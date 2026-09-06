@@ -1,0 +1,38 @@
+		[STAThread]
+		private static void Main()
+		{
+			mutex = new Mutex(initiallyOwned: true, Application.ProductName, out var createdNew);
+			if (!createdNew)
+			{
+				log.Append("program is running. exit.\n");
+				OutputLog();
+				Application.Exit();
+				return;
+			}
+			try
+			{
+				if (Mutex.TryOpenExisting("Xuan-Yuan Sword Mists Beyond the Mountains", out var _))
+				{
+					Application.Exit();
+					return;
+				}
+			}
+			catch
+			{
+			}
+			try
+			{
+				if (Mutex.TryOpenExisting("Xuan-Yuan Sword Mists Beyond the Mountains(1999)", out var _))
+				{
+					Application.Exit();
+					return;
+				}
+			}
+			catch
+			{
+			}
+			try
+			{
+				if (!SteamAPI.Init())
+				{
+					MessageBox.Show("Please login to your Steam first.", "notic");

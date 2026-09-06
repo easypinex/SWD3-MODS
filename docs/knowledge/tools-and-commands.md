@@ -339,9 +339,21 @@ worker 另提供 `inspect-package --package <absolute-path>`（唯讀，不初�
 
 #### GitHub 桌面發佈包
 
-`scripts/Build-DesktopRelease.ps1 -BuildRoot <desktop-build> -OutputRoot <new-directory>` 只讀已建置的 0.3.0 成品，核對程式指紋，使用明確清單複製至新目錄並建立 Windows ZIP、`SHA256SUMS.txt`。不含遊戲 DLL、開發機 `package-runtime.json` 或使用者資料；不呼叫 Steam，也不上傳 GitHub。腳本位於上述桌面專案內，輸出使用 `.work/` 或專案已忽略的 `release-artifacts/`。
+現行桌面來源為 0.3.1，Steam 工作者仍為 0.3.0。現行封裝器包含 `SteamEntry.exe` 及其桌面指紋；0.3.0 歷史包從對應 Git tag 重建。
+
+`scripts/Build-DesktopRelease.ps1 -BuildRoot <desktop-build> -OutputRoot <new-directory>` 只讀已建置的 0.3.1 桌面成品，核對程式指紋，使用明確清單複製至新目錄並建立 Windows ZIP、`SHA256SUMS.txt`。不含遊戲 DLL、開發機 `package-runtime.json` 或使用者資料；不呼叫 Steam，也不上傳 GitHub。腳本位於上述桌面專案內，輸出使用 `.work/` 或專案已忽略的 `release-artifacts/`。
 
 解壓後執行 `Setup.cmd`，或 `powershell.exe -NoProfile -ExecutionPolicy Bypass -File <package>/Setup-Desktop.ps1 -GameRoot <game-root> -PythonExe <python.exe> -NoLaunch`。`GameRoot` 省略時顯示遊戲選檔對話框，`PythonExe` 省略時從 PATH 的 python／py 尋找；`NoLaunch` 僅執行設定與 32 項工作者離線測試。設定先核對套件檔案與原配套 DLL 雜湊，然後複製兩份 DLL、生成本機 Python runtime 設定與更新其指紋；重跑可重新設定。需要 Python 3 和 zstandard（驗收使用 Python 3.12.10／zstandard 0.25.0），不自動下載依賴、不修改遊戲、不呼叫 Steam。未指定 `NoLaunch` 時完成後開啟桌面程式，介面啟動會查詢 Steam。隨包 `release-files.json` 用於檔案完整性檢查；本機可變的 worker 指紋不在該清單，整份 ZIP 的雜湊另由 `SHA256SUMS.txt` 提供。
+
+#### Steam 啟動入口 0.3.1
+
+桌面建置同時編譯 `SteamEntry.exe`（Framework 4.8，獨立轉接程式），不在建置或 Setup 時接管。GUI 入口與本機驗收見 [DESKTOP](../../research/active/swd3works-publisher-repair/DESKTOP.md#接管-steam-啟動入口)。
+
+`SWD3ModStudio.exe --steam-entry status|install|restore <absolute-game-root>`：三個參數位置固定。`status` 只讀；`install` 從目前桌面程式所在目錄核對桌面、轉接器與完整 worker 指紋，備份遊戲的 `SWD3Works.exe`／設定，保存入口登記，再原子替換入口；`restore` 只在目前入口屬於已登記轉接器且備份符合已驗證原版 hash 時還原。兩個寫入操作共用互斥鎖，保留原備份及登記；未知版本、損壞備份、路徑接合點或檔案鎖定均失敗，不執行遊戲／Steam 發佈。WinExe 命令結果需重導 stdout 取得 JSON 與退出碼。
+
+`scripts/Test-SteamEntry.ps1 -BuildRoot <desktop-build> -GameRoot <game-root> -OutputRoot <new-isolated-directory>` 讀取已驗證原工具（若已接管則讀備份），在新隔離目錄建立遊戲檔名 marker 及工具副本，驗證首次／重複接管、還原、模擬 Steam 還原、未知入口、備份損壞、鎖定導致替換失敗與重試，共 15 次命令及雜湊斷言。只寫隔離副本和測試 JSON，不初始化 Steam、不執行 marker、不刪除證據。最終保留還原後副本。
+
+轉接器私有啟動參數 `--steam-entry-game <game-root>` 供桌面記住遊戲位置，不能當成安裝命令。正常轉接設定桌面工作目錄，啟動後即退出；原工具後備路徑仍使用遊戲目錄為工作目錄。遊戲仍執行時，桌面拒絕重複啟動或呼叫會自行退出的原工具。此原工具行為與限制僅針對[固定版本證據](../../research/active/swd3works-publisher-repair/evidence/steam-entry-20260906/README.md)。
 
 ## Node.js：Lua 語法與 mock runtime
 

@@ -18,18 +18,38 @@ namespace Swd3ModStudio.Desktop
 {
     public static class Entry
     {
+        [System.Runtime.InteropServices.DllImport("user32.dll")] static extern bool SetForegroundWindow(IntPtr handle);
+        [System.Runtime.InteropServices.DllImport("user32.dll")] static extern bool ShowWindow(IntPtr handle,int command);
         [STAThread] public static int Main(string[] args)
         {
-            if(args.Length>0 && (args[0]=="--test-child" || args[0]=="--self-test")) {
+            if(args.Length>0 && (args[0]=="--test-child" || args[0]=="--self-test" || args[0]=="--steam-entry")) {
                 Console.SetOut(new StreamWriter(Console.OpenStandardOutput(),Data.Utf8){AutoFlush=true});
                 Console.SetError(new StreamWriter(Console.OpenStandardError(),Data.Utf8){AutoFlush=true});
             }
             if (args.Length > 0 && args[0] == "--test-child") return DesktopTests.Child(args);
             if (args.Length > 0 && args[0] == "--self-test") return DesktopTests.Run().GetAwaiter().GetResult();
+            if (args.Length > 0 && args[0] == "--steam-entry") {
+                try {
+                    if(args.Length!=3)throw new ArgumentException("--steam-entry status|install|restore <game-root>");
+                    if(args[1]=="install")SteamEntry.Install(args[2],AppDomain.CurrentDomain.BaseDirectory);
+                    else if(args[1]=="restore")SteamEntry.Restore(args[2]);
+                    else if(args[1]!="status")throw new ArgumentException("Unknown entry command");
+                    Console.WriteLine(Data.Encode(new{kind="steam-entry",status=SteamEntry.Status(args[2])}));return 0;
+                }catch(Exception ex){Console.WriteLine(Data.Encode(new{kind="steam-entry-error",error=ex.Message}));return 1;}
+            }
+            if(args.Length==2 && args[0]=="--steam-entry-game") {
+                try {SteamEntry.Game(args[1]);Data.Save(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"SWD3ModStudio","Desktop","steam-entry-settings.json"),new{GameRoot=Path.GetFullPath(args[1])});}catch(Exception){}
+            }
             bool first;
             using (var mutex = new Mutex(true,"Local\\SWD3ModStudio-Desktop",out first))
             {
-                if (!first) { MessageBox.Show("MOD Studio 已在執行，請切換到已開啟的視窗。","MOD Studio"); return 0; }
+                if (!first) {
+                    foreach(var process in Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName))using(process) {
+                        if(process.Id==Process.GetCurrentProcess().Id||process.MainWindowHandle==IntPtr.Zero)continue;
+                        ShowWindow(process.MainWindowHandle,9);SetForegroundWindow(process.MainWindowHandle);return 0;
+                    }
+                    MessageBox.Show("MOD Studio 已在執行，請切換到已開啟的視窗。","MOD Studio"); return 0;
+                }
                 try
                 {
                     var app = new Application();
@@ -50,6 +70,7 @@ namespace Swd3ModStudio.Desktop
         readonly Window window;
         readonly WorkerClient worker;
         readonly string dataRoot;
+        readonly string studioRoot;
         readonly DispatcherTimer saveTimer=new DispatcherTimer();
         readonly DispatcherTimer clock=new DispatcherTimer();
         readonly List<WorkRow> works=new List<WorkRow>();
@@ -61,10 +82,10 @@ namespace Swd3ModStudio.Desktop
         bool busy, loadingForm, dirty, connected;
         int uiTicks;
         CancellationTokenSource cancellation;
-        readonly string[] actionNames={"RefreshButton","NewButton","ImportItemButton","PickPackageButton","RecoverPackageButton","ReloadTextButton","PickPreviewButton","ReviewButton","FilesButton","HistoryButton","HealthButton","ResumeButton","RetryReviewButton","CloseOperationButton","ImportOperationButton","ImportDraftButton"};
+        readonly string[] actionNames={"TakeoverButton","RestoreEntryButton","OriginalToolButton","StartGameButton","PickGameButton","RefreshButton","NewButton","ImportItemButton","PickPackageButton","RecoverPackageButton","ReloadTextButton","PickPreviewButton","ReviewButton","FilesButton","HistoryButton","HealthButton","ResumeButton","RetryReviewButton","CloseOperationButton","ImportOperationButton","ImportDraftButton"};
         public StudioShell(Window window,string root)
         {
-            this.window=window; worker=new WorkerClient(Path.Combine(root,"worker"));
+            this.window=window; studioRoot=root; worker=new WorkerClient(Path.Combine(root,"worker"));
             dataRoot=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"SWD3ModStudio","Desktop");
             Directory.CreateDirectory(dataRoot);
             if(File.Exists(Path.Combine(dataRoot,"settings.json"))) { try {var settings=Data.Read(Path.Combine(dataRoot,"settings.json")); account=Data.WorkshopId(Data.Text(settings,"Account")); persona=Data.Text(settings,"Persona");} catch(Exception){account="";} }
@@ -83,6 +104,16 @@ namespace Swd3ModStudio.Desktop
             Button("ReportButton").Click+=delegate { try { ExportReport(); } catch(Exception ex){ShowError(ex);} };
             Button("DataFolderButton").Click+=delegate { Process.Start(new ProcessStartInfo(dataRoot){UseShellExecute=true}); };
             Button("CopyLogButton").Click+=delegate { try { Clipboard.SetText(Box("LogBox").Text); Notice("診斷紀錄已複製。",false); } catch(Exception ex){ShowError(ex);} };
+            Button("PickGameButton").Click+=delegate {try {
+                var picker=new OpenFileDialog{Title="選擇 Steam 高清版的 swd3.exe",Filter="遊戲程式|swd3.exe"};
+                if(picker.ShowDialog(window)==true){Box("GameRootBox").Text=Path.GetDirectoryName(picker.FileName);SaveEntrySettings();RefreshEntry();}
+            }catch(Exception ex){ShowError(ex);} };
+            Button("EntryStatusButton").Click+=delegate {try{RefreshEntry();}catch(Exception ex){ShowError(ex);} };
+            Bind("TakeoverButton",async delegate {SaveEntrySettings();SteamEntry.Install(Box("GameRootBox").Text,studioRoot);RefreshEntry();Notice("已接管 Steam 啟動入口，原工具已備份。",false);await Task.FromResult(0);});
+            Bind("RestoreEntryButton",async delegate {SteamEntry.Restore(Box("GameRootBox").Text);RefreshEntry();Notice("已還原原版 Steam 入口，備份與草稿均保留。",false);await Task.FromResult(0);});
+            Bind("OriginalToolButton",async delegate {string game=SteamEntry.Game(Box("GameRootBox").Text);SteamEntry.Start(SteamEntry.Original(game),game,new string[0]);await Task.FromResult(0);});
+            Bind("StartGameButton",async delegate {string game=SteamEntry.Game(Box("GameRootBox").Text);SteamEntry.RequireGameStopped();SteamEntry.Start(Path.Combine(game,"swd3.exe"),game,new string[0]);Notice("已送出啟動要求；請以遊戲視窗出現為準。",false);await Task.FromResult(0);});
+            try {string entrySettings=Path.Combine(dataRoot,"steam-entry-settings.json");if(File.Exists(entrySettings)){Box("GameRootBox").Text=Data.Text(Data.Read(entrySettings),"GameRoot");RefreshEntry();}}catch(Exception ex){Text("EntryStatus").Text=ex.Message;}
             Button("OpenOperationFolder").Click+=delegate { var row=Control<DataGrid>("OperationGrid").SelectedItem as OperationRow; if(row!=null) Process.Start(new ProcessStartInfo(row.DirectoryPath){UseShellExecute=true}); };
             Button("StopButton").Click+=delegate { if(cancellation!=null) { cancellation.Cancel(); Notice("已停止本機等待；請稍後由發佈紀錄重新核對，Steam 不一定已取消。",true); } };
             Box("SearchBox").TextChanged+=delegate { FilterWorks(); };
@@ -101,6 +132,8 @@ namespace Swd3ModStudio.Desktop
             window.Loaded+=async delegate { LoadCache(); LoadDrafts(); ReloadOperations(); Page("Library"); await RunUi(Refresh); };
             Text("SettingsInfo").Text="Steam 遊戲：軒轅劍參高清版（1638230）\n工作者："+worker.Root+"\n草稿與發佈紀錄："+dataRoot+"\n每階段等候上限：120 秒。沒有保存 Steam 密碼。";
         }
+        void SaveEntrySettings(){string game=SteamEntry.Game(Box("GameRootBox").Text);Data.Save(Path.Combine(dataRoot,"steam-entry-settings.json"),new{GameRoot=game});}
+        void RefreshEntry(){Text("EntryStatus").Text=SteamEntry.Status(Box("GameRootBox").Text);}
         T Control<T>(string name) where T:class { return window.FindName(name) as T; }
         Button Button(string name){return Control<Button>(name);} TextBox Box(string name){return Control<TextBox>(name);} TextBlock Text(string name){return Control<TextBlock>(name);}
         void Nav(string name,string page){Button(name).Click+=delegate { Page(page); };}

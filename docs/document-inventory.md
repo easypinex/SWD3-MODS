@@ -46,7 +46,7 @@
 | [來源圖庫](../SWD3-TSW-PNG-GALLERY/README.md) | README 重建；來源 manifest／CSV 不作 HD 映射 |
 | [原版資料入口](knowledge/original-game-data/README.md)及[戰鬥資料集](knowledge/original-game-data/battle-balance-and-capture/README.md) | BALANCE-RESEARCH 只維護原版數值分析與界線；匯出腳本及 generated CSV 為共用資料來源／推導，不是產品設定 |
 | [研究清冊](../research/README.md) | 7 個持續使用／未完成、13 個歷史探針；各 README／TESTING 保存條件、重跑與停止方法 |
-| [發佈工具診斷與替代](../research/active/swd3works-publisher-repair/README.md) | README 保存 F1–F3 與備案；NEW-TOOL-DESIGN 為產品規劃；DESKTOP 保存現行 0.3.0 桌面版契約；RELEASES／PROTOTYPE 保存 0.2.0／M0 歷史；prototype／scripts 為自有來源；evidence 保存靜態與真實 Steam 驗證、核對報告 |
+| [發佈工具診斷與替代](../research/active/swd3works-publisher-repair/README.md) | README 保存 F1–F3 與備案；NEW-TOOL-DESIGN 為產品規劃；DESKTOP 保存現行 0.3.1 桌面版與 Steam 入口接管契約；RELEASES／PROTOTYPE 保存 0.2.0／M0 歷史；prototype／scripts 為自有來源；evidence 保存靜態與真實 Steam 驗證、核對報告 |
 | research/archive/legacy-designs | 舊蚩尤提案、圖片方案；現行文件只連結，不複製教學 |
 
 ## 非說明文件與本機產物
