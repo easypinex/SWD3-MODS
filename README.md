@@ -30,7 +30,7 @@
 
 ## 研究與資源
 
-- [SWD3 MOD Studio 桌面版](research/active/swd3works-publisher-repair/DESKTOP.md)：獨立工作坊發佈、版本更新與下載核對工具；[下載 0.3.0](https://github.com/easypinex/SWD3-MODS/releases/tag/mod-studio-v0.3.0)。
+- [SWD3 MOD Studio 桌面版](research/active/swd3works-publisher-repair/DESKTOP.md)：獨立工作坊發佈、版本更新與下載核對工具；[下載 0.3.2](https://github.com/easypinex/SWD3-MODS/releases/tag/mod-studio-v0.3.2)。
 
 規劃中的獨立 MOD：[蔡魔王](swd3-cai-demon-king-mod/README.md)，目前為造型、戰鬥補齊與相容性評估草案，尚無可安裝版本。
 

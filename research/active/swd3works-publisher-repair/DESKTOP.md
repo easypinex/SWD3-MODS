@@ -43,6 +43,6 @@ WPF／.NET Framework 4.8 桌面程序，Steam API 在獨立 x86 工作者執行�
 
 本版採原子替換與備份的 UTF-8 JSON，不另安裝 .NET 10／SQLite。是發佈與版本維護的完整桌面流程；[完整產品提案](NEW-TOOL-DESIGN.md)中的專案封裝編輯器、本機 MOD 安裝排序、遊戲／DLC 管理仍為後續範圍。檔案檢查只解析可辨識的 SMOD v4 manifest；不替代 MOD 實機驗收。
 
-已上架的 0.3.0 不含入口接管功能，可從 [GitHub Release](https://github.com/easypinex/SWD3-MODS/releases/tag/mod-studio-v0.3.0) 下載未簽章的 Windows ZIP。完整解壓到遊戲以外的可寫入目錄，準備 Python 3／zstandard，再執行 `Setup.cmd` 選擇遊戲的 `swd3.exe`；設定會核對並複製本機遊戲配套 DLL、設定 Python，完成後開啟桌面程式。之後直接執行 `SWD3ModStudio.exe`。發佈包不含遊戲 DLL、帳號資料或開發機 Python 路徑。詳見 [隨包說明](release/README.txt)及[版本說明](release/RELEASE-NOTES-0.3.0.md)。命令參數、輸出與副作用的唯一入口為 [工具索引](../../../docs/knowledge/tools-and-commands.md#mod-studio-桌面版-030)。
+0.3.2 已發佈，可從 [GitHub Release](https://github.com/easypinex/SWD3-MODS/releases/tag/mod-studio-v0.3.2) 下載未簽章的 Windows ZIP。完整解壓到遊戲以外的可寫入目錄，準備 Python 3／zstandard，再執行 `Setup.cmd` 選擇遊戲的 `swd3.exe`；設定會核對並複製本機遊戲配套 DLL、設定 Python，完成後開啟桌面程式。之後直接執行 `SWD3ModStudio.exe`。發佈包不含遊戲 DLL、帳號資料或開發機 Python 路徑。詳見 [隨包說明](release/README.txt)及[版本說明](release/RELEASE-NOTES-0.3.2.md)。命令參數、輸出與副作用的唯一入口為 [工具索引](../../../docs/knowledge/tools-and-commands.md#mod-studio-桌面版-030)。
 
-0.3.2 本機套件位於專案 `release-artifacts/0.3.2/`，尚未建立新的 GitHub Release；內容見[0.3.2 版本說明](release/RELEASE-NOTES-0.3.2.md)。
+0.3.2 本機套件位於專案 `release-artifacts/0.3.2/`，對應 Git tag `mod-studio-v0.3.2`、程式提交 `28bf9b7`；內容見[0.3.2 版本說明](release/RELEASE-NOTES-0.3.2.md)。
