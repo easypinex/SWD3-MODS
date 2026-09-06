@@ -1,0 +1,5 @@
+{"at":"2026-09-06T09:18:55.8491071Z","kind":"session","data":{"version":"0.1.0","appId":1638230,"steamId":"76561198095249191","persona":"輕鬆小品","runtime":"4.0.30319.42000","x64":false,"steamworks":"Steamworks.NET, Version=20.2.0.0, Culture=neutral, PublicKeyToken=null"}}
+{"at":"2026-09-06T09:18:56.1115170Z","kind":"page","data":{"page":2,"returned":0,"total":4}}
+{"at":"2026-09-06T09:18:56.1125175Z","kind":"published","data":{"appId":1638230,"steamId":"76561198095249191","complete":false,"total":4,"items":[]}}
+{"at":"2026-09-06T09:18:56.1125175Z","kind":"completed","data":{"command":"list"}}
+{"at":"2026-09-06T09:18:56.1417986Z","kind":"shutdown","data":{"ok":true}}

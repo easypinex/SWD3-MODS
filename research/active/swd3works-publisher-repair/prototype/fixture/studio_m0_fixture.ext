@@ -1,0 +1,10 @@
+MODName SWD3 MOD Studio Private M0 Fixture
+MODAuthor SWD3 MOD Studio Prototype
+MODDate 2026,9,6
+MODVersion 0,1
+MODinfo Private publisher connectivity test. No gameplay effects.%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+DAT 2,0,Main.lua,No-op publisher fixture

@@ -59,3 +59,6 @@ Desktop.ini
 # Runtime logs stay local; explicitly archived research evidence is versioned.
 *.log
 !/research/**/evidence/**/*.log
+
+# Desktop release archives and per-machine bootstrap output are rebuilt locally.
+/research/active/swd3works-publisher-repair/release-artifacts/

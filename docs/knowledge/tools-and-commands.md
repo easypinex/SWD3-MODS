@@ -234,6 +234,115 @@ Start-Process -FilePath "$gameRoot\swd3.exe" -WorkingDirectory $gameRoot
 
 輸入包括工作坊內容資料夾、標題、說明、預覽圖、更新說明與可見度。內容資料夾應只含單一正式 `.ssmod`。完整順序、重新訂閱與公開門檻見 [Steam 工作坊發布](steam-workshop-release.md)。
 
+### SWD3Works 受管反編譯
+
+**已實測工具流程，2026-09-06。** SWD3Works 是受管工具，使用 ILSpyCmd；不需為此執行整個遊戲的 Ghidra loader 分析。來源版本及可定位控制流見[發佈工具研究](../../research/active/swd3works-publisher-repair/README.md#分析基線與重跑)。此處只定義靜態匯出，不執行或修補目標、不呼叫 Steam API。
+
+本機已測 `.NET SDK 8.0.204`／runtime `8.0.4` 配 `ilspycmd 9.1.0.7988`。從工作區根目錄準備工具，安裝會下載 NuGet 套件並寫入 `.tools`／本機套件快取；不修改遊戲安裝：
+
+```powershell
+dotnet tool install ilspycmd --version 9.1.0.7988 --tool-path .tools/ilspycmd
+& ./.tools/ilspycmd/ilspycmd.exe --help
+```
+
+已安裝即略過 install。依該版實際 help 核對：`-r` 指受管相依目錄、`-o` 指 C# 輸出目錄，最後為 assembly 路徑；`--disable-updatecheck` 停用更新檢查，`--version` 記錄分析器版本。官方入口：[ILSpyCmd](https://github.com/icsharpcode/ILSpy/tree/master/ICSharpCode.ILSpyCmd)，不同版本不得直接假定行號或參數一致。
+
+```powershell
+& ./research/active/swd3works-publisher-repair/scripts/Export-PublisherAnalysis.ps1 `
+  -GameRoot '<game-root>' `
+  -OutputRoot '<workspace>/.work/publisher-analysis-new-run' `
+  -IlspyPath '<workspace>/.tools/ilspycmd/ilspycmd.exe'
+```
+
+三個參數皆必填。腳本拒絕既存輸出目錄及遊戲目錄內輸出；建立 `input/` 三份副本（exe、Steamworks.NET.dll、exe.config）、`decompiled/` C# 與 `fingerprint.json`。複製前後及分析後核對原檔與副本 hash；檢查所需 symbols 與退出碼。僅當來源及完整匯出 hash 符合既有基線，才另產生 `control-flow-excerpts.txt` 行號摘要；其他版本須重新定位。所有完整反編譯及原版副本留在本機產物，只有選定證據與指紋可歸入研究目錄。
+
+### Steam 工作者原型 M0
+
+**已實測，2026-09-06。** 獨立 x86 命令列工作者，目標 .NET Framework 4.8，依賴本機配套 `Steamworks.NET 20.2.0.0` 與 x86 `steam_api.dll`；不用執行 SWD3Works。版本、指紋、操作範圍與線上證據見[原型文件](../../research/active/swd3works-publisher-repair/PROTOTYPE.md#實測結果)。只適用已測版本，不把 x86 結論套用所有 Steamworks.NET build。
+
+所有命令從工作區根目錄執行。建置使用 Windows 隨附的 `Microsoft.NET/Framework/v4.0.30319/csc.exe`，本次版本 `4.8.9221.0`；使用本機 framework／System.Web.Extensions，沒有 NuGet restore 或新 SDK 安裝。現行建置腳本產生 0.3.0（桌面擴充見下方），另需本機 Python 3＋`zstandard` 作封包檢查，擴充命令見[版本維護入口](#steam-版本維護原型-020)：
+
+```powershell
+& ./research/active/swd3works-publisher-repair/scripts/Build-SteamPrototype.ps1 `
+  -GameRoot '<game-root>' -OutputRoot '<workspace>/.work/steam-prototype-new-build'
+```
+
+兩參數必填。拒絕既存輸出目錄／遊戲目錄內輸出及未知依賴 hash；複製配套 DLL，呼叫 C# compiler 的 `/target:exe /platform:x86 /optimize+ /warnaserror+`，建立 exe、framework config、`steam_appid.txt` 與 build fingerprint，執行離線 self-test。build 是本機產物，不包含遊戲核心修改；離線測試只寫自己的暫存目錄。
+
+操作包裝器：[Invoke-SteamPrototype.ps1](../../research/active/swd3works-publisher-repair/scripts/Invoke-SteamPrototype.ps1)。`-BuildRoot`、`-Command`、`-LogPath` 必填；核對 exe／DLL hash，以 build 目錄為 cwd 執行並保存 stdout。`-LogPath` 必須尚不存在：
+
+```powershell
+& ./research/active/swd3works-publisher-repair/scripts/Invoke-SteamPrototype.ps1 `
+  -BuildRoot '<build-root>' -Command list `
+  -LogPath '<new-log-path>' -OutputPath '<published-json-path>'
+```
+
+| 參數／Command | 規則與副作用 |
+| --- | --- |
+| `self-test` | 現行0.2.0離線32項（原M0為14項），無 Steam init |
+| `health`、`list`、`details` | 唯讀 Steam；details 必須給 `-ItemId`；list 可給 `-OutputPath`（原子替換，保留 .bak）及 `-Page 1..1000`；省略 Page 自動逐頁 |
+| `create-test`、`update-test` | 必須給 `-PlanPath`、`-StatePath`；**會向 Steam 建立／更新專用私人測試項目**；不適用正式作品，既有 create journal 禁止重建 |
+| `verify-test` | 相同 PlanPath／StatePath；唯讀遠端，核對後寫本機 journal |
+| `download-test` | 相同 PlanPath／StatePath；Steam 下載至其快取，比對成品 hash；不訂閱、不啟用、不安裝到 Mods |
+| `-TimeoutSeconds` | 5–600，預設60；逾時停止等待但不宣稱遠端取消，不能盲目重送 Create |
+
+初次私人測試前準備並檢查專用計畫：
+
+```powershell
+& ./research/active/swd3works-publisher-repair/scripts/Prepare-SteamPrototypeTest.ps1 `
+  -GameRoot '<game-root>' -OutputRoot '<workspace>/.work/steam-prototype-new-fixture'
+```
+
+拒絕既存／遊戲內輸出，建立兩版 no-op fixture、512×256 自有預覽與 `plan-r1.json`／`plan-r2.json`；呼叫已記錄的 `SS2Dtool p`，再由 `Verify-M0Package.py <package> <source-dir> <new-output-dir>` 反向解出兩個 frame 並逐位元比較。此 helper 使用 CPython3／`zstandard 0.25.0`，只適用此 fixture，不是通用解包器。準備本身不呼叫 Steam；本次官方 x 無輸出之例外保留在[專案紀錄](../../research/active/swd3works-publisher-repair/PROTOTYPE.md#測試內容與解包差異)。
+
+真實新建使用 `-Command create-test -PlanPath <plan-r1> -StatePath <new-state>`，同 ID 第二版更新用 `-Command update-test -PlanPath <plan-r2> -StatePath <same-state>`；都另給必填 BuildRoot／LogPath。可先透過原型 `--help` 查看 CLI。使用相同 ID 做 `verify-test` 可核對未知 submit 結果；缺 ID 的未知建立須先查作品，不自動重建。正式完整產品的多語言、一般作品編輯、UI／IPC 不屬 M0。
+
+### Steam 版本維護原型 0.2.0
+
+**已實測，2026-09-06，所列版本限定。** 沿用上方建置與 Invoke 腳本，加入原 ID 持續升版、一般自有作品查詢／更新、逐版歷史、雙語預設欄位同步與自動下載驗證。專案契約、實例與限制見 [RELEASES](../../research/active/swd3works-publisher-repair/RELEASES.md)，精確線上證據見[案例](../../research/active/swd3works-publisher-repair/evidence/releases-20260906/README.md#案例)。
+
+前置環境為原配套 x86 DLL、Framework4.8，另需可執行 `python` 且已安裝 `zstandard`（本次0.25.0）。Build 會解析實際 `python.exe` 路徑，複製自有 `SteamReleasePackage.py`，保存 runtime 設定及其 hash；Invoke 核對這兩個檔案，搬機應重新建置。每次讀包啟動背景 Python helper，最多等候30秒；不使用 shell 拼接命令。
+
+| 入口 | 參數、輸出與副作用 |
+| --- | --- |
+| `SteamReleasePackage.py inspect <package>` | 唯讀 `.ssmod`，stdout JSON：內嵌版本、MODName、檔名、大小、SHA-256、manifest hash；只辨識SMOD v4首個manifest，不完整解包資源 |
+| `SteamReleasePackage.py prepare <draft.json> <new-output>` | 輸出必須是工作區內新目錄；複製單一封包／可選預覽、讀取版本，產生schema 3的plan.json／package.json。不呼叫Steam；中文計畫契約含English預設欄位同步 |
+| `review-release` | Invoke另給PlanPath／StatePath；查遠端與下載目前檔案，保存審閱。不寫Steam；可重新審閱明確拒絕的原操作，未知結果不能當拒絕 |
+| `publish-release` | 相同PlanPath／StatePath，**會新建或更新Steam作品**；新建ID立即保存，中文與預設欄位按序提交，再自動查回／下載驗證。已有送出結果時只核對，不盲目重送 |
+| `verify-release` | 相同PlanPath／StatePath；查詢／下載，核對成功才保存verified；不提交。相同操作多次核對不是新版本 |
+| `close-release` | 相同PlanPath／StatePath；僅明確遭拒且遠端仍完全保持原狀的既有更新，可查詢／下載後結案。部分改動或未知結果拒絕 |
+| `files` | Invoke另給ItemId；查詳情並下載至Steam自身快取，列每個檔名／大小／SHA-256／可辨識內嵌版本；不訂閱、不安裝至Mods |
+| `history` | Invoke另給ItemId；目前帳號的本機已驗證歷史；讀LocalAppData，不宣稱可恢復Steam從未記錄的舊包 |
+| `-OutputPath` | details、files、history、release-review／verified均可輸出完整JSON；原子替換並保留.bak |
+| `-Language` | 查詢預設tchinese，可選english／schinese；release命令以計畫Language為準，舊M0測試固定english |
+
+上述 Invoke 仍必須提供 BuildRoot／Command／新 LogPath；5–600秒時限以每個Steam等待階段計算。release操作另自動產生 `<LogPath>.html`，失敗時有狀態檔也會輸出差異；HTML是當次紀錄，不是即時Steam畫面。獨立報告腳本為 `Export-SteamReleaseReport.ps1 -PlanPath <plan> -StatePath <state> -OutputPath <new-html>`，只讀兩份JSON並寫本機HTML，不查Steam。
+
+測試fixture準備腳本新增 `-Revisions 3,4,5`（預設仍1,2）；產生的schema 1 M0 plan僅適用舊兩版測試，其他版取其已回驗封包再由prepare產生release計畫。離線封包回歸使用 `python research/active/swd3works-publisher-repair/scripts/Test-SteamReleasePackage.py <no-op-fixture.ssmod>`；在工作區 `.work` 內獨立暫存完成5項測試後清理，不呼叫Steam。
+
+固定操作登記／未完成指標／成功歷史寫入 `%LOCALAPPDATA%/SWD3ModStudio/releases/1638230/<SteamID>/`；每次計畫與快照、完整state／.bak保留在指定操作目錄。不要只刪除state來重送未知Create；完整恢復規則見[原型狀態契約](../../research/active/swd3works-publisher-repair/RELEASES.md#狀態失敗與恢復)。
+
+### MOD Studio 桌面版 0.3.0
+
+**已實測，2026-09-06。** Windows WPF 發佈與維護介面，沿用獨立 x86 Steam 工作者。完整操作、環境範圍、資料遷移與驗收證據見 [DESKTOP](../../research/active/swd3works-publisher-repair/DESKTOP.md)。上方 0.2.0 的命令語意保持；現行來源建置版本為 0.3.0。
+
+```powershell
+& ./research/active/swd3works-publisher-repair/scripts/Build-Desktop.ps1 `
+  -GameRoot '<game-root>' -OutputRoot '.work/mod-studio-new-build'
+```
+
+OutputRoot 必須尚不存在且在遊戲外；建置自有 WPF 程式、worker 子目錄、runtime 設定、指紋與離線測試日誌，不呼叫 Steam。Framework 4.8／原配套 DLL／本機 Python 和 zstandard 的要求同上。成品入口 `SWD3ModStudio.exe`；GUI 開啟後會查詢 Steam，按發佈才寫作品，檔案查詢會下載至 Steam 快取。
+
+0.3.0 桌面資料與操作快照寫入 `%USERPROFILE%/SWD3ModStudio/Desktop/`；工作者歷史與未完成指標改用 `%USERPROFILE%/SWD3ModStudio/releases/1638230/<SteamID>/`。舊 LocalAppData 計畫需要時複製到 `%USERPROFILE%/SWD3ModStudio/uploads/<OperationID>/`，核對雜湊後提交；不自動刪除尚可能被 Steam 使用的副本。此位置選擇與 MSIX 預覽隔離的限定證據見[桌面研究](../../research/active/swd3works-publisher-repair/evidence/desktop-20260906/README.md#預覽環境的資料隔離問題)，不提升為遊戲引擎規則。
+
+worker 另提供 `inspect-package --package <absolute-path>`（唯讀，不初始化 Steam）及 `--expected-account <SteamID>`（連線帳號不符即停止）。GUI 會自動使用這兩項。`SWD3ModStudio.exe --self-test` 只做離線程序與保存測試；因 WinExe 不附加主控台，建置腳本以重導 stdout 保存結果。
+
+#### GitHub 桌面發佈包
+
+`scripts/Build-DesktopRelease.ps1 -BuildRoot <desktop-build> -OutputRoot <new-directory>` 只讀已建置的 0.3.0 成品，核對程式指紋，使用明確清單複製至新目錄並建立 Windows ZIP、`SHA256SUMS.txt`。不含遊戲 DLL、開發機 `package-runtime.json` 或使用者資料；不呼叫 Steam，也不上傳 GitHub。腳本位於上述桌面專案內，輸出使用 `.work/` 或專案已忽略的 `release-artifacts/`。
+
+解壓後執行 `Setup.cmd`，或 `powershell.exe -NoProfile -ExecutionPolicy Bypass -File <package>/Setup-Desktop.ps1 -GameRoot <game-root> -PythonExe <python.exe> -NoLaunch`。`GameRoot` 省略時顯示遊戲選檔對話框，`PythonExe` 省略時從 PATH 的 python／py 尋找；`NoLaunch` 僅執行設定與 32 項工作者離線測試。設定先核對套件檔案與原配套 DLL 雜湊，然後複製兩份 DLL、生成本機 Python runtime 設定與更新其指紋；重跑可重新設定。需要 Python 3 和 zstandard（驗收使用 Python 3.12.10／zstandard 0.25.0），不自動下載依賴、不修改遊戲、不呼叫 Steam。未指定 `NoLaunch` 時完成後開啟桌面程式，介面啟動會查詢 Steam。隨包 `release-files.json` 用於檔案完整性檢查；本機可變的 worker 指紋不在該清單，整份 ZIP 的雜湊另由 `SHA256SUMS.txt` 提供。
+
 ## Node.js：Lua 語法與 mock runtime
 
 `swd3-live-card-battle-mod/tests/run-tests.ps1` 已實測使用下列工具。

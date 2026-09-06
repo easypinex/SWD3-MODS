@@ -1,0 +1,6 @@
+Setting breakpad minidump AppID = 1638230
+SteamInternal_SetMinidumpSteamID:  Caching Steam ID:  76561198095249191 [API loaded no]
+{"at":"2026-09-06T10:44:05.9208562Z","kind":"session","data":{"version":"0.2.0","appId":1638230,"steamId":"76561198095249191","persona":"輕鬆小品","runtime":"4.0.30319.42000","x64":false,"steamworks":"Steamworks.NET, Version=20.2.0.0, Culture=neutral, PublicKeyToken=null"}}
+{"at":"2026-09-06T10:44:05.9683931Z","kind":"health","data":{"ok":true}}
+{"at":"2026-09-06T10:44:05.9683931Z","kind":"completed","data":{"command":"health"}}
+{"at":"2026-09-06T10:44:05.9753971Z","kind":"shutdown","data":{"ok":true}}

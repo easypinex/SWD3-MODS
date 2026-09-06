@@ -1,0 +1,4 @@
+{"at":"2026-09-06T09:19:51.2828423Z","kind":"session","data":{"version":"0.1.0","appId":1638230,"steamId":"76561198095249191","persona":"輕鬆小品","runtime":"4.0.30319.42000","x64":false,"steamworks":"Steamworks.NET, Version=20.2.0.0, Culture=neutral, PublicKeyToken=null"}}
+{"at":"2026-09-06T09:19:54.1353427Z","kind":"download-verified","data":{"workshopId":"3796679826","revision":2,"sha256":"844EA33D1DAE3DF398CEA50765A4296B508A7BA6B2BDED59C4AD7D4EC2EF4752","size":"771","folder":"D:\\SteamLibrary\\steamapps\\workshop\\content\\1638230\\3796679826","subscribed":false}}
+{"at":"2026-09-06T09:19:54.1353427Z","kind":"completed","data":{"command":"download-test"}}
+{"at":"2026-09-06T09:19:54.1428873Z","kind":"shutdown","data":{"ok":true}}

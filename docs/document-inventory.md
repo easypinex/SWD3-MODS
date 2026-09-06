@@ -9,7 +9,7 @@
 | [工作區 README](../README.md) | 正式 MOD、圖庫與主要入口導航 | 易過期的本機啟用／發布狀態 |
 | [AGENTS](../AGENTS.md) | 依開發任務條件決定最小閱讀路徑、知識歸屬 | 原始 trace、產品版本教學 |
 | [知識庫索引](knowledge/README.md) | 人工按主題瀏覽 | 第二份通用規則或證據定義 |
-| [研究清冊](../research/README.md) | 19 個研究專案的位置、狀態、正文去向與缺口 | 完整引擎結論 |
+| [研究清冊](../research/README.md) | 20 個研究專案的位置、狀態、正文去向與缺口 | 完整引擎結論 |
 | [相容性登記](compatibility-registry.md) | 快捷鍵、hook、namespace、保存 key、文字與資產 ID 的擁有／保留狀態 | native API 規格 |
 | 本文件 | 文件與資料責任清冊 | 研究結果的另一份摘要正文 |
 
@@ -45,7 +45,8 @@
 | [HD 圖庫](../SWD3-HD-TSW-PNG-GALLERY/README.md) | README 重建；SSMOD-FORMAT-RESEARCH 為格式證據；manifest／CSV 為映射，圖片可由正版安裝重建 |
 | [來源圖庫](../SWD3-TSW-PNG-GALLERY/README.md) | README 重建；來源 manifest／CSV 不作 HD 映射 |
 | [原版資料入口](knowledge/original-game-data/README.md)及[戰鬥資料集](knowledge/original-game-data/battle-balance-and-capture/README.md) | BALANCE-RESEARCH 只維護原版數值分析與界線；匯出腳本及 generated CSV 為共用資料來源／推導，不是產品設定 |
-| [研究清冊](../research/README.md) | 6 個持續使用／未完成、13 個歷史探針；各 README／TESTING 保存條件、重跑與停止方法 |
+| [研究清冊](../research/README.md) | 7 個持續使用／未完成、13 個歷史探針；各 README／TESTING 保存條件、重跑與停止方法 |
+| [發佈工具診斷與替代](../research/active/swd3works-publisher-repair/README.md) | README 保存 F1–F3 與備案；NEW-TOOL-DESIGN 為產品規劃；DESKTOP 保存現行 0.3.0 桌面版契約；RELEASES／PROTOTYPE 保存 0.2.0／M0 歷史；prototype／scripts 為自有來源；evidence 保存靜態與真實 Steam 驗證、核對報告 |
 | research/archive/legacy-designs | 舊蚩尤提案、圖片方案；現行文件只連結，不複製教學 |
 
 ## 非說明文件與本機產物

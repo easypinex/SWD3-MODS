@@ -1,0 +1,30 @@
+{
+  "RecordedAt": "2026-09-06T16:55:58.8593319+08:00",
+  "Inputs": [
+    {
+      "Name": "SWD3Works.exe",
+      "Version": "1.0.0.1",
+      "Length": 484864,
+      "SHA256": "756D9E2F9866EC335F8A536B9ED0DE2869BBE83FF3D5BF468E0F8A2E3C0330FA"
+    },
+    {
+      "Name": "Steamworks.NET.dll",
+      "Version": "20.2.0",
+      "Length": 381440,
+      "SHA256": "CFC3DB8EDBB2A1BB5A23FA045BB3F30C959068DF147B01FC34291F7E0C71029F"
+    },
+    {
+      "Name": "SWD3Works.exe.config",
+      "Version": null,
+      "Length": 1168,
+      "SHA256": "1FF33566112A07E8E067C9CD940F0EDEA62815EA962724068C93E5E11B250D4E"
+    }
+  ],
+  "Tool": [
+    "ilspycmd: 9.1.0.7988",
+    "ICSharpCode.Decompiler: 9.1.0.7988"
+  ],
+  "ScriptSHA256": "FE6400A8A983ACF42EBC502BBA2AF8EF03556455C27A6CF5D903F9D3EDEF05D0",
+  "ReportSHA256": "DBF8B4B4FA2C0411D4902C4402496E1BFEC9C2588B44FF40D0330B36C4131F78",
+  "Method": "ILSpy C# export; no target execution or Steam API calls"
+}

@@ -1,0 +1,18 @@
+{
+  "Schema": 2,
+  "AppId": 1638230,
+  "OperationId": "73fd8cb11c7042f092847f28ef08e1d3",
+  "WorkshopId": "3796691396",
+  "Version": "0.5",
+  "ContentDirectory": "D:\\workspace\\SWD3-MODS\\.work\\steam-release-validation\\r5\\content",
+  "FileName": "studio_m0_fixture.ssmod",
+  "ContentSha256": "BCD11DED6B5BBF814B9DB266C9228E9A772909CECC68A413E9F30E984C8038C5",
+  "ContentSize": 770,
+  "Title": "[私人測試] MOD Studio 持續維護 0.5",
+  "Description": "版本 0.5\n第三版：再次沿用同一作品 ID 更新，驗證可持續維護。\n所有內容皆為無遊戲效果的測試資料。",
+  "Language": "tchinese",
+  "Visibility": "preserve",
+  "ChangeNote": "連續更新至 0.5，再次核對標題、說明、版本及檔案內容。",
+  "PreviewFile": null,
+  "PreviewSha256": null
+}

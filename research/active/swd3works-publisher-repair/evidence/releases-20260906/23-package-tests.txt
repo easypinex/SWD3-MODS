@@ -1,0 +1,10 @@
+test_broken_package_never_becomes_release (__main__.ReleasePackageTests.test_broken_package_never_becomes_release) ... ok
+test_declared_version_cannot_override_package_version (__main__.ReleasePackageTests.test_declared_version_cannot_override_package_version) ... ok
+test_existing_release_cannot_be_overwritten (__main__.ReleasePackageTests.test_existing_release_cannot_be_overwritten) ... ok
+test_non_package_is_rejected (__main__.ReleasePackageTests.test_non_package_is_rejected) ... ok
+test_real_package_snapshot_stays_unchanged_after_source_edit (__main__.ReleasePackageTests.test_real_package_snapshot_stays_unchanged_after_source_edit) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.079s
+
+OK

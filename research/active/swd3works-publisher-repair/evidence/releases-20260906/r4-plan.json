@@ -1,0 +1,18 @@
+{
+  "Schema": 2,
+  "AppId": 1638230,
+  "OperationId": "c9c76f0aaef04f5b93e0d126d3089168",
+  "WorkshopId": "3796691396",
+  "Version": "0.4",
+  "ContentDirectory": "D:\\workspace\\SWD3-MODS\\.work\\steam-release-validation\\r4\\content",
+  "FileName": "studio_versioned_fixture.ssmod",
+  "ContentSha256": "F46B62CA21560BA111732F04599EA3929322F0E7025CCC89404EB762EE02EAE5",
+  "ContentSize": 770,
+  "Title": "[私人測試] MOD Studio 有效更新 0.4",
+  "Description": "版本 0.4\n第二版：標題已更新、說明已更新、封包內容已更新。\n本版同時更換下載檔名，確認沒有殘留舊檔。",
+  "Language": "tchinese",
+  "Visibility": "preserve",
+  "ChangeNote": "更新至 0.4：更換標題、說明、版本、內容與檔名。",
+  "PreviewFile": null,
+  "PreviewSha256": null
+}

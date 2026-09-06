@@ -38,6 +38,7 @@
 | 反解 `swd3.exe`、追特定 native 事件流／函式邏輯、準備 Ghidra | [引擎研究最短路徑](docs/knowledge/engine-research-workflow.md#查特定-native-事件或函式的最短路徑)、[工具與腳本索引](docs/knowledge/tools-and-commands.md#ghidra完整-pe-靜態分析唯讀)、[testing-and-verification.md](docs/knowledge/testing-and-verification.md)；需要原始研究才讀對應探針 README |
 | 新增快捷鍵、hook、全域名稱、保存 key、StringDB 前綴、戰場／TSW ID | [docs/compatibility-registry.md](docs/compatibility-registry.md)，再讀相應主題文件 |
 | 準備 Steam 工作坊發布 | [tools-and-commands.md](docs/knowledge/tools-and-commands.md)、[packaging-and-installation.md](docs/knowledge/packaging-and-installation.md)、[testing-and-verification.md](docs/knowledge/testing-and-verification.md)、[steam-workshop-release.md](docs/knowledge/steam-workshop-release.md) |
+| 修復／替代 SWD3Works、製作獨立 MOD 發佈維護工具 | [工具研究 README](research/active/swd3works-publisher-repair/README.md)、[桌面版與驗收](research/active/swd3works-publisher-repair/DESKTOP.md)、tools、testing、steam-workshop-release；產品規劃再讀 NEW-TOOL-DESIGN，修改安裝清單再讀 packaging |
 
 未另註的主題文件都位於 `docs/knowledge/`；[docs/compatibility-registry.md](docs/compatibility-registry.md) 與 [research/README.md](research/README.md) 是工作區根目錄相對路徑。
 

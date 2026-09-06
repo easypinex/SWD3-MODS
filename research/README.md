@@ -6,12 +6,13 @@
 
 `active/` 保存持續使用工具與未完成研究；`archive/` 保存已結案、被取代或停止的實驗。**歸檔不等於問題全解，也不等於識別碼已釋放。** 重跑歷史探針須先核對其所依賴的 MOD 版本、停用互斥與不存檔條件；不承諾舊探針可直接搭配現行正式版。
 
-研究狀態只在本清冊維護；證據類型見[測試文件](../docs/knowledge/testing-and-verification.md#證據標記)，識別碼狀態見[相容性登記](../docs/compatibility-registry.md)。以下 19 個專案原本都直接位於工作區根目錄，新位置為表中連結；名稱不變。
+研究狀態只在本清冊維護；證據類型見[測試文件](../docs/knowledge/testing-and-verification.md#證據標記)，識別碼狀態見[相容性登記](../docs/compatibility-registry.md)。原有 19 個專案從工作區根目錄搬至表中位置，名稱不變；另新增 1 個發佈工具診斷與替代規劃，共 20 個。
 
-## 持續使用與未完成研究（6 個）
+## 持續使用與未完成研究（7 個）
 
 | 研究／新位置 | 狀態與用途 | 已萃取知識 | 尚未解答／接續方式 |
 | --- | --- | --- | --- |
+| [swd3works-publisher-repair](active/swd3works-publisher-repair/README.md) | 進行中：0.3.0 發佈維護桌面版已完成，私人新建／升版／重啟紀錄已實測 | [工具](../docs/knowledge/tools-and-commands.md#steam-版本維護原型-020)、[可行性](../docs/knowledge/steam-workshop-release.md#獨立-steam-工作者原型) | [版本維護操作與驗收](active/swd3works-publisher-repair/RELEASES.md)；[桌面使用與驗收](active/swd3works-publisher-repair/DESKTOP.md)；後續封裝編輯器與本機安裝管理；原工具卡死 runtime 尚未重現 |
 | [swd3-engine-ui-diagnostics](active/swd3-engine-ui-diagnostics/README.md) | 持續使用：唯讀公開 API／package 名稱盤點 | [正文](../docs/knowledge/ui-input-and-native-menu.md) | 列出函式不證明可安全呼叫；native module 可用性未驗證 |
 | [swd3-native-menu-probe](active/swd3-native-menu-probe/README.md) | 持續使用：原生選單、文字及 native 分析工具 | [正文](../docs/knowledge/ui-input-and-native-menu.md) | 選單長度／跨情境；收妖反解另見 NATIVE-CAPTURE-RESEARCH.md |
 | [swd3-native-loader-probe](active/swd3-native-loader-probe/README.md) | 持續使用：Workshop／本機載入鏈靜態研究 | [正文](../docs/knowledge/packaging-and-installation.md) | 同名優先序、package runtime 與 DLL 可達性仍未驗證 |

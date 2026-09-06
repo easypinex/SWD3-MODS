@@ -1,0 +1,6 @@
+{
+  "Result": "k_EResultInvalidParam",
+  "WorkshopId": "3796679826",
+  "Reason": "Migrate development journal from saved submit callback; previous build did not persist EResult",
+  "SourceLog": "03-migrate-publish.jsonl"
+}

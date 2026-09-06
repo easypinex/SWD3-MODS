@@ -1,0 +1,297 @@
+=== SWD3Works.decompiled.cs lines 1644-1651 ===
+01644: 			{
+01645: 				comboBox_language.Items.Add(Str_API[i]);
+01646: 			}
+01647: 			comboBox_language.SelectedIndex = 7;
+01648: 			SelectItem = Parentform.SelectItem;
+01649: 			if (SelectItem != null)
+01650: 			{
+01651: 				Text = Program.lang.GetString(120);
+
+=== SWD3Works.decompiled.cs lines 1854-1917 ===
+01854: 		private void buttonOK_Click(object sender, EventArgs e)
+01855: 		{
+01856: 			if (SelectItem == null)
+01857: 			{
+01858: 				int selectedIndex = comboBox_language.SelectedIndex;
+01859: 				SteamWorkshopItem steamWorkshopItem = new SteamWorkshopItem();
+01860: 				steamWorkshopItem.Title = new Dictionary<string, string>();
+01861: 				steamWorkshopItem.Description = new Dictionary<string, string>();
+01862: 				steamWorkshopItem.UpdateLanguage = Str_API[selectedIndex].SteamAPI;
+01863: 				steamWorkshopItem.Visibility = GetVisibility();
+01864: 				steamWorkshopItem.UpdateContentPath = textBox_Content.Text;
+01865: 				steamWorkshopItem.UpdatePreviewPath = ImagePath;
+01866: 				steamWorkshopItem.UpdateChangeNotes = textBox_ChangeNote.Text;
+01867: 				steamWorkshopItem.Title[Str_API[selectedIndex].SteamAPI] = txt.Title[selectedIndex];
+01868: 				steamWorkshopItem.Description[Str_API[selectedIndex].SteamAPI] = txt.Description[selectedIndex];
+01869: 				SteamWorkshopManager.CreateItem(steamWorkshopItem);
+01870: 				Application.UseWaitCursor = true;
+01871: 				base.Enabled = false;
+01872: 			}
+01873: 			else
+01874: 			{
+01875: 				UpdateItem(SelectItem);
+01876: 			}
+01877: 		}
+01878: 
+01879: 		private void ItemUpdate(object sender, SteamWorkshopManager.ItemUpdatedEventArgs e)
+01880: 		{
+01881: 			_ = SteamWorkshopManager.Instance;
+01882: 			UpdateItemCount--;
+01883: 			if (!e.Success)
+01884: 			{
+01885: 				UpdateItemErrorCount++;
+01886: 			}
+01887: 			if (UpdateItemCount <= 0)
+01888: 			{
+01889: 				if (UpdateItemErrorCount == 0)
+01890: 				{
+01891: 					MessageBox.Show(Program.lang.GetString(107), Program.lang.GetString(100));
+01892: 				}
+01893: 				else
+01894: 				{
+01895: 					MessageBox.Show(Program.lang.GetString(108), Program.lang.GetString(122), MessageBoxButtons.OK, MessageBoxIcon.Hand);
+01896: 				}
+01897: 				UpdateItemErrorCount = 0;
+01898: 				UpdateItemCount = 0;
+01899: 				WriteItem(SelectItem);
+01900: 				Application.UseWaitCursor = false;
+01901: 				Close();
+01902: 			}
+01903: 		}
+01904: 
+01905: 		private void WriteItem(SteamWorkshopItem item)
+01906: 		{
+01907: 			if (item.FileId.m_PublishedFileId == 0L)
+01908: 			{
+01909: 				return;
+01910: 			}
+01911: 			string text = item.FileId.m_PublishedFileId + ".mod";
+01912: 			FileStream fileStream = File.Open("Tools\\" + text, FileMode.Create, FileAccess.ReadWrite);
+01913: 			StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
+01914: 			streamWriter.WriteLine("ID:" + item.FileId.m_PublishedFileId);
+01915: 			if (item.Visibility == ERemoteStoragePublishedFileVisibility.k_ERemoteStoragePublishedFileVisibilityPublic)
+01916: 			{
+01917: 				streamWriter.WriteLine("Visibility:Public");
+
+=== SWD3Works.decompiled.cs lines 3240-3309 ===
+03240: 
+03241: 		public PALWorkshopForm()
+03242: 		{
+03243: 			InitializeComponent();
+03244: 			Text = Program.lang.GetString(14);
+03245: 			label_List.Text = Program.lang.GetString(102);
+03246: 			button_New.Text = Program.lang.GetString(103);
+03247: 			buttonEdit.Text = Program.lang.GetString(104);
+03248: 			SteamWorkshopManager.UgcQueryCompleted += UgcQueryCompleted;
+03249: 			LoadList();
+03250: 			UpdateList();
+03251: 			SWM.QueryInstalledWorkshopItems();
+03252: 		}
+03253: 
+03254: 		public void UgcQueryCompleted(object sender, EventArgs e)
+03255: 		{
+03256: 			SteamWorkshopManager.UgcQueryCompletedEventArgs e2 = (SteamWorkshopManager.UgcQueryCompletedEventArgs)e;
+03257: 			if (e2.Success)
+03258: 			{
+03259: 				bool flag = true;
+03260: 				while (flag)
+03261: 				{
+03262: 					flag = false;
+03263: 					foreach (KeyValuePair<ulong, SteamWorkshopItem> item in items)
+03264: 					{
+03265: 						bool flag2 = false;
+03266: 						foreach (SteamWorkshopItem item2 in e2.Items)
+03267: 						{
+03268: 							if (item.Key == item2.FileId.m_PublishedFileId)
+03269: 							{
+03270: 								flag2 = true;
+03271: 								break;
+03272: 							}
+03273: 						}
+03274: 						if (!flag2)
+03275: 						{
+03276: 							items.Remove(item.Key);
+03277: 							flag = true;
+03278: 							break;
+03279: 						}
+03280: 					}
+03281: 				}
+03282: 			}
+03283: 			else
+03284: 			{
+03285: 				SWM.QueryInstalledWorkshopItems();
+03286: 			}
+03287: 		}
+03288: 
+03289: 		private void UpdateList()
+03290: 		{
+03291: 			buttonEdit.Enabled = false;
+03292: 			listBoxMod.Items.Clear();
+03293: 			foreach (KeyValuePair<ulong, SteamWorkshopItem> item in items)
+03294: 			{
+03295: 				listBoxMod.Items.Add(item.Value);
+03296: 			}
+03297: 		}
+03298: 
+03299: 		private void LoadList()
+03300: 		{
+03301: 			SelectItem = null;
+03302: 			items = new Dictionary<ulong, SteamWorkshopItem>();
+03303: 			try
+03304: 			{
+03305: 				foreach (FileInfo item in new DirectoryInfo(Path.Combine(Application.StartupPath, "Tools")).EnumerateFiles("*.mod"))
+03306: 				{
+03307: 					try
+03308: 					{
+03309: 						FileStream fileStream = File.Open(item.FullName, FileMode.Open, FileAccess.Read);
+
+=== SWD3Works.decompiled.cs lines 3437-3444 ===
+03437: 		private void button_New_Click(object sender, EventArgs e)
+03438: 		{
+03439: 			SelectItem = null;
+03440: 			new MODDetails(this).ShowDialog();
+03441: 			LoadList();
+03442: 			UpdateList();
+03443: 		}
+03444: 
+
+=== SWD3Works.decompiled.cs lines 3886-3913 ===
+03886: 		public void CreateFromWorkshopItem(SteamWorkshopItem item, EWorkshopFileType fileType)
+03887: 		{
+03888: 			if (item == null)
+03889: 			{
+03890: 				throw new ArgumentNullException("item");
+03891: 			}
+03892: 			SteamAPICall_t hAPICall = SteamUGC.CreateItem(SteamUtils.GetAppID(), fileType);
+03893: 			CallResult<CreateItemResult_t> callResult = CallResult<CreateItemResult_t>.Create();
+03894: 			callResult.Set(hAPICall, delegate(CreateItemResult_t param, bool ioFailure)
+03895: 			{
+03896: 				item.FileId = param.m_nPublishedFileId;
+03897: 				SteamWorkshopManager.ItemCreated?.Invoke(this, new ItemCreatedEventArgs(item, !ioFailure && param.m_eResult == EResult.k_EResultOK, param));
+03898: 				createItemCallResults.Remove(callResult);
+03899: 				if (!ioFailure && param.m_eResult == EResult.k_EResultOK)
+03900: 				{
+03901: 					PublishedFileId_t nPublishedFileId = param.m_nPublishedFileId;
+03902: 					Console.WriteLine("CreateFromWorkshopItem " + nPublishedFileId.ToString());
+03903: 					UpdateItem(item, out var _);
+03904: 				}
+03905: 				else
+03906: 				{
+03907: 					PublishedFileId_t nPublishedFileId = param.m_nPublishedFileId;
+03908: 					Console.WriteLine("CreateFromWorkshopItem " + nPublishedFileId.ToString() + " Result : " + param.m_eResult);
+03909: 				}
+03910: 			});
+03911: 			createItemCallResults.Add(callResult);
+03912: 		}
+03913: 
+
+=== SWD3Works.decompiled.cs lines 3984-4073 ===
+03984: 		public bool UpdateItem(SteamWorkshopItem item, out UGCUpdateHandle_t updateHandle)
+03985: 		{
+03986: 			if (item == null)
+03987: 			{
+03988: 				throw new ArgumentNullException("item");
+03989: 			}
+03990: 			if (item.FileId == PublishedFileId_t.Invalid)
+03991: 			{
+03992: 				throw new ArgumentException("Item does not have a valid published file ID.", "item");
+03993: 			}
+03994: 			updateHandle = SteamUGC.StartItemUpdate(SteamUtils.GetAppID(), item.FileId);
+03995: 			if (updateHandle == UGCUpdateHandle_t.Invalid)
+03996: 			{
+03997: 				throw new Exception("Unable to get update handle.");
+03998: 			}
+03999: 			bool flag = true;
+04000: 			if (item.Metadata != null)
+04001: 			{
+04002: 				flag &= SteamUGC.SetItemMetadata(updateHandle, item.Metadata);
+04003: 			}
+04004: 			flag &= SteamUGC.SetItemVisibility(updateHandle, item.Visibility);
+04005: 			if (item.Tags != null)
+04006: 			{
+04007: 				flag &= SteamUGC.SetItemTags(updateHandle, item.Tags);
+04008: 			}
+04009: 			if (item.UpdateContentPath != null)
+04010: 			{
+04011: 				flag &= SteamUGC.SetItemContent(updateHandle, item.UpdateContentPath);
+04012: 			}
+04013: 			if (item.UpdatePreviewPath != null)
+04014: 			{
+04015: 				flag &= SteamUGC.SetItemPreview(updateHandle, item.UpdatePreviewPath);
+04016: 			}
+04017: 			SteamAPICall_t hAPICall = SteamUGC.SubmitItemUpdate(updateHandle, item.UpdateChangeNotes);
+04018: 			CallResult<SubmitItemUpdateResult_t> callResult = CallResult<SubmitItemUpdateResult_t>.Create();
+04019: 			callResult.Set(hAPICall, delegate(SubmitItemUpdateResult_t param, bool ioFailure)
+04020: 			{
+04021: 				SteamWorkshopManager.ItemUpdated?.Invoke(this, new ItemUpdatedEventArgs(item, !ioFailure && param.m_eResult == EResult.k_EResultOK, param));
+04022: 				submitItemUpdateCallResults.Remove(callResult);
+04023: 				PublishedFileId_t nPublishedFileId = param.m_nPublishedFileId;
+04024: 				Console.WriteLine("UpdateItem " + nPublishedFileId.ToString() + " Result : " + param.m_eResult);
+04025: 			});
+04026: 			submitItemUpdateCallResults.Add(callResult);
+04027: 			return flag;
+04028: 		}
+04029: 
+04030: 		public bool QueryInstalledWorkshopItems()
+04031: 		{
+04032: 			uint numSubscribedItems = SteamUGC.GetNumSubscribedItems();
+04033: 			PublishedFileId_t[] array = new PublishedFileId_t[numSubscribedItems];
+04034: 			if (SteamUGC.GetSubscribedItems(array, (uint)array.Length) != numSubscribedItems)
+04035: 			{
+04036: 				return false;
+04037: 			}
+04038: 			UGCQueryHandle_t query = SteamUGC.CreateQueryUGCDetailsRequest(array, (uint)array.Length);
+04039: 			SteamUGC.SetReturnMetadata(query, bReturnMetadata: true);
+04040: 			SteamAPICall_t hAPICall = SteamUGC.SendQueryUGCRequest(query);
+04041: 			CallResult<SteamUGCQueryCompleted_t> callResult = CallResult<SteamUGCQueryCompleted_t>.Create();
+04042: 			callResult.Set(hAPICall, delegate(SteamUGCQueryCompleted_t param, bool ioFailure)
+04043: 			{
+04044: 				UgcQueryCompletedEventArgs e;
+04045: 				if (!ioFailure && param.m_eResult == EResult.k_EResultOK)
+04046: 				{
+04047: 					List<SteamWorkshopItem> list = new List<SteamWorkshopItem>();
+04048: 					for (uint num = 0u; num < param.m_unNumResultsReturned; num++)
+04049: 					{
+04050: 						SteamWorkshopItem steamWorkshopItem = new SteamWorkshopItem();
+04051: 						SteamUGC.GetQueryUGCResult(query, num, out var pDetails);
+04052: 						steamWorkshopItem.FileId = pDetails.m_nPublishedFileId;
+04053: 						steamWorkshopItem.Title[Program.SteamLanguage] = pDetails.m_rgchTitle;
+04054: 						steamWorkshopItem.Description[Program.SteamLanguage] = pDetails.m_rgchDescription;
+04055: 						SteamUGC.GetQueryUGCMetadata(query, num, out var pchMetadata, 5000u);
+04056: 						steamWorkshopItem.Metadata = pchMetadata;
+04057: 						steamWorkshopItem.Visibility = pDetails.m_eVisibility;
+04058: 						steamWorkshopItem.Tags.AddRange(pDetails.m_rgchTags.Split(','));
+04059: 						steamWorkshopItem.UgcDetails = pDetails;
+04060: 						list.Add(steamWorkshopItem);
+04061: 					}
+04062: 					e = new UgcQueryCompletedEventArgs(list, success: true, param);
+04063: 				}
+04064: 				else
+04065: 				{
+04066: 					e = new UgcQueryCompletedEventArgs(null, success: false, param);
+04067: 				}
+04068: 				ugcQueryCompletedCallResults.Remove(callResult);
+04069: 				SteamUGC.ReleaseQueryUGCRequest(query);
+04070: 				SteamWorkshopManager.UgcQueryCompleted?.Invoke(this, e);
+04071: 			});
+04072: 			ugcQueryCompletedCallResults.Add(callResult);
+04073: 			return true;
+
+=== SWD3Works.decompiled.cs lines 4717-4720 ===
+04717: 		private static void HandleApplicationIdle(object sender, EventArgs e)
+04718: 		{
+04719: 			SteamAPI.RunCallbacks();
+04720: 		}
+
+=== SWD3Works.decompiled.cs lines 4788-4796 ===
+04788: 			InitializeCallbacks();
+04789: 			log.Append("Requesting Current Stats - " + SteamUserStats.RequestCurrentStats() + "\n");
+04790: 			log.Append("CurrentGameLanguage: " + SteamApps.GetCurrentGameLanguage() + "\n");
+04791: 			log.Append("PersonaName: " + SteamFriends.GetPersonaName() + "\n");
+04792: 			Application.Idle += HandleApplicationIdle;
+04793: 			Application.EnableVisualStyles();
+04794: 			Application.SetCompatibleTextRenderingDefault(defaultValue: false);
+04795: 			Application.Run(new GameForm());
+04796: 			if (mutex != null)
+

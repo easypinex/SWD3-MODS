@@ -1,0 +1,14 @@
+{"at":"2026-09-06T09:19:11.6472296Z","kind":"session","data":{"version":"0.1.0","appId":1638230,"steamId":"76561198095249191","persona":"輕鬆小品","runtime":"4.0.30319.42000","x64":false,"steamworks":"Steamworks.NET, Version=20.2.0.0, Culture=neutral, PublicKeyToken=null"}}
+{"at":"2026-09-06T09:19:11.6522284Z","kind":"state","data":{"phase":"create-intent","workshopId":null,"confirmedRevision":0,"pendingRevision":0}}
+{"at":"2026-09-06T09:19:11.9419361Z","kind":"create-result","data":{"result":"k_EResultOK","workshopId":"3796679826","needsAgreement":false}}
+{"at":"2026-09-06T09:19:11.9541435Z","kind":"state","data":{"phase":"created","workshopId":"3796679826","confirmedRevision":0,"pendingRevision":0}}
+{"at":"2026-09-06T09:19:11.9648358Z","kind":"state","data":{"phase":"submit-intent","workshopId":"3796679826","confirmedRevision":0,"pendingRevision":1}}
+{"at":"2026-09-06T09:19:11.9668374Z","kind":"progress","data":{"status":"k_EItemUpdateStatusPreparingConfig","processed":"0","total":"0","workshopId":"3796679826"}}
+{"at":"2026-09-06T09:19:13.9698380Z","kind":"progress","data":{"status":"k_EItemUpdateStatusUploadingContent","processed":"0","total":"0","workshopId":"3796679826"}}
+{"at":"2026-09-06T09:19:15.9822535Z","kind":"progress","data":{"status":"k_EItemUpdateStatusUploadingPreviewFile","processed":"0","total":"0","workshopId":"3796679826"}}
+{"at":"2026-09-06T09:19:17.2412139Z","kind":"submit-result","data":{"result":"k_EResultOK","workshopId":"3796679826","callbackId":"3796679826","needsAgreement":false}}
+{"at":"2026-09-06T09:19:17.2494037Z","kind":"state","data":{"phase":"remote-confirmed","workshopId":"3796679826","confirmedRevision":0,"pendingRevision":1}}
+{"at":"2026-09-06T09:19:17.5690224Z","kind":"state","data":{"phase":"verified","workshopId":"3796679826","confirmedRevision":1,"pendingRevision":0}}
+{"at":"2026-09-06T09:19:17.5690224Z","kind":"verified","data":{"item":{"Id":"3796679826","Owner":"76561198095249191","AppId":1638230,"CreatorAppId":1638230,"Title":"[PRIVATE M0 TEST] SWD3 MOD Studio r1","Description":"Private connectivity test for SWD3 MOD Studio. Revision 1. No gameplay effects. Verifies creation, same-ID update and downloaded package integrity. Test key: a66dbb2905b2405598981d7fcd76e0e9.","Visibility":"k_ERemoteStoragePublishedFileVisibilityPrivate","Updated":1788686356,"Metadata":"swd3-mod-studio:m0:a66dbb2905b2405598981d7fcd76e0e9:r1:47D75EFA1539CE8BB652947549CD1856B1A0310294CFEECA75C28E832890E5C5","PreviewUrl":"https://images.steamusercontent.com/ugc/9285340190281594936/9CE68C55B2A45597CE8F171D8858C613078F1C59/","FileSize":772,"OwnedByCurrentUser":true},"revision":1,"verification":"remote-details; content bytes require download-test"}}
+{"at":"2026-09-06T09:19:17.5700201Z","kind":"completed","data":{"command":"create-test"}}
+{"at":"2026-09-06T09:19:17.6021827Z","kind":"shutdown","data":{"ok":true}}

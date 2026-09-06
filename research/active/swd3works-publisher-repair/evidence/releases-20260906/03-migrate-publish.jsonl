@@ -1,0 +1,8 @@
+{"at":"2026-09-06T09:44:05.0432679Z","kind":"session","data":{"version":"0.2.0","appId":1638230,"steamId":"76561198095249191","persona":"輕鬆小品","runtime":"4.0.30319.42000","x64":false,"steamworks":"Steamworks.NET, Version=20.2.0.0, Culture=neutral, PublicKeyToken=null"}}
+{"at":"2026-09-06T09:44:05.4741903Z","kind":"release-state","data":{"workshopId":"3796679826","phase":"submit-intent","statePath":"D:\\workspace\\SWD3-MODS\\.work\\steam-release-validation\\migrate\\state.json"}}
+{"at":"2026-09-06T09:44:05.4761906Z","kind":"progress","data":{"status":"k_EItemUpdateStatusPreparingConfig","processed":"0","total":"0","workshopId":"3796679826"}}
+{"at":"2026-09-06T09:44:07.4996317Z","kind":"progress","data":{"status":"k_EItemUpdateStatusUploadingContent","processed":"0","total":"0","workshopId":"3796679826"}}
+{"at":"2026-09-06T09:44:09.4993615Z","kind":"progress","data":{"status":"k_EItemUpdateStatusCommittingChanges","processed":"0","total":"0","workshopId":"3796679826"}}
+{"at":"2026-09-06T09:44:09.7274684Z","kind":"submit-result","data":{"result":"k_EResultInvalidParam","workshopId":"3796679826","needsAgreement":false}}
+{"at":"2026-09-06T09:44:09.7440753Z","kind":"error","data":{"type":"InvalidOperationException","message":"Submission requires reconciliation: k_EResultInvalidParam","stack":"   於 Swd3ModStudio.Prototype.Program.Require(Boolean condition, String message)\r\n   於 Swd3ModStudio.Prototype.Program.PublishRelease(ReleasePlan plan, ReleaseState state, String path)\r\n   於 Swd3ModStudio.Prototype.Program.RunRelease(String command, ReleasePlan plan, String statePath)\r\n   於 Swd3ModStudio.Prototype.Program.Main(String[] args)"}}
+{"at":"2026-09-06T09:44:09.7510805Z","kind":"shutdown","data":{"ok":true}}

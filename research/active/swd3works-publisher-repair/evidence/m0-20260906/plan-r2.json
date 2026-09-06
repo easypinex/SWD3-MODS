@@ -1,0 +1,13 @@
+{
+  "Schema": 1,
+  "AppId": 1638230,
+  "TestKey": "a66dbb2905b2405598981d7fcd76e0e9",
+  "Revision": 2,
+  "ContentDirectory": "D:\\workspace\\SWD3-MODS\\.work\\steam-prototype-m0-fixture4\\revision-2\\content",
+  "ContentSha256": "844EA33D1DAE3DF398CEA50765A4296B508A7BA6B2BDED59C4AD7D4EC2EF4752",
+  "PreviewFile": "D:\\workspace\\SWD3-MODS\\.work\\steam-prototype-m0-fixture4\\preview.png",
+  "PreviewSha256": "26C3E4C8BEA3FDB1CD396A391025988DC06D597C907EF3CF34273F8CE2B30E88",
+  "Title": "[PRIVATE M0 TEST] SWD3 MOD Studio r2",
+  "Description": "Private connectivity test for SWD3 MOD Studio. Revision 2. No gameplay effects. Verifies creation, same-ID update and downloaded package integrity. Test key: a66dbb2905b2405598981d7fcd76e0e9.",
+  "ChangeNote": "M0 private test revision 2; no gameplay effects."
+}

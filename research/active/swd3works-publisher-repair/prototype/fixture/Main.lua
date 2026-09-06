@@ -1,0 +1,2 @@
+-- SWD3 MOD Studio M0 fixture.
+-- Deliberately no executable statements, hooks, globals, or saved data.

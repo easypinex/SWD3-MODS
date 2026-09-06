@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "method": "two-frame M0 reverse extraction and byte comparison",
+  "zstandard": "0.25.0",
+  "package_sha256": "47D75EFA1539CE8BB652947549CD1856B1A0310294CFEECA75C28E832890E5C5",
+  "files": [
+    {
+      "name": "studio_m0_fixture.ext",
+      "offset": 340,
+      "size": 271,
+      "sha256": "E02B3B2BD6FC2CA4FBF1CD78BD9AC8F64CCBC0A88FD3A3CE5958F978D15084AF"
+    },
+    {
+      "name": "data/Main.lua",
+      "offset": 549,
+      "size": 170,
+      "sha256": "F077299180304ED1F4EC7ACC615F6A1F2190EB1CD74F2C4AE094DF76E4493E2E"
+    }
+  ]
+}
