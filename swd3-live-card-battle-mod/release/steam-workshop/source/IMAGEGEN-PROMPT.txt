@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: Steam Workshop primary preview image, square format
+Primary request: An original fantasy game-mod cover for a free battle challenge mode, without relying on any existing game artwork.
+Scene/backdrop: A dark navy ancient eastern-fantasy battle arena, viewed slightly from above, with a luminous circular magic seal.
+Subject: Five floating blank monster-card silhouettes orbiting the seal; one side is cool cyan and one side is warm amber, clearly suggesting adjustable difficulty.
+Style/medium: polished hand-painted JRPG-inspired fantasy illustration, crisp shapes, subtle parchment texture, premium Steam Workshop thumbnail.
+Composition/framing: centered, square, strong readable silhouette at small size, leave a calm dark border around the edges.
+Lighting/mood: dramatic magical glow, adventurous, not scary.
+Color palette: deep navy, teal/cyan, gold/amber, small ivory accents.
+Constraints: no words, no letters, no numbers, no logos, no interface mockup, no watermark, no recognizable copyrighted characters or game assets.

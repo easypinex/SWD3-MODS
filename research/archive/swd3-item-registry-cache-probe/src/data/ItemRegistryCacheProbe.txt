@@ -1,0 +1,3 @@
+IRCP_CardName 黏怪・索引探針卡
+IRCP_CardHelp 原生物品索引快取探針建立的暫時測試卡；請勿存檔。
+IRCP_CardInfo 僅供測試物品欄反白；停用探針前按 F12 清除。

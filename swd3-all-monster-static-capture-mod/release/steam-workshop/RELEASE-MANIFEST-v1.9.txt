@@ -1,0 +1,26 @@
+Release: swd3-all-monster-static-capture-mod v1.9
+Game: Xuan-Yuan Sword: Mists Beyond the Mountains Steam HD 4.0.x
+Steam App ID: 1638230
+
+UPLOAD CONTENT
+workshop_content/swd3_all_monster_static_capture.ssmod
+Size: 16794 bytes
+SHA-256: D17004ABE76AF3476CC65817F5190BBE4DC2FF0FAF775A0CA25F4917648DC005
+
+PRIMARY PREVIEW
+preview/all-monster-static-capture-workshop-primary-preview.jpg
+Dimensions: 1024x1024
+Size: 290074 bytes
+SHA-256: C4906352C3E3996B99C29801AE97DB2B6A041A301E69FF6B37ECB7E5AA80953F
+
+COVER SOURCE (DO NOT ADD TO WORKSHOP CONTENT)
+source/all-monster-static-capture-workshop-cover-source.png
+Size: 2813493 bytes
+SHA-256: 5AD4EF63F23BDFE97A426DF4C2722874AA3569AAE287131E60B581EBC20A00A0
+
+Verification:
+- workshop_content contains exactly one file.
+- upload package SHA-256 matches _build_v19_final/swd3_all_monster_static_capture.ssmod.
+- primary preview is a 1024x1024 JPEG and is below 1 MB.
+- v1.9 uses a Battle_Enter-only battle-copy cap of first battle player +11; HP <=25% then uses the native 100% capture branch.
+- Steam subscription-download and general-encounter regression remain required before public visibility.

@@ -1,0 +1,13 @@
+MODName TSW format probe
+MODAuthor local research
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo Isolated image packaging probe
+MODGameVersion 4,0
+MODpicture
+MODsystemMOD 1
+MODbundleSave 1
+
+; TSW ID,SN,TYPE,LangID,FileName,Comment
+; TYPE 4 = system UI, LangID 0 = default
+TSW 20002,0,4,0,tsw20002_00.pic,PNG conversion probe

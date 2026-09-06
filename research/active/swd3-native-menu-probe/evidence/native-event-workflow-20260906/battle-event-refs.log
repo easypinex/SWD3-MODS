@@ -1,0 +1,122 @@
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> SWD3 HD battle event string xref report  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_Enter @ 140172750  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003f50a in FUN_14003e500 @ 14003e500; LEA RDX,[0x140172750]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_DrawBGI @ 140172838  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400407d4 in FUN_1400402a0 @ 1400402a0; LEA RDX,[0x140172838]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_InputKeyDown @ 140172b88  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140053c20 in FUN_140053ae0 @ 140053ae0; LEA RDX,[0x140172b88]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_InputClick @ 140172ba0  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140053c42 in FUN_140053ae0 @ 140053ae0; LEA RDX,[0x140172ba0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400576e8 in FUN_1400574a0 @ 1400574a0; LEA RDX,[0x140172ba0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14005486d in FUN_140054580 @ 140054580; LEA RDX,[0x140172ba0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=3  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_InputDClick @ 140172bb8  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140053c64 in FUN_140053ae0 @ 140053ae0; LEA RDX,[0x140172bb8]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_CmdSelectOK @ 140172788  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140057d6a in FUN_1400574a0 @ 1400574a0; LEA RDX,[0x140172788]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140044d14 in FUN_140044ab0 @ 140044ab0; LEA RDX,[0x140172788]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_EnemyInit @ 1401726f0  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140042f6e in FUN_140042d40 @ 140042d40; LEA RDX,[0x1401726f0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003ecb3 in FUN_14003e500 @ 14003e500; LEA RDX,[0x1401726f0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_PlayerInit @ 140172728  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003f020 in FUN_14003e500 @ 14003e500; LEA RDX,[0x140172728]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_NPCInit @ 140172740  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003f39e in FUN_14003e500 @ 14003e500; LEA RDX,[0x140172740]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003f5b2 in FUN_14003e500 @ 14003e500; LEA RDX,[0x140172740]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_KeeperInit @ 140172770  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004232f in FUN_140040820 @ 140040820; LEA RDX,[0x140172770]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_Dead @ 140172760  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140069655 in FUN_1400695f0 @ 1400695f0; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400696b3 in FUN_1400695f0 @ 1400695f0; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004113e in FUN_140040820 @ 140040820; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400424f9 in FUN_140040820 @ 140040820; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004173d in FUN_140040820 @ 140040820; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400417d5 in FUN_140040820 @ 140040820; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004ad56 in FUN_14004acb0 @ 14004acb0; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004b174 in FUN_14004acb0 @ 14004acb0; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004336b in FUN_140042d40 @ 140042d40; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400436b0 in FUN_140042d40 @ 140042d40; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400435e2 in FUN_140042d40 @ 140042d40; LEA RDX,[0x140172760]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=11  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_StopSkill @ 140174110  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140085b3d in FUN_140085890 @ 140085890; LEA RDX,[0x140174110]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400853ea in FUN_140085370 @ 140085370; LEA RDX,[0x140174110]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400854e2 in FUN_140085480 @ 140085480; LEA RDX,[0x140174110]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=3  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_Freeze @ 140174128  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140085ba5 in FUN_140085890 @ 140085890; LEA RDX,[0x140174128]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140085419 in FUN_140085370 @ 140085370; LEA RDX,[0x140174128]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140085511 in FUN_140085480 @ 140085480; LEA RDX,[0x140174128]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=3  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_SetActive @ 1401740f8  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400853b2 in FUN_140085370 @ 140085370; LEA RDX,[0x1401740f8]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400854a9 in FUN_140085480 @ 140085480; LEA RDX,[0x1401740f8]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_RestoreItem @ 1401728a8  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004a5b5 in FUN_14004a420 @ 14004a420; LEA RDX,[0x1401728a8]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_CancelClick @ 1401768b8  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400b09ae in <no enclosing function>; LEA RDX,[0x1401768b8]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   instruction window:  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     POP R12  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     POP RDI  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     POP RSI  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     POP RBX  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     POP RBP  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     RET  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     CMP byte ptr [0x1401fa92d],0x0  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     LEA RAX,[0x1401768d0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     LEA RDX,[0x1401768b8]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     CMOVZ RDX,RAX  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     LEA RCX,[0x1401a6d80]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     XOR R8D,R8D  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     JMP 0x14014ccf0  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     PUSH RBX  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     SUB RSP,0x30  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     MOV ECX,0xe0  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     CALL 0x14016a054  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     MOV qword ptr [RSP + 0x40],RAX  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     TEST RAX,RAX  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     JZ 0x1400b09f7  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     MOV RCX,RAX  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     CALL 0x1400b1240  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     MOV RBX,RAX  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>     JMP 0x1400b09f9  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET CheckLearnSpecialSkill @ 140172d38  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14005ebd6 in FUN_14005eb40 @ 14005eb40; LEA RDX,[0x140172d38]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET CheckStatSpecialSkill @ 140177170  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400b4384 in FUN_1400b4270 @ 1400b4270; LEA RDX,[0x140177170]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET BattleCriticalHitRate @ 1401739f0  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140071dd6 in FUN_140071970 @ 140071970; LEA RDX,[0x1401739f0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140071ff5 in FUN_140071f60 @ 140071f60; LEA RDX,[0x1401739f0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET BattleEnemyEscapeRate @ 140173a78  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140079ce0 in FUN_140079ca0 @ 140079ca0; LEA RDX,[0x140173a78]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET BattleGain @ 140172c60  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14005d46b in FUN_14005d250 @ 14005d250; LEA RDX,[0x140172c60]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET BattleEnemyAI @ 140172810  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140043e8c in FUN_1400438b0 @ 1400438b0; LEA RDX,[0x140172810]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET BattlePlayerAI @ 1401727b0  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140045055 in FUN_140044ab0 @ 140044ab0; LEA RDX,[0x1401727b0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET BattlePlayerAI_after @ 1401727f8  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400462ca in FUN_140044ab0 @ 140044ab0; LEA RDX,[0x1401727f8]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py> TARGET BattleNPCAI @ 1401727a0  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140045678 in FUN_140044ab0 @ 140044ab0; LEA RDX,[0x1401727a0]  
+2026-09-06 10:41:27 INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1  

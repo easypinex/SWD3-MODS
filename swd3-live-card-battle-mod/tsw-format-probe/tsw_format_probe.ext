@@ -1,0 +1,12 @@
+MODName TSW format probe
+MODAuthor Local verification only
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo Isolated TSW packaging probe only.%Q
+MODGameVersion 4,0
+MODpicture tsw20001_00.pic
+MODsystemMOD 0
+MODbundleSave 1
+
+; TSW ID,SN,TYPE,LangID,FileName,Comment
+TSW 20001,0,4,0,tsw20001_00.pic,Known-good base image probe

@@ -1,0 +1,11 @@
+MODName 高等首領靈契門檻探針
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,3
+MODinfo 以牛魔王驗證僅暫降收妖等級門檻而不弱化原始戰鬥資料；原生收服後自動交換靜態卡，F7 啟動隔離戰。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,HighLevelCaptureGateProbe.lua,Isolated high-level capture gate probe

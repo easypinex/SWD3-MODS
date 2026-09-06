@@ -1,0 +1,14 @@
+MODName 全魔物靈契
+MODAuthor Andy / Codex
+MODDate 2026,9,6
+MODVersion 2,0
+MODinfo 建立全戰鬥物件的靜態活物卡庫；一般戰鬥開放原生靈契資格，過高敵人僅在戰鬥內封頂為第一位主角 +11。原生指令 UI 暫清 Boss，賽特靈契行動保持非 Boss，非賽特行動前還原 Boss 以維持傷害分支；成功後交換為映射契靈卡。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 0,0,AllMonsterStaticCapture.txt,Traditional Chinese card strings
+DAT 2,0,AllMonsterStaticCatalogue.lua,Generated static card catalogue
+DAT 2,0,AllMonsterStaticCapture.lua,Static card installer and exchange helpers
+DAT 2,0,AllMonsterCaptureRuntime.lua,Automatic native capture eligibility and exchange runtime

@@ -1,0 +1,26 @@
+Release: swd3-live-card-battle-mod v0.6
+Game: Xuan-Yuan Sword: Mists Beyond the Mountains Steam HD 4.0.x
+Steam App ID: 1638230
+
+UPLOAD CONTENT
+workshop_content/live_card_battle.ssmod
+Size: 16384 bytes
+SHA-256: 74F20ADD8B935CD0D2F8076F46B6B683B34C2C0654372C9D0A2D77247C6D9E9B
+
+PRIMARY PREVIEW
+preview/live-card-battle-workshop-primary-preview.jpg
+Dimensions: 1024x1024
+Size: 256027 bytes
+SHA-256: 1312265C0A0C6AE7D29B650CA43C3D376BA2CC58373CFE414C484984F5B8AE1C
+
+COVER SOURCE (DO NOT ADD TO WORKSHOP CONTENT)
+source/live-card-battle-workshop-cover-source.png
+Size: 2514378 bytes
+SHA-256: E21D39EEED2644A1A262598FCC546F09130354C33D83DB727CD811AB55B2754B
+
+Verification:
+- workshop_content contains exactly one file.
+- upload package SHA-256 matches build/package-20260906-v06-challenge-mode-title/live_card_battle.ssmod.
+- reverse extraction verified the .ext, CardBattleRules.lua, LiveCardBattle.lua, and LiveCardBattle.txt against their source SHA-256 values.
+- preview is an original project asset; it is not uploaded with workshop content.
+- Steam subscription-download and challenge regression remain required before public visibility.

@@ -1,0 +1,11 @@
+MODName 劇情首領靈契等級門檻探針
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,2
+MODinfo F6 建立一場蚩尤收妖測試戰；暫時調整資格、等級與生存欄位，成功後交換靜態卡，戰後立即還原，不保存。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,StoryBossLevelGateProbe.lua,Story boss level-gate probe

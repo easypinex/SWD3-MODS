@@ -1,0 +1,11 @@
+MODName 護駕戰鬥抗性探針
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo 僅研究靜態契靈護駕在戰鬥角色副本中的抗性套用；不寫入存檔。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,GuardianResistanceBattleProbe.lua,Battle-only guardian resistance research

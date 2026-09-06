@@ -1,0 +1,435 @@
+INFO  Using log config file: jar:file:/D:/workspace/SWD3-MODS/.tools/static-re/ghidra-11.4.3/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\reports\import-analysis.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (973 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Headless startup complete (2381 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\workspace\SWD3-MODS\research\active\swd3-native-menu-probe\tools\ghidra
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\PIC\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Jython\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BSim\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\8051\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PDB\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\DATA\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\JVM\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FunctionID\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  Creating project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///D:/workspace/SWD3-MODS/.work/native-events-doccheck-20260906-104009/input/swd3.exe (HeadlessAnalyzer)  
+INFO  Using Loader: Portable Executable (PE) (AutoImporter)  
+INFO  Using Language/Compiler: x86:LE:64:default:windows (AutoImporter)  
+INFO  Using Library Search Path: [., C:\WINDOWS\SysWOW64, D:\workspace\SWD3-MODS\.tools\static-re\jdk-21\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\Andy\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\Andy\.codex\tmp\arg0\codex-arg0dLrdpN, C:\Users\Andy\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\Andy\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\Andy\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\Andy\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Program Files\Eclipse Adoptium\jdk-17.0.14.7-hotspot\bin, C:\Program Files (x86)\VMware\VMware Workstation\bin\, C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin, C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\libnvvp, C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin, C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp, C:\Program Files\AdoptOpenJDK\jdk-8.0.252.09-hotspot\bin, C:\Windows, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0\, C:\Windows\System32\OpenSSH\, C:\Program Files\Git\cmd, C:\Program Files\EmEditor, C:\Program Files\TortoiseGit\bin, C:\Program Files\RedHat\java-11-openjdk-11.0.8-2\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Amazon\AWSCLI\, C:\Program Files\gradle-6.6.1\bin, C:\Program Files\Amazon\AWSSAMCLI\bin\, D:\Program Files (x86)\cudnn\bin, C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR, C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.2.0\, C:\Program Files\dotnet\, C:\Windows\System32, C:\Users\Andy\AppData\Roaming\nvm, C:\Program Files\nodejs, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files\Git\bin, C:\Users\Andy\.pyenv\pyenv-win\bin, C:\Users\Andy\.pyenv\pyenv-win\shims, C:\Users\Andy\anaconda3\condabin, D:\workspace\python\darknet\build\darknet\x64, D:\Program Files (x86)\cmake-3.22.1\bin, C:\Users\Andy\AppData\Local\Microsoft\WindowsApps, C:\Users\Andy\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\Andy\AppData\Roaming\npm, C:\Users\Andy\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin, C:\Program Files (x86)\GnuWin32\bin, D:\Program Files (x86)\opencv\build\x64\vc15\bin, C:\Users\Andy\.dotnet\tools, C:\Users\Andy\AppData\Local\Programs\Ollama, D:\Program Files\AntiMicroX\bin, C:\Users\Andy\AppData\Local\Microsoft\WinGet\Links, C:\Users\Andy\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-125365-g9a01c1cb6a-win64-gpl\bin, C:\Users\Andy\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\Andy\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\Andy\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\Andy\AppData\Local\OpenAI\Codex\bin\c60635126245daef, C:\Users\Andy\AppData\Local\OpenAI\Codex\bin\8e5b6932251c2c1c] (AutoImporter)  
+INFO  TLS callbacks at 1401723b0 (TLSDirectory)  
+INFO  TLS callbacks at 1800e4888 (TLSDirectory)  
+INFO  TLS callbacks at 333372030 (TLSDirectory)  
+INFO  TLS callbacks at 180627728 (TLSDirectory)  
+WARN  Invalid or missing function at 18070c92c (ExportDataDirectory)  
+WARN  Invalid or missing function at 1800bf3c8 (ExportDataDirectory)  
+INFO  Removing 56 unused filesystems from cache (FileSystemInstanceManager)  
+INFO  Additional info:
+Loading file:///D:/workspace/SWD3-MODS/.work/native-events-doccheck-20260906-104009/input/swd3.exe?MD5=d87ac58e18147386e2bcc1b1b868ffe8...
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-CONVERT-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-convert-l1-1-0.dll?MD5=3560176d0cdbe2f5d33f543348e0a027...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-convert-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-ENVIRONMENT-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-environment-l1-1-0.dll?MD5=e93c7f013493b12ad40229b19db02ce6...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-environment-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-FILESYSTEM-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-filesystem-l1-1-0.dll?MD5=47555752931cecf90e796499b62ec729...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-filesystem-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-HEAP-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-heap-l1-1-0.dll?MD5=527bbbfded529ea77ee798d94ce0f243...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-heap-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-LOCALE-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-locale-l1-1-0.dll?MD5=09796dab12cbbd920f632aeb89820193...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-locale-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-MATH-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-math-l1-1-0.dll?MD5=aa9624cb27cc50a3fbbd3b223a617b1c...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-math-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-runtime-l1-1-0.dll?MD5=bbaa58e9e1abdf7d8c4c69652d29d789...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-runtime-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-STDIO-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-stdio-l1-1-0.dll?MD5=ef37235fc43157a4c93241d5e49e304b...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-stdio-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-STRING-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-string-l1-1-0.dll?MD5=639b1fb35cb61ba633eb1791b750631f...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-string-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-TIME-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-time-l1-1-0.dll?MD5=fccce207a34c947f01d3f23a7dd09569...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-time-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library API-MS-WIN-CRT-UTILITY-L1-1-0.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/api-ms-win-crt-utility-l1-1-0.dll?MD5=708a5bc205384633a7b6674eecc7f0f0...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-utility-l1-1-0.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library IMM32.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/imm32.dll
+Loading file:///C:/Windows/System32/imm32.dll?MD5=34c4170cd8664571b16de822196ede61...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\imm32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library KERNEL32.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/kernel32.dll
+Loading file:///C:/Windows/System32/kernel32.dll?MD5=191cf42b2e24eec284b10aca60d0a961...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\kernel32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library LIBVLC.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 61 paths for library LIBZSTD.DLL...
+Loading file:///C:/Users/Andy/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/Library/bin/libzstd.dll?MD5=9d6b1c6df611c2b44968da84ccd7b00b...
+Created exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\libzstd.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library MSVCP140.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/msvcp140.dll
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/msvcp140.dll?MD5=72f3d84384e888bf0d38852eb863026b...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\msvcp140.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library OLE32.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/ole32.dll
+Loading file:///C:/Windows/System32/ole32.dll?MD5=ccc34ad7f9dd69d5fd4c357c7fdb29b6...
+[ole32.dll]: failed to create WEVTResource at 180183740: Failed to resolve data length for WEVTResource
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\ole32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library SDL2.DLL...
+Loading file:///D:/Program Files/AntiMicroX/bin/SDL2.dll?MD5=328568855913279238b476074d764817...
+Created exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\sdl2.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library SDL2_IMAGE.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 61 paths for library SDL2_MIXER.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 61 paths for library SDL2_TTF.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 61 paths for library SHELL32.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/shell32.dll
+Loading file:///C:/Windows/System32/shell32.dll?MD5=e97281e0268e389a0b037b9484a9f741...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\shell32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library STEAM_API64.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 61 paths for library USER32.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/user32.dll
+Loading file:///C:/Windows/System32/user32.dll?MD5=451e4da7a741ed80a1845d7bf9b29c79...
+[user32.dll]: failed to create WEVTResource at 1800dea70: Failed to resolve data length for WEVTResource
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\user32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library VCRUNTIME140.DLL...
+Skipping library which is the wrong architecture: file:///C:/Windows/SysWOW64/vcruntime140.dll
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/vcruntime140.dll?MD5=caf9edded91c1f6c0022b278c16679aa...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\vcruntime140.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 61 paths for library VCRUNTIME140_1.DLL...
+Loading file:///D:/workspace/SWD3-MODS/.tools/static-re/jdk-21/bin/vcruntime140_1.dll?MD5=2bd576cbc5cb712935eb1b10e4d312f5...
+Using existing exports file: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\vcruntime140_1.exports
+Library not saved to project.
+------------------------------------------------
+
+Applying cached symbols from LIBZSTD.DLL
+Applying cached symbols from SDL2.DLL
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\imm32.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\kernel32.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\user32.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\shell32.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\ole32.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\msvcp140.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\vcruntime140.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\vcruntime140_1.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-heap-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-runtime-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-stdio-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-string-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-utility-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-math-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-time-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-filesystem-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-convert-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-locale-l1-1-0.exports
+Applying C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\symbols\win64\api-ms-win-crt-environment-l1-1-0.exports
+Linking the External Programs of 'swd3.exe' to imported libraries...
+  [LIBZSTD.DLL] -> not found in project
+  [LIBVLC.DLL] -> not found in project
+  [SDL2_IMAGE.DLL] -> not found in project
+  [SDL2_TTF.DLL] -> not found in project
+  [SDL2_MIXER.DLL] -> not found in project
+  [SDL2.DLL] -> not found in project
+  [STEAM_API64.DLL] -> not found in project
+  [IMM32.DLL] -> not found in project
+  [KERNEL32.DLL] -> not found in project
+  [USER32.DLL] -> not found in project
+  [SHELL32.DLL] -> not found in project
+  [OLE32.DLL] -> not found in project
+  [MSVCP140.DLL] -> not found in project
+  [VCRUNTIME140.DLL] -> not found in project
+  [VCRUNTIME140_1.DLL] -> not found in project
+  [API-MS-WIN-CRT-HEAP-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-STDIO-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-STRING-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-UTILITY-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-MATH-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-TIME-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-FILESYSTEM-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-CONVERT-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-LOCALE-L1-1-0.DLL] -> not found in project
+  [API-MS-WIN-CRT-ENVIRONMENT-L1-1-0.DLL] -> not found in project
+------------------------------------------------
+
+ (AutoImporter)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///D:/workspace/SWD3-MODS/.work/native-events-doccheck-20260906-104009/input/swd3.exe (HeadlessAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___raise_securityfailure' specified in file: D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\data\PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___report_rangecheckfailure' specified in file: D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\data\PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+INFO  Skipping PDB processing: missing PDB information in program metadata (PdbUniversalAnalyzer)  
+INFO  hit non-returning function, restarting decompiler switch analyzer later (DecompilerSwitchAnalyzer)  
+INFO  Packed database cache: C:\Users\Andy\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: windows_vs12_64 (ApplyDataArchiveAnalyzer)  
+INFO  Applied data type archive: windows_vs12_64 (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              0.459 secs
+    Apply Data Archives                        0.156 secs
+    Call Convention ID                         0.025 secs
+    Call-Fixup Installer                       0.173 secs
+    Create Address Tables                      0.282 secs
+    Create Address Tables - One Time           0.146 secs
+    Create Function                            0.114 secs
+    Data Reference                             0.581 secs
+    Decompiler Switch Analysis                 2.072 secs
+    Decompiler Switch Analysis - One Time     12.590 secs
+    Demangler Microsoft                        0.031 secs
+    Disassemble                                0.000 secs
+    Disassemble Entry Points                   6.840 secs
+    Embedded Media                             0.036 secs
+    External Entry References                  0.000 secs
+    Function ID                                1.966 secs
+    Function Start Search                      0.047 secs
+    Non-Returning Functions - Discovered       0.819 secs
+    Non-Returning Functions - Known            0.011 secs
+    PDB Universal                              0.001 secs
+    Reference                                  0.727 secs
+    Scalar Operand References                  2.033 secs
+    Shared Return Calls                        0.493 secs
+    Stack                                     10.415 secs
+    Subroutine References                      0.333 secs
+    Subroutine References - One Time           0.014 secs
+    Windows x86 PE Exception Handling          0.013 secs
+    Windows x86 PE RTTI Analyzer               1.692 secs
+    Windows x86 Thread Environment Block (TEB) Analyzer     0.014 secs
+    WindowsResourceReference                   1.482 secs
+    x86 Constant Reference Analyzer           11.134 secs
+-----------------------------------------------------
+     Total Time   54 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///D:/workspace/SWD3-MODS/.work/native-events-doccheck-20260906-104009/input/swd3.exe (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\research\active\swd3-native-menu-probe\tools\ghidra\ReportHdBattleEventStringRefs.py (HeadlessAnalyzer)  
+INFO  ReportHdBattleEventStringRefs.py> SWD3 HD battle event string xref report (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_Enter @ 140172750 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003f50a in FUN_14003e500 @ 14003e500; LEA RDX,[0x140172750] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_DrawBGI @ 140172838 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400407d4 in FUN_1400402a0 @ 1400402a0; LEA RDX,[0x140172838] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_InputKeyDown @ 140172b88 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140053c20 in FUN_140053ae0 @ 140053ae0; LEA RDX,[0x140172b88] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_InputClick @ 140172ba0 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140053c42 in FUN_140053ae0 @ 140053ae0; LEA RDX,[0x140172ba0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400576e8 in FUN_1400574a0 @ 1400574a0; LEA RDX,[0x140172ba0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14005486d in FUN_140054580 @ 140054580; LEA RDX,[0x140172ba0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=3 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_InputDClick @ 140172bb8 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140053c64 in FUN_140053ae0 @ 140053ae0; LEA RDX,[0x140172bb8] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_CmdSelectOK @ 140172788 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140057d6a in FUN_1400574a0 @ 1400574a0; LEA RDX,[0x140172788] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140044d14 in FUN_140044ab0 @ 140044ab0; LEA RDX,[0x140172788] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_EnemyInit @ 1401726f0 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140042f6e in FUN_140042d40 @ 140042d40; LEA RDX,[0x1401726f0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003ecb3 in FUN_14003e500 @ 14003e500; LEA RDX,[0x1401726f0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_PlayerInit @ 140172728 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003f020 in FUN_14003e500 @ 14003e500; LEA RDX,[0x140172728] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_NPCInit @ 140172740 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003f39e in FUN_14003e500 @ 14003e500; LEA RDX,[0x140172740] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14003f5b2 in FUN_14003e500 @ 14003e500; LEA RDX,[0x140172740] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_KeeperInit @ 140172770 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004232f in FUN_140040820 @ 140040820; LEA RDX,[0x140172770] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_Dead @ 140172760 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140069655 in FUN_1400695f0 @ 1400695f0; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400696b3 in FUN_1400695f0 @ 1400695f0; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004113e in FUN_140040820 @ 140040820; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400424f9 in FUN_140040820 @ 140040820; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004173d in FUN_140040820 @ 140040820; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400417d5 in FUN_140040820 @ 140040820; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004ad56 in FUN_14004acb0 @ 14004acb0; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004b174 in FUN_14004acb0 @ 14004acb0; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004336b in FUN_140042d40 @ 140042d40; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400436b0 in FUN_140042d40 @ 140042d40; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400435e2 in FUN_140042d40 @ 140042d40; LEA RDX,[0x140172760] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=11 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_StopSkill @ 140174110 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140085b3d in FUN_140085890 @ 140085890; LEA RDX,[0x140174110] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400853ea in FUN_140085370 @ 140085370; LEA RDX,[0x140174110] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400854e2 in FUN_140085480 @ 140085480; LEA RDX,[0x140174110] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=3 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_Freeze @ 140174128 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140085ba5 in FUN_140085890 @ 140085890; LEA RDX,[0x140174128] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140085419 in FUN_140085370 @ 140085370; LEA RDX,[0x140174128] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140085511 in FUN_140085480 @ 140085480; LEA RDX,[0x140174128] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=3 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_SetActive @ 1401740f8 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400853b2 in FUN_140085370 @ 140085370; LEA RDX,[0x1401740f8] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400854a9 in FUN_140085480 @ 140085480; LEA RDX,[0x1401740f8] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_RestoreItem @ 1401728a8 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14004a5b5 in FUN_14004a420 @ 14004a420; LEA RDX,[0x1401728a8] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET Battle_CancelClick @ 1401768b8 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400b09ae in <no enclosing function>; LEA RDX,[0x1401768b8] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   instruction window: (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     POP R12 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     POP RDI (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     POP RSI (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     POP RBX (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     POP RBP (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     RET (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     CMP byte ptr [0x1401fa92d],0x0 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     LEA RAX,[0x1401768d0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     LEA RDX,[0x1401768b8] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     CMOVZ RDX,RAX (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     LEA RCX,[0x1401a6d80] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     XOR R8D,R8D (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     JMP 0x14014ccf0 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     PUSH RBX (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     SUB RSP,0x30 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     MOV ECX,0xe0 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     CALL 0x14016a054 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     MOV qword ptr [RSP + 0x40],RAX (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     TEST RAX,RAX (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     JZ 0x1400b09f7 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     MOV RCX,RAX (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     CALL 0x1400b1240 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     MOV RBX,RAX (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>     JMP 0x1400b09f9 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET CheckLearnSpecialSkill @ 140172d38 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14005ebd6 in FUN_14005eb40 @ 14005eb40; LEA RDX,[0x140172d38] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET CheckStatSpecialSkill @ 140177170 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400b4384 in FUN_1400b4270 @ 1400b4270; LEA RDX,[0x140177170] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET BattleCriticalHitRate @ 1401739f0 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140071dd6 in FUN_140071970 @ 140071970; LEA RDX,[0x1401739f0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140071ff5 in FUN_140071f60 @ 140071f60; LEA RDX,[0x1401739f0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=2 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET BattleEnemyEscapeRate @ 140173a78 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140079ce0 in FUN_140079ca0 @ 140079ca0; LEA RDX,[0x140173a78] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET BattleGain @ 140172c60 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 14005d46b in FUN_14005d250 @ 14005d250; LEA RDX,[0x140172c60] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET BattleEnemyAI @ 140172810 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140043e8c in FUN_1400438b0 @ 1400438b0; LEA RDX,[0x140172810] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET BattlePlayerAI @ 1401727b0 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140045055 in FUN_140044ab0 @ 140044ab0; LEA RDX,[0x1401727b0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET BattlePlayerAI_after @ 1401727f8 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 1400462ca in FUN_140044ab0 @ 140044ab0; LEA RDX,[0x1401727f8] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py> TARGET BattleNPCAI @ 1401727a0 (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   REF DATA from 140045678 in FUN_140044ab0 @ 140044ab0; LEA RDX,[0x1401727a0] (GhidraScript)  
+INFO  ReportHdBattleEventStringRefs.py>   referenceCount=1 (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file:///D:/workspace/SWD3-MODS/.work/native-events-doccheck-20260906-104009/input/swd3.exe (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///D:/workspace/SWD3-MODS/.work/native-events-doccheck-20260906-104009/input/swd3.exe (HeadlessAnalyzer)  
+INFO  REPORT: Save succeeded for: /swd3.exe (NativeEvents:/swd3.exe) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

@@ -1,0 +1,16 @@
+RDU_TITLE 護駕／煉化診斷
+RDU_MATERIALS 投入材料：
+RDU_UNLOCKED 目前狀態：成品等級限制已解除
+RDU_WEST 西方祭壇結果：
+RDU_EAST 東方祭壇結果：
+RDU_TRUE_LEVEL 真實等級
+RDU_VANILLA_SETH 原版最低需賽特
+RDU_ALTAR_OWNED 封神壇：已取得，可正常使用東方祭壇
+RDU_ALTAR_MISSING 封神壇：尚未取得；按鍵盤 End 預覽東方結果
+RDU_ALTAR_UNKNOWN 封神壇：狀態無法讀取
+RDU_SETH_LAST 賽特等級：最近戰鬥
+RDU_SETH_UNKNOWN 賽特等級：尚未同步，完成一場戰鬥後更新
+RDU_NOW_EAST 目前預覽：東方結果
+RDU_NEXT_END 下一步：按 End 偷看東方；確認鍵仍走原版煉化
+RDU_NEXT_OK 下一步：使用原版確認鍵或滑鼠進行煉化
+RDU_SLIME 黏怪說明：這是配方結果，不是等級不足

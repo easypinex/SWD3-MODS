@@ -1,0 +1,14 @@
+MODName 武器熟練度100倍
+MODAuthor Andy / Codex
+MODDate 2026,8,21
+MODVersion 1,2
+MODinfo 預設100倍；可在遊戲選單左下角即時切換0.5～100倍，按F8隱藏面板。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+; TYPE 2 = Lua script, LangID 0 = all languages
+DAT 2,0,00_ProficiencyMultiplierConfig.lua,Default multiplier setting
+DAT 2,0,ProficiencyMultiplier.lua,Weapon proficiency multiplier logic
+DAT 2,0,ProficiencyMultiplierUI.lua,In-game menu multiplier panel

@@ -1,0 +1,13 @@
+MODName 活物挑戰：原生對話容器驗證
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo 僅驗證 F9 是否能以原生對話容器承載活物挑戰介面；不變更背包、存檔或戰鬥。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+; TYPE 0 = StringDB text, TYPE 2 = Lua script, LangID 0 = all languages
+DAT 0,0,LiveCardDialogueProbe.txt,Traditional Chinese probe text
+DAT 2,0,LiveCardDialogueProbe.lua,Native dialogue host probe

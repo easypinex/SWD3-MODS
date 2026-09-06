@@ -1,0 +1,5 @@
+2026-09-06 10:41:36 INFO  DecompileHdBattleUiEventCallers.py> SWD3 HD battle UI/input event caller report  
+2026-09-06 10:41:36 INFO  DecompileHdBattleUiEventCallers.py> ===== battle_draw_bgi_dispatcher @ 0x1400402a0L =====  
+2026-09-06 10:41:36 INFO  DecompileHdBattleUiEventCallers.py> ===== battle_input_dispatcher @ 0x140053ae0L =====  
+2026-09-06 10:41:37 INFO  DecompileHdBattleUiEventCallers.py> ===== battle_input_and_command_ui @ 0x1400574a0L =====  
+2026-09-06 10:41:37 INFO  DecompileHdBattleUiEventCallers.py> ===== battle_input_ui_helper @ 0x140054580L =====  

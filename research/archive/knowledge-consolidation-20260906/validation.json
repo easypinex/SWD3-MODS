@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-06",
+  "scope": "Documentation, research relocation, path-only tool fixes; no game execution",
+  "markdown_files": 86,
+  "local_links": 477,
+  "link_errors": [],
+  "active_projects": [
+    "swd3-engine-ui-diagnostics",
+    "swd3-native-menu-probe",
+    "swd3-native-loader-probe",
+    "swd3-capture-command-timing-probe",
+    "swd3-critical-hit-formula-probe",
+    "swd3-seth-capture-window-probe"
+  ],
+  "archived_projects": [
+    "swd3-all-monster-capture-probe",
+    "swd3-item-registry-cache-probe",
+    "swd3-static-item-registry-probe",
+    "swd3-static-capture-exchange-probe",
+    "swd3-general-capture-eligibility-probe",
+    "swd3-story-boss-level-gate-probe",
+    "swd3-high-level-capture-gate-probe",
+    "swd3-formal-capture-validation-probe",
+    "swd3-guardian-resistance-battle-probe",
+    "swd3-guardian-resistance-runtime-probe",
+    "swd3-high-level-capture-rate-probe",
+    "swd3-manual-capture-bridge-probe",
+    "swd3-live-card-battle-dialogue-probe"
+  ],
+  "move_roots": 41,
+  "files_verified_during_move": 606,
+  "original_files": 604,
+  "new_split_evidence_files": 2,
+  "protected_non_markdown_files_checked": 208,
+  "unexpected_non_document_changes": [],
+  "powershell_parse_files": 18,
+  "loader_workspace_resolution": "passed",
+  "existing_probe_tests": [
+    {
+      "project": "swd3-capture-command-timing-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: capture command timing probe mock runtime"
+      ]
+    },
+    {
+      "project": "swd3-critical-hit-formula-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: critical-hit formula probe mock runtime"
+      ]
+    },
+    {
+      "project": "swd3-seth-capture-window-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: Seth capture input-window probe mock runtime"
+      ]
+    },
+    {
+      "project": "swd3-all-monster-capture-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: all-monster capture probe mock runtime",
+        "PASS: all all-monster capture probe automated checks"
+      ]
+    },
+    {
+      "project": "swd3-formal-capture-validation-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: formal capture validation probe mock runtime",
+        "PASS: formal capture validation probe automated checks"
+      ]
+    },
+    {
+      "project": "swd3-general-capture-eligibility-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: general capture eligibility probe mock runtime",
+        "PASS: all general capture eligibility probe automated checks"
+      ]
+    },
+    {
+      "project": "swd3-guardian-resistance-battle-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: guardian resistance battle probe mock"
+      ]
+    },
+    {
+      "project": "swd3-guardian-resistance-runtime-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: guardian resistance runtime probe mock"
+      ]
+    },
+    {
+      "project": "swd3-high-level-capture-gate-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: high-level capture gate probe mock runtime",
+        "PASS: high-level capture gate probe automated checks"
+      ]
+    },
+    {
+      "project": "swd3-high-level-capture-rate-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: high-level capture-rate probe mock runtime"
+      ]
+    },
+    {
+      "project": "swd3-item-registry-cache-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: item registry cache probe mock runtime",
+        "PASS: all item registry cache probe automated checks"
+      ]
+    },
+    {
+      "project": "swd3-manual-capture-bridge-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: manual capture bridge probe mock runtime"
+      ]
+    },
+    {
+      "project": "swd3-static-capture-exchange-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: static capture exchange probe mock runtime",
+        "PASS: all static capture exchange probe automated checks"
+      ]
+    },
+    {
+      "project": "swd3-static-item-registry-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: static item registry probe mock runtime",
+        "PASS: all static item registry probe automated checks"
+      ]
+    },
+    {
+      "project": "swd3-story-boss-level-gate-probe",
+      "exit_code": 0,
+      "passed": true,
+      "pass_markers": [
+        "PASS: story boss level gate probe mock runtime",
+        "PASS: all story boss level-gate probe automated checks"
+      ]
+    }
+  ],
+  "csv_export_comparison": [
+    {
+      "file": "attack-effects.csv",
+      "identical": true
+    },
+    {
+      "file": "battle-usable-items.csv",
+      "identical": true
+    },
+    {
+      "file": "capture-card-audit.csv",
+      "identical": true
+    },
+    {
+      "file": "combatants.csv",
+      "identical": true
+    },
+    {
+      "file": "current-challengeable-enemies.csv",
+      "identical": true
+    },
+    {
+      "file": "current-challengeable-enemy-actions.csv",
+      "identical": true
+    },
+    {
+      "file": "equipment-and-artifacts.csv",
+      "identical": true
+    },
+    {
+      "file": "export-manifest.csv",
+      "identical": true
+    },
+    {
+      "file": "guardian-cards.csv",
+      "identical": true
+    },
+    {
+      "file": "permanent-growth-items.csv",
+      "identical": true
+    },
+    {
+      "file": "player-learned-skills.csv",
+      "identical": true
+    },
+    {
+      "file": "players-level-60.csv",
+      "identical": true
+    },
+    {
+      "file": "skills.csv",
+      "identical": true
+    },
+    {
+      "file": "top-challengeable-enemies-by-hp.csv",
+      "identical": true
+    }
+  ],
+  "ignored_cache_paths": "passed",
+  "new_in_game_tests": false
+}

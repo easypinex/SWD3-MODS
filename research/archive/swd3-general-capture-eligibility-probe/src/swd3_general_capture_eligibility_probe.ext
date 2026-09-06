@@ -1,0 +1,11 @@
+MODName 一般戰鬥靈契資格探針
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,4
+MODinfo 地圖按 Home 後先暫時開放完整戰鬥目錄的靈契資格；收妖成功後依戰前基線交換成靜態卡，戰鬥結束立即還原。僅測試，不保存。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,GeneralCaptureEligibilityProbe.lua,General battle capture eligibility bridge probe

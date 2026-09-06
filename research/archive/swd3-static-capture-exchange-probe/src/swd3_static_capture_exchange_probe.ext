@@ -1,0 +1,12 @@
+MODName 靜態蛇卡收妖交換探針
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo 驗證原生靈契收服蛇後交換為載入期靜態註冊的蛇活物卡；不保存。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 0,0,StaticCaptureExchangeProbe.txt,Traditional Chinese probe strings
+DAT 2,0,StaticCaptureExchangeProbe.lua,Static snake-card capture exchange probe

@@ -1,0 +1,11 @@
+MODName 高等靈契機率驗證戰
+MODAuthor Andy / Codex
+MODDate 2026,9,4
+MODVersion 1,6
+MODinfo F4 建立腳本化 Lv80 牛魔王隔離戰；在 BattleScript coroutine 測試原生 BSC.Obsolt。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,HighLevelCaptureRateProbe.lua,Isolated high-level capture-rate verification

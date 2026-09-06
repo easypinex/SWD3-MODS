@@ -1,0 +1,12 @@
+MODName SWD3 引擎 UI API 診斷
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo 僅列印公開 Lua UI API 名稱至 Console；不呼叫未知 API、不改存檔或遊戲資料。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+; TYPE 2 = Lua script, LangID 0 = all languages
+DAT 2,0,EngineUiDiagnostics.lua,Read-only native UI API inventory

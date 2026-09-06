@@ -1,0 +1,2 @@
+# Archived evidence is fingerprinted byte-for-byte; do not normalize line endings.
+research/**/evidence/** -text

@@ -1,0 +1,3 @@
+﻿TswId,SN,Status,Purpose,Evidence,MatchingPng
+9385,0,embedded_manifest_and_game_verified,物品頁背景,GameData.ACTdef.MenuWallPaper_BG_TSW；實機繪製確認不透明；HD manifest recovered from package.,HD-TSW09385-SN00__MenuWallPaper_BG_item.png
+10007,0,embedded_manifest_and_game_verified,戰鬥 AI 說明底圖,原版 OnEvent_Battle.lua 註解與實機繪製確認半透明藍色；HD manifest recovered from package.,HD-TSW10007-SN00__BattleInfoBG.png

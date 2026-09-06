@@ -1,0 +1,12 @@
+MODName 原生物品索引快取探針
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo 僅驗證 GameData.SendItemTempData 是否能將執行期測試卡加入原版物品索引；不收妖、不修改原版 ItemTemp。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 0,0,ItemRegistryCacheProbe.txt,Traditional Chinese probe strings
+DAT 2,0,ItemRegistryCacheProbe.lua,Runtime item-index refresh probe

@@ -1,0 +1,3 @@
+SCEP_SnakeCardName 蛇・靜態收妖探針卡
+SCEP_SnakeCardHelp 以原生靈契收服後交換的靜態註冊蛇卡；請勿存檔。
+SCEP_SnakeCardInfo 僅供驗證收妖交換與物品欄；完成後按 F1 清除。

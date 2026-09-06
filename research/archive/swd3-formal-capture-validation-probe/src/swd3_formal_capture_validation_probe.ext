@@ -1,0 +1,11 @@
+MODName 正式首領收妖驗證戰
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo F4 建立低風險牛魔王驗證戰；收妖資格與交換完全由正式全魔物卡庫處理。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,FormalCaptureValidationProbe.lua,Formal capture integration validation battle

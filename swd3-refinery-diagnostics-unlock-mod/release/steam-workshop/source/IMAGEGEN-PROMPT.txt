@@ -1,0 +1,13 @@
+Use case: ads-marketing
+Asset type: square Steam Workshop primary preview image for a classic Chinese fantasy RPG refinery diagnostics mod
+Primary request: Create a polished square cover illustration representing dual East and West mystical refinery altars and unlocked alchemy diagnostics.
+Scene/backdrop: dark violet-brown storm-lit temple interior with subtle branching golden energy, inspired by a classic late-1990s/early-2000s fantasy RPG interface atmosphere but fully original.
+Subject: two symmetrical ancient stone refinery altars facing each other; the East altar glows warm golden-orange and the West altar glows soft pale ivory, joined by a luminous circular diagnostic diagram and small abstract level markers.
+Style/medium: painterly fantasy game key art, crisp silhouettes, readable at small thumbnail size, refined but slightly nostalgic.
+Composition/framing: centered square composition, strong circular focal point, balanced East/West halves, safe margins around all edges.
+Lighting/mood: mystical, analytical, reliable, warm highlights against dark background.
+Color palette: golden orange, pale yellow-ivory, deep violet, charcoal brown.
+Constraints: no people, no game logo, no brand marks, no readable text, no letters, no numbers, no watermark, no UI screenshot, no copyrighted characters. Preserve strong clarity at 150px thumbnail size.
+Avoid: blurry glow covering details, overly modern sci-fi machinery, photorealism, illegible pseudo-text.
+
+Generated with the built-in ImageGen tool.

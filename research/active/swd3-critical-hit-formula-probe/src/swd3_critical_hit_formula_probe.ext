@@ -1,0 +1,11 @@
+MODName 爆擊傷害唯讀量測探針
+MODAuthor Andy / Codex
+MODDate 2026,9,4
+MODVersion 0,2
+MODinfo 只記錄玩家普攻的爆擊旗標、武器、等級與目標生命差；不改變機率、傷害、資料或存檔。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,CriticalHitFormulaProbe.lua,Read-only critical-hit formula probe

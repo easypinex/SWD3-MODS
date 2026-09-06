@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: 1024x1024 Steam Workshop primary preview for an unofficial Chinese fantasy RPG mod about capturing monsters as guardian spirit cards.
+
+Primary request: create an original square fantasy cover illustration. A monumental three-legged ancient bronze spirit vessel at the center, surrounded by distinct mythic guardian silhouettes made of jade light, indigo mist, and warm gold sparks: dragon above, phoenix, tiger, tortoise, qilin and other beast spirits. Floating talisman ribbons form a circular magical contract seal; the scene suggests a large collectible guardian archive.
+
+Scene/backdrop: deep midnight blue mountain mist and subtle antique cloud motifs.
+Style/medium: polished painted fantasy game-cover illustration, richly textured bronze, jade, parchment and luminous spirit energy; original artwork, not copied from any existing game art.
+Composition/framing: a large centered vessel is unmistakably the focal point and readable at thumbnail size; the guardian spirits form a balanced ring around it; clean outer edges, no UI or border.
+Lighting/mood: cinematic mystical light, heroic but elegant.
+Color palette: deep indigo, aged bronze, jade green, restrained gold.
+Text (verbatim): no text.
+Constraints: no logos, no game title, no letters, no Chinese characters, no numerals, no watermark, no copyrighted characters, no UI.

@@ -1,0 +1,6 @@
+
+Algorithm : SHA256
+Hash      : 737A80991E28F8C094E3B4AE33AE92A8D87BD309F4017878B17254CF538B2E22
+Path      : D:\workspace\SWD3-MODS\research\active\swd3-native-menu-probe\tools\ghidra\ReportHdBattleEventStringRefs.py
+
+

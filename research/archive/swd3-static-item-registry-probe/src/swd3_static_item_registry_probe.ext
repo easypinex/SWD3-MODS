@@ -1,0 +1,12 @@
+MODName 靜態物品註冊探針
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo 僅驗證 MOD 載入期建立的活物卡能否被原生物品欄安全反白；不收妖、不保存。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 0,0,StaticItemRegistryProbe.txt,Traditional Chinese probe strings
+DAT 2,0,StaticItemRegistryProbe.lua,Load-phase item registration probe

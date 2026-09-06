@@ -1,0 +1,11 @@
+MODName 戰鬥事件時序唯讀探針
+MODAuthor Andy / Codex
+MODDate 2026,9,4
+MODVersion 0,5
+MODinfo 只讀記錄 HD 輸入事件、戰鬥 callback、NowMenu 與選取狀態；不改變等級、機率、物品、存檔或戰鬥結果。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,CaptureCommandTimingProbe.lua,Read-only capture command timing probe

@@ -1,0 +1,3 @@
+SIRP_CardName 黏怪・靜態註冊探針卡
+SIRP_CardHelp 於 MOD 載入期建立的暫時測試卡；請勿存檔。
+SIRP_CardInfo 僅供測試物品欄反白；安全通過後按 F3 清除。

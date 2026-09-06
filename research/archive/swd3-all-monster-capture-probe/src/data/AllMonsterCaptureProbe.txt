@@ -1,0 +1,3 @@
+AMCP_CardName 蛇・探針活物卡
+AMCP_CardHelp 全魔物收妖探針建立的暫時測試卡。停用探針前按 F5 清除。
+AMCP_CardInfo 僅供測試護駕、背包與讀檔路徑；消耗：8 點體力。

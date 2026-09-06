@@ -1,0 +1,61 @@
+# Rebuildable galleries extracted from the locally installed game.
+# Keep the scripts, manifests, CSV indexes, and documentation in Git.
+/SWD3-HD-TSW-PNG-GALLERY/hd_tsw_png/
+/SWD3-TSW-PNG-GALLERY/tsw/
+/SWD3-TSW-PNG-GALLERY/tsw_png/
+/SWD3-TSW-PNG-GALLERY/all_*.tsw
+
+# MOD packages and reverse-extraction results are rebuilt locally from src.
+*.ssmod
+dist/
+verify-*/
+verify/
+**/_build_*/
+**/_verify/
+**/_verify_*/
+out_data/
+package-output/
+package-verify/
+
+# Local installation state, generated catalogue previews, and save backups.
+/Mods/
+/_guardian_specs_*/
+/archive/save-safety-*/
+/swd3-*/build/
+**/_installed-backup-*/
+**/installed-backup-*/
+
+# Local tool and language caches.
+/.tools/
+/.codex-temp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+
+# Editor and operating-system noise.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+
+# Local Steam subscription mapping.
+/SWD3-HD-TSW-PNG-GALLERY/SteamMods.txt
+
+# Re-extracted audit workspace. Preserve conclusions in project or knowledge docs.
+/_critical_balance_audit_*/
+
+# Local consolidated work products and pre-edit backups. Keep evidence inventories in research.
+/.work/
+# Rebuilt outputs keep the same ignore semantics after research moves.
+/research/*/*/build/
+/research/*/*/native-analysis/input/
+/research/*/*/native-analysis/ghidra-project/
+
+# Runtime logs stay local; explicitly archived research evidence is versioned.
+*.log
+!/research/**/evidence/**/*.log

@@ -1,0 +1,13 @@
+MODName 煉化條件診斷與全限制解除
+MODAuthor Andy / Codex
+MODDate 2026,9,1
+MODVersion 1,5
+MODinfo 解除東、西方煉化的成品等級限制，以診斷卡顯示完整結果，並用清晰黃橘色標示目前的東方或西方預覽。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+; TYPE 0 = StringDB text, TYPE 2 = Lua script, LangID 0 = default language
+DAT 0,0,RefineryDiagnosticsUnlock.txt,Traditional Chinese UI strings
+DAT 2,0,RefineryDiagnosticsUnlock.lua,Refinery diagnostics and level-limit unlock

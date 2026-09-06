@@ -1,0 +1,13 @@
+MODName 活物挑戰戰鬥－藍灰介面圖
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo 提供活物挑戰戰鬥選單使用的藍灰 PIC 背景圖。需先於主功能 MOD 載入。%Q
+MODGameVersion 4,0
+MODpicture live_card_panel_bluegrey_tile.pic
+MODsystemMOD 1
+MODbundleSave 1
+
+; TSW ID,SN,TYPE,LangID,FileName,Comment
+; TYPE 4 = system/UI. This picture package owns the custom TSW registration.
+TSW 20001,0,4,0,live_card_panel_bluegrey_tile.pic,Blue-grey living card panel background

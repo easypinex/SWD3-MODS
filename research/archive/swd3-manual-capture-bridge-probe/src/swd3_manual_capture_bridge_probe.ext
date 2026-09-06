@@ -1,0 +1,11 @@
+MODName 手動靈契原生橋接探針
+MODAuthor Andy / Codex
+MODDate 2026,9,4
+MODVersion 0,5
+MODinfo F6 建立自動偵測手動靈契的原生 BSC.Obsolt 接力隔離戰。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,ManualCaptureBridgeProbe.lua,Manual capture handoff research

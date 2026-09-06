@@ -1,0 +1,24 @@
+Release: swd3-refinery-diagnostics-unlock-mod v1.5
+Game: Xuan-Yuan Sword: Mists Beyond the Mountains Steam HD 4.0.x
+Steam App ID: 1638230
+
+UPLOAD CONTENT
+workshop_content/refinery_diagnostics_unlock.ssmod
+Size: 6011 bytes
+SHA-256: 498DB24C022C33B802CE2BD34EAC12A6D5E113FD75304FE44CEDDF37D8C0AC83
+
+PRIMARY PREVIEW
+preview/refinery-workshop-primary-preview.jpg
+Dimensions: 1024x1024
+Size: 327581 bytes
+SHA-256: 5A770B6B86CF145E513FF58B570512F73B0CCEEF1EEE3C32AA907D56D6419C01
+
+COVER SOURCE (DO NOT ADD TO WORKSHOP CONTENT)
+source/refinery-workshop-cover-source.png
+Size: 2655228 bytes
+SHA-256: 205DE4CDD473D1A3606FB6955AA01AABD299B246D2C9A47E2C06308C496B0FD8
+
+Verification:
+- workshop_content contains exactly one file.
+- upload package SHA-256 matches dist/refinery_diagnostics_unlock.ssmod.
+- primary preview is a web-compatible JPEG and is below 1 MB.

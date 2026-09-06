@@ -1,0 +1,13 @@
+MODName 全魔物收妖探針
+MODAuthor Andy / Codex
+MODDate 2026,9,3
+MODVersion 0,1
+MODinfo 僅驗證自訂戰場靈契判定與一張 MOD 活物卡的背包／護駕路徑；不修改原版敵人範本。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 0
+
+; Datas: TYPE, LangID, FileName, Comment
+; TYPE 0 = StringDB text, TYPE 2 = Lua script, LangID 0 = all languages
+DAT 0,0,AllMonsterCaptureProbe.txt,Traditional Chinese probe strings
+DAT 2,0,AllMonsterCaptureProbe.lua,Scoped capture and custom-card probe

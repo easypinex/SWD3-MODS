@@ -1,0 +1,70 @@
+{
+  "Result": "PASS",
+  "CheckedAt": "2026-09-06T10:42:23.6291520+08:00",
+  "PowerShell": "7.6.5",
+  "EventTargets": 25,
+  "DecompiledFunctions": 4,
+  "ReadOnlyProcess": true,
+  "ExecutableHashesAfter": [
+    {
+      "File": "D:\\SteamLibrary\\steamapps\\common\\SWD3\\swd3.exe",
+      "SHA256": "63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523"
+    },
+    {
+      "File": ".work\\native-events-doccheck-20260906-104009\\input\\swd3.exe",
+      "SHA256": "63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523"
+    }
+  ],
+  "EvidenceFiles": [
+    {
+      "Name": "battle-event-refs.log",
+      "Length": 13164,
+      "SHA256": "D4CC44A311D0E0F24AEC6118C657AB4DED53B5FF0A97F5ED6ACE2081EF158658"
+    },
+    {
+      "Name": "battle-event-refs.txt",
+      "Length": 38032,
+      "SHA256": "0053C19C9E49D0A3E4CFEDB3142FA88440B63EF7703D72D306086B4417A9EE9B"
+    },
+    {
+      "Name": "battle-ui-analysis.log",
+      "Length": 68608,
+      "SHA256": "7360B629ABCCC369F467A293A366CC812E8C1649ACBD871D530EAD690D04EF60"
+    },
+    {
+      "Name": "battle-ui-callers.txt",
+      "Length": 68112,
+      "SHA256": "355E033753AB27F1CC986C639E0ACAB77280AE3326BAD6916A3055645E7476E1"
+    },
+    {
+      "Name": "battle-ui-script.log",
+      "Length": 579,
+      "SHA256": "BC5EBACF6AC80080D3EE7CF28CFB8E1C21A3324D972DDBDA395EA264A770D10B"
+    },
+    {
+      "Name": "event-script-fingerprint.txt",
+      "Length": 225,
+      "SHA256": "1785E63F5ACFBDB0523752986DB43E8FDE6FD47484ED49A195909967D1416FC3"
+    },
+    {
+      "Name": "import-analysis.log",
+      "Length": 49567,
+      "SHA256": "308A9F84BA488E6A153027E06A20EC9C931779E142F31FA4D5B672D365BF341C"
+    },
+    {
+      "Name": "input-fingerprint.json",
+      "Length": 259,
+      "SHA256": "1481FFB881FBABC7AAF28CA1B2A93921AF0B2A464081171979CA6806489841F0"
+    },
+    {
+      "Name": "tool-versions.txt",
+      "Length": 2343,
+      "SHA256": "F6C164B6C76901D36D5BF9508CC1B14FA4421EE8324739C294D784DBF766B8D8"
+    },
+    {
+      "Name": "ui-script-fingerprint.txt",
+      "Length": 227,
+      "SHA256": "75DFD76B2E79BA4A769FC16D03BF8742672F06CAA3F4197DF99CD8004B872E4C"
+    }
+  ]
+}

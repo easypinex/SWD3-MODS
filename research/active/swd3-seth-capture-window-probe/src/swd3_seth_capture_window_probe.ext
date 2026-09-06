@@ -1,0 +1,11 @@
+MODName 賽特靈契旗標窗口探針
+MODAuthor Andy / Codex
+MODDate 2026,9,5
+MODVersion 0,6
+MODinfo F3 建立隔離牛魔王戰，驗證 NowMenu 指令輸入暫清 Boss、賽特提交後維持非 Boss、非賽特提交後還原 Boss 的原生靈契窗口；不修改正式收妖流程。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+
+; Datas: TYPE, LangID, FileName, Comment
+DAT 2,0,SethCaptureWindowProbe.lua,Isolated Seth capture-window probe
