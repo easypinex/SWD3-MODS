@@ -28,10 +28,12 @@ function Invoke-Entry([string]$Action,[int]$ExpectedExit=0) {
 }
 $entry=Join-Path $fixture 'SWD3Works.exe'
 $backup=Join-Path $fixture 'SWD3Works.original.exe'
-$shimHash=(Get-FileHash (Join-Path $build 'SteamEntry.exe')).Hash
+$shimHash=(Get-FileHash (Join-Path $build 'DeveloperBridge.exe')).Hash
 Invoke-Entry status
 Invoke-Entry install
-if((Get-FileHash $entry).Hash -ne $shimHash -or (Get-FileHash $backup).Hash -ne $expected){throw 'Install hash mismatch'}
+$patchHash=(Get-FileHash $entry).Hash
+$patchRecord=Get-Content (Join-Path $fixture 'SWD3ModStudio.developer.json') -Raw | ConvertFrom-Json
+if($patchHash -eq $shimHash -or $patchHash -eq $expected -or (Get-FileHash $backup).Hash -ne $expected -or $patchRecord.Scope -ne 'DeveloperMenu' -or $patchRecord.Verification.UnchangedMethods -lt 100){throw 'Menu-only patch verification failed'}
 Invoke-Entry install
 Invoke-Entry restore
 if((Get-FileHash $entry).Hash -ne $expected){throw 'Restore hash mismatch'}
@@ -42,14 +44,17 @@ Copy-Item -LiteralPath $backup -Destination $entry -Force
 Invoke-Entry status
 Invoke-Entry install
 # Never overwrite an unrecognized replacement.
+$verifiedPatch=Join-Path $output 'verified-patch.exe'
+Copy-Item -LiteralPath $entry -Destination $verifiedPatch
+$patchHash=(Get-FileHash $entry).Hash
 [IO.File]::WriteAllText($entry,'unknown third-party entry')
 Invoke-Entry install 1
 Invoke-Entry restore 1
 if([IO.File]::ReadAllText($entry) -ne 'unknown third-party entry'){throw 'Unknown file overwritten'}
-Copy-Item -LiteralPath (Join-Path $build 'SteamEntry.exe') -Destination $entry -Force
+Copy-Item -LiteralPath $verifiedPatch -Destination $entry -Force
 [IO.File]::WriteAllText($backup,'damaged backup')
 Invoke-Entry restore 1
-if((Get-FileHash $entry).Hash -ne $shimHash){throw 'Entry changed after bad-backup rejection'}
+if((Get-FileHash $entry).Hash -ne $patchHash){throw 'Entry changed after bad-backup rejection'}
 Copy-Item -LiteralPath $original -Destination $backup -Force
 Invoke-Entry restore
 # An interrupted swap leaves a valid backup/journal and can be retried.
@@ -60,5 +65,17 @@ Invoke-Entry install
 Invoke-Entry restore
 if((Get-FileHash $entry).Hash -ne $expected -or (Get-FileHash $backup).Hash -ne $expected){throw 'Final restoration failed'}
 if((Get-FileHash (Join-Path $fixture 'SWD3Works.exe.config')).Hash -ne (Get-FileHash (Join-Path $game 'SWD3Works.exe.config')).Hash){throw 'Original config changed'}
-@{Passed=$results.Count;SteamInitialized=$false;OriginalSHA256=$expected;EntrySHA256=$shimHash;Cases=$results} | ConvertTo-Json -Depth 8 | Set-Content (Join-Path $output 'results.json') -Encoding UTF8
+# Repair a previously registered 0.3.1 full-launcher takeover using the original backup.
+[IO.File]::WriteAllText($entry,'isolated legacy whole-launcher shim')
+@{Schema=1;EntryHashes=@((Get-FileHash $entry).Hash)} | ConvertTo-Json | Set-Content (Join-Path $fixture 'SWD3ModStudio.entry.json') -Encoding UTF8
+Invoke-Entry install
+Invoke-Entry restore
+$bridge=Join-Path $fixture 'SWD3ModStudio.developer.exe'
+[IO.File]::WriteAllText($bridge,'unknown developer bridge')
+Invoke-Entry install 1
+if([IO.File]::ReadAllText($bridge) -ne 'unknown developer bridge'){throw 'Unknown bridge overwritten'}
+Copy-Item -LiteralPath (Join-Path $build 'DeveloperBridge.exe') -Destination $bridge -Force
+Invoke-Entry install
+Invoke-Entry restore
+@{Passed=$results.Count;SteamInitialized=$false;OriginalSHA256=$expected;BridgeSHA256=$shimHash;ScopeVerification=$patchRecord.Verification;Cases=$results} | ConvertTo-Json -Depth 8 | Set-Content (Join-Path $output 'results.json') -Encoding UTF8
 Write-Output "PASS: $($results.Count) isolated entry checks; original and config preserved"

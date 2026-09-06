@@ -1,0 +1,177 @@
+{
+  "ScopeVerification": {
+    "Scope": "DeveloperMenu",
+    "Method": "System.Void SWD3Works.GameTools::button_SteamWorkshop_Click(System.Object,System.EventArgs)",
+    "EntryPoint": "System.Void SWD3Works.Program::Main()",
+    "UnchangedMethods": 292,
+    "UnchangedResources": 7,
+    "OriginalSHA256": "756D9E2F9866EC335F8A536B9ED0DE2869BBE83FF3D5BF468E0F8A2E3C0330FA",
+    "PatchedSHA256": "BBCD2639C8B8DF5F4A5AD9AF81A421B1F70161C4165331B43825AB709066D634"
+  },
+  "OriginalSHA256": "756D9E2F9866EC335F8A536B9ED0DE2869BBE83FF3D5BF468E0F8A2E3C0330FA",
+  "BridgeSHA256": "9666E2D658DCE5024A14FA523E11E81156C54D7BAD71779353C846BE3FE5843A",
+  "Cases": [
+    {
+      "ExpectedExit": 0,
+      "Case": "status",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單；Steam 模組開發工具尚未替換或已還原"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單保留；Steam 模組開發工具 → D:\\workspace\\SWD3-MODS\\.work\\desktop-0.3.2-package-check\\SWD3-Mod-Studio-0.3.2-Windows\\SWD3ModStudio.exe"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單保留；Steam 模組開發工具 → D:\\workspace\\SWD3-MODS\\.work\\desktop-0.3.2-package-check\\SWD3-Mod-Studio-0.3.2-Windows\\SWD3ModStudio.exe"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "restore",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單；Steam 模組開發工具尚未替換或已還原"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "restore",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單；Steam 模組開發工具尚未替換或已還原"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單保留；Steam 模組開發工具 → D:\\workspace\\SWD3-MODS\\.work\\desktop-0.3.2-package-check\\SWD3-Mod-Studio-0.3.2-Windows\\SWD3ModStudio.exe"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "status",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單；Steam 模組開發工具尚未替換或已還原"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單保留；Steam 模組開發工具 → D:\\workspace\\SWD3-MODS\\.work\\desktop-0.3.2-package-check\\SWD3-Mod-Studio-0.3.2-Windows\\SWD3ModStudio.exe"
+      }
+    },
+    {
+      "ExpectedExit": 1,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry-error",
+        "error": "原工具版本不符或入口被修改，已停止。"
+      }
+    },
+    {
+      "ExpectedExit": 1,
+      "Case": "restore",
+      "Result": {
+        "kind": "steam-entry-error",
+        "error": "目前入口並非已登記的修補版本，拒絕覆蓋。"
+      }
+    },
+    {
+      "ExpectedExit": 1,
+      "Case": "restore",
+      "Result": {
+        "kind": "steam-entry-error",
+        "error": "原版備份缺失或已變更，拒絕還原。"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "restore",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單；Steam 模組開發工具尚未替換或已還原"
+      }
+    },
+    {
+      "ExpectedExit": 1,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry-error",
+        "error": "由於已有另一個處理序正在使用該檔案，所以無法存取該檔案。"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單保留；Steam 模組開發工具 → D:\\workspace\\SWD3-MODS\\.work\\desktop-0.3.2-package-check\\SWD3-Mod-Studio-0.3.2-Windows\\SWD3ModStudio.exe"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "restore",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單；Steam 模組開發工具尚未替換或已還原"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單保留；Steam 模組開發工具 → D:\\workspace\\SWD3-MODS\\.work\\desktop-0.3.2-package-check\\SWD3-Mod-Studio-0.3.2-Windows\\SWD3ModStudio.exe"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "restore",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單；Steam 模組開發工具尚未替換或已還原"
+      }
+    },
+    {
+      "ExpectedExit": 1,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry-error",
+        "error": "開發工具轉接器已被修改，拒絕覆蓋。"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "install",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單保留；Steam 模組開發工具 → D:\\workspace\\SWD3-MODS\\.work\\desktop-0.3.2-package-check\\SWD3-Mod-Studio-0.3.2-Windows\\SWD3ModStudio.exe"
+      }
+    },
+    {
+      "ExpectedExit": 0,
+      "Case": "restore",
+      "Result": {
+        "kind": "steam-entry",
+        "status": "原版啟動選單；Steam 模組開發工具尚未替換或已還原"
+      }
+    }
+  ],
+  "Passed": 20,
+  "SteamInitialized": false
+}

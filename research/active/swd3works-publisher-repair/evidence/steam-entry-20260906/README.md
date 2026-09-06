@@ -1,5 +1,7 @@
 # 0.3.1 Steam 入口接管驗收
 
+**歷史範圍錯誤，已撤回。** 本版驗證的是整體入口接管，不符合使用者要求的「進階 → Steam 模組開發工具」。本機已還原此接管，現行修正見[0.3.2 驗收](../developer-menu-20260906/README.md)。
+
 **已實測，2026-09-06。** Windows／Framework 4.8，桌面 0.3.1，Steam 工作者沿用 0.3.0。正式來源與程式雜湊見 [desktop-fingerprint.json](desktop-fingerprint.json)。
 
 | 層次／案例 | 結果與定位 |

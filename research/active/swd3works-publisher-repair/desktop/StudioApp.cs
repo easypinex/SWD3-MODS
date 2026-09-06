@@ -82,7 +82,7 @@ namespace Swd3ModStudio.Desktop
         bool busy, loadingForm, dirty, connected;
         int uiTicks;
         CancellationTokenSource cancellation;
-        readonly string[] actionNames={"TakeoverButton","RestoreEntryButton","OriginalToolButton","StartGameButton","PickGameButton","RefreshButton","NewButton","ImportItemButton","PickPackageButton","RecoverPackageButton","ReloadTextButton","PickPreviewButton","ReviewButton","FilesButton","HistoryButton","HealthButton","ResumeButton","RetryReviewButton","CloseOperationButton","ImportOperationButton","ImportDraftButton"};
+        readonly string[] actionNames={"TakeoverButton","RestoreEntryButton","OriginalToolButton","PickGameButton","RefreshButton","NewButton","ImportItemButton","PickPackageButton","RecoverPackageButton","ReloadTextButton","PickPreviewButton","ReviewButton","FilesButton","HistoryButton","HealthButton","ResumeButton","RetryReviewButton","CloseOperationButton","ImportOperationButton","ImportDraftButton"};
         public StudioShell(Window window,string root)
         {
             this.window=window; studioRoot=root; worker=new WorkerClient(Path.Combine(root,"worker"));
@@ -109,10 +109,9 @@ namespace Swd3ModStudio.Desktop
                 if(picker.ShowDialog(window)==true){Box("GameRootBox").Text=Path.GetDirectoryName(picker.FileName);SaveEntrySettings();RefreshEntry();}
             }catch(Exception ex){ShowError(ex);} };
             Button("EntryStatusButton").Click+=delegate {try{RefreshEntry();}catch(Exception ex){ShowError(ex);} };
-            Bind("TakeoverButton",async delegate {SaveEntrySettings();SteamEntry.Install(Box("GameRootBox").Text,studioRoot);RefreshEntry();Notice("已接管 Steam 啟動入口，原工具已備份。",false);await Task.FromResult(0);});
-            Bind("RestoreEntryButton",async delegate {SteamEntry.Restore(Box("GameRootBox").Text);RefreshEntry();Notice("已還原原版 Steam 入口，備份與草稿均保留。",false);await Task.FromResult(0);});
-            Bind("OriginalToolButton",async delegate {string game=SteamEntry.Game(Box("GameRootBox").Text);SteamEntry.Start(SteamEntry.Original(game),game,new string[0]);await Task.FromResult(0);});
-            Bind("StartGameButton",async delegate {string game=SteamEntry.Game(Box("GameRootBox").Text);SteamEntry.RequireGameStopped();SteamEntry.Start(Path.Combine(game,"swd3.exe"),game,new string[0]);Notice("已送出啟動要求；請以遊戲視窗出現為準。",false);await Task.FromResult(0);});
+            Bind("TakeoverButton",async delegate {SaveEntrySettings();SteamEntry.Install(Box("GameRootBox").Text,studioRoot);RefreshEntry();Notice("已替換 Steam 模組開發工具，原版啟動選單保留。",false);await Task.FromResult(0);});
+            Bind("RestoreEntryButton",async delegate {SteamEntry.Restore(Box("GameRootBox").Text);RefreshEntry();Notice("已還原原版開發工具，啟動選單與草稿均保留。",false);await Task.FromResult(0);});
+            Bind("OriginalToolButton",async delegate {string game=SteamEntry.Game(Box("GameRootBox").Text);SteamEntry.RequireGameStopped();SteamEntry.Start(Path.Combine(game,"SWD3Works.exe"),game,new string[0]);await Task.FromResult(0);});
             try {string entrySettings=Path.Combine(dataRoot,"steam-entry-settings.json");if(File.Exists(entrySettings)){Box("GameRootBox").Text=Data.Text(Data.Read(entrySettings),"GameRoot");RefreshEntry();}}catch(Exception ex){Text("EntryStatus").Text=ex.Message;}
             Button("OpenOperationFolder").Click+=delegate { var row=Control<DataGrid>("OperationGrid").SelectedItem as OperationRow; if(row!=null) Process.Start(new ProcessStartInfo(row.DirectoryPath){UseShellExecute=true}); };
             Button("StopButton").Click+=delegate { if(cancellation!=null) { cancellation.Cancel(); Notice("已停止本機等待；請稍後由發佈紀錄重新核對，Steam 不一定已取消。",true); } };

@@ -1,4 +1,4 @@
-SWD3 MOD Studio 0.3.1 - Windows desktop release
+SWD3 MOD Studio 0.3.2 - Windows desktop release
 
 首次使用
 1. 將 ZIP 完整解壓到一般可寫入資料夾，放在遊戲安裝目錄之外。
@@ -27,14 +27,17 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Setup-Desktop.ps1 -GameRoo
 - 草稿、紀錄與快照位於使用者目錄下的 SWD3ModStudio。
 - 本版涵蓋發佈與版本維護，尚不含 MOD 封裝編輯器與遊戲內安裝排序。
 
-Steam 啟動入口（選用）
-- 設定與診斷 → 選擇遊戲 → 接管 Steam 啟動入口。
-- 請先將桌面工具放在固定位置。會備份 SWD3Works.original.exe 與配套設定，
-  再將 SWD3Works.exe 換成小型轉接程式；不修改 swd3.exe 或遊戲資源。
-- 同頁可還原原版入口、開啟原工具及啟動遊戲。備份與草稿不會刪除。
-- Steam 更新／驗證檔案後若入口被還原，可重新接管；新版原工具雜湊不符則停止。
-- 若移動／更新桌面工具，請從新位置重新接管。找不到工具時會提供開啟原工具。
-- 首次 Setup 不會自動接管，必須從桌面設定頁操作。
+Steam 模組開發工具（選用）
+- 設定與診斷 → 選擇遊戲 → 替換 Steam 模組開發工具。
+- 保留 Steam 啟動後的原版選單，只讓「進階 → Steam 模組開發工具」開啟 MOD Studio。
+- 請先將完整桌面工具放在固定位置。會備份 SWD3Works.original.exe，
+  在本機修補原工具的一個按鈕函式；其餘函式與介面資源均反向核對。
+- 同頁可還原原版開發工具、開啟原版啟動選單。備份與草稿不刪除。
+- Steam 更新／驗證後若修補被還原，可重新設定；新版原工具雜湊不符則停止。
+- 若移動／更新桌面工具，請從新位置重新設定。首次 Setup 不會自動替換。
+- 0.3.1 整體接管啟動入口的做法已撤回。本版可從已登記的舊接管狀態修正。
+- 套件內 Mono.Cecil 0.11.6 為 MIT 授權元件，授權全文見 Mono.Cecil-LICENSE.txt。
+  不附帶原版或修補後的遊戲工具程式；修補只由你本機的已驗證原檔產生。
 
 來源與完整說明：
 https://github.com/easypinex/SWD3-MODS/tree/main/research/active/swd3works-publisher-repair

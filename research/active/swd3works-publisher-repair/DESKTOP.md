@@ -1,10 +1,10 @@
-# SWD3 MOD Studio 桌面版 0.3.1
+# SWD3 MOD Studio 桌面版 0.3.2
 
-2026-09-06。0.3.1 新增可接管及還原的 Steam 啟動入口，沿用 0.3.0 工作者；見[入口驗收](evidence/steam-entry-20260906/README.md)。發佈與維護的 Windows 桌面介面已完成；0.3.0 私人作品已實測更新與新建，並核對 Steam 實際下載內容。原始紀錄見 [桌面驗收](evidence/desktop-20260906/README.md)。
+2026-09-06。0.3.2 保留原版啟動選單，只替換「進階 → Steam 模組開發工具」按鈕，撤回 0.3.1 的整體入口接管；見[按鈕驗收](evidence/developer-menu-20260906/README.md)。使用者已確認從原版遊戲工具視窗開啟 MOD Studio 0.3.2。沿用 0.3.0 工作者；私人作品更新、新建與實際下載核對見[桌面驗收](evidence/desktop-20260906/README.md)。
 
 ## 開啟與日常使用
 
-本機程式：`build/desktop-0.3.1-final/SWD3ModStudio.exe`。桌面另有 **SWD3 MOD Studio** 捷徑。先登入 Steam，再開啟程式；不需啟動遊戲或 SWD3Works。
+本機程式：`build/desktop-0.3.2/SWD3ModStudio.exe`。桌面另有 **SWD3 MOD Studio** 捷徑。先登入 Steam，再開啟程式；不需啟動遊戲或 SWD3Works。
 
 1. **我的作品**：重新整理目前帳號的作品，雙擊開始維護；也可貼上工作坊網址或作品 ID。支援搜尋及本機草稿。
 2. **發佈編輯**：填寫標題、完整說明、更新說明，選擇 `.ssmod` 成品及預覽圖片。新作品預設私人；既有作品預設保持可見度。版本直接讀取封包內的 `MODVersion`，更換內容必須提高版本。
@@ -16,7 +16,7 @@
 
 ## 保存、恢復與匯出
 
-接管不改變下列保存位置，0.3.0 草稿與歷史可繼續使用。
+替換開發工具不改變下列保存位置，0.3.0 草稿與歷史可繼續使用。
 
 - 草稿約在停止編輯 0.9 秒後自動保存，也可手動保存／匯入／匯出 JSON。
 - 資料放在 `%USERPROFILE%/SWD3ModStudio/Desktop/`，依 Steam 帳號區分。`drafts` 保存文字與來源綁定，`operations` 保存各次快照與狀態，`logs` 保存診斷，`recovered` 保存取回封包。
@@ -25,15 +25,17 @@
 - 「停止等待」只停止本機背景工作者；Steam 可能仍在處理。重啟後先開啟原操作核對，保留原作品 ID。
 - 核對頁可匯出 HTML 報告；報告保留完整文字與雜湊，是匯出當時的紀錄。設定頁可複製診斷紀錄、開啟資料位置。
 
-## 接管 Steam 啟動入口
+## 替換 Steam 模組開發工具
 
-在「設定與診斷」選擇遊戲的 `swd3.exe`，再按「接管 Steam 啟動入口」。桌面程式須先完整設定，放在遊戲以外的固定可寫入資料夾。原位置的 `SWD3Works.exe` 會換成自有轉接程式，Steam 原啟動路徑隨即指向 MOD Studio。首次 Setup 不會自動接管。
+在「設定與診斷」選擇遊戲的 `swd3.exe`，按「替換 Steam 模組開發工具」。桌面程式須先完整設定，放在遊戲外的固定可寫入資料夾。完成後重新開啟原版啟動選單，由「進階 → Steam 模組開發工具」開啟 MOD Studio；首次 Setup 不會自動修改原工具。
 
-原工具保留為遊戲目錄內的 `SWD3Works.original.exe`，其配套設定另有同名 `.config` 副本；原 `SWD3Works.exe.config` 不修改。`SWD3ModStudio.entry.json` 保存桌面位置與已登記的入口雜湊。轉接程式啟動桌面後退出，避免鎖住入口而不能還原；找不到桌面時會提供開啟備份原工具。它不修改 Steam 客戶端設定。
+修補只改寫已驗證 `SWD3Works.exe` 的開發工具按鈕處理函式，重新讀取產物核對原 `Program.Main`、其餘 292 個函式內容及 7 份內嵌資源。原版啟動選單、遊戲啟動與其他按鈕保留。這是函式與資源核對，整個 EXE 的位元組會因重新寫入而改變。
 
-同頁可「還原原版入口」、「開啟原工具」或直接「啟動遊戲」。還原後保留備份、入口登記及全部草稿。只接受已驗證原工具或本工具已登記的轉接程式；未知入口、備份損壞或連結／接合點均拒絕覆蓋。Steam 更新或驗證後若恢復相同原工具，可重新接管；原工具新版雜湊不同時停止，需先重新驗證新版。移動或更新桌面程式後，從新位置重新接管以更新目標。
+原檔備份為遊戲目錄內的 `SWD3Works.original.exe`，配套設定另有同名 `.config` 副本；原設定不修改。自有 `SWD3ModStudio.developer.exe` 讀取 `SWD3ModStudio.developer.json` 記錄的桌面位置並啟動桌面後退出。登記保存修補與轉接器雜湊及範圍核對結果。找不到桌面時提示重新設定；不更改 Steam 客戶端設定。
 
-本機已驗證原路徑轉接、還原、重複接管及桌面查詢。這不代表已驗證 Steam Overlay、遊玩時間、DLC 安裝切換或所有新版遊戲。命令與重跑方式見[入口工具參數](../../../docs/knowledge/tools-and-commands.md#steam-啟動入口-031)。
+同頁可「還原原版開發工具」、「重新檢查」或「開啟原版啟動選單」。還原保留備份、登記及草稿。只接受固定原版或已登記的本工具版本，亦可從舊 0.3.1 整體接管修正至本版；未知入口、損壞備份、遭修改轉接器或路徑接合點拒絕覆蓋。Steam 驗證恢復相同原版後可重新設定；新版原檔雜湊不同則停止，需重新研究。移動桌面資料夾後，從新位置重新設定。
+
+遊戲仍在執行時，原版選單會自行退出；應先正常關閉遊戲再開啟選單。本次已驗收原選單到新桌面的按鈕流程，不代表已驗證所有其他按鈕、Steam Overlay、遊玩時間或 DLC 切換。命令與重跑方式見[工具參數](../../../docs/knowledge/tools-and-commands.md#steam-模組開發工具-032)。
 
 ## 實作與邊界
 
@@ -43,4 +45,4 @@ WPF／.NET Framework 4.8 桌面程序，Steam API 在獨立 x86 工作者執行�
 
 已上架的 0.3.0 不含入口接管功能，可從 [GitHub Release](https://github.com/easypinex/SWD3-MODS/releases/tag/mod-studio-v0.3.0) 下載未簽章的 Windows ZIP。完整解壓到遊戲以外的可寫入目錄，準備 Python 3／zstandard，再執行 `Setup.cmd` 選擇遊戲的 `swd3.exe`；設定會核對並複製本機遊戲配套 DLL、設定 Python，完成後開啟桌面程式。之後直接執行 `SWD3ModStudio.exe`。發佈包不含遊戲 DLL、帳號資料或開發機 Python 路徑。詳見 [隨包說明](release/README.txt)及[版本說明](release/RELEASE-NOTES-0.3.0.md)。命令參數、輸出與副作用的唯一入口為 [工具索引](../../../docs/knowledge/tools-and-commands.md#mod-studio-桌面版-030)。
 
-0.3.1 本機套件位於專案 release-artifacts/0.3.1-final，尚未建立新的 GitHub Release；新增內容見[0.3.1 版本說明](release/RELEASE-NOTES-0.3.1.md)。遊戲仍在執行時，「開啟原工具」與「啟動遊戲」會要求先正常關閉遊戲。
+0.3.2 本機套件位於專案 `release-artifacts/0.3.2/`，尚未建立新的 GitHub Release；內容見[0.3.2 版本說明](release/RELEASE-NOTES-0.3.2.md)。

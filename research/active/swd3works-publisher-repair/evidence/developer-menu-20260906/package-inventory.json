@@ -1,0 +1,23 @@
+{
+  "ZIP": "SWD3-Mod-Studio-0.3.2-Windows.zip",
+  "SHA256": "40BF212D93FCC4E0921D15823247C98CB6C584FA5B7955B98E25A93A315F6D03",
+  "Files": [
+    "SWD3-Mod-Studio-0.3.2-Windows/desktop-fingerprint.json",
+    "SWD3-Mod-Studio-0.3.2-Windows/DeveloperBridge.exe",
+    "SWD3-Mod-Studio-0.3.2-Windows/Mono.Cecil-LICENSE.txt",
+    "SWD3-Mod-Studio-0.3.2-Windows/Mono.Cecil.dll",
+    "SWD3-Mod-Studio-0.3.2-Windows/README.txt",
+    "SWD3-Mod-Studio-0.3.2-Windows/release-files.json",
+    "SWD3-Mod-Studio-0.3.2-Windows/Setup-Desktop.ps1",
+    "SWD3-Mod-Studio-0.3.2-Windows/Setup.cmd",
+    "SWD3-Mod-Studio-0.3.2-Windows/SWD3ModStudio.exe",
+    "SWD3-Mod-Studio-0.3.2-Windows/SWD3ModStudio.exe.config",
+    "SWD3-Mod-Studio-0.3.2-Windows/worker/build-fingerprint.json",
+    "SWD3-Mod-Studio-0.3.2-Windows/worker/steam_appid.txt",
+    "SWD3-Mod-Studio-0.3.2-Windows/worker/SteamPrototype.exe",
+    "SWD3-Mod-Studio-0.3.2-Windows/worker/SteamPrototype.exe.config",
+    "SWD3-Mod-Studio-0.3.2-Windows/worker/SteamReleasePackage.py"
+  ],
+  "ManifestFilesVerified": 13,
+  "GameBinariesIncluded": false
+}

@@ -1,0 +1,13 @@
+Original decompiled SWD3Works.exe 1.0.0.1; full-file line numbers.
+Source SHA256: 756D9E2F9866EC335F8A536B9ED0DE2869BBE83FF3D5BF468E0F8A2E3C0330FA
+
+4406: 		private void button_SteamWorkshop_Click(object sender, EventArgs e)
+4407: 		{
+4408: 			new PALWorkshopForm().ShowDialog();
+4409: 		}
+
+4560: 			this.button_SteamWorkshop.Name = "button_SteamWorkshop";
+4561: 			this.button_SteamWorkshop.UseVisualStyleBackColor = true;
+4562: 			this.button_SteamWorkshop.Click += new System.EventHandler(button_SteamWorkshop_Click);
+4563: 			componentResourceManager.ApplyResources(this.button_Console, "button_Console");
+4564: 			this.button_Console.Name = "button_Console";
