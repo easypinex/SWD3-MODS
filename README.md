@@ -30,6 +30,8 @@
 
 ## 研究與資源
 
+規劃中的獨立 MOD：[蔡魔王](swd3-cai-demon-king-mod/README.md)，目前為造型、戰鬥補齊與相容性評估草案，尚無可安裝版本。
+
 - [研究清冊](research/README.md)：所有探針與診斷的單一入口；區分持續使用、未完成及歷史實驗，列出知識去向與未解問題。
 - [Steam HD TSW 圖庫](SWD3-HD-TSW-PNG-GALLERY/README.md)：正式 HD ID／SN 映射與重建流程。
 - [原版來源圖庫](SWD3-TSW-PNG-GALLERY/README.md)：swd3DVD 來源索引，不能當成 HD DrawTSW 對照。

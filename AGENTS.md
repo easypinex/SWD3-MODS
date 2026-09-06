@@ -50,6 +50,7 @@
 | `swd3-proficiency-multiplier-mod` | `README.md`；改倍率／保存讀 `state-persistence-and-safety.md`，改事件讀 `lua-events-and-compatibility.md`，改面板讀 `ui-input-and-native-menu.md`，發布讀 `PACKAGING-NOTES.md` |
 | `swd3-refinery-diagnostics-unlock-mod` | `README.md`；必讀 `state-persistence-and-safety.md` 與 `lua-events-and-compatibility.md`；改診斷文字再讀 `localization-and-strings.md`；測試讀 `TESTING.md`；發布讀 `release/steam-workshop/` |
 | `swd3-live-card-battle-mod` | `README.md`、`TESTING.md`；必讀 `lua-events-and-compatibility.md`、`state-persistence-and-safety.md`、`ui-input-and-native-menu.md`、`runtime-api-and-data-model.md`；改戰鬥／預留再讀 `battle-and-inventory-lifecycle.md`；碰圖片研究才讀 `IMAGE-ASSET-GUIDE.md` 與 `graphics-and-tsw-assets.md` |
+| `swd3-cai-demon-king-mod` | `README.md`（目前僅評估草案）；動作可行性讀 graphics／engine-research／testing，角色補齊讀 runtime／state，相容性依 README 的挑戰模式與卡庫入口選讀；未有實機證據前不把新 ACT 登錄列為已支援 |
 | `swd3-all-monster-static-capture-mod` | `README.md`；資格／收服讀 native-capture，交換讀 battle-and-inventory，改資料讀 runtime／state；驗收讀 TESTING，發布讀 release |
 | `swd3-engine-ui-diagnostics` | `README.md`、testing；只建立唯讀 API 盤點，不呼叫未知介面 |
 | `swd3-native-menu-probe` | `README.md`、`ENGINE-UI-RESEARCH.md`、UI、testing |

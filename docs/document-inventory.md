@@ -41,6 +41,7 @@
 | [煉化 MOD](../swd3-refinery-diagnostics-unlock-mod/README.md) | README 功能；TESTING 驗收／還原；PACKAGING 與 release 保留版本證據及發布素材 |
 | [挑戰 MOD](../swd3-live-card-battle-mod/README.md) | README／TESTING 為現行產品契約；BALANCE-AND-SAFETY-AUDIT 為產品決策；IMAGE-ASSET-GUIDE 僅為歷史入口；release 為逐版素材 |
 | [全魔物靈契](../swd3-all-monster-static-capture-mod/README.md) | README／TESTING 為功能、具體數值、版本與案例證據；catalogue 為自有映射／平衡輸出；release 為發布素材 |
+| [蔡魔王 MOD 規劃](../swd3-cai-demon-king-mod/README.md) | 僅評估草案：既有造型選項、戰鬥補齊需求、獨立入口、相容性與分階段門檻；尚無來源封包或實機結果 |
 | [HD 圖庫](../SWD3-HD-TSW-PNG-GALLERY/README.md) | README 重建；SSMOD-FORMAT-RESEARCH 為格式證據；manifest／CSV 為映射，圖片可由正版安裝重建 |
 | [來源圖庫](../SWD3-TSW-PNG-GALLERY/README.md) | README 重建；來源 manifest／CSV 不作 HD 映射 |
 | [原版資料入口](knowledge/original-game-data/README.md)及[戰鬥資料集](knowledge/original-game-data/battle-balance-and-capture/README.md) | BALANCE-RESEARCH 只維護原版數值分析與界線；匯出腳本及 generated CSV 為共用資料來源／推導，不是產品設定 |
