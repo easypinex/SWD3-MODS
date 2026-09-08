@@ -1,0 +1,4 @@
+Generated mappings=193, staticCards=97, guardianSpecs=97, IDs=10001-10097, common=30, contract=58, elite=16, rare=45, uncommon=44
+PASS: all-monster static catalogue mock runtime
+PASS: automatic capture runtime mock
+PASS: all all-monster static catalogue automated checks

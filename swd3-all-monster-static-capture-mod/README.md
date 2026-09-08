@@ -26,6 +26,8 @@ v0.6 診斷確認先前 10 筆全是目錄中 `Race=0` 的天神系活物：`149
 
 ## 靜態卡與交換表
 
+**2026-09-08 傷害影響調查（靜態確認／產品推論）。** v2.0 的賽特窗口並非只涵蓋靈契；賽特自身爆擊未見妮可型的 Boss 條件分支，但帶異常的攻擊／奇術仍可能受 live bit 影響。戰前來源 bridge 亦可能令敵方漏掉原生 Boss 初始化加成，後續只恢復 bit 不會補算；這部分尚待面板 A/B。精確分支、版本及人工補證見[本次調查](../research/active/swd3-native-menu-probe/evidence/boss-damage-20260908/README.md)，通用規則依[資料模型](../docs/knowledge/runtime-api-and-data-model.md#boss-旗幟的傷害與狀態分支)。本次未修改或重新封裝 MOD。
+
 - 可審核完整表：[all-monster-static-cards.csv](catalogue/all-monster-static-cards.csv)。
 - **97 張自製卡完整規格表**：[static-card-guardian-specs.csv](catalogue/static-card-guardian-specs.csv)。每列包含來源與靜態卡戰鬥數值、召喚體力消耗、九維護駕加成、原型主題、戰鬥傾向與設計說明；97 組九維加成皆不重複。
 - **手動專屬定位表**：[guardian-specialization-overrides.csv](catalogue/guardian-specialization-overrides.csv)。它恰好列出 62 張曾有重複設計組合的卡片；每列指定專屬稱號、原型、個性印、能力傾向、說明與九維偏向。其餘 35 張維持既有的唯一設計。

@@ -1,0 +1,30 @@
+{
+  "project": "swd3-all-monster-static-capture-mod",
+  "version": "2.0",
+  "workshopId": "3796222908",
+  "fileName": "swd3_all_monster_static_capture.ssmod",
+  "bytes": 17680,
+  "sha256": "6E0D15A866705297A25EC735CBB2535D460F2F0ABE984FDFE00362F67843B73A",
+  "dat": [
+    {
+      "name": "AllMonsterCaptureRuntime.lua",
+      "sha256": "106789A25E3187D33C40F3AEDFF9E49DADA6FFC649DC74BCBA672387B0D9A56A"
+    },
+    {
+      "name": "AllMonsterStaticCapture.lua",
+      "sha256": "C384CF173F9804B888D3A81521BA09BAE539C2202D0D49477DBBDD2E8D400414"
+    },
+    {
+      "name": "AllMonsterStaticCapture.txt",
+      "sha256": "EEC9BF776091D98CA654329B94B56B96B5CEA193F3D053D0263BD82522445E56"
+    },
+    {
+      "name": "AllMonsterStaticCatalogue.lua",
+      "sha256": "852B3C8B009CC690F4A6283DBB67960A26340761947EA101BB77F82A28AF2B2F"
+    }
+  ],
+  "auditDate": "2026-09-08",
+  "decision": "來源與 Steam 成品一致；保留 Boss 旗標影響的既有待驗證紀錄，不猜測修改公式",
+  "roundtrip": "all DAT and metadata verified",
+  "steamOperation": "unchanged"
+}
