@@ -1,0 +1,138 @@
+=== LUA System start. ===
+=== Loading SSMOD all lua,ext and txt.
+[ProficiencyMultiplier] Applied x100.000 to 58 weapons
+=== Loading all lua in : [Script\].
+=== Loading setting in : [Save\].
+=== Loading CommonSave in : [Save\].
+=== LUA System Initialization : 'OnEvent.SysInit' . ===
+SysInit init : main
+SysInit init test : 1
+SysInit init test : 2
+SysInit init test : 3
+where test : [string "OnEvent.lua"]:33: 
+SysInitTEST where test : [string "OnEvent.lua"]:35: 
+ItemsClear
+=== Game start Initialization : 'OnEvent.GameStart' . ===
+additem 621 Count 2
+additem 621 new x2
+Delete Item :ItemID = 621
+additem 730 Count 1
+additem 730 new x1
+Delete Item :ItemID = 730
+additem 792 Count 1
+additem 792 new x1
+Delete Item :ItemID = 792
+[AllMonsterStaticCapture] load-phase catalogue: mappings=193, static=97, failures=0, itemCache=97, raceCache=97; capture eligibility is intentionally not changed in this data phase
+[AllMonsterStaticCapture] capture bridge armed (GameStart): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[LiveCardBattle] loaded; open the native item basket and press F9
+[RefineryDiagnostics] Installed refinery wrapper; East/West level limits unlocked
+[CaiActProbe] v0.2 DAT1 loaded; inventory Insert; no saving
+NewEquip player1 pos1 501
+NewEquip player1 pos3 851
+NewEquip player1 pos5 906
+NewEquip player2 pos1 521
+NewEquip player2 pos2 1019
+NewEquip player2 pos3 1004
+NewEquip player2 pos5 906
+NewEquip player3 pos1 537
+NewEquip player3 pos2 1024
+NewEquip player3 pos3 1007
+NewEquip player3 pos4 1043
+NewEquip player3 pos5 1033
+NewEquip player4 pos1 554
+NewEquip player4 pos3 863
+NewEquip player4 pos4 875
+NewEquip player4 pos5 918
+NewEquip player4 pos6 996
+[CaiActProbe] inventory draw active
+[CaiActProbe] input=0; menuAge=16
+[CaiActProbe] input=0; menuAge=710
+[AllMonsterStaticCapture] capture bridge restored (MapLoading): sources=193, races=16, skipped=0
+OnEvent.MapLoaded.test1
+[AllMonsterStaticCapture] capture bridge armed (MapLoaded): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiActProbe] input=41; menuAge=1215
+[CaiActProbe] input=73; menuAge=16
+[CaiActProbe] start ACT438 red normal attack
+---> BattleEnemy init : ID=1 蔡魔王
+---> BattlePlayer init : ID=1 賽特
+---> BattlePlayer init : ID=2 妮可
+BattleID:CDK_ACT_PROBE
+[AllMonsterStaticCapture] battle level cap applied (Battle_Enter): playerLevel=59, cap=70, changed=1, failed=0; source/map levels remain original; native high-difficulty capture uses HP ?25%
+[CaiActProbe] entered; DAT1 ACT438
+[CaiActProbe] input=81; menuAge=7978
+[CaiActProbe] input=79; menuAge=8112
+[CaiActProbe] input=44; menuAge=8312
+  BattleCriticalHitRate srcLV=59 trgLV=59 rateBase=20
+[CaiActProbe] input=81; menuAge=8682
+[CaiActProbe] input=79; menuAge=8749
+[CaiActProbe] input=44; menuAge=8916
+  BattleCriticalHitRate srcLV=60 trgLV=60 rateBase=20
+---> BattlePlayerAI after : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+---> BattlePlayerAI after : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:2000
+AttackCount 0 data.Skills=nil
+data.CureSkills=nil
+data.SP_AE=nil
+Target -> 2/2(妮可)
+ATTACK -> 2/2(妮可)
+[CaiActProbe] input=81; menuAge=17260
+[CaiActProbe] input=79; menuAge=17359
+[CaiActProbe] input=44; menuAge=17827
+[CaiActProbe] input=81; menuAge=18162
+[CaiActProbe] input=79; menuAge=18195
+[CaiActProbe] input=44; menuAge=18331
+  BattleCriticalHitRate srcLV=60 trgLV=60 rateBase=20
+---> BattlePlayerAI after : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+---> BattlePlayerAI after : playerID=2 妮可 HP:4047/4050 AI:1 PlayerID=1
+[CaiActProbe] input=81; menuAge=19842
+[CaiActProbe] input=79; menuAge=19909
+[CaiActProbe] input=44; menuAge=20009
+[CaiActProbe] input=81; menuAge=20347
+[CaiActProbe] input=79; menuAge=20414
+[CaiActProbe] input=44; menuAge=20547
+  BattleCriticalHitRate srcLV=60 trgLV=60 rateBase=20
+---> BattlePlayerAI after : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+---> BattlePlayerAI after : playerID=2 妮可 HP:4047/4050 AI:1 PlayerID=1
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:2000
+AttackCount 1 data.Skills=nil
+data.CureSkills=nil
+data.SP_AE=nil
+Target -> 2/2(妮可)
+ATTACK -> 2/2(妮可)
+[CaiActProbe] input=82; menuAge=30075
+[CaiActProbe] input=82; menuAge=30343
+[CaiActProbe] input=82; menuAge=30511
+[CaiActProbe] input=44; menuAge=30680
+[CaiActProbe] input=44; menuAge=30849
+[CaiActProbe] input=44; menuAge=31385
+[CaiActProbe] input=44; menuAge=31517
+  BattleCriticalHitRate srcLV=60 trgLV=70 rateBase=20
+---> BattlePlayerAI after : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+---> BattlePlayerAI after : playerID=2 妮可 HP:4032/4050 AI:1 PlayerID=1
+[CaiActProbe] input=81; menuAge=35346
+[CaiActProbe] input=79; menuAge=35413
+[CaiActProbe] input=82; menuAge=35815
+[CaiActProbe] input=80; menuAge=35917
+[CaiActProbe] input=44; menuAge=36050
+[CaiActProbe] input=44; menuAge=36282
+  BattleCriticalHitRate srcLV=60 trgLV=70 rateBase=20
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:478
+AttackCount 2 data.Skills=nil
+data.CureSkills=nil
+data.SP_AE=nil
+Target -> 2/2(妮可)
+ATTACK -> 2/2(妮可)
+[CaiActProbe] input=81; menuAge=38899
+[CaiActProbe] input=44; menuAge=39000
+[CaiActProbe] input=82; menuAge=40937
+[CaiActProbe] input=44; menuAge=41544
+[CaiActProbe] input=44; menuAge=41677
+  BattleCriticalHitRate srcLV=59 trgLV=70 rateBase=20
+---> BattlePlayerAI after : playerID=2 妮可 HP:4026/4050 AI:1 PlayerID=1
+---> BattlePlayerAI after : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+Battle_Dead : ID=1 蔡魔王
+[CaiActProbe] input=44; menuAge=44772
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiActProbe] restore item
+

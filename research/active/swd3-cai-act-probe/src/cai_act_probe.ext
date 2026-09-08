@@ -1,0 +1,11 @@
+MODName 蔡魔王紅衣動作探針
+MODAuthor Andy / Codex
+MODDate 2026,9,6
+MODVersion 0,2
+MODinfo 隔離動作測試；物品欄按 Insert；不存檔，不與正式蔡魔王並用。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+DAT 2,0,CaiDemonActions.lua,Red swordsman ACT candidate from Cai project
+DAT 1,0,CaiDemonActions.ext,Native ACT438 candidate
+DAT 2,0,CaiActProbe.lua,Isolated animation test
