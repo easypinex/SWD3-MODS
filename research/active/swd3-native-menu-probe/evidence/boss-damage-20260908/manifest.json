@@ -1,0 +1,92 @@
+{
+  "Date": "2026-09-08",
+  "Evidence": "static decompilation only; no in-game actions",
+  "ExeVersion": "4.0.5.0",
+  "ExeLength": 2227712,
+  "ExeSHA256": "63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523",
+  "Database": ".work/native-events-doccheck-20260906-104009/ghidra-project/NativeEvents",
+  "Ghidra": "11.4.3",
+  "Java": "portable JDK 21",
+  "Reports": [
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\tools\\ghidra\\DecompileHdDamageFormulaCore.py",
+      "Length": 1011,
+      "SHA256": "31F0F2119F1A79C6ED01CEC9C820D3E4C443E527EBCA7174E8B2B72079F16F09"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\tools\\ghidra\\DecompileHdNormalDamagePath.py",
+      "Length": 1042,
+      "SHA256": "6EFE21EAED1B8C5F2387D890133F80A5F19BA4FB3C2C0D21536CBEC553479EF5"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\tools\\ghidra\\DecompileHdCriticalDamageFlow.py",
+      "Length": 1104,
+      "SHA256": "F9FE70C870AEC463A062D73C23AD2AD5516F07BC8F824B13D3F0AAAC48505430"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\tools\\ghidra\\ReportHdCriticalHitPath.py",
+      "Length": 1470,
+      "SHA256": "C1ED184D22121B502765EDB83CF9B31B6910B820AAC9E14142B9B81BB9332291"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\tools\\ghidra\\ReportHdBossDamageBranches.py",
+      "Length": 1720,
+      "SHA256": "DF39E3F3A773A4B8361D9EEEB4CC9B638AD124B7C713EC4EB3CA5BDD3C43EEBA"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\tools\\ghidra\\ReportHdBossDamageFieldEvidence.py",
+      "Length": 1571,
+      "SHA256": "B3664FE0D0373BC88F9ADF63CAA08A5F7D3730E2B115053B03B12E6E6BF070B7"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-all-monster-static-capture-mod\\src\\data\\AllMonsterCaptureRuntime.lua",
+      "Length": 18474,
+      "SHA256": "106789A25E3187D33C40F3AEDFF9E49DADA6FFC649DC74BCBA672387B0D9A56A"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\.work\\extracted\\script-index-inspect\\out_data\\GameData_NewGame.lua",
+      "Length": 2828,
+      "SHA256": "482743F45F929932B92B449E14D693AFA2B467DAF7F21DFF30AB5E82B171FD71"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\.work\\extracted\\script-index-inspect\\out_data\\GameData_AttackEffect.lua",
+      "Length": 109031,
+      "SHA256": "794EB68CBFA5609BC0F0577E71A0FC9729EDCD0FED1F0BC38EED8B3F57C1C9B7"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\.work\\extracted\\script-index-inspect\\out_data\\OnEvent_Battle.lua",
+      "Length": 32598,
+      "SHA256": "1173F8008165EE8939394794FD32C92B3C6CF9ED7DCCAE7282976E85F72B043E"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\evidence\\boss-damage-20260908\\branches-analysis.log",
+      "Length": 205597,
+      "SHA256": "384BFAB5FEC387FFC0C4FC2C8F2D7AD6DD9CC20BEB3DCBE0007259C6C974F97D"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\evidence\\boss-damage-20260908\\branches.txt",
+      "Length": 204761,
+      "SHA256": "24A5EA5E659A4DF1B5A54FE6D35DC10EE335DF8C01ECB1184306C9AB7086E23A"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\evidence\\boss-damage-20260908\\fields-analysis.log",
+      "Length": 29201,
+      "SHA256": "1A53B85203378BED66910DFDB6F2D1581A9B60C71444067B39BFC714B34DD199"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\evidence\\boss-damage-20260908\\fields.txt",
+      "Length": 26105,
+      "SHA256": "6F003C423ADC164D814332AA0A486D80D51D6867E7EB012732DADF171745771D"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\evidence\\boss-damage-20260908\\formulas-analysis.log",
+      "Length": 96232,
+      "SHA256": "1DA9832AD220202411EC02B1B4ECA05688D752848B0EC9E26480825802407A70"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-native-menu-probe\\evidence\\boss-damage-20260908\\formulas.txt",
+      "Length": 95376,
+      "SHA256": "223EEF2B86316361D514A90E8DCA98C9F8A4AD878A0F570AC7A35EFB27221133"
+    }
+  ]
+}

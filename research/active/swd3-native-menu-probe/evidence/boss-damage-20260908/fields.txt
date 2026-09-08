@@ -1,0 +1,471 @@
+INFO  Using log config file: jar:file:/D:/workspace/SWD3-MODS/.tools/static-re/ghidra-11.4.3/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: .work\boss-damage-20260908\fields-final-analysis.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (938 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Headless startup complete (2298 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\workspace\SWD3-MODS\research\active\swd3-native-menu-probe\tools\ghidra
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\PIC\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Jython\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BSim\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\8051\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PDB\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\DATA\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\JVM\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FunctionID\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  Opening project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /swd3.exe (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\research\active\swd3-native-menu-probe\tools\ghidra\ReportHdBossDamageFieldEvidence.py (HeadlessAnalyzer)  
+INFO  ReportHdBossDamageFieldEvidence.py> SWD3 HD boss damage field evidence; SHA256=63f1d83d8c3a756d17640d9022e19f8928741b091f0e47abbdb22c0ccf6c9523 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> ASCII 0x140173da0L ATK (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> ASCII 0x140173da4L DEF (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> ASCII 0x140173da8L SPD (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> ASCII 0x140173dacL WIS (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> ASCII 0x140173dbcL HP (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> ASCII 0x14017875cL Camp (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> INSTRUCTIONS 0x1400859f0L (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 1400859f3 CMP R8W,AX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 1400859f7 JBE 0x1400859fe (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 1400859f9 MOV ECX,R8D (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 1400859fc SUB ECX,EAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 1400859fe MOVZX R8D,word ptr [R9 + 0x38] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a03 MOVZX EAX,word ptr [RDX + 0x42] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a07 SUB R8D,EAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a0a CMP R8D,-0x5 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a0e JGE 0x140085a18 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a10 MOV R8D,0xfffffffb (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a16 JMP 0x140085a1f (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a18 CMP R8D,R13D (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a1b CMOVG R8D,R13D (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a1f TEST byte ptr [RDX + 0x8],0x20 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a23 LEA EAX,[R8 + RCX*0x1] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a27 LEA ECX,[RAX + -0xa] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a2a CMOVZ ECX,EAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a2d TEST ECX,ECX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a2f JLE 0x140085989 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a35 CALL 0x140167e10 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a3a MOV RCX,qword ptr [RBX + 0x30] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a3e MOVZX EDX,word ptr [RCX + 0x4c] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a42 CMP EAX,EDX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a44 JL 0x140085989 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a4a MOVZX EAX,word ptr [RSI + 0x1a] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140085a4e CMP dword ptr [RBX + 0x34e8],EAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> INSTRUCTIONS 0x140089b30L (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b32 SUB ECX,0x6 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b35 JZ 0x140089c07 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b3b CMP ECX,0x9 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b3e JNZ 0x140089d65 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b44 MOVSX EAX,SI (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b47 IMUL ECX,EAX,0x96 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b4d MOV EAX,0x51eb851f (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b52 IMUL ECX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b54 MOV ESI,EDX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b56 SAR ESI,0x5 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b59 MOV EAX,ESI (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b5b SHR EAX,0x1f (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b5e ADD ESI,EAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b60 TEST R13,R13 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b63 JZ 0x140089b70 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b65 TEST byte ptr [R13 + 0x8],0x20 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b6a JNZ 0x140089d65 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b70 MOV ECX,0x3 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b75 CALL 0x140167e10 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b7a TEST AX,AX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b7d JNZ 0x140089bdd (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b7f MOV word ptr [RDI + 0x15f2],R14W (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b87 MOV R14D,0x1 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b8d MOV R8,RDI (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b90 MOV byte ptr [RDI + 0x1602],0x3 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b97 LEA RDX,[RDI + 0x15d8] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089b9e MOV RCX,RBX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089ba1 CALL 0x140085890 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089ba6 MOVZX R9D,word ptr [RSP + 0xb0] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089baf CMP byte ptr [RBX + 0x39d0],BPL (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bb6 JNZ 0x140089d74 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bbc MOVZX EAX,byte ptr [RBX + 0x399d] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bc3 MOV byte ptr [RBX + 0x399c],0x1 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bca TEST AL,AL (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bcc JZ 0x140089d74 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bd2 MOV byte ptr [RBX + 0x399c],AL (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bd8 JMP 0x140089d74 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bdd CMP AX,0x1 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089be1 JNZ 0x140089bf1 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089be3 MOV EAX,0x40 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089be8 MOV word ptr [RDI + 0x15f2],AX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bef JMP 0x140089b87 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bf1 CMP AX,0x2 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bf5 JNZ 0x140089b87 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bf7 MOV R14D,0x1 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089bfd MOV word ptr [RDI + 0x15f2],R14W (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c05 JMP 0x140089b8d (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c07 MOVSX EAX,SI (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c0a IMUL ECX,EAX,0x55 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c0d MOV EAX,0x51eb851f (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c12 IMUL ECX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c14 SAR EDX,0x5 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c17 MOV ESI,EDX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c19 SHR ESI,0x1f (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c1c ADD ESI,EDX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c1e CMP byte ptr [RBX + 0x39d0],BPL (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c25 JNZ 0x140089d65 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c2b MOVZX EAX,byte ptr [RBX + 0x399d] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c32 MOV R14D,0x1 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c38 MOVZX R9D,word ptr [RSP + 0xb0] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c41 MOV byte ptr [RBX + 0x399c],0xd (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c48 TEST AL,AL (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c4a JZ 0x140089d74 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c50 MOV byte ptr [RBX + 0x399c],AL (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c56 JMP 0x140089d74 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c5b TEST R13,R13 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c5e JZ 0x140089c6b (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c60 TEST byte ptr [R13 + 0x8],0x20 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c65 JNZ 0x140089d65 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c6b MOVZX R8D,byte ptr [RBX + 0x39b4] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c73 CMP R8B,0x1 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c77 JNZ 0x140089c8b (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c79 MOV RAX,qword ptr [RBX + 0x18] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c7d TEST RAX,RAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c80 JNZ 0x140089c86 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c82 MOV EDX,EBP (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c84 JMP 0x140089ca6 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c86 MOV EDX,dword ptr [RAX + 0x4] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c89 JMP 0x140089ca6 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c8b MOV RAX,qword ptr [RBX + 0x30] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c8f TEST RAX,RAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c92 JNZ 0x140089c98 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c94 MOV EDX,EBP (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c96 JMP 0x140089ca6 (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c98 MOV EDX,dword ptr [RAX + 0x58] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089c9b MOV EAX,dword ptr [RBX + 0x358c] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089ca1 TEST EAX,EAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089ca3 CMOVNZ EDX,EAX (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089ca6 MOVZX R9D,word ptr [RSP + 0xb0] (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 140089caf MOVSX ECX,SI (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> FUNCTION 0x140167e10L (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 
+ulonglong FUN_140167e10(uint param_1)
+
+{
+  uint *puVar1;
+  int iVar2;
+  ulonglong uVar3;
+  int iVar4;
+  uint uVar5;
+  
+  uVar5 = (param_1 ^ (int)param_1 >> 0x1f) - ((int)param_1 >> 0x1f);
+  if ((int)uVar5 < 2) {
+    uVar5 = 1;
+  }
+  do {
+    iVar4 = DAT_1402c0628 + -0x93;
+    if (DAT_1402c0628 < 0x93) {
+      iVar4 = DAT_1402c0628 + 0x67;
+    }
+    if (0xf8 < iVar4) {
+      iVar4 = 0xf9;
+    }
+    if (0xf8 < DAT_1402c0628) {
+      DAT_1402c0628 = 0xf9;
+    }
+    (&DAT_1401a7ca0)[DAT_1402c0628] = (&DAT_1401a7ca0)[DAT_1402c0628] ^ (&DAT_1401a7ca0)[iVar4];
+    if (DAT_1402c0628 < 0xf9) {
+      iVar2 = DAT_1402c0628 + 1;
+      iVar4 = DAT_1402c0628 + -0x92;
+      if (iVar2 < 0x93) goto LAB_140167ea7;
+    }
+    else {
+      iVar2 = 0;
+LAB_140167ea7:
+      iVar4 = iVar2 + 0x67;
+    }
+    puVar1 = &DAT_1401a7ca0 + iVar2;
+    *puVar1 = *puVar1 ^ (&DAT_1401a7ca0)[iVar4];
+    DAT_1402c0628 = 0;
+    if (iVar2 < 0xf9) {
+      DAT_1402c0628 = iVar2 + 1;
+    }
+    if (*puVar1 < 0xffffU - (int)(0xffff % (ulonglong)uVar5)) {
+      uVar3 = (ulonglong)*puVar1 % (ulonglong)uVar5;
+      if ((int)param_1 < 0) {
+        uVar3 = (ulonglong)(uint)-(int)uVar3;
+      }
+      return uVar3;
+    }
+  } while( true );
+}
+
+ (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> FUNCTION 0x14007a8e0L (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> 
+undefined1 FUN_14007a8e0(longlong param_1,undefined4 param_2)
+
+{
+  SDL_memset(param_1,0,0xe0);
+  *(undefined4 *)(param_1 + 0xd8) = param_2;
+  FUN_14007b3a0(param_1,param_2,"GameData");
+  FUN_14007b3a0(param_1,param_2,"SaveData");
+  return 1;
+}
+
+ (GhidraScript)  
+INFO  ReportHdBossDamageFieldEvidence.py> END FIELD EVIDENCE (GhidraScript)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\research\active\swd3-native-menu-probe\tools\ghidra\ReportHdCriticalHitPath.py (HeadlessAnalyzer)  
+INFO  ReportHdCriticalHitPath.py> SWD3 HD BattleCriticalHitRate path report (GhidraScript)  
+INFO  ReportHdCriticalHitPath.py> target=1401739f0; data=ds "BattleCriticalHitRate" (GhidraScript)  
+INFO  ReportHdCriticalHitPath.py> DATA from 140071dd6; function=FUN_140071970; instruction=LEA RDX,[0x1401739f0] (GhidraScript)  
+INFO  ReportHdCriticalHitPath.py> DATA from 140071ff5; function=FUN_140071f60; instruction=LEA RDX,[0x1401739f0] (GhidraScript)  
+INFO  ReportHdCriticalHitPath.py> ===== caller FUN_140071970 @ 140071970 ===== (GhidraScript)  
+INFO  ReportHdCriticalHitPath.py> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+undefined8 FUN_140071970(longlong param_1,longlong param_2)
+
+{
+  short sVar1;
+  int iVar2;
+  ulonglong uVar3;
+  undefined1 uVar4;
+  undefined2 uVar5;
+  ushort uVar6;
+  undefined8 uVar7;
+  int iVar8;
+  
+  uVar6 = *(ushort *)(param_1 + 0x3962);
+  if (uVar6 == 0) goto LAB_140071e9d;
+  if ((*(ushort *)(param_1 + 0x398a) & 0x200) != 0) {
+    *(undefined1 *)(param_1 + 0x39d4) = 1;
+    if (*(int *)(param_1 + 0x3fa0) != 0) {
+      uVar6 = (ushort)*(int *)(param_1 + 0x3fa0);
+      *(ushort *)(param_1 + 0x3962) = uVar6;
+    }
+    if ((*(byte *)(param_1 + 0x15e0) & 0x28) == 0) goto LAB_140071ef6;
+    goto LAB_140071e8a;
+  }
+  if (*(longlong *)(param_1 + 0x3508) != 0) {
+    free(*(void **)(param_1 + 0x34f8));
+  }
+  *(undefined8 *)(param_1 + 0x34f8) = 0;
+  *(undefined8 *)(param_1 + 0x3500) = 0;
+  *(undefined8 *)(param_1 + 0x3508) = 0;
+  sVar1 = *(short *)(param_1 + 0x3962);
+  if (sVar1 != 0x1b) {
+    *(undefined2 *)(param_1 + 0x3886) = *(undefined2 *)(*(longlong *)(param_1 + 0x10) + 0x32);
+  }
+  if (*(short *)(param_1 + 0x3f76) == 0) {
+    uVar5 = FUN_14008b410(param_1);
+    *(undefined2 *)(param_1 + 0x3f76) = uVar5;
+  }
+  switch(sVar1) {
+  case 0x15:
+    *(uint *)(param_1 + 0x35ac) = *(uint *)(param_1 + 0x35ac) | 1;
+    *(undefined2 *)(param_1 + 0x3962) = 1;
+    FUN_14008b3a0(param_1,0x15);
+    FUN_14008b510(param_1,5);
+    *(undefined1 *)(param_1 + 0x39a3) = 1;
+    goto switchD_140071a5f_caseD_19;
+  case 0x16:
+    *(uint *)(param_1 + 0x35ac) = *(uint *)(param_1 + 0x35ac) | 2;
+    *(undefined2 *)(param_1 + 0x3966) = 0x16;
+    *(ushort *)(param_1 + 0x398a) = *(ushort *)(param_1 + 0x398a) | 0x400;
+    *(undefined2 *)(param_1 + 0x3962) = 0;
+    break;
+  case 0x17:
+    *(uint *)(param_1 + 0x35ac) = *(uint *)(param_1 + 0x35ac) | 4;
+    *(undefined2 *)(param_1 + 0x3962) = 0x17;
+    break;
+  case 0x18:
+    *(uint *)(param_1 + 0x35ac) = *(uint *)(param_1 + 0x35ac) | 8;
+    *(undefined2 *)(param_1 + 0x3962) = 0x18;
+    FUN_14008b3a0(param_1);
+    break;
+  default:
+    goto switchD_140071a5f_caseD_19;
+  case 0x1a:
+    *(uint *)(param_1 + 0x35ac) = *(uint *)(param_1 + 0x35ac) | 0x20;
+    *(undefined2 *)(param_1 + 0x3962) = 0x1a;
+    break;
+  case 0x1b:
+    *(uint *)(param_1 + 0x35ac) = *(uint *)(param_1 + 0x35ac) | 0x40;
+    *(undefined2 *)(param_1 + 0x3962) = 0x1b;
+    break;
+  case 0x1c:
+    *(undefined2 *)(param_1 + 0x3962) = 0x1c;
+    FUN_14008b3a0(param_1);
+    break;
+  case 0x1d:
+    *(uint *)(param_1 + 0x35ac) = *(uint *)(param_1 + 0x35ac) | 0x100;
+    *(undefined2 *)(param_1 + 0x3962) = 0x1d;
+    break;
+  case 0x1e:
+    *(uint *)(param_1 + 0x35ac) = *(uint *)(param_1 + 0x35ac) | 0x200;
+    *(undefined2 *)(param_1 + 0x3962) = 0x1e;
+    break;
+  case 0x1f:
+    *(undefined2 *)(param_1 + 0x3962) = 0;
+    *(undefined2 *)(param_1 + 0x3966) = 0x1f;
+    *(ushort *)(param_1 + 0x398a) = *(ushort *)(param_1 + 0x398a) | 0x400;
+    FUN_14008b3a0(param_1);
+    *(short *)(param_1 + 0x3886) = (short)(((uint)*(ushort *)(param_1 + 0x35bc) << 2) / 100) + 1;
+    break;
+  case 0x20:
+    *(undefined2 *)(param_1 + 0x3962) = 0x20;
+    FUN_14008b3a0(param_1);
+    break;
+  case 0x21:
+    *(undefined2 *)(param_1 + 0x3962) = 0x21;
+    FUN_14008b3a0(param_1);
+    break;
+  case 0x22:
+    FUN_14008b3a0(param_1,0x22);
+    uVar6 = *(ushort *)(param_1 + 0x35bc) >> 1;
+    uVar6 = uVar6 - uVar6 / 5;
+    *(ushort *)(param_1 + 0x35bc) = uVar6;
+    iVar2 = *(int *)(*(longlong *)(param_1 + 0x10) + 0x10);
+    iVar8 = (uint)uVar6 * iVar2;
+    *(short *)(param_1 + 0x388c) =
+         (((short)(iVar8 / 100) + (short)(iVar8 >> 0x1f)) -
+         (short)((longlong)iVar8 * 0x51eb851f >> 0x3f)) +
+         (((short)(iVar2 / 10) + (short)(iVar2 >> 0x1f)) -
+         (short)((longlong)iVar2 * 0x66666667 >> 0x3f));
+    break;
+  case 0x23:
+    FUN_14008b3a0(param_1,0x23);
+    uVar3 = (ulonglong)*(ushort *)(param_1 + 0x35bc) / 5;
+    *(short *)(param_1 + 0x35bc) = (short)uVar3;
+    iVar2 = *(int *)(*(longlong *)(param_1 + 0x10) + 0x14);
+    iVar8 = (int)uVar3 * iVar2;
+    *(short *)(param_1 + 0x388e) =
+         (((short)(iVar8 / 100) + (short)(iVar8 >> 0x1f)) -
+         (short)((longlong)iVar8 * 0x51eb851f >> 0x3f)) +
+         (((short)(iVar2 / 10) + (short)(iVar2 >> 0x1f)) -
+         (short)((longlong)iVar2 * 0x66666667 >> 0x3f));
+    break;
+  case 0x24:
+    FUN_14008b3a0(param_1,0x24);
+    uVar6 = *(ushort *)(param_1 + 0x35bc) >> 1;
+    uVar6 = uVar6 - uVar6 / 5;
+    *(ushort *)(param_1 + 0x35bc) = uVar6;
+    iVar2 = *(int *)(*(longlong *)(param_1 + 0x10) + 0xc);
+    iVar8 = (uint)uVar6 * iVar2;
+    *(short *)(param_1 + 0x3890) =
+         (((short)(iVar8 / 100) + (short)(iVar8 >> 0x1f)) -
+         (short)((longlong)iVar8 * 0x51eb851f >> 0x3f)) +
+         (((short)(iVar2 / 10) + (short)(iVar2 >> 0x1f)) -
+         (short)((longlong)iVar2 * 0x66666667 >> 0x3f));
+  }
+  FUN_14008b510(param_1,5);
+switchD_140071a5f_caseD_19:
+  if (*(int *)(param_1 + 0x35ac) == 0) {
+    if ((*(byte *)(param_1 + 0x35a8) & 1) != 0) {
+      *(undefined1 *)(param_1 + 0x3f90) = 1;
+    }
+    if ((_DAT_1401aa8e8 + 8U <= (uint)DAT_1401f9d7d) ||
+       ((7 < DAT_1401f9d7d && (uVar6 = FUN_140167e10(10), 5 < uVar6)))) {
+      _DAT_1401f9d78 = *(undefined4 *)(param_1 + 0x15ac);
+      *(undefined1 *)(param_1 + 0x3f90) = 1;
+      DAT_1401f9d7d = 0;
+    }
+    FUN_14014ccf0(&DAT_1401a6d80,"BattleCriticalHitRate",5,(int)*(char *)(param_1 + 0x3f90),
+                  *(short *)(param_1 + 4) + 1,(int)*(short *)(param_1 + 6),
+                  *(short *)(param_2 + 4) + 1,(int)*(short *)(param_2 + 6));
+    uVar4 = FUN_1401488b0(&DAT_1401a6d80,"BeCriticalHit");
+    *(undefined1 *)(param_1 + 0x3f90) = uVar4;
+  }
+  SDL_memset(param_1 + 0x15d8,0,0x30);
+  FUN_14007a330(param_1 + 0x15d8,0);
+  if ((*(byte *)(param_1 + 0x35a8) & 0x20) != 0) {
+    *(uint *)(param_1 + 0x15d8) = *(uint *)(param_1 + 0x15d8) | 0x100;
+  }
+  if (*(int *)(param_1 + 0x140) == 0) {
+    if (((*(ushort *)(param_1 + 0x15e0) & 8) != 0) || ((*(ushort *)(param_1 + 0x15e0) & 0x20) != 0))
+    {
+      uVar6 = *(ushort *)(param_1 + 0x3962);
+      if ((uVar6 < 0x1b) &&
+         (((0x4800002U >> (uVar6 & 0x1f) & 1) != 0 && (*(char *)(param_1 + 0x39d0) == '\x01')))) {
+        *(ushort *)(param_1 + 0x3966) = uVar6;
+        *(undefined2 *)(param_1 + 0x3962) = 200;
+      }
+    }
+LAB_140071ef6:
+    uVar7 = 0;
+  }
+  else {
+    FUN_14007a330(param_1 + 0x15d8);
+    if (((*(byte *)(param_1 + 0x15e0) & 0x28) != 0) || (*(short *)(param_1 + 0x3962) == 0x17)) {
+      uVar6 = *(ushort *)(param_1 + 0x3962);
+      if ((uVar6 < 0x1b) &&
+         (((0x4800002U >> (uVar6 & 0x1f) & 1) != 0 && (*(char *)(param_1 + 0x39d0) == '\x01')))) {
+LAB_140071e8a:
+        *(ushort *)(param_1 + 0x3966) = uVar6;
+        *(undefined2 *)(param_1 + 0x3962) = 200;
+      }
+    }
+LAB_140071e9d:
+    uVar7 = 1;
+  }
+  return uVar7;
+}
+
+ (GhidraScript)  
+INFO  ReportHdCriticalHitPath.py> ===== caller FUN_140071f60 @ 140071f60 ===== (GhidraScript)  
+INFO  ReportHdCriticalHitPath.py> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+ulonglong FUN_140071f60(longlong param_1,longlong param_2)
+
+{
+  ushort uVar1;
+  ulonglong in_RAX;
+  
+  if (*(int *)(param_1 + 0x35ac) != 0) goto LAB_140072043;
+  if ((*(byte *)(param_1 + 0x35a8) & 1) != 0) {
+    *(undefined1 *)(param_1 + 0x3f90) = 1;
+  }
+  if ((uint)DAT_1401f9d7d < _DAT_1401aa8e8 + 8U) {
+    if (7 < DAT_1401f9d7d) {
+      uVar1 = FUN_140167e10(10);
+      if (5 < uVar1) goto LAB_140071fb9;
+    }
+  }
+  else {
+LAB_140071fb9:
+    _DAT_1401f9d78 = *(undefined4 *)(param_1 + 0x15ac);
+    *(undefined1 *)(param_1 + 0x3f90) = 1;
+    DAT_1401f9d7d = 0;
+  }
+  FUN_14014ccf0(&DAT_1401a6d80,"BattleCriticalHitRate",5,(int)*(char *)(param_1 + 0x3f90),
+                *(short *)(param_1 + 4) + 1,(int)*(short *)(param_1 + 6),*(short *)(param_2 + 4) + 1
+                ,(int)*(short *)(param_2 + 6));
+  in_RAX = FUN_1401488b0(&DAT_1401a6d80,"BeCriticalHit");
+  *(char *)(param_1 + 0x3f90) = (char)in_RAX;
+  if ((char)in_RAX == '\x01') {
+    return in_RAX;
+  }
+LAB_140072043:
+  return in_RAX & 0xffffffffffffff00;
+}
+
+ (GhidraScript)  

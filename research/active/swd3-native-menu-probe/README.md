@@ -10,6 +10,8 @@
 
 ## 現行來源與歷史驗證
 
+2026-09-08 的[Boss 傷害調查](evidence/boss-damage-20260908/README.md)補充角色特殊爆擊、異常狀態保護及敵方初始化加成的靜態證據；沒有新實機驗收或 MOD 行為變更。
+
 **來源核對，2026-09-06。** [metadata](src/swd3_native_menu_probe.ext)仍為 `MODVersion 0,1`；[Lua](src/data/NativeMenuProbe.lua)的載入訊息為 `loaded: in a safe map with no menu open, press B once`。這只識別目前保存的來源與訊息，不把歷史 UI 結果補標成 v0.1，也不證明本機已載入此版。原結果的版本缺口見[早期證據說明](ENGINE-UI-RESEARCH.md#早期證據的版本缺口)。
 
 選取與點空白返回已有[實測摘要](ENGINE-UI-RESEARCH.md#已實測escmenu-原生選單-coroutine)。來源仍保留 Esc／`DLGClose` 嘗試供重現歷史反例；已測 Esc 無反應，不是正常返回路徑。只有新版本或不同條件需要重現時才測 Esc，不為一般開發反覆重試同一路徑。
