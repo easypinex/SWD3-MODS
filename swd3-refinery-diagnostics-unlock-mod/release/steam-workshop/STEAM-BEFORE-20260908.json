@@ -1,0 +1,21 @@
+{
+  "id": "3794202575",
+  "title": "煉化限制解除",
+  "visibility": "k_ERemoteStoragePublishedFileVisibilityPublic",
+  "files": [
+    {
+      "FileName": "refinery_diagnostics_unlock.ssmod",
+      "Size": 6011,
+      "Sha256": "498DB24C022C33B802CE2BD34EAC12A6D5E113FD75304FE44CEDDF37D8C0AC83",
+      "Package": {
+        "Version": "1.5",
+        "Name": "煉化條件診斷與全限制解除",
+        "FileName": "refinery_diagnostics_unlock.ssmod",
+        "Size": 6011,
+        "Sha256": "498DB24C022C33B802CE2BD34EAC12A6D5E113FD75304FE44CEDDF37D8C0AC83",
+        "ManifestSha256": "32FF1D332652E95506B0F44AE67ACA988F043A9D1543CA911150AB15736224E0"
+      },
+      "PackageError": null
+    }
+  ]
+}

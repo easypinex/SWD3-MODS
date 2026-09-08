@@ -1,5 +1,7 @@
 # Steam 工作坊發布素材包
 
+2026-09-08 已查回原公開作品並下载核對，現行來源與 Steam 封包一致，本次無須上傳；見 [檢查紀錄](AUDIT-20260908.md)。下列候選／上傳清單為原發布準備歷史，未回報的遊戲案例仍保持待驗。
+
 本目錄提供 `swd3-refinery-diagnostics-unlock-mod` v1.5 的 Steam 工作坊發布素材。
 
 通用發布流程與內容邊界見 [Steam 工作坊發布](../../../docs/knowledge/steam-workshop-release.md)；本目錄只保存 v1.5 的具體素材與驗收清單。

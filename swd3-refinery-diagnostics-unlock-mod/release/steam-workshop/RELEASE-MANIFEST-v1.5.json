@@ -1,0 +1,22 @@
+{
+  "project": "swd3-refinery-diagnostics-unlock-mod",
+  "version": "1.5",
+  "workshopId": "3794202575",
+  "fileName": "refinery_diagnostics_unlock.ssmod",
+  "bytes": 6011,
+  "sha256": "498DB24C022C33B802CE2BD34EAC12A6D5E113FD75304FE44CEDDF37D8C0AC83",
+  "dat": [
+    {
+      "name": "RefineryDiagnosticsUnlock.lua",
+      "sha256": "A6E3572D075E14DF42ED9604F2E92138480BA200D34B3536B22E7BA8D4D8A814"
+    },
+    {
+      "name": "RefineryDiagnosticsUnlock.txt",
+      "sha256": "C9657D5D5CD16AC58210B891CF6F83BA3702C4F15AFE9DBD9AC4128EC567DB91"
+    }
+  ],
+  "auditDate": "2026-09-08",
+  "decision": "來源與 Steam 成品一致；不改封包、不重複上傳",
+  "roundtrip": "all DAT and metadata verified",
+  "steamOperation": "unchanged"
+}

@@ -1,0 +1,13 @@
+[RefineryDiagnostics] Installed refinery wrapper; East/West level limits unlocked
+[RefineryDiagnostics] 材料：東方甲 + 西方乙 | 西方：西方乙 Lv.40（原版賽特 Lv.34） | 東方：東方甲 Lv.20（原版賽特 Lv.14） | 等級限制已解除 | 封神壇：尚未取得；按鍵盤 End 預覽東方結果
+[RefineryDiagnostics] End 東方預覽：東方甲，真實 Lv.20，原版最低需賽特 Lv.14
+[RefineryDiagnostics] Refinery wrapper error: ...3-refinery-diagnostics-unlock-mod/tests/mock_runtime.lua:156: forced original error
+stack traceback:
+	[JS]: in function 'error'
+	...3-refinery-diagnostics-unlock-mod/tests/mock_runtime.lua:156: in upvalue 'previousMain'
+	...ostics-unlock-mod/src/data/RefineryDiagnosticsUnlock.lua:311: in function <...ostics-unlock-mod/src/data/RefineryDiagnosticsUnlock.lua:310>
+	[JS]: in function 'xpcall'
+	...ostics-unlock-mod/src/data/RefineryDiagnosticsUnlock.lua:310: in function <...ostics-unlock-mod/src/data/RefineryDiagnosticsUnlock.lua:299>
+	[JS]: in function 'pcall'
+	...3-refinery-diagnostics-unlock-mod/tests/mock_runtime.lua:298: in main chunk
+PASS: refinery diagnostics mock runtime
