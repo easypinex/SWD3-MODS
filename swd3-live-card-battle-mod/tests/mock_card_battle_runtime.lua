@@ -75,8 +75,14 @@ local catalogueCards = Rules.GetCatalogueCards(itemTemps)
 equal(#catalogueCards, 3, 'Catalogue includes battle-ready non-IT_12 bosses that are in the book')
 equal(catalogueCards[1].itemId, 75, 'Catalogue keeps Satan Septem-like boss ID')
 local specialCards = Rules.GetSpecialCards(itemTemps)
-equal(#specialCards, 2, 'Special list includes unavailable and non-item bosses')
+equal(#specialCards, 1, 'Special list excludes custom enemy IDs even with copied boss flags')
 equal(specialCards[1].itemId, 75, 'Special list keeps non-IT_12 boss ID')
+for _, id in ipairs({10001, 10096, 11001, 11006, 99999}) do
+    itemTemps[id] = {Name='Custom card', IT_12=true, isBattleChar=true, ACT=75, Level=60, IT_06=true, NotInBook=true}
+end
+equal(#Rules.GetSpecialCards(itemTemps), 1, 'Static pact cards and Cai custom templates never enter Special')
+local ownedCustom = Rules.GetAvailableCards({{ItemTempID=10001,Count=1}}, itemTemps)
+equal(#ownedCustom, 1, 'Owned custom cards remain available under My Cards')
 
 local menu = Rules.NewMenuState()
 local virtualCard = specialCards[1]

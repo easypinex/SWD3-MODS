@@ -1,4 +1,10 @@
-# 軒轅劍參：挑戰模式 MOD（v0.6 原生選單版）
+# 軒轅劍參：挑戰模式 MOD（v0.9 原生選單版）
+
+**現行v0.9，2026-09-08：**「特殊／首領」只列[HD4.0.5原版敵人表](../docs/knowledge/original-game-data/battle-balance-and-capture/generated/current-challengeable-enemies.csv)的58個特殊／首領候選ID，再檢查戰鬥資料，排除全魔物靈契等自訂卡；持有卡入口不受影響。蔡魔王438可自由混編，開戰映射至蔡魔王v1.7的11001，保留完整策略及F9倍率；單名敵人有台詞，敵方超過一人時不播放台詞。每名蔡魔王各自記錄一次回血與階段，整隊敵人清除後才可發獎勵，平均倍率低於1.0x仍無獎勵。缺少相容蔡魔王模組時，在選卡及開戰前均提示並阻擋。主選單另有固定「蔡魔王・正式挑戰」，接Insert同一選單、不套用自由編成／倍率。[驗收](TESTING.md#v09-蔡魔王混編與原版首領清單)。
+
+**v0.8新增功能，2026-09-08：** 戰中道具照常扣除，結束後返還實際消耗，僅在實際發生扣除時記帳；護駕依已回報的挑戰情況不會死亡或耗損；同場掉落／收妖交換與既有難度獎勵規則保留。以消耗記帳返還，不覆蓋整份背包、不在戰中無限補給。原版Lua整合mock通過，實機待驗；下方v0.7的「物品消耗照常」由本段取代。[v0.8驗收](TESTING.md#v08-挑戰道具返還)。
+
+**v0.7滿狀態存檔的入場、戰敗還原與再戰已人工通過（2026-09-07）；原先全員陣亡入場仍待驗：** 每次挑戰讓參戰主角生命、靈力、體力與絕招能量全滿，解除死亡及異常；結束後還原這些資源與狀態，原先陣亡者仍還原陣亡。不增加陣亡入場限制。物品消耗及以下原有獎勵規則照常。測試步驟见[TESTING](TESTING.md#v07-角色狀態驗收)，原生分析與程式界線見[共同研究](../swd3-cai-demon-king-mod/PARTY-STATE-RESEARCH.md)。載入訊息：`[LiveCardBattle] v0.7 loaded; full party on entry; restore prior party state on exit; press F9`。
 
 在原生物品欄按 `F9`，進入由遊戲引擎繪製與操作的「挑戰模式」選單。選 1～5 張活物作為敵方；選取的持有卡不會消耗。難度平均達 `1.0x` 時保留原版獎勵；低於 `1.0x` 才是無獎勵練習模式。
 
@@ -41,6 +47,6 @@
 
 本專案的來源與封包 basename 固定為 `live_card_battle`。通用建置與反解步驟見 [封裝與安裝](../docs/knowledge/packaging-and-installation.md)，完整專案驗收見 [TESTING.md](TESTING.md)，平衡與劇情安全決策見 [盤點報告](BALANCE-AND-SAFETY-AUDIT.md)。
 
-角色上限、戰鬥物品／護駕、可挑戰敵人、蚩尤技能與靈契可行性的可重跑原版資料，已移至共用知識區：[平衡研究](../docs/knowledge/original-game-data/battle-balance-and-capture/BALANCE-RESEARCH.md)。它不改變目前功能，資料匯出可依[資料集 README](../docs/knowledge/original-game-data/battle-balance-and-capture/README.md)重跑。
+角色上限、戰鬥物品／護駕、可挑戰敵人、蚩尤技能與靈契可行性的可重跑原版資料，已移至共用知識區：[平衡研究](../docs/knowledge/original-game-data/battle-balance-and-capture/BALANCE-RESEARCH.md)。2026-09-06補齊終局配裝、12個後續絕招、成長道具取得線索與補給範圍校正；本MOD的最多四人行動預算與多敵人調校見[高手挑戰補充](BALANCE-AND-SAFETY-AUDIT.md#高手挑戰平衡補充2026-09-06)。它不改變目前功能，資料匯出可依[資料集 README](../docs/knowledge/original-game-data/battle-balance-and-capture/README.md)重跑。
 
 原生選單引擎的探針證據見 [ENGINE-UI-RESEARCH.md](../research/active/swd3-native-menu-probe/ENGINE-UI-RESEARCH.md)，通用操作規則見 [UI、輸入與原生選單](../docs/knowledge/ui-input-and-native-menu.md)。圖片方案歷史保留於 [IMAGE-ASSET-GUIDE.md](IMAGE-ASSET-GUIDE.md)，本版不再使用覆蓋式自繪背景或自訂 TSW。

@@ -1,5 +1,7 @@
 local rulesPath = assert(arg[1], 'CardBattleRules.lua path is required')
 local runtimePath = assert(arg[2], 'LiveCardBattle.lua path is required')
+local testDir=runtimePath:gsub('src[\\/]data[\\/]LiveCardBattle.lua$','tests/')
+assert(loadfile(testDir..'party_fixture.lua'))()
 
 local function equal(actual, expected, message)
     if actual ~= expected then
@@ -73,9 +75,16 @@ ESC = {
         equal(SWD3LiveCardBattle.GetInputCaptureStatus().selectorRunning, false, 'Starting battle clears selector flag before native transition')
         startedBattleId = id
         battleId = id
+        for i=1,4 do for _,fn in ipairs(OnEvent.Battle_PlayerInit) do fn(i) end end
     end
 }
 ItemClass = {
+    AddItem = function(id,n)
+        for _,item in ipairs(SaveData.Items) do
+            if item.ItemTempID==id then item.Count_New=item.Count_New+n;return 0 end
+        end
+        table.insert(SaveData.Items,{ItemTempID=id,Count=0,Count_New=n});return 1
+    end,
     DelItem = function(slot, itemId, count)
         local item = SaveData.Items[slot]
         if item == nil or item.ItemTempID ~= itemId then
@@ -90,6 +99,9 @@ ItemClass = {
 }
 
 assert(loadfile(rulesPath))()
+assert(loadfile((runtimePath:gsub('LiveCardBattle.lua$','LiveCardPartyState.lua'))))()
+OnEvent.Battle_RestoreItem={main=function() end}
+assert(loadfile((runtimePath:gsub('LiveCardBattle.lua$','LiveCardInventory.lua'))))()
 assert(loadfile(runtimePath))()
 
 local function event(name, index)
@@ -171,7 +183,7 @@ equal(SaveData.Items[1].Count, 2, 'Battle end preserves owned count')
 -- 關閉選單或完成戰鬥後，隊伍草稿與難度都在本次遊戲執行期間保留。
 equal(SWD3LiveCardBattle.Rules.GetMenuTotal(SWD3LiveCardBattle.State.draft), 3, 'Challenge team persists after battle cleanup')
 equal(SWD3LiveCardBattle.State.draft.difficulty.hp, 0.9, 'Challenge difficulty persists after battle cleanup')
-table.insert(menuSelections, 7)
+table.insert(menuSelections, 8)
 event('DrawMenuAfter', 1)()
 equal(event('InputClick', 1)(nil, 66), true, 'F9 reopens the persisted challenge draft')
 local reopenedRows = observedMenus[#observedMenus].rows
@@ -183,15 +195,20 @@ SWD3LiveCardBattle.State.activeChallenge = { reservations = {}, pendingCaptureBy
 SWD3LiveCardBattle.State.selectorRunning = true
 battleId = 'MOD_CARD_CHALLENGE'
 BattleEnv.players[1] = {
+    isPlayer=true,
     self = { isDeath = function() return true end },
     status = { HP = 0 }
 }
+SWD3LiveCardBattle.PartyState.Begin(function() end)
+for i=1,4 do event('Battle_PlayerInit',1)(i) end
 event('Battle_Enter', 1)()
 event('Battle_Dead', 1)(1, 0, 0)
 equal(BSC.noOverCalls, 2, 'Each challenge entry enables no-Game-Over mode')
 equal(BSC.battleBreakCalls, 1, 'All-player defeat requests native battle break')
 equal(SWD3LiveCardBattle.GetInputCaptureStatus().selectorRunning, false, 'Defeat return clears selector flag')
-equal(SWD3LiveCardBattle.GetInputCaptureStatus().challengeActive, false, 'Defeat return releases challenge state')
+equal(SWD3LiveCardBattle.GetInputCaptureStatus().challengeActive, true, 'Death callback retains snapshot until native teardown')
+event('Battle_RestoreItem',1)()
+equal(SWD3LiveCardBattle.GetInputCaptureStatus().challengeActive, false, 'Teardown releases challenge state')
 
 -- 收妖新增同 ID 後只移除本次額外的一張；原有選卡不會被刪除。
 SaveData.Items[1].Count_New = SaveData.Items[1].Count_New + 1
@@ -217,5 +234,78 @@ SWD3AllMonsterStaticCapture = nil
 event('GameStart', 1)()
 equal(SWD3LiveCardBattle.Rules.GetMenuTotal(SWD3LiveCardBattle.State.draft), 0, 'A full game start resets the temporary team draft')
 equal(SWD3LiveCardBattle.State.draft.difficulty.hp, 1.0, 'A full game start resets the temporary difficulty draft')
+
+-- Cai entry resolves after both mods load and never starts an F9
+-- reservation/difficulty lifecycle. The actual Cai Scene owns its battle.
+local draft = SWD3LiveCardBattle.State.draft
+draft.difficulty.hp = 0.5
+local stock = SaveData.Items[1].Stock
+local calls = 0
+Scene.CDK_ChallengeMenu = function()
+    calls = calls + 1
+    equal(SWD3LiveCardBattle.State.selectorRunning, false, 'Handoff releases input before Cai Scene')
+    equal(SWD3LiveCardBattle.State.selector, nil, 'Handoff releases F9 selector')
+    equal(SWD3LiveCardBattle.State.activeChallenge, nil, 'Formal battle has no F9 lifecycle')
+    equal(SaveData.Items[1].Stock, stock, 'Formal handoff does not reserve selected cards')
+end
+menuSelections = {7}
+Scene.LCB_LiveCardBattleMenu()
+equal(calls, 1, 'Optional formal entry calls the existing Cai Scene once')
+equal(#observedMenus[#observedMenus].rows, 8, 'Optional entry adds one row')
+equal(SWD3LiveCardBattle.State.draft, draft, 'Cancel from Cai preserves F9 draft')
+equal(draft.difficulty.hp, 0.5, 'Formal handoff preserves unrelated difficulty')
+menuSelections = {8}
+Scene.LCB_LiveCardBattleMenu()
+equal(calls, 1, 'Last row remains return when Cai installed')
+Scene.CDK_ChallengeMenu = function() error('injected Cai menu failure') end
+menuSelections = {7}
+Scene.LCB_LiveCardBattleMenu()
+equal(SWD3LiveCardBattle.State.selectorRunning, false, 'Cai failure never wedges F9')
+equal(SWD3LiveCardBattle.State.activeChallenge, nil, 'Cai failure creates no F9 battle')
+Scene.CDK_ChallengeMenu = nil
+local beforeMissing = startedBattleId
+menuSelections = {7, 1, 8}
+Scene.LCB_LiveCardBattleMenu()
+equal(#observedMenus[#observedMenus].rows, 8, 'Missing MOD still shows formal entry')
+equal(visibleRow(observedMenus[#observedMenus-1].rows[2]),
+    'Install and enable the Cai Demon King MOD, then fully restart the game.',
+    'Missing MOD explains installation and restart')
+equal(startedBattleId, beforeMissing, 'Missing MOD never starts fallback battle')
+equal(SWD3LiveCardBattle.State.activeChallenge, nil, 'Missing MOD creates no lifecycle')
+equal(SaveData.Items[1].Stock, stock, 'Missing MOD creates no reservation')
+equal(SWD3LiveCardBattle.State.draft, draft, 'Missing MOD preserves selected draft')
+
+GameData.ItemTemp[438] = {Name='Cai', isBattleChar=true, ACT=438, Level=99, IT_06=true, NotInBook=true}
+local beforeTeam = SWD3LiveCardBattle.Rules.GetMenuTotal(draft)
+menuSelections = {3, 2, 1, 1, 8}
+Scene.LCB_LiveCardBattleMenu()
+equal(#menuSelections, 0, 'Special Cai missing dependency opens notice then safely returns')
+equal(SWD3LiveCardBattle.Rules.GetMenuTotal(draft), beforeTeam, 'Missing Cai never enters mixed team')
+equal(startedBattleId, beforeMissing, 'Special missing Cai never starts original battle')
+local freeCalls=0
+SWD3CaiDemonKing={freeChallengeVersion=1,freeChallengeField='CDK_CAI_CHALLENGE',
+    StartFreeChallenge=function(field, rewards)
+        freeCalls=freeCalls+1
+        equal(field.tCharActQ[1].ItemTempID,11001,'Original Cai selection maps to formal enemy')
+        equal(rewards,false,'F9 low difficulty reward rule passed to Cai')
+        equal(SWD3LiveCardBattle.State.selectorRunning,false,'Release input before Cai battle')
+        equal(SWD3LiveCardBattle.State.activeChallenge.caiManaged,true,'Cai owns restoration')
+        battleId='CDK_CAI_CHALLENGE'
+        return true
+    end}
+menuSelections = {3, 2, 1, 6}
+Scene.LCB_LiveCardBattleMenu()
+equal(freeCalls,1,'Special Cai uses formal combat bridge on Start')
+equal(SWD3LiveCardBattle.Rules.GetMenuTotal(draft), beforeTeam+1,'Cai remains in selected team')
+equal(SaveData.Items[1].Stock, stock, 'Virtual Cai reserves no cards')
+event('Battle_RestoreItem',1)()
+-- Stale or externally supplied draft is checked again immediately before battle.
+Scene.CDK_ChallengeMenu = nil
+SWD3CaiDemonKing=nil
+menuSelections = {6, 1, 8}
+Scene.LCB_LiveCardBattleMenu()
+equal(#menuSelections, 0, 'Pre-battle dependency check opens a notice')
+equal(SWD3LiveCardBattle.State.activeChallenge, nil, 'Stale Cai draft never opens battle without dependency')
+equal(startedBattleId, beforeMissing, 'Stale Cai draft does not fall back to original enemy')
 
 io.write('PASS: live card battle game runtime mock\n')

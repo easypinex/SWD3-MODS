@@ -1,4 +1,8 @@
 LCB_TITLE 挑戰模式
+LCB_CAI_FORMAL 蔡魔王・正式挑戰
+LCB_CAI_REQUIRED 請先安裝或更新並啟用蔡魔王模組，完整重啟遊戲。
+LCB_CAI_ORIGINAL （原版資料）
+LCB_CAI_FREE （自由對戰）
 LCB_EMPTY 沒有可挑戰的活物。
 LCB_TOTAL 已選：
 LCB_LIMIT ／5 張

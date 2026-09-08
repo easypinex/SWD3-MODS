@@ -1,0 +1,21 @@
+{
+  "id": "3796228075",
+  "title": "挑戰模式｜自由選敵與難度調整",
+  "visibility": "k_ERemoteStoragePublishedFileVisibilityPublic",
+  "files": [
+    {
+      "FileName": "live_card_battle.ssmod",
+      "Size": 16384,
+      "Sha256": "74F20ADD8B935CD0D2F8076F46B6B683B34C2C0654372C9D0A2D77247C6D9E9B",
+      "Package": {
+        "Version": "0.6",
+        "Name": "挑戰模式（原生選單版）",
+        "FileName": "live_card_battle.ssmod",
+        "Size": 16384,
+        "Sha256": "74F20ADD8B935CD0D2F8076F46B6B683B34C2C0654372C9D0A2D77247C6D9E9B",
+        "ManifestSha256": "31DA4C792E4A8ACBA843400848E8E94F4EB8BED12A93B773608BBDFA9D7DE70E"
+      },
+      "PackageError": null
+    }
+  ]
+}

@@ -188,6 +188,15 @@ function Rules.GetCatalogueCards(itemTemps)
 end
 
 -- 特殊／首領以劇情／圖鑑外標記彙整。若資料表沒有這些欄位，安全地回傳空清單。
+-- Original HD4.0.5 allowlist: generated/current-challengeable-enemies.csv
+-- in docs/knowledge/original-game-data/battle-balance-and-capture (58 rows).
+-- Do not infer provenance from IT_06/NotInBook: custom pact cards clone them.
+local originalSpecial = {}
+for _, id in ipairs({2,3,4,6,7,10,12,13,16,18,28,32,33,38,39,40,46,48,50,51,52,53,
+    59,60,61,62,63,64,67,68,69,70,71,72,73,74,75,93,180,378,379,381,382,383,
+    384,385,389,394,395,396,398,399,403,433,438,2201,2202,2203}) do
+    originalSpecial[id] = true
+end
 function Rules.GetSpecialCards(itemTemps)
     local cards = {}
     if type(itemTemps) ~= 'table' then
@@ -196,7 +205,7 @@ function Rules.GetSpecialCards(itemTemps)
 
     for itemId, itemTemp in pairs(itemTemps) do
         local numericId = tonumber(itemId)
-        if numericId ~= nil
+        if originalSpecial[numericId]
             and Rules.IsBattleReady(itemTemp)
             and (itemTemp.IT_06 == true or itemTemp.NotInBook == true) then
             table.insert(cards, {

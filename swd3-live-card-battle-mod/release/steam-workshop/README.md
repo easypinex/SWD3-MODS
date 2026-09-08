@@ -1,19 +1,7 @@
-# Steam 工作坊發布素材包
+# 挑戰模式 v0.9 發佈維護
 
-這是「挑戰模式」v0.6 的 Steam 工作坊發布素材。正式上傳內容只在 `workshop_content`，且只會有單一 `.ssmod`。
+維護既有 Steam ID `3796228075`，由 v0.6 升至 v0.9。唯一上傳內容為 `workshop_content/live_card_battle.ssmod`，不含測試包或原始碼。
 
-```text
-steam-workshop/
-├─ workshop_content/                 實際上傳內容，只含 live_card_battle.ssmod
-├─ preview/                          工作坊預覽圖
-├─ source/                           預覽圖來源與生成提示，不上傳
-├─ TITLE-ZH-TW.txt                   標題
-├─ DESCRIPTION-ZH-TW.txt             Steam BBCode 完整說明
-├─ CHANGE-NOTE-v0.6.txt              更新說明
-├─ RELEASE-MANIFEST-v0.6.txt         檔案與雜湊證據
-└─ UPLOAD-CHECKLIST.md               上傳、驗收與公開清單
-```
+使用 SWD3 MOD Studio 0.3.2 配套工作者準備、審閱、發佈及下載核對。標題見 [TITLE-ZH-TW.txt](TITLE-ZH-TW.txt)、說明見 [DESCRIPTION-ZH-TW.txt](DESCRIPTION-ZH-TW.txt)、更新內容見 [CHANGE-NOTE-v0.9.txt](CHANGE-NOTE-v0.9.txt)。舊版 manifest／更新說明保留為歷史。
 
-本包是候選發布版：預覽圖與封包已準備。v0.6 將玩家可見名稱統一為「挑戰模式」，並保留 v0.5 與「全魔物靈契」同時啟用時的收服交接；首次訂閱下載與挑戰回歸驗收前，請維持私人或僅限好友，勿設為公開。
-
-通用流程見 [Steam 工作坊發布](../../../docs/knowledge/steam-workshop-release.md)。
+發佈結果見 [本次核對](AUDIT-20260908.md)。自動驗證不代替遊戲驗收，未回報案例仍依 [TESTING](../../TESTING.md#v09-蔡魔王混編與原版首領清單)維持待驗。

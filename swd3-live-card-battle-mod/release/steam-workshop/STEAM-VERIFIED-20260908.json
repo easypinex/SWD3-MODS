@@ -1,0 +1,44 @@
+{
+  "workshopId": "3796228075",
+  "version": "0.9",
+  "files": [
+    {
+      "FileName": "live_card_battle.ssmod",
+      "Size": 21217,
+      "Sha256": "808E094E7B27B98CA8CBBBFFEEDC71023175A523F5DD497A8F60A6DCA4638852",
+      "Package": {
+        "Version": "0.9",
+        "Name": "挑戰模式（原生選單版）",
+        "FileName": "live_card_battle.ssmod",
+        "Size": 21217,
+        "Sha256": "808E094E7B27B98CA8CBBBFFEEDC71023175A523F5DD497A8F60A6DCA4638852",
+        "ManifestSha256": "20B55F447F1EDFC574F4E752F92EFD90E7DE1CD4FB3B788DC19465DF39F3FDA1"
+      },
+      "PackageError": null
+    }
+  ],
+  "verifiedLanguages": [
+    "tchinese",
+    "english"
+  ],
+  "checks": [
+    "title",
+    "description",
+    "visibility",
+    "version",
+    "file-name",
+    "file-size",
+    "file-sha256",
+    "downloaded-MODVersion",
+    "operation",
+    "preserved-metadata"
+  ],
+  "verifiedAt": "2026-09-08T14:45:00.9793450Z",
+  "visibility": "k_ERemoteStoragePublishedFileVisibilityPublic",
+  "title": "挑戰模式｜自由選敵與難度調整",
+  "previewUrl": "https://images.steamusercontent.com/ugc/13801435385082009151/D8FC0B9A358165855A08D91F8C8F4C959DF0414D/",
+  "operationId": "b639af906faa4baab88a447f89dbc789",
+  "changeNote": "v0.9（包含 v0.7～v0.9 的正式更新）\n- 挑戰以既有隊伍全滿入場，勝敗離場還原原先狀態。\n- 戰中消耗品照常扣除，離場返還實際消耗，保留正常掉落與靈契交換。\n- 特殊／首領清單排除自訂契靈卡。\n- 新增蔡魔王正式挑戰入口；未安裝相容模組時提示並阻擋。\n- 自由編成中的蔡魔王接入完整分階段策略與一次回血；多敵人時取消角色台詞。\n- 混編維持難度設定、整隊勝利判定與低倍率無獎勵規則，避免重複還原／返還。",
+  "changeNoteEvidence": "Submit accepted; Steam changelog web page could not be fetched by browser tool; no claim of verbatim remote history readback",
+  "tool": "MOD Studio desktop 0.3.2 / worker 0.3.0"
+}

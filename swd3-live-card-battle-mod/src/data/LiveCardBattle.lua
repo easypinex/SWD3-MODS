@@ -6,6 +6,8 @@ SWD3LiveCardBattle = SWD3LiveCardBattle or {}
 
 local MOD = SWD3LiveCardBattle
 local Rules = assert(MOD.Rules, '[LiveCardBattle] CardBattleRules.lua must load first')
+local Party = assert(MOD.PartyState, 'LiveCardPartyState must load first')
+local Inventory = assert(MOD.Inventory, 'LiveCardInventory must load first')
 local State = MOD.State or {}
 MOD.State = State
 
@@ -42,7 +44,11 @@ local FALLBACK_TEXT = {
     LCB_DIFFICULTY_SKILL = '技能傷害', LCB_DIFFICULTY_CURRENT = '目前係數：',
     LCB_DIFFICULTY_DOWN = '降低 0.1x', LCB_DIFFICULTY_UP = '提高 0.1x',
     LCB_DIFFICULTY_RESET = '重設為 1.0x', LCB_DIFFICULTY_AVERAGE = '平均係數：',
-    LCB_NO_REWARD = '本次無獎勵'
+    LCB_NO_REWARD = '本次無獎勵',
+    LCB_CAI_FORMAL = 'Cai Demon King - Full Challenge',
+    LCB_CAI_REQUIRED = 'Install and enable the Cai Demon King MOD, then fully restart the game.',
+    LCB_CAI_ORIGINAL = ' (original data)',
+    LCB_CAI_FREE = ' (free battle only)'
 }
 
 local DIFFICULTY_OPTIONS = {
@@ -114,6 +120,13 @@ end
 local function localizeCards(cards)
     for _, card in ipairs(cards or {}) do
         card.name = resolveItemName(card.itemId, card.name)
+        if card.itemId == 438 then
+            card.name = uiText('LCB_CAI_FORMAL')
+        elseif card.itemId == 10096 then
+            card.name = card.name .. uiText('LCB_CAI_ORIGINAL')
+        elseif card.itemId == 11001 or card.itemId == 11006 then
+            card.name = card.name .. uiText('LCB_CAI_FREE')
+        end
     end
     return cards
 end
@@ -121,7 +134,7 @@ end
 local function isChallengeBattle()
     return State.activeChallenge ~= nil and GameFunc ~= nil
         and type(GameFunc.GetBattleFieldID) == 'function'
-        and GameFunc.GetBattleFieldID() == BATTLE_ID
+        and GameFunc.GetBattleFieldID() == (State.activeChallenge.fieldId or BATTLE_ID)
 end
 
 -- 宣告在前，讓敗北中止流程可呼叫下方的實作。
@@ -129,6 +142,8 @@ local settlePendingCaptures
 local restoreNoRewardOverrides
 
 local function releaseActiveChallenge(reason)
+    Inventory.Restore(reason, reason=='game start')
+    Party.Restore(reason, reason=='game start')
     State.challengeNoOverEnabled = false
     State.challengeDefeatBreakRequested = false
     local challenge = State.activeChallenge
@@ -150,14 +165,14 @@ local function isDefeatedBattlePlayer(data)
         end
     end
     local status = data and data.status
-    return status ~= nil and (tonumber(status.HP) or 0) <= 0
+    return status ~= nil and tonumber(status.HP) ~= nil and tonumber(status.HP) <= 0
 end
 
 local function areAllChallengePlayersDefeated()
     local players = BattleEnv and BattleEnv.players
     local foundPlayer = false
     for _, data in pairs(players or {}) do
-        if data ~= nil then
+        if data ~= nil and data.isPlayer then
             foundPlayer = true
             if not isDefeatedBattlePlayer(data) then
                 return false
@@ -168,6 +183,7 @@ local function areAllChallengePlayersDefeated()
 end
 
 local function enableChallengeNoGameOver()
+    if State.activeChallenge and State.activeChallenge.caiManaged then return end
     if not isChallengeBattle() then
         return
     end
@@ -179,6 +195,12 @@ local function enableChallengeNoGameOver()
     if ok then
         State.challengeNoOverEnabled = true
         write('challenge defeat returns to game instead of Game Over')
+        local prepared,err=pcall(Party.Enter)
+        if not prepared or State.partyError then
+            write('party preparation error: '..tostring(State.partyError or err))
+            State.challengeDefeatBreakRequested=true
+            BSC.BattleBreak()
+        end
     else
         write('challenge defeat fallback failed: ' .. tostring(failure))
     end
@@ -191,8 +213,7 @@ local function endChallengeAsDefeat()
     State.challengeDefeatBreakRequested = true
     State.selector = nil
     State.selectorRunning = false
-    settlePendingCaptures()
-    releaseActiveChallenge('challenge defeat')
+    -- Keep party and reward snapshots until native teardown, not the death callback.
     if BSC == nil or type(BSC.BattleBreak) ~= 'function' then
         write('challenge defeat fallback unavailable: BSC.BattleBreak is not exposed')
         return
@@ -275,6 +296,11 @@ local function applyNoRewardOverrides(selection)
     return snapshots
 end
 
+local function caiDependencyMissing(itemId)
+    return (itemId == 438 or itemId == 10096 or itemId == 11001 or itemId == 11006)
+        and not (SWD3CaiDemonKing and SWD3CaiDemonKing.freeChallengeVersion==1
+            and type(SWD3CaiDemonKing.StartFreeChallenge)=='function')
+end
 local function startChallenge()
     local selector = State.selector
     if selector == nil then
@@ -286,6 +312,11 @@ local function startChallenge()
     )
     if normalized == nil then
         return false, validationError
+    end
+    for _, entry in ipairs(normalized) do
+        if caiDependencyMissing(entry.itemId) then
+            return false, uiText('LCB_CAI_REQUIRED')
+        end
     end
     local reservations, reservationError = Rules.ReserveSelection(items, normalized)
     if reservations == nil then
@@ -301,6 +332,13 @@ local function startChallenge()
         Rules.ReleaseReservations(items, reservations)
         return false, fieldError
     end
+    local cai
+    for _,entry in ipairs(field.tCharActQ) do
+        if entry.ItemTempID==438 or entry.ItemTempID==11001 then
+            cai=SWD3CaiDemonKing
+            entry.ItemTempID=11001
+        end
+    end
 
     local noRewardOverrides = {}
     if not rewardsAllowed then
@@ -314,6 +352,8 @@ local function startChallenge()
     BattleField = BattleField or {}
     BattleField[BATTLE_ID] = field
     State.activeChallenge = {
+        caiManaged = cai~=nil,
+        fieldId = cai and cai.freeChallengeField or BATTLE_ID,
         selection = normalized,
         reservations = reservations,
         captureBaseline = buildCaptureBaseline(items, normalized),
@@ -329,8 +369,18 @@ local function startChallenge()
     -- LCB_LiveCardBattleMenu 的尾端才清除這個旗標。從此刻起選單已交出
     -- 控制權給戰鬥，F9 不應再被視為有一個未結束的選單。
     State.selectorRunning = false
-    local ok, failure = pcall(ESC.StartBattle, BATTLE_ID)
-    if not ok then
+    local prepared,prepareError=pcall(function()
+        if not cai then Inventory.Begin(write);Party.Begin(write) end
+    end)
+    if not prepared then
+        releaseActiveChallenge('party preparation failed')
+        return false,prepareError
+    end
+    State.partyError=nil
+    local ok, failure
+    if cai then ok,failure=pcall(cai.StartFreeChallenge,field,rewardsAllowed)
+    else ok,failure=pcall(ESC.StartBattle,BATTLE_ID) end
+    if not ok or (cai and failure~=true) then
         releaseActiveChallenge('start battle failed')
         return false, failure
     end
@@ -402,9 +452,14 @@ local function showCardList(title, cards, selector)
         elseif selectedCard == 'next' then
             page = page + 1
         elseif type(selectedCard) == 'table' then
-            local changed, reason = Rules.AdjustMenuCard(selector, selectedCard, 1)
-            if not changed then
-                write(title .. ' selection unchanged: ' .. tostring(reason))
+            if caiDependencyMissing(selectedCard.itemId) then
+                write('Cai selection blocked: required MOD entry unavailable')
+                nativeMenu({uiText('LCB_BACK'), uiText('LCB_CAI_REQUIRED'), uiText('LCB_BACK')})
+            else
+                local changed, reason = Rules.AdjustMenuCard(selector, selectedCard, 1)
+                if not changed then
+                    write(title .. ' selection unchanged: ' .. tostring(reason))
+                end
             end
         end
     end
@@ -551,6 +606,14 @@ end
 
 Scene = Scene or {}
 
+local function handoffCai(caiMenu)
+    State.selector = nil
+    State.selectorRunning = false
+    write('handoff to Cai formal challenge; fixed rules; F9 draft preserved')
+    local ok, failure = pcall(caiMenu)
+    if not ok then write('Cai menu failed: ' .. tostring(failure)) end
+end
+
 function Scene.LCB_LiveCardBattleMenu()
     if State.activeChallenge ~= nil then
         write('selector refused: ' .. uiText('LCB_BUSY'))
@@ -560,7 +623,7 @@ function Scene.LCB_LiveCardBattleMenu()
     State.selector = getChallengeDraft()
     write('native selector opened')
     while State.selector ~= nil do
-        local selected = nativeMenu({
+        local rows = {
             uiText('LCB_OWNED'),
             uiText('LCB_CATALOGUE'),
             uiText('LCB_SPECIAL'),
@@ -568,9 +631,23 @@ function Scene.LCB_LiveCardBattleMenu()
             uiText('LCB_DIFFICULTY'),
             uiText('LCB_START'),
             uiText('LCB_RETURN')
-        })
-        if selected == 0 or selected == 7 then
+        }
+        -- Resolve at menu time, so either MOD load order works. Reuse the
+        -- existing Scene coroutine; never schedule a nested RunScene.
+        local caiMenu = Scene.CDK_ChallengeMenu
+        local caiIndex = #rows
+        table.insert(rows, caiIndex, uiText('LCB_CAI_FORMAL'))
+        local selected = nativeMenu(rows)
+        if selected == 0 or selected == #rows then
             State.selector = nil
+        elseif selected == caiIndex and type(caiMenu) ~= 'function' then
+            write('Cai formal challenge blocked: required MOD entry unavailable')
+            nativeMenu({uiText('LCB_BACK'), uiText('LCB_CAI_REQUIRED'), uiText('LCB_BACK')})
+        elseif selected == caiIndex then
+            -- Handoff before StartBattle can abandon the caller coroutine.
+            -- Keep the draft, but do not reserve cards or apply F9 difficulty.
+            handoffCai(caiMenu)
+            return
         elseif selected == 1 then
             showCardList(uiText('LCB_OWNED'), localizeCards(Rules.GetAvailableCards(getItems(), getItemTemps())), State.selector)
         elseif selected == 2 then
@@ -587,6 +664,9 @@ function Scene.LCB_LiveCardBattleMenu()
                 break
             end
             write('challenge start refused: ' .. tostring(reason or uiText('LCB_INVALID')))
+            if reason == uiText('LCB_CAI_REQUIRED') then
+                nativeMenu({uiText('LCB_BACK'), reason, uiText('LCB_BACK')})
+            end
         end
     end
     State.selectorRunning = false
@@ -598,7 +678,7 @@ local function removeCapturedCard(challenge, itemId)
     if removal == nil or ItemClass == nil or type(ItemClass.DelItem) ~= 'function' then
         return false
     end
-    ItemClass.DelItem(removal.slot, removal.itemId, removal.count, 0)
+    Inventory.WithoutRefund(ItemClass.DelItem, removal.slot, removal.itemId, removal.count, 0)
     challenge.capturedById[itemId] = (challenge.capturedById[itemId] or 0) + 1
     write('removed captured challenge card ' .. tostring(itemId))
     return true
@@ -635,7 +715,8 @@ local function onBattleDead(index, side, mode)
         return
     end
     if side == 0 then
-        if State.challengeNoOverEnabled and areAllChallengePlayersDefeated() then
+        if State.activeChallenge.caiManaged then return end
+        if mode == 0 and State.challengeNoOverEnabled and areAllChallengePlayersDefeated() then
             endChallengeAsDefeat()
         end
         return
@@ -744,7 +825,7 @@ local function onGameStart()
     State.selectorRunning = false
     releaseActiveChallenge('game start')
     State.draft = Rules.NewMenuState()
-    write('loaded; open the native item basket and press F9')
+    write('v0.9 loaded; original special list; Cai mixed combat bridge; press F9')
 end
 
 local function onDrawMenuAfter()
@@ -752,13 +833,14 @@ local function onDrawMenuAfter()
     -- 主修復在 ESC.StartBattle 前已結束 selectorRunning。這裡僅是防呆：若其他
     -- 非預期引擎中斷仍留下旗標，只有回到物品欄、挑戰已建立且不再處於本 MOD
     -- 戰鬥時，才判為安全的遺留狀態。
-    if State.selectorRunning and State.activeChallenge ~= nil and not isChallengeBattle() then
+    if State.activeChallenge ~= nil and not isChallengeBattle() then
         State.selector = nil
         State.selectorRunning = false
         settlePendingCaptures()
         releaseActiveChallenge('stale selector recovered from inventory draw')
         write('recovered stale selector after interrupted battle')
     end
+    if Party.Pending() and State.activeChallenge==nil then Party.Restore('inventory recovery') end
 end
 
 local function onInputClick(_, keyScancode)
@@ -785,6 +867,7 @@ OnEvent.DrawMenuAfter = OnEvent.DrawMenuAfter or {}
 OnEvent.InputClick = OnEvent.InputClick or {}
 OnEvent.Battle_Dead = OnEvent.Battle_Dead or {}
 OnEvent.Battle_Enter = OnEvent.Battle_Enter or {}
+OnEvent.Battle_PlayerInit = OnEvent.Battle_PlayerInit or {}
 OnEvent.Battle_EnemyInit = OnEvent.Battle_EnemyInit or {}
 OnEvent.BattleGain = OnEvent.BattleGain or {}
 OnEvent.Battle_RestoreItem = OnEvent.Battle_RestoreItem or {}
@@ -796,6 +879,12 @@ if not State.eventsRegistered then
     table.insert(OnEvent.InputClick, onInputClick)
     table.insert(OnEvent.Battle_Dead, onBattleDead)
     table.insert(OnEvent.Battle_Enter, enableChallengeNoGameOver)
+    table.insert(OnEvent.Battle_PlayerInit, function(index)
+        if not isChallengeBattle() then return end
+        if State.activeChallenge.caiManaged then return end
+        local ok,err=pcall(Party.Init,index)
+        if not ok then State.partyError=tostring(err); write('party preparation failed: '..State.partyError) end
+    end)
     table.insert(OnEvent.Battle_EnemyInit, onBattleEnemyInit)
     table.insert(OnEvent.BattleGain, onBattleGain)
     table.insert(OnEvent.Battle_RestoreItem, onBattleRestoreItem)

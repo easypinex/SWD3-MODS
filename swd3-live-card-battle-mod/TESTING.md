@@ -1,5 +1,33 @@
 # 挑戰模式：測試策略
 
+## v0.9 蔡魔王混編與原版首領清單
+
+2026-09-08，搭配蔡魔王v1.7。舊版[Console](../swd3-cai-demon-king-mod/evidence/v16-f9-tactics-user-console.txt)確認F9為MOD_CARD_CHALLENGE／438／HP10000，沒有正式對話。新版選卡438映射11001，透過StartFreeChallenge版本1介面進入CDK_CAI_CHALLENGE；Cai管理角色／道具還原，F9管理Stock／倍率／一般獎勵，避免雙倍返還。
+
+**靜態與mock：** 缺依賴提示與開戰阻擋、保留草稿、首領allowlist、排除仿造旗標的自訂卡而保留持有卡入口已通過。allowlist維持原版58個候選（含原版2201–2203），不是憑ID大小判定。共同整合模型及實機待驗見[蔡魔王v1.7](../swd3-cai-demon-king-mod/TESTING.md#v17-f9混編與手動戰鬥)。
+
+## v0.8 挑戰道具返還
+
+2026-09-08使用者回報道具返還及敗北狀態恢復正常；保存的[本次Console](../swd3-cai-demon-king-mod/evidence/v012-refund-accepted-console.txt)只含蔡魔王場，F9沒有獨立逐值trace。護駕未死亡／耗損為使用者遊玩觀察，本輪不再要求刻意耗損；不把該回報提升為所有原生護駕不會死亡的規則。
+
+2026-09-08，依使用者要求與蔡魔王v0.12同步，詳細算法／共用測試以[道具返還驗收](../swd3-cai-demon-king-mod/TESTING.md#v012-挑戰道具返還)為準。此包保留原角色還原、難度及收妖規則；LiveCardInventory沿本場記實際扣量，退出後返還，自己的removeCapturedCard以WithoutRefund排除。兩模組程式主體除namespace與戰場ID外相同，封包各自攜帶、不互相依賴。原版整合測試由Cai測試入口一次覆蓋兩份；本專案原規則／原生選單／角色模型同步通過。
+
+人工待驗：F9任選對手，記下某道具數量，戰中用一份，勝敗／逃跑後應回原數量。若有同ID掉落，結束總量應為原持有量加掉落。持有卡選敵的Stock釋放仍照原規則；戰中護駕陣亡才有耗損返還，不把敵方收妖去重補回。
+
+**已封裝、安裝及啟動，人工返還仍待驗：** v0.8 hash `4D0B431C0FA3A44EFCCA179735353EB0E8A0ABAD6633AE82C31F7586D602E75B`，manifest及5份DAT逐檔反解一致，本機hash相同；完整測試通過。Console、共同備份及既有sav不變的核對見[蔡魔王v0.12安裝紀錄](../swd3-cai-demon-king-mod/TESTING.md#v012-挑戰道具返還)。Steam挑戰3796228075仍停用，僅本機新包啟用，其他清單不變。
+
+## v0.7 角色狀態驗收
+
+**2026-09-07人工回報通過（滿狀態存檔流程）：** 依本輪調整後的Insert／F9各測步驟，進場消耗資源、受傷、戰敗返回原值、再次進場正常，使用者回覆「通過」。F9結果依人工回報；本輪保存Console只含蔡魔王一場，不能稱為F9已有完整逐值trace。精確證據與待測界線見[共同結果](../swd3-cai-demon-king-mod/TESTING.md#滿狀態存檔流程通過2026-09-07)。原先全員陣亡、場外異常、四人、勝利／逃跑與跨存檔仍待驗。
+
+**安裝／啟動，2026-09-06：** 封包與本機安裝SHA-256為`23B67751FBBBAAC68D25A4F087085A3AB3DE1F297386CBDF14E00BD37F99DBC0`；manifest及4份DAT逐檔反解一致。原生選單版不宣告的歷史PNG不作本版封包資源。`Mods/live_card_battle.ssmod`啟用，Steam項目`3796228075`停用以避免載入舊版，其他訂閱維持。遊戲主視窗與[兩MOD的v0.7載入訊息](../swd3-cai-demon-king-mod/evidence/v07-startup-console.txt)均確認；當時人工待驗，後續結果見上方2026-09-07紀錄。備份與還原位置見[蔡魔王v0.7紀錄](../swd3-cai-demon-king-mod/TESTING.md#v07-全滿入場與原狀還原)，未更新工作坊發布素材。
+
+**靜態／mock通過；滿狀態存檔流程人工通過，其餘依上方界線。** v0.6來源直接帶場外狀態進場，沒有補滿；蔡魔王已人工回報全員陣亡入場後敵人自擊，F9只確認來源有同類風險，未假稱已重現。v0.7新增LiveCardPartyState與Battle_PlayerInit handler，保存並恢復HP／MP／SP／State／絕招Energy；勝敗清理延到原生RestoreItem，死亡callback不提前還原，主角全滅判定忽略護駕及NPC。
+
+人工依[蔡魔王與挑戰共同步驟](../swd3-cai-demon-king-mod/TESTING.md#v07-全滿入場與原狀還原)：F9用原本陣亡／殘血隊伍進場應全滿且可操作，勝利、戰敗或逃跑後回到原值，再次挑戰再次全滿；低難度無獎勵與正常獎勵保持既有規格。四人／換存檔未測前仍待驗。
+
+新增`party_state.lua`模型測試四人、死亡標記與HP分離、超過9999的補滿、異常／能量、重入與部分失敗、六種清理理由及不同SaveData／GameStart隔離。原有規則、選單、掉落、靈契交接與倍率模型通過。`Build.ps1`以独立.work封裝並逐檔反解比對，來源新增的LiveCardPartyState也必須比對。
+
 本文件只列本 MOD 的規則與實機案例；通用測試層級、Console 與研究證據標記見 [測試與驗證](../docs/knowledge/testing-and-verification.md)。
 
 ## 一鍵自動測試

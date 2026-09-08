@@ -1,0 +1,7 @@
+PASS: live card battle rules mock runtime
+
+PASS: live card battle game runtime mock
+
+PASS: all live card battle automated checks
+PASS: party full entry, native revival, four slots, exact restoration and failures
+

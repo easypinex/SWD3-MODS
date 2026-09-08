@@ -1,7 +1,7 @@
 MODName 挑戰模式（原生選單版）
 MODAuthor Andy / Codex
-MODDate 2026,9,6
-MODVersion 0,6
+MODDate 2026,9,8
+MODVersion 0,9
 MODinfo 在物品欄按 F9 進入挑戰模式，可選 1～5 張敵人並調整各項難度；平均係數達 1.0x 時保留原版獎勵，低於 1.0x 時為無獎勵練習模式。與全魔物靈契並用時，收服交由靜態卡交換流程處理。%Q
 MODGameVersion 4,0
 MODsystemMOD 0
@@ -11,4 +11,6 @@ MODbundleSave 1
 ; TYPE 0 = StringDB text, TYPE 2 = Lua script, LangID 0 = all languages
 DAT 0,0,LiveCardBattle.txt,Traditional Chinese UI strings
 DAT 2,0,CardBattleRules.lua,Pure card challenge rules and safety checks
+DAT 2,0,LiveCardPartyState.lua,Temporary full party and exact resource restoration
+DAT 2,0,LiveCardInventory.lua,Post-battle item cost refunds
 DAT 2,0,LiveCardBattle.lua,Game UI and battle lifecycle

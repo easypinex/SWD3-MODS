@@ -6,7 +6,7 @@ $runtimePath = Join-Path $projectRoot 'src\data\LiveCardBattle.lua'
 $mockPath = Join-Path $PSScriptRoot 'mock_card_battle_runtime.lua'
 $liveMockPath = Join-Path $PSScriptRoot 'mock_live_card_battle_runtime.lua'
 
-npx --yes --package luaparse luaparse --quiet --file $rulesPath --file $runtimePath
+npx --yes --package luaparse luaparse --quiet --file $rulesPath --file $runtimePath --file "$projectRoot/src/data/LiveCardPartyState.lua" --file "$projectRoot/src/data/LiveCardInventory.lua"
 if ($LASTEXITCODE -ne 0) {
     throw 'Lua syntax check failed.'
 }
@@ -24,3 +24,6 @@ if (($LASTEXITCODE -ne 0) -or ($liveRuntimeOutput -match 'stack traceback:') -or
 }
 
 Write-Host 'PASS: all live card battle automated checks'
+$partyOutput=(& npx --yes --package fengari-node-cli fengari "$PSScriptRoot/party_state.lua" "$projectRoot/src/data/LiveCardPartyState.lua" SWD3LiveCardBattle 2>&1 | Out-String)
+Write-Output $partyOutput
+if ($LASTEXITCODE -ne 0 -or $partyOutput -match 'stack traceback:' -or $partyOutput -notmatch 'PASS: party full entry') { throw 'Party state mock failed' }

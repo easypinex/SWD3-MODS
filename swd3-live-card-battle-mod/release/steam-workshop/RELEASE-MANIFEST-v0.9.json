@@ -1,0 +1,40 @@
+{
+  "project": "swd3-live-card-battle-mod",
+  "version": "0.9",
+  "workshopId": "3796228075",
+  "fileName": "live_card_battle.ssmod",
+  "bytes": 21217,
+  "sha256": "808E094E7B27B98CA8CBBBFFEEDC71023175A523F5DD497A8F60A6DCA4638852",
+  "dat": [
+    {
+      "name": "CardBattleRules.lua",
+      "sha256": "C93B24117CDC33C5882D53CDA6652304DF06B54F295EF8728AC7FE2DA4139AC0"
+    },
+    {
+      "name": "live_card_panel_bluegrey_tile.png",
+      "sha256": "205085A44E341AA3194CC1B08AE8D2EAB04FAD3444B2E80C1FB8C7A2BE943A82"
+    },
+    {
+      "name": "LiveCardBattle.lua",
+      "sha256": "5454FC4CA18BE00C6C3F45F5389B008F883EBD877B375064FA5BB027769D4D92"
+    },
+    {
+      "name": "LiveCardBattle.txt",
+      "sha256": "7A6A7A5AD14346863A0D07B9363D3A97CA938F018AAA339C81773882EACF0BEF"
+    },
+    {
+      "name": "LiveCardInventory.lua",
+      "sha256": "1FA6C03C5FEBEE41E489F5A9E4D9C8F1D41ECD554394FAB3766E8778CD4E57DE"
+    },
+    {
+      "name": "LiveCardPartyState.lua",
+      "sha256": "9405909BD107EE1A004961770A06AD5E5C5FCC513631F26F412A34D6439199A3"
+    }
+  ],
+  "auditDate": "2026-09-08",
+  "decision": "準備從 Steam v0.6 更新至 v0.9",
+  "roundtrip": "all DAT and metadata verified",
+  "steamOperation": "verified",
+  "verifiedAt": "2026-09-08T14:45:00.9793450Z",
+  "visibility": "public"
+}
