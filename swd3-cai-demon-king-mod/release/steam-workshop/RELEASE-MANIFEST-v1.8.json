@@ -1,0 +1,64 @@
+{
+  "project": "swd3-cai-demon-king-mod",
+  "version": "1.8",
+  "workshopId": "3798055142",
+  "fileName": "cai_demon_king.ssmod",
+  "bytes": 25467,
+  "sha256": "7FC22A7CADD8D0364EE88A828AC7E82ADB7D55943A71715C8D04E199E84051B9",
+  "dat": [
+    {
+      "name": "CaiDemonActions.ext",
+      "sha256": "956BCDBC8E501571F37354CD453279D92B83D2F7F84B26242A1F96E730D6A705"
+    },
+    {
+      "name": "CaiDemonActions.lua",
+      "sha256": "8AD3AAAF017EBCCC50F5AB3FDBA622657A03DC7613F7AFF5B521AC4D9C1CA885"
+    },
+    {
+      "name": "CaiDemonAI.lua",
+      "sha256": "7C0EEA2AF5E53C27346689CD0B6C736DEBC77D2A17E4F26011324E89D49F5217"
+    },
+    {
+      "name": "CaiDemonChallengeData.lua",
+      "sha256": "1E4D3FC5CC4AA6A021B9FB7F16AEEF7C17530468D091AC0F5907CD7C2CB31774"
+    },
+    {
+      "name": "CaiDemonData.lua",
+      "sha256": "95E960EDDDDEAC8E96FE711939CF9343B0E3837F9E1C90989C2C8A6157A8AEE3"
+    },
+    {
+      "name": "CaiDemonKing.lua",
+      "sha256": "16FEDDBEE046E6D96E462AC2311FD6A692E8511EEFEA3FD8237CC56DEE8AD729"
+    },
+    {
+      "name": "CaiDemonKing.txt",
+      "sha256": "4C495B8FBA1391FB684E507C110887082A1A760CB392CD0DB0FE74575C73FAF7"
+    },
+    {
+      "name": "CaiDialogue.lua",
+      "sha256": "27BBE0CFE4185CD03485A3883C1C89CF418EE42D571F264764E7C02381399FE1"
+    },
+    {
+      "name": "CaiFairPlay.lua",
+      "sha256": "FC9CAB3918E05EB6B82887731F79C858FE5AA14D1820F09B1C8774E6D55CD9C8"
+    },
+    {
+      "name": "CaiInventory.lua",
+      "sha256": "6C521D2327061BD8D9BF6F6EF1582E21E91F832EE01DCAC480ABCE44E8481D25"
+    },
+    {
+      "name": "CaiPartyState.lua",
+      "sha256": "1E3C18FE1463849C99CAD46512E908C992AE2006F73F3A124AE24D5212D6B1BF"
+    },
+    {
+      "name": "CaiReward.lua",
+      "sha256": "8E8220421B74790E44783B149C685B7BED0FEF31110084D6777B9A637A1E6044"
+    }
+  ],
+  "auditDate": "2026-09-08",
+  "decision": "準備新作品",
+  "roundtrip": "all DAT and metadata verified",
+  "steamOperation": "verified",
+  "verifiedAt": "2026-09-08T14:43:13.9176906Z",
+  "visibility": "public"
+}

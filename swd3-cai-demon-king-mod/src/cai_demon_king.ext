@@ -1,0 +1,20 @@
+MODName 蔡魔王挑戰
+MODAuthor Andy / Codex
+MODDate 2026,9,8
+MODVersion 1,8
+MODinfo 物品欄按 Insert 挑戰等級99蔡魔王。全滿入場、離場還原狀態與消耗道具；分階段戰法、重逢對話及勝利真契靈獎勵。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+DAT 0,0,CaiDemonKing.txt,Traditional Chinese strings
+DAT 1,0,CaiDemonActions.ext,Native ACT438 declarations using existing TSW
+DAT 2,0,CaiDemonActions.lua,Existing Cai swordsman artwork actions
+DAT 2,0,CaiDemonData.lua,Cai source and optional static card references
+DAT 2,0,CaiDemonChallengeData.lua,Independent Lv99 challenge enemy registration
+DAT 2,0,CaiReward.lua,Static reward card and verified victory settlement
+DAT 2,0,CaiDemonAI.lua,Owned phase strategy and once-only healing
+DAT 2,0,CaiPartyState.lua,Temporary full party and exact resource restoration
+DAT 2,0,CaiInventory.lua,Post-battle item cost refunds
+DAT 2,0,CaiDialogue.lua,Per-save dialogue branches and equipment hints
+DAT 2,0,CaiFairPlay.lua,Challenge admission and observable integrity checks
+DAT 2,0,CaiDemonKing.lua,Standalone menu and battle lifecycle

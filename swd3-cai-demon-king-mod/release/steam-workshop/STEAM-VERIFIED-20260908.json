@@ -1,0 +1,44 @@
+{
+  "workshopId": "3798055142",
+  "version": "1.8",
+  "files": [
+    {
+      "FileName": "cai_demon_king.ssmod",
+      "Size": 25467,
+      "Sha256": "7FC22A7CADD8D0364EE88A828AC7E82ADB7D55943A71715C8D04E199E84051B9",
+      "Package": {
+        "Version": "1.8",
+        "Name": "蔡魔王挑戰",
+        "FileName": "cai_demon_king.ssmod",
+        "Size": 25467,
+        "Sha256": "7FC22A7CADD8D0364EE88A828AC7E82ADB7D55943A71715C8D04E199E84051B9",
+        "ManifestSha256": "033E9BEC33A34569211E7255E8AC536C48EB714BEB534E05C7CA8C32E80E3911"
+      },
+      "PackageError": null
+    }
+  ],
+  "verifiedLanguages": [
+    "tchinese",
+    "english"
+  ],
+  "checks": [
+    "title",
+    "description",
+    "visibility",
+    "version",
+    "file-name",
+    "file-size",
+    "file-sha256",
+    "downloaded-MODVersion",
+    "operation",
+    "preserved-metadata"
+  ],
+  "verifiedAt": "2026-09-08T14:43:13.9176906Z",
+  "visibility": "k_ERemoteStoragePublishedFileVisibilityPublic",
+  "title": "蔡魔王挑戰｜DOMO 彼端重逢",
+  "previewUrl": "https://images.steamusercontent.com/ugc/17087627906682359981/C5AE71855A10731AAAD9FAC49CF8EA4E0CBFB144/",
+  "operationId": "c9ebf26eb1df428cbf1fbf58b19e0044",
+  "changeNote": "v1.8 首次正式發佈\n- 等級99蔡魔王挑戰，物品欄按 Insert 進入。\n- 四人以既有隊伍全滿入場，離場還原原先狀態與本場消耗道具。\n- 物理重劍、光暗術法、兩階段策略與一次兩段合計12000回血。\n- 34句懷舊原創台詞、重戰分支、敗北配裝線索與勝利真契靈獎勵。\n- 支援挑戰模式 v0.9 自由混編；多敵人不播放角色台詞，每名蔡魔王保留獨立策略。\n- 加入可觀察異常的公平比試檢查；不宣稱能識別所有修改器。\n- 正式包不包含玩家 AI、測試開局、補給或滿裝存檔。",
+  "changeNoteEvidence": "Submit accepted; Steam changelog web page could not be fetched by browser tool; no claim of verbatim remote history readback",
+  "tool": "MOD Studio desktop 0.3.2 / worker 0.3.0"
+}

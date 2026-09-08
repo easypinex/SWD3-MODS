@@ -1,0 +1,306 @@
+INFO  Using log config file: jar:file:/D:/workspace/SWD3-MODS/.tools/static-re/ghidra-11.4.3/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: .work\cai-native-v01\party-analysis3.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (919 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Headless startup complete (2216 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\PIC\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Jython\ghidra_scripts
+    D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tests
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BSim\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\8051\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PDB\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\DATA\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\JVM\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FunctionID\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  Opening project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /swd3.exe (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tests\ReportPartyState.py (HeadlessAnalyzer)  
+INFO  ReportPartyState.py> PARTY STATE REPORT (GhidraScript)  
+INFO  ReportPartyState.py> FUNCTION 140067270 (GhidraScript)  
+INFO  ReportPartyState.py> 
+void FUN_140067270(undefined1 *param_1)
+
+{
+  undefined8 uVar1;
+  undefined8 uVar2;
+  
+  if (*(void **)(param_1 + 8) != (void *)0x0) {
+    free(*(void **)(param_1 + 8));
+  }
+  *(undefined8 *)(param_1 + 8) = 0;
+  *(undefined8 *)(param_1 + 0x10) = 0;
+  DAT_1401f9d03 = 1;
+  DAT_1401f9d1c = 0;
+  param_1[0x28] = 0;
+  *param_1 = 1;
+  uVar1 = DAT_1401a6d80;
+  uVar2 = FUN_14000c9f0(DAT_1401a6d80);
+  *(undefined8 *)(param_1 + 0x18) = uVar2;
+  FUN_140007270(uVar1,0xfffffffe);
+  FUN_140007270(*(undefined8 *)(param_1 + 0x18),0);
+  FUN_140008390(*(undefined8 *)(param_1 + 0x18));
+  FUN_140008940(*(undefined8 *)(param_1 + 0x18),"_BattleScriptThread");
+  FUN_140007270(*(undefined8 *)(param_1 + 0x18),0);
+  return;
+}
+
+ (GhidraScript)  
+INFO  ReportPartyState.py> FUNCTION 1400a94f0 (GhidraScript)  
+INFO  ReportPartyState.py> 
+undefined8 FUN_1400a94f0(undefined8 param_1)
+
+{
+  int iVar1;
+  char cVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  undefined8 uVar6;
+  undefined8 uVar7;
+  ulonglong uVar8;
+  int *piVar9;
+  uint uVar10;
+  
+  iVar3 = FUN_140007250();
+  if (iVar3 < 4) {
+    FUN_140147710(param_1,"Healing Error: Not enough arguments.");
+    return 0;
+  }
+  iVar3 = FUN_140007ad0(param_1,1);
+  uVar10 = iVar3 - 1;
+  iVar3 = FUN_140007ad0(param_1,2);
+  iVar4 = FUN_140007ad0(param_1,3);
+  iVar5 = FUN_140007ad0(param_1,4);
+  FUN_140007270(param_1,0xfffffffb);
+  if (uVar10 < 4) {
+    uVar8 = (ulonglong)uVar10;
+    if (iVar3 == -1) {
+      iVar3 = (&DAT_1401faf10)[uVar8 * 0x1a];
+    }
+    else {
+      iVar3 = (&DAT_1401faf04)[uVar8 * 0x1a] + iVar3;
+    }
+    (&DAT_1401faf04)[uVar8 * 0x1a] = iVar3;
+    if (iVar4 == -1) {
+      iVar4 = (&DAT_1401faf14)[uVar8 * 0x1a];
+    }
+    else {
+      iVar4 = (&DAT_1401faf08)[uVar8 * 0x1a] + iVar4;
+    }
+    (&DAT_1401faf08)[uVar8 * 0x1a] = iVar4;
+    if (iVar5 == -1) {
+      iVar5 = (&DAT_1401faf18)[uVar8 * 0x1a];
+    }
+    else {
+      iVar5 = (&DAT_1401faf0c)[uVar8 * 0x1a] + iVar5;
+    }
+    iVar1 = (&DAT_1401faf10)[uVar8 * 0x1a];
+    (&DAT_1401faf0c)[uVar8 * 0x1a] = iVar5;
+    if (iVar1 < iVar3) {
+      (&DAT_1401faf04)[uVar8 * 0x1a] = iVar1;
+      iVar3 = iVar1;
+    }
+    if ((int)(&DAT_1401faf14)[uVar8 * 0x1a] < iVar4) {
+      (&DAT_1401faf08)[uVar8 * 0x1a] = (&DAT_1401faf14)[uVar8 * 0x1a];
+    }
+    if ((int)(&DAT_1401faf18)[uVar8 * 0x1a] < iVar5) {
+      (&DAT_1401faf0c)[uVar8 * 0x1a] = (&DAT_1401faf18)[uVar8 * 0x1a];
+    }
+    (&DAT_1401faf30)[uVar8 * 0x34] = 0;
+    if (iVar3 < 1) {
+      (&DAT_1401faf04)[uVar8 * 0x1a] = 0;
+      (&DAT_1401faf30)[uVar8 * 0x34] = 0x8000;
+      piVar9 = &DAT_1401faf04;
+      iVar3 = 0x1e;
+      do {
+        cVar2 = FUN_140151160(iVar3);
+        if ((cVar2 != '\0') && (0 < *piVar9)) break;
+        iVar3 = iVar3 + 1;
+        piVar9 = piVar9 + 0x1a;
+      } while ((longlong)piVar9 < 0x1401fb0a4);
+    }
+    if ((int)(&DAT_1401faf08)[uVar8 * 0x1a] < 0) {
+      (&DAT_1401faf08)[uVar8 * 0x1a] = 0;
+    }
+    if ((int)(&DAT_1401faf0c)[uVar8 * 0x1a] < 0) {
+      (&DAT_1401faf0c)[uVar8 * 0x1a] = 0;
+    }
+  }
+  else {
+    uVar6 = FUN_1401668f0(0x583);
+    uVar7 = FUN_1401668f0(0x582);
+    FUN_140147710(param_1,uVar7,uVar6,uVar10);
+  }
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  ReportPartyState.py> FUNCTION 140141730 (GhidraScript)  
+INFO  ReportPartyState.py> 
+void FUN_140141730(void)
+
+{
+  undefined8 uVar1;
+  undefined4 uVar2;
+  int iVar3;
+  uint uVar4;
+  undefined8 local_58;
+  int local_50;
+  undefined8 local_40;
+  uint local_38;
+  undefined1 local_28 [32];
+  
+  local_40 = DAT_1401a6d80;
+  FUN_1400083c0(DAT_1401a6d80,&DAT_1401830fc);
+  local_38 = 1;
+  FUN_140050900(&local_58,&DAT_14017db5c,&local_40);
+  FUN_1400081e0(local_58,FUN_1401411a0,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"PathBreak");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_1401409a0,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"ChangeQQ");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140140750,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"ChangeDIR");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140140550,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"ChangeACT");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140141230,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"SetLoop");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_1401414e0,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,&DAT_14017db78);
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_1401404b0,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"Active");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140141420,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"SetTargetPos");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140141090,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"MoveToTarget");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140141570,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"WaitTime");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_1401411f0,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"PathTimming");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140140810,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"ChangePath");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_1401412d0,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"SetRolePos");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140140610,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"ChangeACTData");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140140d50,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"Follow");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140140a80,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"Follow2");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140140f10,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"Message");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  FUN_1400081e0(local_58,FUN_140141030,0);
+  uVar2 = FUN_140007220(local_58,0xfffffffe);
+  FUN_140008070(local_58,"MessageOff");
+  FUN_140007380(local_58,0xfffffffe);
+  FUN_140008b60(local_58,uVar2);
+  uVar4 = local_50 - 1;
+  local_50 = 1;
+  iVar3 = FUN_140007250(local_58);
+  if (iVar3 < 1) {
+    FUN_140050d40(local_28,"invalid stack");
+                    /* WARNING: Subroutine does not return */
+    _CxxThrowException(local_28,(ThrowInfo *)&DAT_14019ba30);
+  }
+  FUN_140007270(local_58,0xfffffffe);
+  local_50 = 0;
+  iVar3 = FUN_140007250(local_58);
+  if (iVar3 < (int)uVar4) {
+    FUN_140050d40(local_28,"invalid stack");
+                    /* WARNING: Subroutine does not return */
+    _CxxThrowException(local_28,(ThrowInfo *)&DAT_14019ba30);
+  }
+  FUN_140007270(local_58,~uVar4);
+  iVar3 = FUN_140007250(local_58);
+  if (iVar3 < 0) {
+    FUN_140050d40(&local_58,"invalid stack");
+                    /* WARNING: Subroutine does not return */
+    _CxxThrowException(&local_58,(ThrowInfo *)&DAT_14019ba30);
+  }
+  FUN_140007270(local_58,0xffffffff);
+  uVar1 = local_40;
+  iVar3 = FUN_140007250(local_40);
+  if ((int)local_38 <= iVar3) {
+    FUN_140007270(uVar1,~local_38);
+    return;
+  }
+  FUN_140050d40(&local_40,"invalid stack");
+                    /* WARNING: Subroutine does not return */
+  _CxxThrowException(&local_40,(ThrowInfo *)&DAT_14019ba30);
+}
+
+ (GhidraScript)  

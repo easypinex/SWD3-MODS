@@ -1,0 +1,17 @@
+{
+  ".work\\cai-guardian-supply-research\\original-data-v3.json": "174d8a15970f9b1dfd55e8ea9e5bc2ce3bb71620a3489cdce5e823104da94fd9",
+  ".work\\extracted\\script-index-inspect\\out_data\\ItemString.txt": "4c098c467823ef45366b4fd822ac61dffee51a2e153807363c699be663b9d49d",
+  "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\tools\\Audit-RenewableRecipes.py": "3b4872c64165bb04b4df029089615e274c8e12336c2ad7e70da12778570d378c",
+  "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\tools\\Export-RefineryData.lua": "103d14eb0292b4d74a7a75ee72525cf8b4607440bd11c4221bbb30f3ab60efe4",
+  "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\tools\\Verify-RecipeWitnesses.lua": "71cb03296009ba5ce22ed6c4b3e3fb3d495972eb0e3413b99c2e9559be5ed841",
+  ".work\\extracted\\script-index-inspect\\out_data\\GameData_ItemData.lua": "59848d74a39e6b3366e4e5e41210eca10a6dc510bfb2d632e6dcd18af79479a0",
+  ".work\\extracted\\script-index-inspect\\out_data\\GameData_BattleCharData.lua": "d5c3934d4819286b6835cc2f48f572b70c0d1f929e609462b5a6fd82e7220a0f",
+  ".work\\extracted\\script-index-inspect\\out_data\\GameData_WeaponData.lua": "3d23e6f0b6c1f6cd35e248ced1fda719cb1c1adc2fb717e4a63f62898c0d8221",
+  ".work\\extracted\\script-index-inspect\\out_data\\GameData_ArmorData.lua": "0308f5c6c4320372b7c33bf4e15ebc8a41e2568fbbfa5027476f42fa772b52ac",
+  ".work\\extracted\\script-index-inspect\\out_data\\GameData_SkillData.lua": "5a19234114d82c4a98a2f340c150ab3f3ee8e84481af73da6e1b653b5d1bbc9b",
+  ".work\\extracted\\script-index-inspect\\out_data\\GameData_AttackEffect.lua": "794eb68cbfa5609bc0f0577e71a0fc9729edcd0fed1f0bc38eed8b3f57c1c9b7",
+  ".work\\extracted\\script-index-inspect\\out_data\\GameData_RaceDefine.lua": "b4c68f8ebe148e4308bf80fc8110c06ea758e5a5d5d9412fd639727f87f070d7",
+  ".work\\extracted\\script-index-inspect\\out_data\\OnEvent_Obsolt.lua": "132b9e119b2f8b26eec1c1dea9bd50b3aa1a5dde846ead065073ba469c0cf741",
+  ".work\\extracted\\script-index-inspect\\out_data\\Scene.lua": "a4547882433c6c6302d13f39fe0e4a57a3735a65da311b17c63f150decd82b5b",
+  ".work\\extracted\\script-index-inspect\\out_data\\Function_Repository.lua": "7e3f5cc42c5d44011a51fb5dd118a2cf88583dfe66f483c6c6c98fe0a37354bf"
+}

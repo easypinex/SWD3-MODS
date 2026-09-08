@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-08T01:09:49.7683700+08:00",
+  "backup": "D:\\workspace\\SWD3-MODS\\.work\\challenge-refund-install-20260908-010853-140",
+  "gamePid": 20456,
+  "gameWindow": 12650984,
+  "files": [
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\dist\\cai_demon_king.ssmod",
+      "Hash": "252F2C844AF859DC1261F7EB7ECB1A7AAB2106EA573C6A470D590890B1885560"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-live-card-battle-mod\\dist\\live_card_battle.ssmod",
+      "Hash": "4D0B431C0FA3A44EFCCA179735353EB0E8A0ABAD6633AE82C31F7586D602E75B"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\src\\data\\CaiInventory.lua",
+      "Hash": "07355807949BBC048E64E93007F04FCA0DDC19F314CC0FACB1470BC4C52AB236"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-live-card-battle-mod\\src\\data\\LiveCardInventory.lua",
+      "Hash": "1FA6C03C5FEBEE41E489F5A9E4D9C8F1D41ECD554394FAB3766E8778CD4E57DE"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\tests\\inventory_refund.lua",
+      "Hash": "E3403A7FD55EBD6A3090B1E66D72C9E8C3D03647706AE8BBC2AE36056C672B27"
+    }
+  ],
+  "console": "BC984CE0995ED5376FE5300A488DF2ACBA03AEAE3DA8B9B3CBEB1C4CB9C1572D",
+  "savesUnchanged": true
+}

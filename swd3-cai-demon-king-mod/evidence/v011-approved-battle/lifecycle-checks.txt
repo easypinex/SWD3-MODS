@@ -1,0 +1,13 @@
+CASE reward
+reward failed: ...space\SWD3-MODS\swd3-cai-demon-king-mod/tests/reward.lua:30: inventory failure
+PASS: reward native definitions, inventory/equipment lifecycle, failure retry and isolated skill arrays
+
+CASE validation
+PASS: Cai v0.4 independent registration, exit classification and context isolation
+PASS: Cai native dialogue coroutine, opening/defeat order, cancellation, errors and no menu hints
+PASS: strategy hook, native cure replacement, scope and cleanup
+PASS: explicit manual summon entry and unchanged standard entry
+
+CASE party_state
+PASS: party full entry, native revival, four slots, exact restoration and failures
+

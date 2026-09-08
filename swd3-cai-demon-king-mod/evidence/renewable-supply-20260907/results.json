@@ -1,0 +1,5701 @@
+{
+  "seeds": [
+    627,
+    628,
+    626,
+    639,
+    698,
+    697,
+    644,
+    649,
+    657,
+    554,
+    555,
+    568,
+    569,
+    979,
+    995,
+    1031,
+    883
+  ],
+  "reachable": 256,
+  "targets": [
+    {
+      "id": 255,
+      "name": "尼凱",
+      "shop_leaf_count": 6,
+      "leaves": [
+        {
+          "id": 555,
+          "name": "八卦棍",
+          "count": 2
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 255,
+        "name": "尼凱",
+        "side": "west",
+        "a": {
+          "id": 198,
+          "name": "太白金星",
+          "side": "east",
+          "a": {
+            "id": 555,
+            "name": "八卦棍",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 154,
+            "name": "上元夫人",
+            "side": "east",
+            "a": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 146,
+              "name": "妖陀螺鬼",
+              "side": "east",
+              "a": {
+                "id": 628,
+                "name": "金創藥",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 883,
+                "name": "烏蠶手套",
+                "shop": "Scene.TALK4402"
+              }
+            }
+          }
+        },
+        "b": {
+          "id": 555,
+          "name": "八卦棍",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 179,
+      "name": "鳳凰",
+      "shop_leaf_count": 6,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 555,
+          "name": "八卦棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 179,
+        "name": "鳳凰",
+        "side": "east",
+        "a": {
+          "id": 555,
+          "name": "八卦棍",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 213,
+          "name": "龍王",
+          "side": "east",
+          "a": {
+            "id": 554,
+            "name": "齊眉棍",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 214,
+            "name": "黑龍",
+            "side": "east",
+            "a": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 149,
+      "name": "九天玄女",
+      "shop_leaf_count": 6,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 555,
+          "name": "八卦棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 149,
+        "name": "九天玄女",
+        "side": "east",
+        "a": {
+          "id": 555,
+          "name": "八卦棍",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 158,
+          "name": "娥皇",
+          "side": "east",
+          "a": {
+            "id": 554,
+            "name": "齊眉棍",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 154,
+            "name": "上元夫人",
+            "side": "east",
+            "a": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 146,
+              "name": "妖陀螺鬼",
+              "side": "east",
+              "a": {
+                "id": 628,
+                "name": "金創藥",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 883,
+                "name": "烏蠶手套",
+                "shop": "Scene.TALK4402"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 368,
+      "name": "鬥戰聖佛",
+      "shop_leaf_count": 9,
+      "leaves": [
+        {
+          "id": 555,
+          "name": "八卦棍",
+          "count": 1
+        },
+        {
+          "id": 568,
+          "name": "翔羽葉",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 368,
+        "name": "鬥戰聖佛",
+        "side": "east",
+        "a": {
+          "id": 186,
+          "name": "黑無常",
+          "side": "east",
+          "a": {
+            "id": 223,
+            "name": "石獅精",
+            "side": "east",
+            "a": {
+              "id": 568,
+              "name": "翔羽葉",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 238,
+            "name": "尼梅亞獅",
+            "side": "west",
+            "a": {
+              "id": 316,
+              "name": "妖燈鬼",
+              "side": "east",
+              "a": {
+                "id": 979,
+                "name": "辟邪戒指",
+                "shop": "Scene.TALK4402"
+              },
+              "b": {
+                "id": 979,
+                "name": "辟邪戒指",
+                "shop": "Scene.TALK4402"
+              }
+            },
+            "b": {
+              "id": 254,
+              "name": "肯塔羅斯",
+              "side": "west",
+              "a": {
+                "id": 147,
+                "name": "水仙",
+                "side": "east",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              },
+              "b": {
+                "id": 143,
+                "name": "溫蒂妮",
+                "side": "west",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "id": 555,
+          "name": "八卦棍",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 178,
+      "name": "神龍",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 555,
+          "name": "八卦棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 178,
+        "name": "神龍",
+        "side": "east",
+        "a": {
+          "id": 555,
+          "name": "八卦棍",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 214,
+          "name": "黑龍",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 198,
+      "name": "太白金星",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 555,
+          "name": "八卦棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 198,
+        "name": "太白金星",
+        "side": "east",
+        "a": {
+          "id": 555,
+          "name": "八卦棍",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 154,
+          "name": "上元夫人",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 146,
+            "name": "妖陀螺鬼",
+            "side": "east",
+            "a": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 883,
+              "name": "烏蠶手套",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 152,
+      "name": "瑪特女神",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 152,
+        "name": "瑪特女神",
+        "side": "west",
+        "a": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 316,
+          "name": "妖燈鬼",
+          "side": "east",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 154,
+      "name": "上元夫人",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 154,
+        "name": "上元夫人",
+        "side": "east",
+        "a": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 146,
+          "name": "妖陀螺鬼",
+          "side": "east",
+          "a": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 883,
+            "name": "烏蠶手套",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 213,
+      "name": "龍王",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 213,
+        "name": "龍王",
+        "side": "east",
+        "a": {
+          "id": 554,
+          "name": "齊眉棍",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 214,
+          "name": "黑龍",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 214,
+      "name": "黑龍",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 214,
+        "name": "黑龍",
+        "side": "east",
+        "a": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 632,
+      "name": "蟠桃",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 2
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 2
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 632,
+        "name": "蟠桃",
+        "side": "east",
+        "a": {
+          "id": 154,
+          "name": "上元夫人",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 146,
+            "name": "妖陀螺鬼",
+            "side": "east",
+            "a": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 883,
+              "name": "烏蠶手套",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        },
+        "b": {
+          "id": 140,
+          "name": "妖貓",
+          "side": "east",
+          "a": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 126,
+            "name": "邪靈",
+            "side": "west",
+            "a": {
+              "id": 657,
+              "name": "聖言石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 657,
+              "name": "聖言石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 641,
+      "name": "仙爐灰",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 2
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 641,
+        "name": "仙爐灰",
+        "side": "east",
+        "a": {
+          "id": 153,
+          "name": "瓦雀",
+          "side": "west",
+          "a": {
+            "id": 143,
+            "name": "溫蒂妮",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        },
+        "b": {
+          "id": 140,
+          "name": "妖貓",
+          "side": "east",
+          "a": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 126,
+            "name": "邪靈",
+            "side": "west",
+            "a": {
+              "id": 657,
+              "name": "聖言石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 657,
+              "name": "聖言石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 642,
+      "name": "仙魄香",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 4
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 642,
+        "name": "仙魄香",
+        "side": "east",
+        "a": {
+          "id": 152,
+          "name": "瑪特女神",
+          "side": "west",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 316,
+            "name": "妖燈鬼",
+            "side": "east",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        },
+        "b": {
+          "id": 170,
+          "name": "殭屍",
+          "side": "west",
+          "a": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 646,
+      "name": "仙蓮子",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 6
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 646,
+        "name": "仙蓮子",
+        "side": "east",
+        "a": {
+          "id": 214,
+          "name": "黑龍",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        },
+        "b": {
+          "id": 197,
+          "name": "耆戈",
+          "side": "west",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 804,
+      "name": "真夢娃娃",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    },
+    {
+      "id": 993,
+      "name": "白玉龍紋珮",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    },
+    {
+      "id": 1031,
+      "name": "千葉",
+      "shop_leaf_count": 1,
+      "leaves": [
+        {
+          "id": 1031,
+          "name": "千葉",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 1031,
+        "name": "千葉",
+        "shop": "Scene.TALK4402"
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 979,
+      "name": "辟邪戒指",
+      "shop_leaf_count": 1,
+      "leaves": [
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 979,
+        "name": "辟邪戒指",
+        "shop": "Scene.TALK4402"
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 47,
+      "name": "蟹精魔機",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    },
+    {
+      "id": 49,
+      "name": "羯忍幻機",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    },
+    {
+      "id": 101,
+      "name": "黏怪",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 101,
+        "name": "黏怪",
+        "side": "west",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 554,
+          "name": "齊眉棍",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 118,
+      "name": "吸血殭屍",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 3
+        }
+      ],
+      "tree": {
+        "id": 118,
+        "name": "吸血殭屍",
+        "side": "west",
+        "a": {
+          "id": 208,
+          "name": "水鬼",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 206,
+          "name": "惡靈",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 124,
+      "name": "炎靈子",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 3
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 124,
+        "name": "炎靈子",
+        "side": "west",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 154,
+          "name": "上元夫人",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 146,
+            "name": "妖陀螺鬼",
+            "side": "east",
+            "a": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 883,
+              "name": "烏蠶手套",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 125,
+      "name": "吸血鬼王",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 5
+        }
+      ],
+      "tree": {
+        "id": 125,
+        "name": "吸血鬼王",
+        "side": "west",
+        "a": {
+          "id": 657,
+          "name": "聖言石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 221,
+          "name": "枯屍鬼",
+          "side": "east",
+          "a": {
+            "id": 126,
+            "name": "邪靈",
+            "side": "west",
+            "a": {
+              "id": 657,
+              "name": "聖言石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 657,
+              "name": "聖言石",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 126,
+            "name": "邪靈",
+            "side": "west",
+            "a": {
+              "id": 657,
+              "name": "聖言石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 657,
+              "name": "聖言石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 126,
+      "name": "邪靈",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 126,
+        "name": "邪靈",
+        "side": "west",
+        "a": {
+          "id": 657,
+          "name": "聖言石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 657,
+          "name": "聖言石",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 127,
+      "name": "石骨魚",
+      "shop_leaf_count": 10,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 6
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 127,
+        "name": "石骨魚",
+        "side": "west",
+        "a": {
+          "id": 101,
+          "name": "黏怪",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 554,
+            "name": "齊眉棍",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 133,
+          "name": "亞格瑞斯",
+          "side": "west",
+          "a": {
+            "id": 238,
+            "name": "尼梅亞獅",
+            "side": "west",
+            "a": {
+              "id": 316,
+              "name": "妖燈鬼",
+              "side": "east",
+              "a": {
+                "id": 979,
+                "name": "辟邪戒指",
+                "shop": "Scene.TALK4402"
+              },
+              "b": {
+                "id": 979,
+                "name": "辟邪戒指",
+                "shop": "Scene.TALK4402"
+              }
+            },
+            "b": {
+              "id": 254,
+              "name": "肯塔羅斯",
+              "side": "west",
+              "a": {
+                "id": 147,
+                "name": "水仙",
+                "side": "east",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              },
+              "b": {
+                "id": 143,
+                "name": "溫蒂妮",
+                "side": "west",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              }
+            }
+          },
+          "b": {
+            "id": 142,
+            "name": "雪球怪",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 128,
+      "name": "石骨飛魚",
+      "shop_leaf_count": 9,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 5
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 128,
+        "name": "石骨飛魚",
+        "side": "west",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 130,
+          "name": "獢",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 163,
+            "name": "朱蛤獸",
+            "side": "east",
+            "a": {
+              "id": 189,
+              "name": "食人花",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 391,
+                "name": "魚身人面妖",
+                "side": "west",
+                "a": {
+                  "id": 979,
+                  "name": "辟邪戒指",
+                  "shop": "Scene.TALK4402"
+                },
+                "b": {
+                  "id": 979,
+                  "name": "辟邪戒指",
+                  "shop": "Scene.TALK4402"
+                }
+              }
+            },
+            "b": {
+              "id": 174,
+              "name": "阿高司",
+              "side": "west",
+              "a": {
+                "id": 143,
+                "name": "溫蒂妮",
+                "side": "west",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              },
+              "b": {
+                "id": 143,
+                "name": "溫蒂妮",
+                "side": "west",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 129,
+      "name": "阿加希歐",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 129,
+        "name": "阿加希歐",
+        "side": "east",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 130,
+      "name": "獢",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 5
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 130,
+        "name": "獢",
+        "side": "west",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 163,
+          "name": "朱蛤獸",
+          "side": "east",
+          "a": {
+            "id": 189,
+            "name": "食人花",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 391,
+              "name": "魚身人面妖",
+              "side": "west",
+              "a": {
+                "id": 979,
+                "name": "辟邪戒指",
+                "shop": "Scene.TALK4402"
+              },
+              "b": {
+                "id": 979,
+                "name": "辟邪戒指",
+                "shop": "Scene.TALK4402"
+              }
+            }
+          },
+          "b": {
+            "id": 174,
+            "name": "阿高司",
+            "side": "west",
+            "a": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 131,
+      "name": "吸血鬼",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 3
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 131,
+        "name": "吸血鬼",
+        "side": "west",
+        "a": {
+          "id": 206,
+          "name": "惡靈",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 126,
+          "name": "邪靈",
+          "side": "west",
+          "a": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 132,
+      "name": "侏儒",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 132,
+        "name": "侏儒",
+        "side": "west",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 133,
+      "name": "亞格瑞斯",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 5
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 133,
+        "name": "亞格瑞斯",
+        "side": "west",
+        "a": {
+          "id": 238,
+          "name": "尼梅亞獅",
+          "side": "west",
+          "a": {
+            "id": 316,
+            "name": "妖燈鬼",
+            "side": "east",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          },
+          "b": {
+            "id": 254,
+            "name": "肯塔羅斯",
+            "side": "west",
+            "a": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        },
+        "b": {
+          "id": 142,
+          "name": "雪球怪",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 134,
+      "name": "半人馬",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 649,
+          "name": "解僵針",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 134,
+        "name": "半人馬",
+        "side": "west",
+        "a": {
+          "id": 649,
+          "name": "解僵針",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 135,
+      "name": "美杜莎",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 649,
+          "name": "解僵針",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 135,
+        "name": "美杜莎",
+        "side": "west",
+        "a": {
+          "id": 649,
+          "name": "解僵針",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 189,
+          "name": "食人花",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 136,
+      "name": "格萊艾",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 649,
+          "name": "解僵針",
+          "count": 1
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 136,
+        "name": "格萊艾",
+        "side": "west",
+        "a": {
+          "id": 649,
+          "name": "解僵針",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 657,
+          "name": "聖言石",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 137,
+      "name": "凱貝羅斯",
+      "shop_leaf_count": 7,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 137,
+        "name": "凱貝羅斯",
+        "side": "west",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 238,
+          "name": "尼梅亞獅",
+          "side": "west",
+          "a": {
+            "id": 316,
+            "name": "妖燈鬼",
+            "side": "east",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          },
+          "b": {
+            "id": 254,
+            "name": "肯塔羅斯",
+            "side": "west",
+            "a": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 138,
+      "name": "寒蛙",
+      "shop_leaf_count": 9,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 5
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 138,
+        "name": "寒蛙",
+        "side": "east",
+        "a": {
+          "id": 130,
+          "name": "獢",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 163,
+            "name": "朱蛤獸",
+            "side": "east",
+            "a": {
+              "id": 189,
+              "name": "食人花",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 391,
+                "name": "魚身人面妖",
+                "side": "west",
+                "a": {
+                  "id": 979,
+                  "name": "辟邪戒指",
+                  "shop": "Scene.TALK4402"
+                },
+                "b": {
+                  "id": 979,
+                  "name": "辟邪戒指",
+                  "shop": "Scene.TALK4402"
+                }
+              }
+            },
+            "b": {
+              "id": 174,
+              "name": "阿高司",
+              "side": "west",
+              "a": {
+                "id": 143,
+                "name": "溫蒂妮",
+                "side": "west",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              },
+              "b": {
+                "id": 143,
+                "name": "溫蒂妮",
+                "side": "west",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 139,
+      "name": "瓶女",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 139,
+        "name": "瓶女",
+        "side": "west",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 554,
+          "name": "齊眉棍",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 140,
+      "name": "妖貓",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 2
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 140,
+        "name": "妖貓",
+        "side": "east",
+        "a": {
+          "id": 208,
+          "name": "水鬼",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 126,
+          "name": "邪靈",
+          "side": "west",
+          "a": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 141,
+      "name": "牛頭魚",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    },
+    {
+      "id": 142,
+      "name": "雪球怪",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 142,
+        "name": "雪球怪",
+        "side": "west",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 143,
+      "name": "溫蒂妮",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 143,
+        "name": "溫蒂妮",
+        "side": "west",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 144,
+      "name": "竹妖",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 144,
+        "name": "竹妖",
+        "side": "east",
+        "a": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 145,
+      "name": "魍魎",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 569,
+          "name": "旋流刺",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 145,
+        "name": "魍魎",
+        "side": "east",
+        "a": {
+          "id": 569,
+          "name": "旋流刺",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 146,
+      "name": "妖陀螺鬼",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 146,
+        "name": "妖陀螺鬼",
+        "side": "east",
+        "a": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 883,
+          "name": "烏蠶手套",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 147,
+      "name": "水仙",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 147,
+        "name": "水仙",
+        "side": "east",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 148,
+      "name": "七仙女",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        },
+        {
+          "id": 995,
+          "name": "神草結",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 148,
+        "name": "七仙女",
+        "side": "east",
+        "a": {
+          "id": 995,
+          "name": "神草結",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 153,
+          "name": "瓦雀",
+          "side": "west",
+          "a": {
+            "id": 143,
+            "name": "溫蒂妮",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 150,
+      "name": "嫦娥",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 3
+        }
+      ],
+      "tree": {
+        "id": 150,
+        "name": "嫦娥",
+        "side": "east",
+        "a": {
+          "id": 979,
+          "name": "辟邪戒指",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 197,
+          "name": "耆戈",
+          "side": "west",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 151,
+      "name": "瓊霜",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 151,
+        "name": "瓊霜",
+        "side": "west",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 153,
+      "name": "瓦雀",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 153,
+        "name": "瓦雀",
+        "side": "west",
+        "a": {
+          "id": 143,
+          "name": "溫蒂妮",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 155,
+      "name": "蠶女",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 2
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 155,
+        "name": "蠶女",
+        "side": "east",
+        "a": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 719,
+          "name": "博落迴之根",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 156,
+      "name": "女夷",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 2
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 156,
+        "name": "女夷",
+        "side": "east",
+        "a": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 726,
+          "name": "延胡索之花",
+          "side": "east",
+          "a": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 157,
+      "name": "女夷22",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    },
+    {
+      "id": 158,
+      "name": "娥皇",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 158,
+        "name": "娥皇",
+        "side": "east",
+        "a": {
+          "id": 554,
+          "name": "齊眉棍",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 154,
+          "name": "上元夫人",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 146,
+            "name": "妖陀螺鬼",
+            "side": "east",
+            "a": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 883,
+              "name": "烏蠶手套",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 159,
+      "name": "女英",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 568,
+          "name": "翔羽葉",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 159,
+        "name": "女英",
+        "side": "east",
+        "a": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 223,
+          "name": "石獅精",
+          "side": "east",
+          "a": {
+            "id": 568,
+            "name": "翔羽葉",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 160,
+      "name": "席娜",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 160,
+        "name": "席娜",
+        "side": "west",
+        "a": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 175,
+          "name": "炎顱",
+          "side": "east",
+          "a": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          },
+          "b": {
+            "id": 174,
+            "name": "阿高司",
+            "side": "west",
+            "a": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 161,
+      "name": "亞坦",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 5
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 161,
+        "name": "亞坦",
+        "side": "east",
+        "a": {
+          "id": 142,
+          "name": "雪球怪",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 238,
+          "name": "尼梅亞獅",
+          "side": "west",
+          "a": {
+            "id": 316,
+            "name": "妖燈鬼",
+            "side": "east",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          },
+          "b": {
+            "id": 254,
+            "name": "肯塔羅斯",
+            "side": "west",
+            "a": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 162,
+      "name": "蝠妖",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 649,
+          "name": "解僵針",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 162,
+        "name": "蝠妖",
+        "side": "east",
+        "a": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 649,
+          "name": "解僵針",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 163,
+      "name": "朱蛤獸",
+      "shop_leaf_count": 7,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 5
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 163,
+        "name": "朱蛤獸",
+        "side": "east",
+        "a": {
+          "id": 189,
+          "name": "食人花",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        },
+        "b": {
+          "id": 174,
+          "name": "阿高司",
+          "side": "west",
+          "a": {
+            "id": 143,
+            "name": "溫蒂妮",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 143,
+            "name": "溫蒂妮",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 164,
+      "name": "神燈巨人",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 164,
+        "name": "神燈巨人",
+        "side": "east",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 883,
+          "name": "烏蠶手套",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 165,
+      "name": "色烈芬",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 568,
+          "name": "翔羽葉",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 165,
+        "name": "色烈芬",
+        "side": "west",
+        "a": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 159,
+          "name": "女英",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 223,
+            "name": "石獅精",
+            "side": "east",
+            "a": {
+              "id": 568,
+              "name": "翔羽葉",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 166,
+      "name": "藍人",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 166,
+        "name": "藍人",
+        "side": "west",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 657,
+          "name": "聖言石",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 167,
+      "name": "戰死屍鬼",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 167,
+        "name": "戰死屍鬼",
+        "side": "east",
+        "a": {
+          "id": 170,
+          "name": "殭屍",
+          "side": "west",
+          "a": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        },
+        "b": {
+          "id": 554,
+          "name": "齊眉棍",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 170,
+      "name": "殭屍",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 170,
+        "name": "殭屍",
+        "side": "west",
+        "a": {
+          "id": 208,
+          "name": "水鬼",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 208,
+          "name": "水鬼",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 171,
+      "name": "幽靈",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 171,
+        "name": "幽靈",
+        "side": "west",
+        "a": {
+          "id": 101,
+          "name": "黏怪",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 554,
+            "name": "齊眉棍",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 172,
+      "name": "阿普洛迪",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 639,
+          "name": "還靈丹",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 172,
+        "name": "阿普洛迪",
+        "side": "west",
+        "a": {
+          "id": 277,
+          "name": "雪女",
+          "side": "east",
+          "a": {
+            "id": 639,
+            "name": "還靈丹",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 726,
+            "name": "延胡索之花",
+            "side": "east",
+            "a": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        },
+        "b": {
+          "id": 316,
+          "name": "妖燈鬼",
+          "side": "east",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 173,
+      "name": "阿拔東",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 173,
+        "name": "阿拔東",
+        "side": "west",
+        "a": {
+          "id": 316,
+          "name": "妖燈鬼",
+          "side": "east",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 175,
+          "name": "炎顱",
+          "side": "east",
+          "a": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          },
+          "b": {
+            "id": 174,
+            "name": "阿高司",
+            "side": "west",
+            "a": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 174,
+      "name": "阿高司",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 174,
+        "name": "阿高司",
+        "side": "west",
+        "a": {
+          "id": 143,
+          "name": "溫蒂妮",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 143,
+          "name": "溫蒂妮",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 175,
+      "name": "炎顱",
+      "shop_leaf_count": 6,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 175,
+        "name": "炎顱",
+        "side": "east",
+        "a": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 174,
+          "name": "阿高司",
+          "side": "west",
+          "a": {
+            "id": 143,
+            "name": "溫蒂妮",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 143,
+            "name": "溫蒂妮",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 177,
+      "name": "火蠑螈",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    },
+    {
+      "id": 181,
+      "name": "庫塔",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 181,
+        "name": "庫塔",
+        "side": "east",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 184,
+      "name": "食屍鬼",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 184,
+        "name": "食屍鬼",
+        "side": "east",
+        "a": {
+          "id": 316,
+          "name": "妖燈鬼",
+          "side": "east",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 185,
+      "name": "山鬼",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 185,
+        "name": "山鬼",
+        "side": "east",
+        "a": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 206,
+          "name": "惡靈",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 186,
+      "name": "黑無常",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 568,
+          "name": "翔羽葉",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 186,
+        "name": "黑無常",
+        "side": "east",
+        "a": {
+          "id": 223,
+          "name": "石獅精",
+          "side": "east",
+          "a": {
+            "id": 568,
+            "name": "翔羽葉",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 238,
+          "name": "尼梅亞獅",
+          "side": "west",
+          "a": {
+            "id": 316,
+            "name": "妖燈鬼",
+            "side": "east",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          },
+          "b": {
+            "id": 254,
+            "name": "肯塔羅斯",
+            "side": "west",
+            "a": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 189,
+      "name": "食人花",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 189,
+        "name": "食人花",
+        "side": "west",
+        "a": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 191,
+      "name": "樂仙女",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 3
+        }
+      ],
+      "tree": {
+        "id": 191,
+        "name": "樂仙女",
+        "side": "east",
+        "a": {
+          "id": 979,
+          "name": "辟邪戒指",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 153,
+          "name": "瓦雀",
+          "side": "west",
+          "a": {
+            "id": 143,
+            "name": "溫蒂妮",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 391,
+            "name": "魚身人面妖",
+            "side": "west",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 194,
+      "name": "白無常",
+      "shop_leaf_count": 9,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 568,
+          "name": "翔羽葉",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 194,
+        "name": "白無常",
+        "side": "east",
+        "a": {
+          "id": 186,
+          "name": "黑無常",
+          "side": "east",
+          "a": {
+            "id": 223,
+            "name": "石獅精",
+            "side": "east",
+            "a": {
+              "id": 568,
+              "name": "翔羽葉",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 238,
+            "name": "尼梅亞獅",
+            "side": "west",
+            "a": {
+              "id": 316,
+              "name": "妖燈鬼",
+              "side": "east",
+              "a": {
+                "id": 979,
+                "name": "辟邪戒指",
+                "shop": "Scene.TALK4402"
+              },
+              "b": {
+                "id": 979,
+                "name": "辟邪戒指",
+                "shop": "Scene.TALK4402"
+              }
+            },
+            "b": {
+              "id": 254,
+              "name": "肯塔羅斯",
+              "side": "west",
+              "a": {
+                "id": 147,
+                "name": "水仙",
+                "side": "east",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              },
+              "b": {
+                "id": 143,
+                "name": "溫蒂妮",
+                "side": "west",
+                "a": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                },
+                "b": {
+                  "id": 627,
+                  "name": "魔貝粉",
+                  "shop": "Scene.TALK4401"
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "id": 554,
+          "name": "齊眉棍",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 197,
+      "name": "耆戈",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 197,
+        "name": "耆戈",
+        "side": "west",
+        "a": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 199,
+      "name": "天將",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 2
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 199,
+        "name": "天將",
+        "side": "east",
+        "a": {
+          "id": 979,
+          "name": "辟邪戒指",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 154,
+          "name": "上元夫人",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 146,
+            "name": "妖陀螺鬼",
+            "side": "east",
+            "a": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 883,
+              "name": "烏蠶手套",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 206,
+      "name": "惡靈",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 206,
+        "name": "惡靈",
+        "side": "west",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 657,
+          "name": "聖言石",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 208,
+      "name": "水鬼",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 208,
+        "name": "水鬼",
+        "side": "west",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 221,
+      "name": "枯屍鬼",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 221,
+        "name": "枯屍鬼",
+        "side": "east",
+        "a": {
+          "id": 126,
+          "name": "邪靈",
+          "side": "west",
+          "a": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 126,
+          "name": "邪靈",
+          "side": "west",
+          "a": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 222,
+      "name": "枯屍鬼王",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 222,
+        "name": "枯屍鬼王",
+        "side": "east",
+        "a": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 170,
+          "name": "殭屍",
+          "side": "west",
+          "a": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 223,
+      "name": "石獅精",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 568,
+          "name": "翔羽葉",
+          "count": 1
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 223,
+        "name": "石獅精",
+        "side": "east",
+        "a": {
+          "id": 568,
+          "name": "翔羽葉",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 226,
+      "name": "獨角獸",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 226,
+        "name": "獨角獸",
+        "side": "west",
+        "a": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 238,
+      "name": "尼梅亞獅",
+      "shop_leaf_count": 6,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 238,
+        "name": "尼梅亞獅",
+        "side": "west",
+        "a": {
+          "id": 316,
+          "name": "妖燈鬼",
+          "side": "east",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 254,
+          "name": "肯塔羅斯",
+          "side": "west",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 143,
+            "name": "溫蒂妮",
+            "side": "west",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 253,
+      "name": "雪芙",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 2
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 253,
+        "name": "雪芙",
+        "side": "west",
+        "a": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 719,
+          "name": "博落迴之根",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 254,
+      "name": "肯塔羅斯",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 254,
+        "name": "肯塔羅斯",
+        "side": "west",
+        "a": {
+          "id": 147,
+          "name": "水仙",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 143,
+          "name": "溫蒂妮",
+          "side": "west",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 267,
+      "name": "冥府獄卒",
+      "shop_leaf_count": 4,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 568,
+          "name": "翔羽葉",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 267,
+        "name": "冥府獄卒",
+        "side": "east",
+        "a": {
+          "id": 711,
+          "name": "白皙葫蘆",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 554,
+            "name": "齊眉棍",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 715,
+          "name": "雲生碧燄巾",
+          "side": "east",
+          "a": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 568,
+            "name": "翔羽葉",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 269,
+      "name": "冤魂",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 568,
+          "name": "翔羽葉",
+          "count": 1
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 269,
+        "name": "冤魂",
+        "side": "east",
+        "a": {
+          "id": 657,
+          "name": "聖言石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 715,
+          "name": "雲生碧燄巾",
+          "side": "east",
+          "a": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 568,
+            "name": "翔羽葉",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 271,
+      "name": "吊死鬼",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 555,
+          "name": "八卦棍",
+          "count": 1
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 271,
+        "name": "吊死鬼",
+        "side": "east",
+        "a": {
+          "id": 206,
+          "name": "惡靈",
+          "side": "west",
+          "a": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 555,
+          "name": "八卦棍",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 272,
+      "name": "餓死鬼",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 272,
+        "name": "餓死鬼",
+        "side": "east",
+        "a": {
+          "id": 628,
+          "name": "金創藥",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 126,
+          "name": "邪靈",
+          "side": "west",
+          "a": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 273,
+      "name": "瘟鬼",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 555,
+          "name": "八卦棍",
+          "count": 1
+        },
+        {
+          "id": 657,
+          "name": "聖言石",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 273,
+        "name": "瘟鬼",
+        "side": "east",
+        "a": {
+          "id": 126,
+          "name": "邪靈",
+          "side": "west",
+          "a": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 657,
+            "name": "聖言石",
+            "shop": "Scene.TALK4401"
+          }
+        },
+        "b": {
+          "id": 555,
+          "name": "八卦棍",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 274,
+      "name": "夜叉",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 274,
+        "name": "夜叉",
+        "side": "east",
+        "a": {
+          "id": 554,
+          "name": "齊眉棍",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 391,
+          "name": "魚身人面妖",
+          "side": "west",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 277,
+      "name": "雪女",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 639,
+          "name": "還靈丹",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 277,
+        "name": "雪女",
+        "side": "east",
+        "a": {
+          "id": 639,
+          "name": "還靈丹",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 726,
+          "name": "延胡索之花",
+          "side": "east",
+          "a": {
+            "id": 628,
+            "name": "金創藥",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 698,
+            "name": "諸方神石",
+            "shop": "Scene.TALK4401"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 281,
+      "name": "天宮仙女",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 3
+        },
+        {
+          "id": 628,
+          "name": "金創藥",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 281,
+        "name": "天宮仙女",
+        "side": "east",
+        "a": {
+          "id": 154,
+          "name": "上元夫人",
+          "side": "east",
+          "a": {
+            "id": 147,
+            "name": "水仙",
+            "side": "east",
+            "a": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 627,
+              "name": "魔貝粉",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 146,
+            "name": "妖陀螺鬼",
+            "side": "east",
+            "a": {
+              "id": 628,
+              "name": "金創藥",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 883,
+              "name": "烏蠶手套",
+              "shop": "Scene.TALK4402"
+            }
+          }
+        },
+        "b": {
+          "id": 627,
+          "name": "魔貝粉",
+          "shop": "Scene.TALK4401"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 316,
+      "name": "妖燈鬼",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 316,
+        "name": "妖燈鬼",
+        "side": "east",
+        "a": {
+          "id": 979,
+          "name": "辟邪戒指",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 979,
+          "name": "辟邪戒指",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 317,
+      "name": "迷魂霧妖",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 639,
+          "name": "還靈丹",
+          "count": 1
+        },
+        {
+          "id": 883,
+          "name": "烏蠶手套",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 317,
+        "name": "迷魂霧妖",
+        "side": "east",
+        "a": {
+          "id": 639,
+          "name": "還靈丹",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 883,
+          "name": "烏蠶手套",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 377,
+      "name": "死靈騎士",
+      "shop_leaf_count": 8,
+      "leaves": [
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 4
+        },
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 377,
+        "name": "死靈騎士",
+        "side": "west",
+        "a": {
+          "id": 316,
+          "name": "妖燈鬼",
+          "side": "east",
+          "a": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          },
+          "b": {
+            "id": 979,
+            "name": "辟邪戒指",
+            "shop": "Scene.TALK4402"
+          }
+        },
+        "b": {
+          "id": 238,
+          "name": "尼梅亞獅",
+          "side": "west",
+          "a": {
+            "id": 316,
+            "name": "妖燈鬼",
+            "side": "east",
+            "a": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            },
+            "b": {
+              "id": 979,
+              "name": "辟邪戒指",
+              "shop": "Scene.TALK4402"
+            }
+          },
+          "b": {
+            "id": 254,
+            "name": "肯塔羅斯",
+            "side": "west",
+            "a": {
+              "id": 147,
+              "name": "水仙",
+              "side": "east",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            },
+            "b": {
+              "id": 143,
+              "name": "溫蒂妮",
+              "side": "west",
+              "a": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              },
+              "b": {
+                "id": 627,
+                "name": "魔貝粉",
+                "shop": "Scene.TALK4401"
+              }
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 390,
+      "name": "鬼爵",
+      "shop_leaf_count": 5,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 4
+        }
+      ],
+      "tree": {
+        "id": 390,
+        "name": "鬼爵",
+        "side": "west",
+        "a": {
+          "id": 554,
+          "name": "齊眉棍",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 170,
+          "name": "殭屍",
+          "side": "west",
+          "a": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          },
+          "b": {
+            "id": 208,
+            "name": "水鬼",
+            "side": "west",
+            "a": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            },
+            "b": {
+              "id": 698,
+              "name": "諸方神石",
+              "shop": "Scene.TALK4401"
+            }
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 391,
+      "name": "魚身人面妖",
+      "shop_leaf_count": 2,
+      "leaves": [
+        {
+          "id": 979,
+          "name": "辟邪戒指",
+          "count": 2
+        }
+      ],
+      "tree": {
+        "id": 391,
+        "name": "魚身人面妖",
+        "side": "west",
+        "a": {
+          "id": 979,
+          "name": "辟邪戒指",
+          "shop": "Scene.TALK4402"
+        },
+        "b": {
+          "id": 979,
+          "name": "辟邪戒指",
+          "shop": "Scene.TALK4402"
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 392,
+      "name": "閻惡靈",
+      "shop_leaf_count": 3,
+      "leaves": [
+        {
+          "id": 554,
+          "name": "齊眉棍",
+          "count": 1
+        },
+        {
+          "id": 627,
+          "name": "魔貝粉",
+          "count": 1
+        },
+        {
+          "id": 698,
+          "name": "諸方神石",
+          "count": 1
+        }
+      ],
+      "tree": {
+        "id": 392,
+        "name": "閻惡靈",
+        "side": "west",
+        "a": {
+          "id": 698,
+          "name": "諸方神石",
+          "shop": "Scene.TALK4401"
+        },
+        "b": {
+          "id": 711,
+          "name": "白皙葫蘆",
+          "side": "east",
+          "a": {
+            "id": 627,
+            "name": "魔貝粉",
+            "shop": "Scene.TALK4401"
+          },
+          "b": {
+            "id": 554,
+            "name": "齊眉棍",
+            "shop": "Scene.TALK4402"
+          }
+        }
+      },
+      "status": "shop-founded Lua recipe candidate"
+    },
+    {
+      "id": 401,
+      "name": "戰馬",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    },
+    {
+      "id": 2201,
+      "name": "土匪",
+      "shop_leaf_count": null,
+      "leaves": [],
+      "tree": null,
+      "status": "not proven by this seed set"
+    }
+  ]
+}

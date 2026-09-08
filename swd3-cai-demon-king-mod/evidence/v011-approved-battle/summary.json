@@ -1,0 +1,875 @@
+{
+  "date": "2026-09-08",
+  "versions": {
+    "ai": "0.4",
+    "testStart": "0.3",
+    "cai": "0.11"
+  },
+  "limitations": [
+    "No timestamps: action selections are not elapsed duration or completed actions",
+    "Death callbacks are recorded events, not a universal unique death count",
+    "No per-hit damage attribution or exact executed heal amount",
+    "One winning battle is not a measured win rate"
+  ],
+  "bossSelections": [
+    {
+      "line": 118,
+      "skill": 0,
+      "reason": "opening",
+      "phase": 1
+    },
+    {
+      "line": 138,
+      "skill": 11003,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 146,
+      "skill": 11002,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 165,
+      "skill": 0,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 183,
+      "skill": 11002,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 195,
+      "skill": 11003,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 219,
+      "skill": 0,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 231,
+      "skill": 11003,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 246,
+      "skill": 0,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 271,
+      "skill": 11002,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 280,
+      "skill": 11002,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 302,
+      "skill": 11002,
+      "reason": "phase 1",
+      "phase": 1
+    },
+    {
+      "line": 327,
+      "skill": 11004,
+      "reason": "pressure cycle 1",
+      "phase": 2
+    },
+    {
+      "line": 338,
+      "skill": 11003,
+      "reason": "pressure cycle 2",
+      "phase": 2
+    },
+    {
+      "line": 368,
+      "skill": 0,
+      "reason": "pressure cycle 3",
+      "phase": 2
+    },
+    {
+      "line": 388,
+      "skill": 11002,
+      "reason": "pressure cycle 4",
+      "phase": 2
+    },
+    {
+      "line": 403,
+      "skill": 11004,
+      "reason": "pressure cycle 1",
+      "phase": 2
+    },
+    {
+      "line": 433,
+      "skill": 11003,
+      "reason": "pressure cycle 2",
+      "phase": 2
+    },
+    {
+      "line": 451,
+      "skill": 0,
+      "reason": "pressure cycle 3",
+      "phase": 2
+    },
+    {
+      "line": 475,
+      "skill": 11002,
+      "reason": "pressure cycle 4",
+      "phase": 2
+    },
+    {
+      "line": 488,
+      "skill": 11004,
+      "reason": "pressure cycle 1",
+      "phase": 2
+    },
+    {
+      "line": 505,
+      "skill": 11003,
+      "reason": "pressure cycle 2",
+      "phase": 2
+    },
+    {
+      "line": 531,
+      "skill": 0,
+      "reason": "pressure cycle 3",
+      "phase": 2
+    },
+    {
+      "line": 547,
+      "skill": 11005,
+      "reason": "heal",
+      "phase": 2
+    },
+    {
+      "line": 562,
+      "skill": 11002,
+      "reason": "pressure cycle 4",
+      "phase": 2
+    },
+    {
+      "line": 582,
+      "skill": 11004,
+      "reason": "pressure cycle 1",
+      "phase": 2
+    },
+    {
+      "line": 602,
+      "skill": 11003,
+      "reason": "pressure cycle 2",
+      "phase": 2
+    },
+    {
+      "line": 622,
+      "skill": 0,
+      "reason": "pressure cycle 3",
+      "phase": 2
+    },
+    {
+      "line": 646,
+      "skill": 11002,
+      "reason": "pressure cycle 4",
+      "phase": 2
+    },
+    {
+      "line": 667,
+      "skill": 11004,
+      "reason": "pressure cycle 1",
+      "phase": 2
+    },
+    {
+      "line": 679,
+      "skill": 11003,
+      "reason": "pressure cycle 2",
+      "phase": 2
+    },
+    {
+      "line": 698,
+      "skill": 0,
+      "reason": "pressure cycle 3",
+      "phase": 2
+    },
+    {
+      "line": 719,
+      "skill": 11002,
+      "reason": "pressure cycle 4",
+      "phase": 2
+    },
+    {
+      "line": 735,
+      "skill": 11004,
+      "reason": "pressure cycle 1",
+      "phase": 2
+    }
+  ],
+  "deathEvents": [
+    {
+      "line": 339,
+      "slot": 4,
+      "name": "李靖"
+    },
+    {
+      "line": 404,
+      "slot": 1,
+      "name": "賽特"
+    },
+    {
+      "line": 434,
+      "slot": 1,
+      "name": "賽特"
+    },
+    {
+      "line": 489,
+      "slot": 2,
+      "name": "妮可"
+    },
+    {
+      "line": 583,
+      "slot": 2,
+      "name": "妮可"
+    },
+    {
+      "line": 736,
+      "slot": 2,
+      "name": "妮可"
+    },
+    {
+      "line": 738,
+      "slot": 1,
+      "name": "蔡魔王"
+    }
+  ],
+  "nativeItemDeductions": [
+    {
+      "line": 352,
+      "item": 646,
+      "before": 3,
+      "removed": 1
+    },
+    {
+      "line": 380,
+      "item": 642,
+      "before": 4,
+      "removed": 1
+    },
+    {
+      "line": 510,
+      "item": 646,
+      "before": 2,
+      "removed": 1
+    },
+    {
+      "line": 595,
+      "item": 646,
+      "before": 1,
+      "removed": 1
+    },
+    {
+      "line": 635,
+      "item": 642,
+      "before": 3,
+      "removed": 1
+    },
+    {
+      "line": 691,
+      "item": 632,
+      "before": 3,
+      "removed": 1
+    },
+    {
+      "line": 747,
+      "item": 179,
+      "before": 2,
+      "removed": 0
+    },
+    {
+      "line": 748,
+      "item": 178,
+      "before": 2,
+      "removed": 0
+    }
+  ],
+  "keeperAIDecisions": [
+    {
+      "line": 156,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 166,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 205,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 209,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 247,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 254,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 282,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 304,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 340,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 359,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 405,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 423,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 457,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 477,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 506,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 532,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 553,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 569,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 604,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 624,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 657,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 670,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    },
+    {
+      "line": 699,
+      "slot": 5,
+      "name": "鳳凰",
+      "hp": 3500
+    },
+    {
+      "line": 720,
+      "slot": 6,
+      "name": "神龍",
+      "hp": 3800
+    }
+  ],
+  "heroAIDecisions": [
+    {
+      "line": 129,
+      "actor": 2,
+      "phase": 1,
+      "reason": "attack",
+      "command": 2,
+      "item": 1515
+    },
+    {
+      "line": 131,
+      "actor": 4,
+      "phase": 1,
+      "reason": "attack",
+      "command": 4,
+      "item": 1652
+    },
+    {
+      "line": 151,
+      "actor": 3,
+      "phase": 1,
+      "reason": "heal-skill",
+      "command": 2,
+      "item": 1588
+    },
+    {
+      "line": 154,
+      "actor": 1,
+      "phase": 1,
+      "reason": "attack",
+      "command": 4,
+      "item": 1639
+    },
+    {
+      "line": 174,
+      "actor": 4,
+      "phase": 1,
+      "reason": "attack",
+      "command": 2,
+      "item": 1550
+    },
+    {
+      "line": 187,
+      "actor": 2,
+      "phase": 1,
+      "reason": "heal-skill",
+      "command": 2,
+      "item": 1586
+    },
+    {
+      "line": 197,
+      "actor": 1,
+      "phase": 1,
+      "reason": "attack",
+      "command": 2,
+      "item": 1508
+    },
+    {
+      "line": 203,
+      "actor": 3,
+      "phase": 1,
+      "reason": "heal-skill",
+      "command": 2,
+      "item": 1588
+    },
+    {
+      "line": 233,
+      "actor": 4,
+      "phase": 1,
+      "reason": "attack",
+      "command": 2,
+      "item": 1550
+    },
+    {
+      "line": 238,
+      "actor": 2,
+      "phase": 1,
+      "reason": "heal-skill",
+      "command": 2,
+      "item": 1586
+    },
+    {
+      "line": 251,
+      "actor": 1,
+      "phase": 1,
+      "reason": "attack",
+      "command": 2,
+      "item": 1532
+    },
+    {
+      "line": 260,
+      "actor": 3,
+      "phase": 1,
+      "reason": "attack",
+      "command": 2,
+      "item": 1524
+    },
+    {
+      "line": 288,
+      "actor": 4,
+      "phase": 1,
+      "reason": "restore-mp",
+      "command": 2,
+      "item": 1589
+    },
+    {
+      "line": 293,
+      "actor": 2,
+      "phase": 1,
+      "reason": "attack",
+      "command": 2,
+      "item": 1515
+    },
+    {
+      "line": 310,
+      "actor": 1,
+      "phase": 1,
+      "reason": "attack",
+      "command": 1,
+      "item": 0
+    },
+    {
+      "line": 318,
+      "actor": 3,
+      "phase": 2,
+      "reason": "heal-group",
+      "command": 2,
+      "item": 1582
+    },
+    {
+      "line": 349,
+      "actor": 1,
+      "phase": 2,
+      "reason": "serious",
+      "command": 3,
+      "item": 646
+    },
+    {
+      "line": 357,
+      "actor": 2,
+      "phase": 2,
+      "reason": "heal-skill",
+      "command": 2,
+      "item": 1586
+    },
+    {
+      "line": 376,
+      "actor": 3,
+      "phase": 2,
+      "reason": "restore-mp",
+      "command": 3,
+      "item": 642
+    },
+    {
+      "line": 391,
+      "actor": 1,
+      "phase": 2,
+      "reason": "attack",
+      "command": 4,
+      "item": 1639
+    },
+    {
+      "line": 394,
+      "actor": 4,
+      "phase": 2,
+      "reason": "attack",
+      "command": 4,
+      "item": 1652
+    },
+    {
+      "line": 419,
+      "actor": 3,
+      "phase": 2,
+      "reason": "serious",
+      "command": 2,
+      "item": 1521
+    },
+    {
+      "line": 443,
+      "actor": 2,
+      "phase": 2,
+      "reason": "serious",
+      "command": 2,
+      "item": 1586
+    },
+    {
+      "line": 455,
+      "actor": 3,
+      "phase": 2,
+      "reason": "heal-group",
+      "command": 2,
+      "item": 1582
+    },
+    {
+      "line": 466,
+      "actor": 4,
+      "phase": 2,
+      "reason": "heal-group",
+      "command": 3,
+      "item": 804
+    },
+    {
+      "line": 497,
+      "actor": 1,
+      "phase": 2,
+      "reason": "serious",
+      "command": 3,
+      "item": 646
+    },
+    {
+      "line": 514,
+      "actor": 3,
+      "phase": 2,
+      "reason": "heal-group",
+      "command": 2,
+      "item": 1582
+    },
+    {
+      "line": 521,
+      "actor": 4,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1550
+    },
+    {
+      "line": 539,
+      "actor": 1,
+      "phase": 2,
+      "reason": "attack",
+      "command": 4,
+      "item": 1639
+    },
+    {
+      "line": 549,
+      "actor": 2,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1515
+    },
+    {
+      "line": 567,
+      "actor": 3,
+      "phase": 2,
+      "reason": "heal-skill",
+      "command": 2,
+      "item": 1588
+    },
+    {
+      "line": 573,
+      "actor": 4,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1550
+    },
+    {
+      "line": 591,
+      "actor": 1,
+      "phase": 2,
+      "reason": "serious",
+      "command": 3,
+      "item": 646
+    },
+    {
+      "line": 613,
+      "actor": 1,
+      "phase": 2,
+      "reason": "heal-group",
+      "command": 3,
+      "item": 804
+    },
+    {
+      "line": 632,
+      "actor": 3,
+      "phase": 2,
+      "reason": "restore-mp",
+      "command": 3,
+      "item": 642
+    },
+    {
+      "line": 637,
+      "actor": 2,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1515
+    },
+    {
+      "line": 648,
+      "actor": 4,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1550
+    },
+    {
+      "line": 652,
+      "actor": 1,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1508
+    },
+    {
+      "line": 655,
+      "actor": 3,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1524
+    },
+    {
+      "line": 688,
+      "actor": 2,
+      "phase": 2,
+      "reason": "heal-group",
+      "command": 3,
+      "item": 632
+    },
+    {
+      "line": 703,
+      "actor": 4,
+      "phase": 2,
+      "reason": "attack",
+      "command": 4,
+      "item": 1652
+    },
+    {
+      "line": 706,
+      "actor": 1,
+      "phase": 2,
+      "reason": "attack",
+      "command": 4,
+      "item": 1639
+    },
+    {
+      "line": 710,
+      "actor": 3,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1524
+    },
+    {
+      "line": 726,
+      "actor": 2,
+      "phase": 2,
+      "reason": "attack",
+      "command": 2,
+      "item": 1560
+    }
+  ],
+  "partyBefore": [
+    {
+      "line": 88,
+      "actor": 1,
+      "HP": 5800,
+      "MP": 700,
+      "SP": 1100,
+      "State": 0
+    },
+    {
+      "line": 90,
+      "actor": 2,
+      "HP": 4050,
+      "MP": 1275,
+      "SP": 695,
+      "State": 0
+    },
+    {
+      "line": 92,
+      "actor": 3,
+      "HP": 4880,
+      "MP": 1350,
+      "SP": 590,
+      "State": 0
+    },
+    {
+      "line": 94,
+      "actor": 4,
+      "HP": 6800,
+      "MP": 920,
+      "SP": 1140,
+      "State": 0
+    }
+  ],
+  "partyRestored": [
+    {
+      "line": 752,
+      "actor": 1,
+      "HP": 5800,
+      "MP": 700,
+      "SP": 1100,
+      "State": 0
+    },
+    {
+      "line": 753,
+      "actor": 2,
+      "HP": 4050,
+      "MP": 1275,
+      "SP": 695,
+      "State": 0
+    },
+    {
+      "line": 754,
+      "actor": 3,
+      "HP": 4880,
+      "MP": 1350,
+      "SP": 590,
+      "State": 0
+    },
+    {
+      "line": 755,
+      "actor": 4,
+      "HP": 6800,
+      "MP": 920,
+      "SP": 1140,
+      "State": 0
+    }
+  ]
+}

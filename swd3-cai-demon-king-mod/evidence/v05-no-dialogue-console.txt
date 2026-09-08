@@ -1,0 +1,126 @@
+=== LUA System start. ===
+=== Loading SSMOD all lua,ext and txt.
+[ProficiencyMultiplier] Applied x100.000 to 58 weapons
+=== Loading all lua in : [Script\].
+=== Loading setting in : [Save\].
+=== Loading CommonSave in : [Save\].
+=== LUA System Initialization : 'OnEvent.SysInit' . ===
+SysInit init : main
+SysInit init test : 1
+SysInit init test : 2
+SysInit init test : 3
+where test : [string "OnEvent.lua"]:33: 
+SysInitTEST where test : [string "OnEvent.lua"]:35: 
+ItemsClear
+=== Game start Initialization : 'OnEvent.GameStart' . ===
+additem 621 Count 2
+additem 621 new x2
+Delete Item :ItemID = 621
+additem 730 Count 1
+additem 730 new x1
+Delete Item :ItemID = 730
+additem 792 Count 1
+additem 792 new x1
+Delete Item :ItemID = 792
+[AllMonsterStaticCapture] load-phase catalogue: mappings=193, static=97, failures=0, itemCache=97, raceCache=97; capture eligibility is intentionally not changed in this data phase
+[AllMonsterStaticCapture] capture bridge armed (GameStart): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[LiveCardBattle] loaded; open the native item basket and press F9
+[RefineryDiagnostics] Installed refinery wrapper; East/West level limits unlocked
+[CaiDemonKing] v0.5 loaded; independent Item11001; defeat hint survives map return
+[CaiDemonKing] references ready=true; card10096 ACT=438
+NewEquip player1 pos1 501
+NewEquip player1 pos3 851
+NewEquip player1 pos5 906
+NewEquip player2 pos1 521
+NewEquip player2 pos2 1019
+NewEquip player2 pos3 1004
+NewEquip player2 pos5 906
+NewEquip player3 pos1 537
+NewEquip player3 pos2 1024
+NewEquip player3 pos3 1007
+NewEquip player3 pos4 1043
+NewEquip player3 pos5 1033
+NewEquip player4 pos1 554
+NewEquip player4 pos3 863
+NewEquip player4 pos4 875
+NewEquip player4 pos5 918
+NewEquip player4 pos6 996
+[AllMonsterStaticCapture] capture bridge restored (MapLoading): sources=193, races=16, skipped=0
+OnEvent.MapLoaded.test1
+[AllMonsterStaticCapture] capture bridge armed (MapLoaded): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] start: red swordsman; Item11001; ACT438; Lv99 HP80000; validation stage 1/2
+---> BattleEnemy init : ID=1 蔡魔王
+---> BattlePlayer init : ID=1 賽特
+---> BattlePlayer init : ID=2 妮可
+BattleID:CDK_CAI_CHALLENGE
+[AllMonsterStaticCapture] battle level cap applied (Battle_Enter): playerLevel=18, cap=29, changed=0, failed=0; source/map levels remain original; native high-difficulty capture uses HP ?25%
+[CaiDemonKing] readback: source=11001; Level=99; Boss=true; ItemType=32
+[CaiDemonKing] readback stats: HP=80000; MaxHP=80000; ATK=960; DEF=350; SPD=126; WIS=220; DodgeRate=5; AttrDark=nil; AttrWind=nil
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:80000
+AttackCount 0 data.Skills=table: 0000019D23CA3370
+data.CureSkills=table: 0000019D23CA2B50
+data.SP_AE=nil
+Target -> 2/2(妮可)
+Skill_QQ=table: 0000019D23CA2790
+SKILL 1676() -> 2(妮可)
+[CaiDemonKing] skill selected: 1676; oppositeSide=true; target=2; animation=44
+  BattleCriticalHitRate srcLV=18 trgLV=99 rateBase=20
+---> BattlePlayerAI after : playerID=1 賽特 HP:315/315 AI:0 PlayerID=0
+  BattleCriticalHitRate srcLV=19 trgLV=99 rateBase=20
+---> BattlePlayerAI after : playerID=2 妮可 HP:158/330 AI:0 PlayerID=1
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:79603
+AttackCount 0 data.Skills=table: 0000019D23CA3370
+data.CureSkills=table: 0000019D23CA2B50
+data.SP_AE=nil
+Target -> 1/2(賽特)
+ATTACK -> 1/2(賽特)
+Battle_Dead : ID=1 賽特
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:79603
+AttackCount 1 data.Skills=table: 0000019D23CA3370
+data.CureSkills=table: 0000019D23CA2B50
+data.SP_AE=nil
+Target -> 2/2(妮可)
+ATTACK -> 2/2(妮可)
+Battle_Dead : ID=2 妮可
+[CaiDemonKing] party defeated; requesting native BattleBreak
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] defeat cleanup confirmed; hint pending for next Insert menu
+[CaiDemonKing] finished: restore item
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[AllMonsterStaticCapture] capture bridge restored (MapLoading): sources=193, races=16, skipped=0
+OnEvent.MapLoaded.test1
+[AllMonsterStaticCapture] capture bridge armed (MapLoaded): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] start: red swordsman; Item11001; ACT438; Lv99 HP80000; validation stage 1/2
+---> BattleEnemy init : ID=1 蔡魔王
+---> BattlePlayer init : ID=1 賽特
+---> BattlePlayer init : ID=2 妮可
+BattleID:CDK_CAI_CHALLENGE
+[AllMonsterStaticCapture] battle level cap applied (Battle_Enter): playerLevel=18, cap=29, changed=0, failed=0; source/map levels remain original; native high-difficulty capture uses HP ?25%
+[CaiDemonKing] readback: source=11001; Level=99; Boss=true; ItemType=32
+[CaiDemonKing] readback stats: HP=80000; MaxHP=80000; ATK=960; DEF=350; SPD=126; WIS=220; DodgeRate=5; AttrDark=nil; AttrWind=nil
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:80000
+AttackCount 0 data.Skills=table: 0000019D23CA3370
+data.CureSkills=table: 0000019D23CA2B50
+data.SP_AE=nil
+Target -> 2/2(妮可)
+ATTACK -> 2/2(妮可)
+Battle_Dead : ID=2 妮可
+  BattleCriticalHitRate srcLV=18 trgLV=99 rateBase=20
+---> BattlePlayerAI after : playerID=1 賽特 HP:315/315 AI:0 PlayerID=0
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:80000
+AttackCount 1 data.Skills=table: 0000019D23CA3370
+data.CureSkills=table: 0000019D23CA2B50
+data.SP_AE=nil
+Target -> 1/2(賽特)
+ATTACK -> 1/2(賽特)
+Battle_Dead : ID=1 賽特
+[CaiDemonKing] party defeated; requesting native BattleBreak
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] defeat cleanup confirmed; hint pending for next Insert menu
+[CaiDemonKing] finished: restore item
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+

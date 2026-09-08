@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-08",
+  "exeVersion": "4.0.5.0",
+  "exeSha256": "63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523",
+  "tools": "Ghidra 11.4.3, JDK21, -process swd3.exe -noanalysis -readOnly",
+  "files": {
+    "swd3-cai-demon-king-mod/evidence/v15-healing/native-healing.txt": "65E630B13DAF3A62E39BF05A4D09D783571C3AEE29A2C80537845CB336293DF9",
+    "swd3-cai-demon-king-mod/evidence/v15-healing/native-display.txt": "D6E0058CE10E413B0EDA595F3E84714C7855C67C8242B7E07666172D594BD052",
+    "swd3-cai-demon-king-mod/evidence/v15-healing/v14-user-console.txt": "AB660CE141664DC388A3CFE735CBC7B7CD0FE209CB44BC92E4A679A9F1A3AB3D",
+    "swd3-cai-demon-king-mod/tools/InspectNativeHealing.py": "7F78C5EFD09816377853240014B02DB470E5E9D97394228A16DD24184F55066C",
+    "swd3-cai-demon-king-mod/tools/InspectNativeHealingDisplay.py": "3E30AE0ACDC7E257AF60BBFAE0ACE286E9BFB911D0257ED416A8CBD280DFF75E"
+  }
+}

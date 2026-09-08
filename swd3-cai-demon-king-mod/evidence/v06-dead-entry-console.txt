@@ -1,0 +1,833 @@
+=== LUA System start. ===
+=== Loading SSMOD all lua,ext and txt.
+[ProficiencyMultiplier] Applied x100.000 to 58 weapons
+=== Loading all lua in : [Script\].
+=== Loading setting in : [Save\].
+=== Loading CommonSave in : [Save\].
+=== LUA System Initialization : 'OnEvent.SysInit' . ===
+SysInit init : main
+SysInit init test : 1
+SysInit init test : 2
+SysInit init test : 3
+where test : [string "OnEvent.lua"]:33: 
+SysInitTEST where test : [string "OnEvent.lua"]:35: 
+ItemsClear
+=== Game start Initialization : 'OnEvent.GameStart' . ===
+additem 621 Count 2
+additem 621 new x2
+Delete Item :ItemID = 621
+additem 730 Count 1
+additem 730 new x1
+Delete Item :ItemID = 730
+additem 792 Count 1
+additem 792 new x1
+Delete Item :ItemID = 792
+[AllMonsterStaticCapture] load-phase catalogue: mappings=193, static=97, failures=0, itemCache=97, raceCache=97; capture eligibility is intentionally not changed in this data phase
+[AllMonsterStaticCapture] capture bridge armed (GameStart): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[LiveCardBattle] loaded; open the native item basket and press F9
+[RefineryDiagnostics] Installed refinery wrapper; East/West level limits unlocked
+[CaiDemonKing] v0.6 loaded; in-battle opening and defeat dialogue; no menu hints
+[CaiDemonKing] references ready=true; card10096 ACT=438
+NewEquip player1 pos1 501
+NewEquip player1 pos3 851
+NewEquip player1 pos5 906
+NewEquip player2 pos1 521
+NewEquip player2 pos2 1019
+NewEquip player2 pos3 1004
+NewEquip player2 pos5 906
+NewEquip player3 pos1 537
+NewEquip player3 pos2 1024
+NewEquip player3 pos3 1007
+NewEquip player3 pos4 1043
+NewEquip player3 pos5 1033
+NewEquip player4 pos1 554
+NewEquip player4 pos3 863
+NewEquip player4 pos4 875
+NewEquip player4 pos5 918
+NewEquip player4 pos6 996
+[AllMonsterStaticCapture] capture bridge restored (MapLoading): sources=193, races=16, skipped=0
+OnEvent.MapLoaded.test1
+[AllMonsterStaticCapture] capture bridge armed (MapLoaded): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[AllMonsterStaticCapture] capture bridge restored (MapLoading): sources=193, races=16, skipped=0
+OnEvent.MapLoaded.test1
+[AllMonsterStaticCapture] capture bridge armed (MapLoaded): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] start: red swordsman; Item11001; ACT438; Lv99 HP80000; validation stage 1/2
+---> BattleEnemy init : ID=1 蔡魔王
+---> BattlePlayer init : ID=1 賽特
+---> BattlePlayer init : ID=2 妮可
+BattleID:CDK_CAI_CHALLENGE
+[AllMonsterStaticCapture] battle level cap applied (Battle_Enter): playerLevel=18, cap=29, changed=0, failed=0; source/map levels remain original; native high-difficulty capture uses HP ?25%
+[CaiDemonKing] readback: source=11001; Level=99; Boss=true; ItemType=32
+[CaiDemonKing] readback stats: HP=80000; MaxHP=80000; ATK=960; DEF=350; SPD=126; WIS=220; DodgeRate=5; AttrDark=nil; AttrWind=nil
+[CaiDemonKing] native BattleScript entered
+[CaiDemonKing] battle dialogue opening: CDK_OPEN_ONE
+[CaiDemonKing] battle dialogue closed: CDK_OPEN_ONE
+[CaiDemonKing] battle dialogue opening: CDK_OPEN_TWO
+[CaiDemonKing] battle dialogue closed: CDK_OPEN_TWO
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:80000
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+Target -> 2/2(妮可)
+Skill_QQ=table: 000001C74C85AE80
+SKILL 1676() -> 2(妮可)
+[CaiDemonKing] skill selected: 1676; oppositeSide=true; target=2; animation=44
+  BattleCriticalHitRate srcLV=18 trgLV=99 rateBase=20
+---> BattlePlayerAI after : playerID=1 賽特 HP:315/315 AI:0 PlayerID=0
+  BattleCriticalHitRate srcLV=19 trgLV=99 rateBase=20
+---> BattlePlayerAI after : playerID=2 妮可 HP:188/330 AI:0 PlayerID=1
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:79603
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+Target -> 1/2(賽特)
+ATTACK -> 1/2(賽特)
+Battle_Dead : ID=1 賽特
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:79603
+AttackCount 1 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+Target -> 2/2(妮可)
+ATTACK -> 2/2(妮可)
+Battle_Dead : ID=2 妮可
+[CaiDemonKing] party defeated; dialogue queued in BattleScript before exit
+[CaiDemonKing] battle dialogue opening: CDK_HINT_ONE
+[CaiDemonKing] battle dialogue closed: CDK_HINT_ONE
+[CaiDemonKing] battle dialogue opening: CDK_HINT_TWO
+[CaiDemonKing] battle dialogue closed: CDK_HINT_TWO
+[CaiDemonKing] requesting native BattleBreak; outcome=defeat
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] finished: restore item
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] start: red swordsman; Item11001; ACT438; Lv99 HP80000; validation stage 1/2
+---> BattleEnemy init : ID=1 蔡魔王
+---> BattlePlayer init : ID=1 賽特
+---> BattlePlayer init : ID=2 妮可
+BattleID:CDK_CAI_CHALLENGE
+[AllMonsterStaticCapture] battle level cap applied (Battle_Enter): playerLevel=18, cap=29, changed=0, failed=0; source/map levels remain original; native high-difficulty capture uses HP ?25%
+[CaiDemonKing] readback: source=11001; Level=99; Boss=true; ItemType=32
+[CaiDemonKing] readback stats: HP=80000; MaxHP=80000; ATK=960; DEF=350; SPD=126; WIS=220; DodgeRate=5; AttrDark=nil; AttrWind=nil
+[CaiDemonKing] native BattleScript entered
+[CaiDemonKing] battle dialogue opening: CDK_OPEN_ONE
+[CaiDemonKing] battle dialogue closed: CDK_OPEN_ONE
+[CaiDemonKing] battle dialogue opening: CDK_OPEN_TWO
+[CaiDemonKing] battle dialogue closed: CDK_OPEN_TWO
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:80000
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:79361
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:78728
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:78109
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:77484
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:76860
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:76222
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:75576
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:74944
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:74329
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:73716
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:73074
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:72438
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:71792
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:71172
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:70552
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:69929
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:69929
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:69298
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:68652
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:68029
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:67415
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:66803
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:66163
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:65528
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:64890
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:64277
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:63665
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:63046
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:62428
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:61793
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:61793
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:61176
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:60564
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:59941
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:59301
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:58660
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:58035
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:57401
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:56770
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:56133
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:55512
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:54867
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:54249
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:53625
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:53625
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:52994
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:52377
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:51731
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:51088
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:50449
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:49824
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:49202
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:48559
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:47919
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:47919
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:47299
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:46671
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:46052
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:45432
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:44804
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:44804
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:44182
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:43557
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:42929
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:42318
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:41701
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:41066
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:40429
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:39783
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:39146
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:39146
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:38514
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:37868
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:37250
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:37250
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:36636
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:36008
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:35364
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:34723
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:34110
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:33488
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:32852
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:32240
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:31625
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:31010
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:31010
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:30390
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:29751
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:29139
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:28510
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:28510
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:27872
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:27239
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:26624
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:26002
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:25376
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:24731
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:24094
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:23467
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:22851
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:22851
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:22234
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:21610
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:20980
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:20369
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:19732
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:19112
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:18498
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:17862
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:17233
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:16598
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:16598
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:15964
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:15324
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:14706
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:14088
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:14088
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:13462
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:12848
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:12235
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:11622
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:10985
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:10985
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:10362
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:9743
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:9117
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:8497
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:7868
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:7239
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:7239
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:6602
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:5975
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:5338
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:4706
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:4067
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:3424
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:2794
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:2177
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:1550
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:911
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:289
+AttackCount 0 data.Skills=table: 000001C74C85A480
+data.CureSkills=table: 000001C74C85A1B0
+data.SP_AE=nil
+can't find target!
+Battle_Dead : ID=1 蔡魔王
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] finished: restore item
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+

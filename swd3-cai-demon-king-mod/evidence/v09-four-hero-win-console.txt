@@ -1,0 +1,502 @@
+=== LUA System start. ===
+=== Loading SSMOD all lua,ext and txt.
+[ProficiencyMultiplier] Applied x100.000 to 58 weapons
+[CaiAutoAI] v0.1 helpers installed; custom policy only in Cai challenge
+[CaiAutoAI] v0.1 loaded; boot AI UI enabled; manual Cai entry required
+[CaiTestStart] profile role=1 Lv60 HP=5800 MP=700 SP=1100 skills=26
+[CaiTestStart] profile role=2 Lv60 HP=4050 MP=1275 SP=695 skills=31
+[CaiTestStart] profile role=3 Lv60 HP=4880 MP=1350 SP=590 skills=26
+[CaiTestStart] profile role=4 Lv60 HP=6800 MP=920 SP=1140 skills=25
+[CaiTestStart] v0.2 loaded; NEW GAME setup opens native save menu before the character menu
+=== Loading all lua in : [Script\].
+=== Loading setting in : [Save\].
+=== Loading CommonSave in : [Save\].
+=== LUA System Initialization : 'OnEvent.SysInit' . ===
+SysInit init : main
+SysInit init test : 1
+SysInit init test : 2
+SysInit init test : 3
+where test : [string "OnEvent.lua"]:33: 
+SysInitTEST where test : [string "OnEvent.lua"]:35: 
+ItemsClear
+=== Game start Initialization : 'OnEvent.GameStart' . ===
+additem 621 Count 2
+additem 621 new x2
+Delete Item :ItemID = 621
+additem 730 Count 1
+additem 730 new x1
+Delete Item :ItemID = 730
+additem 792 Count 1
+additem 792 new x1
+Delete Item :ItemID = 792
+[AllMonsterStaticCapture] load-phase catalogue: mappings=193, static=97, failures=0, itemCache=97, raceCache=97; capture eligibility is intentionally not changed in this data phase
+[AllMonsterStaticCapture] capture bridge armed (GameStart): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[RefineryDiagnostics] Installed refinery wrapper; East/West level limits unlocked
+[CaiDemonKing] v0.9 loaded; two phases; physical 4200; one heal 10000; full party and restoration retained
+[CaiDemonKing] references ready=true; card10096 ACT=438
+[LiveCardBattle] v0.7 loaded; full party on entry; restore prior party state on exit; press F9
+NewEquip player1 pos1 580
+NewEquip player1 pos2 898
+NewEquip player1 pos3 869
+NewEquip player1 pos4 887
+NewEquip player1 pos5 912
+NewEquip player1 pos6 979
+NewEquip player1 pos7 993
+NewEquip player1 pos8 255
+NewEquip player1 pos9 178
+NewEquip player1 pos10 931
+NewEquip player1 pos11 932
+NewEquip player2 pos1 536
+NewEquip player2 pos2 1031
+NewEquip player2 pos3 1015
+NewEquip player2 pos4 889
+NewEquip player2 pos5 909
+NewEquip player2 pos6 994
+NewEquip player2 pos7 993
+NewEquip player2 pos8 179
+NewEquip player2 pos9 198
+NewEquip player2 pos10 948
+NewEquip player2 pos11 954
+NewEquip player3 pos1 553
+NewEquip player3 pos2 1031
+NewEquip player3 pos3 1017
+NewEquip player3 pos4 1047
+NewEquip player3 pos5 1040
+NewEquip player3 pos6 995
+NewEquip player3 pos7 993
+NewEquip player3 pos8 149
+NewEquip player3 pos9 152
+NewEquip player3 pos10 952
+NewEquip player3 pos11 951
+NewEquip player4 pos1 562
+NewEquip player4 pos2 905
+NewEquip player4 pos3 871
+NewEquip player4 pos4 886
+NewEquip player4 pos5 915
+NewEquip player4 pos6 979
+NewEquip player4 pos7 993
+NewEquip player4 pos8 368
+NewEquip player4 pos9 154
+NewEquip player4 pos10 949
+NewEquip player4 pos11 939
+ItemsClear
+=== Game start Initialization : 'OnEvent.GameStart' . ===
+additem 621 Count 2
+additem 621 new x2
+Delete Item :ItemID = 621
+additem 730 Count 1
+additem 730 new x1
+Delete Item :ItemID = 730
+additem 792 Count 1
+additem 792 new x1
+Delete Item :ItemID = 792
+[AllMonsterStaticCapture] load-phase catalogue: mappings=193, static=97, failures=0, itemCache=97, raceCache=97; capture eligibility is intentionally not changed in this data phase
+[AllMonsterStaticCapture] capture bridge restored (GameStart): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (GameStart): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] v0.9 loaded; two phases; physical 4200; one heal 10000; full party and restoration retained
+[CaiDemonKing] references ready=true; card10096 ACT=438
+[LiveCardBattle] v0.7 loaded; full party on entry; restore prior party state on exit; press F9
+NewEquip player1 pos1 580
+NewEquip player1 pos2 898
+NewEquip player1 pos3 869
+NewEquip player1 pos4 887
+NewEquip player1 pos5 912
+NewEquip player1 pos6 979
+NewEquip player1 pos7 993
+NewEquip player1 pos8 255
+NewEquip player1 pos9 178
+NewEquip player1 pos10 931
+NewEquip player1 pos11 932
+NewEquip player2 pos1 536
+NewEquip player2 pos2 1031
+NewEquip player2 pos3 1015
+NewEquip player2 pos4 889
+NewEquip player2 pos5 909
+NewEquip player2 pos6 994
+NewEquip player2 pos7 993
+NewEquip player2 pos8 179
+NewEquip player2 pos9 198
+NewEquip player2 pos10 948
+NewEquip player2 pos11 954
+NewEquip player3 pos1 553
+NewEquip player3 pos2 1031
+NewEquip player3 pos3 1017
+NewEquip player3 pos4 1047
+NewEquip player3 pos5 1040
+NewEquip player3 pos6 995
+NewEquip player3 pos7 993
+NewEquip player3 pos8 149
+NewEquip player3 pos9 152
+NewEquip player3 pos10 952
+NewEquip player3 pos11 951
+NewEquip player4 pos1 562
+NewEquip player4 pos2 905
+NewEquip player4 pos3 871
+NewEquip player4 pos4 886
+NewEquip player4 pos5 915
+NewEquip player4 pos6 979
+NewEquip player4 pos7 993
+NewEquip player4 pos8 368
+NewEquip player4 pos9 154
+NewEquip player4 pos10 949
+NewEquip player4 pos11 939
+[AllMonsterStaticCapture] capture bridge restored (MapLoading): sources=193, races=16, skipped=0
+OnEvent.MapLoaded.test1
+[AllMonsterStaticCapture] capture bridge armed (MapLoaded): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+additem 632 Count 3
+additem 632 new x3
+Add Item :ItemID = 632 ,count=3
+additem 642 Count 2
+additem 642 new x2
+Add Item :ItemID = 642 ,count=2
+additem 641 Count 3
+additem 641 new x3
+Add Item :ItemID = 641 ,count=3
+additem 646 Count 3
+additem 646 new x3
+Add Item :ItemID = 646 ,count=3
+additem 626 Count 10
+additem 626 new x10
+Add Item :ItemID = 626 ,count=10
+additem 804 Count 1
+additem 804 new x1
+Add Item :ItemID = 804 ,count=1
+[CaiTestStart] READY: four Lv60 heroes; 44 equipment slots; 12 trained items; fixed supplies
+[CaiTestStart] opening native save menu; choose an EMPTY slot, or cancel to inspect party
+[AllMonsterStaticCapture] capture bridge restored (MapLoading): sources=193, races=16, skipped=0
+OnEvent.MapLoaded.test1
+[AllMonsterStaticCapture] capture bridge armed (MapLoaded): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiDemonKing] start: red swordsman; Item11001; Lv99 HP80000; points 3000/2400/4200; one heal 10000
+---> BattleEnemy init : ID=1 蔡魔王
+---> BattlePlayer init : ID=1 賽特
+[CaiDemonKing] party prepared: index=1; before HP=5800; MP=700; SP=1100; State=0
+---> BattlePlayer init : ID=2 妮可
+[CaiDemonKing] party prepared: index=2; before HP=4050; MP=1275; SP=695; State=0
+---> BattlePlayer init : ID=3 卡瑪
+[CaiDemonKing] party prepared: index=3; before HP=4880; MP=1350; SP=590; State=0
+---> BattlePlayer init : ID=4 李靖
+[CaiDemonKing] party prepared: index=4; before HP=6800; MP=920; SP=1140; State=0
+BattleID:CDK_CAI_CHALLENGE
+[AllMonsterStaticCapture] battle level cap applied (Battle_Enter): playerLevel=60, cap=71, changed=0, failed=0; source/map levels remain original; native high-difficulty capture uses HP ?25%
+[CaiAutoAI] automatic Cai test entered; heroes=4
+[CaiDemonKing] party full: index=1; HP=5800/5800; MP=700/700; SP=1100/1100; State=0; Energy=56
+[CaiDemonKing] party full: index=2; HP=4050/4050; MP=1275/1275; SP=695/695; State=0; Energy=56
+[CaiDemonKing] party full: index=3; HP=4880/4880; MP=1350/1350; SP=590/590; State=0; Energy=56
+[CaiDemonKing] party full: index=4; HP=6800/6800; MP=920/920; SP=1140/1140; State=0; Energy=56
+[CaiDemonKing] readback: source=11001; Level=99; Boss=true; ItemType=32
+[CaiDemonKing] readback stats: HP=80000; MaxHP=80000; ATK=960; DEF=350; SPD=126; WIS=220; DodgeRate=5; AttrDark=nil; AttrWind=nil
+[CaiDemonKing] native BattleScript entered
+[CaiDemonKing] battle dialogue opening: CDK_OPEN_ONE
+[CaiDemonKing] battle dialogue closed: CDK_OPEN_ONE
+[CaiDemonKing] battle dialogue opening: CDK_OPEN_TWO
+[CaiDemonKing] battle dialogue closed: CDK_OPEN_TWO
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:80000
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+Skill_QQ=table: 00000223F27E0910
+SKILL 11002() -> 3(卡瑪)
+[CaiDemonKing] strategy selected: 0; opening; phase=1; healUsed=false; oppositeSide=true; target=1; animation=40
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+[CaiAutoAI] select actor=3 phase=1 reason=attack command=2 item=1524 target=1 enemySide=true HPP=91.189655172414
+---> BattlePlayerAI enter : playerID=1 賽特 HP:5405/5800 AI:1 PlayerID=0
+[CaiAutoAI] select actor=1 phase=1 reason=attack command=4 item=1639 target=1 enemySide=true HPP=93.189655172414
+---> BattlePlayerAI enter : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+[CaiAutoAI] select actor=2 phase=1 reason=attack command=2 item=1515 target=1 enemySide=true HPP=93.189655172414
+---> BattlePlayerAI enter : playerID=4 李靖 HP:6800/6800 AI:1 PlayerID=3
+[CaiAutoAI] select actor=4 phase=1 reason=attack command=4 item=1652 target=1 enemySide=true HPP=93.189655172414
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+---> BattlePlayerAI after : playerID=1 賽特 HP:5405/5800 AI:1 PlayerID=0
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:69754
+AttackCount 1 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 4/4(李靖)
+ATTACK -> 4/4(李靖)
+[CaiDemonKing] strategy selected: 11002; phase 1; phase=1; healUsed=false; oppositeSide=true; target=1; animation=44
+---> BattlePlayerAI after : playerID=4 李靖 HP:6800/6800 AI:1 PlayerID=3
+---> BattlePlayerAI after : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:62209
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+ATTACK -> 3/4(卡瑪)
+[CaiDemonKing] strategy selected: 11002; phase 1; phase=1; healUsed=false; oppositeSide=true; target=2; animation=44
+---> BattlePlayerAI enter : playerID=1 賽特 HP:4317/5800 AI:1 PlayerID=0
+AI_SkillAddHP target HP=25.654320987654%
+no heal skill.
+AI_ItemHeal target HP=25.654320987654%
+UseItem idx=9 804(真夢娃娃) cure 妮可
+[CaiAutoAI] select actor=1 phase=1 reason=heal-item command=3 item=804 target=2 enemySide=false HPP=25.654320987654
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+AI_SkillAddHP target HP=25.654320987654%
+AI_ItemHeal target HP=25.654320987654%
+[CaiAutoAI] select actor=3 phase=1 reason=attack command=2 item=1524 target=1 enemySide=true HPP=25.654320987654
+---> BattlePlayerAI after : playerID=1 賽特 HP:4317/5800 AI:1 PlayerID=0
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:62209
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 1/4(賽特)
+ATTACK -> 1/4(賽特)
+[CaiDemonKing] strategy selected: 0; phase 1; phase=1; healUsed=false; oppositeSide=true; target=4; animation=40
+---> BattlePlayerAI enter : playerID=4 李靖 HP:6323/6800 AI:1 PlayerID=3
+[CaiAutoAI] select actor=4 phase=1 reason=attack command=2 item=1550 target=1 enemySide=true HPP=92.985294117647
+---> BattlePlayerAI enter : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+[CaiAutoAI] select actor=2 phase=1 reason=attack command=2 item=1515 target=1 enemySide=true HPP=92.985294117647
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+---> BattlePlayerAI enter : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+[CaiAutoAI] select actor=1 phase=1 reason=attack command=2 item=1508 target=1 enemySide=true HPP=92.985294117647
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:57970
+AttackCount 2 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 2/4(妮可)
+Skill_QQ=table: 00000223F27E0910
+SKILL 11002() -> 2(妮可)
+[CaiDemonKing] strategy selected: 11002; phase 1; phase=1; healUsed=false; oppositeSide=true; target=3; animation=44
+---> BattlePlayerAI after : playerID=4 李靖 HP:6323/6800 AI:1 PlayerID=3
+---> BattlePlayerAI after : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+[CaiAutoAI] select actor=3 phase=1 reason=attack command=2 item=1524 target=1 enemySide=true HPP=92.985294117647
+---> BattlePlayerAI after : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:48935
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 1/4(賽特)
+ATTACK -> 1/4(賽特)
+[CaiDemonKing] strategy selected: 11002; phase 1; phase=1; healUsed=false; oppositeSide=true; target=2; animation=44
+---> BattlePlayerAI enter : playerID=2 妮可 HP:1022/4050 AI:1 PlayerID=1
+AI_SkillAddHP target HP=25.234567901235%
+UseSkill idx=2 1586(浴火重生咒) cure 妮可
+[CaiAutoAI] select actor=2 phase=1 reason=heal-skill command=2 item=1586 target=2 enemySide=false HPP=25.234567901235
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:48935
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+Skill_QQ=table: 00000223F27E0910
+SKILL 11002() -> 3(卡瑪)
+[CaiDemonKing] strategy selected: 11003; phase 1; phase=1; healUsed=false; oppositeSide=true; target=4; animation=44
+---> BattlePlayerAI enter : playerID=4 李靖 HP:4875/6800 AI:1 PlayerID=3
+[CaiAutoAI] select actor=4 phase=1 reason=attack command=2 item=1550 target=1 enemySide=true HPP=37.135802469136
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:4398/4880 AI:1 PlayerID=2
+---> BattlePlayerAI enter : playerID=1 賽特 HP:4464/5800 AI:1 PlayerID=0
+AI_SkillAddHP target HP=37.135802469136%
+AI_ItemHeal target HP=37.135802469136%
+AI_SkillAddHP target HP=37.135802469136%
+AI_ItemHeal target HP=37.135802469136%
+[CaiAutoAI] select actor=1 phase=2 reason=attack command=2 item=1532 target=1 enemySide=true HPP=37.135802469136
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:44697
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+ATTACK -> 3/4(卡瑪)
+[CaiDemonKing] strategy selected: 11004; phase 2; phase=2; healUsed=false; oppositeSide=true; target=4; animation=44
+---> BattlePlayerAI after : playerID=2 妮可 HP:1504/4050 AI:1 PlayerID=1
+---> BattlePlayerAI after : playerID=4 李靖 HP:643/6800 AI:1 PlayerID=3
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:4398/4880 AI:1 PlayerID=2
+AI_SkillAddHP target HP=9.4558823529412%
+UseSkill idx=3 1588(八門定星術) cure 李靖
+[CaiAutoAI] select actor=3 phase=2 reason=heal-skill command=2 item=1588 target=4 enemySide=false HPP=9.4558823529412
+---> BattlePlayerAI after : playerID=1 賽特 HP:4464/5800 AI:1 PlayerID=0
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:4398/4880 AI:1 PlayerID=2
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:39672
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 2/4(妮可)
+Skill_QQ=table: 00000223F27E0910
+SKILL 11004() -> 2(妮可)
+[CaiDemonKing] strategy selected: 0; phase 2; phase=2; healUsed=false; oppositeSide=true; target=4; animation=40
+---> BattlePlayerAI enter : playerID=2 妮可 HP:3304/4050 AI:1 PlayerID=1
+AI_SkillAddMP target MP=2.1739130434783%
+no heal skill.
+AI_ItemHeal target MP=2.1739130434783%
+UseItem idx=5 642(仙魄香) cure 李靖
+[CaiAutoAI] select actor=2 phase=2 reason=restore-mp command=3 item=642 target=4 enemySide=false HPP=76.161764705882
+---> BattlePlayerAI after : playerID=2 妮可 HP:3304/4050 AI:1 PlayerID=1
+delitem 642 x 2 - 1
+---> BattlePlayerAI enter : playerID=4 李靖 HP:5179/6800 AI:1 PlayerID=3
+[CaiAutoAI] select actor=4 phase=2 reason=attack command=4 item=1652 target=1 enemySide=true HPP=76.161764705882
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:4398/4880 AI:1 PlayerID=2
+[CaiAutoAI] select actor=3 phase=2 reason=attack command=2 item=1524 target=1 enemySide=true HPP=76.161764705882
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:39672
+AttackCount 1 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 4/4(李靖)
+ATTACK -> 4/4(李靖)
+[CaiDemonKing] strategy selected: 11003; phase 2; phase=2; healUsed=false; oppositeSide=true; target=2; animation=44
+---> BattlePlayerAI enter : playerID=1 賽特 HP:3126/5800 AI:1 PlayerID=0
+AI_SkillAddHP target HP=53.896551724138%
+no heal skill.
+AI_ItemHeal target HP=53.896551724138%
+UseItem idx=9 804(真夢娃娃) cure 賽特
+[CaiAutoAI] select actor=1 phase=2 reason=heal-group command=3 item=804 target=1 enemySide=false HPP=53.896551724138
+---> BattlePlayerAI after : playerID=1 賽特 HP:3126/5800 AI:1 PlayerID=0
+---> BattlePlayerAI after : playerID=4 李靖 HP:6800/6800 AI:1 PlayerID=3
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:35648
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 4/4(李靖)
+CR_Skill_QQ=table: 00000223F27E2C10
+CURE 11005() -> 1()
+[CaiDemonKing] strategy selected: 11005; heal; phase=2; healUsed=true; oppositeSide=false; target=1; animation=44
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+---> BattlePlayerAI enter : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+[CaiAutoAI] select actor=2 phase=2 reason=attack command=2 item=1515 target=1 enemySide=true HPP=100
+---> BattlePlayerAI enter : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+[CaiAutoAI] select actor=1 phase=2 reason=attack command=2 item=1508 target=1 enemySide=true HPP=100
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:41430
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+Skill_QQ=table: 00000223F27E0910
+SKILL 11003() -> 3(卡瑪)
+[CaiDemonKing] strategy selected: 0; phase 2; phase=2; healUsed=true; oppositeSide=true; target=1; animation=40
+---> BattlePlayerAI enter : playerID=4 李靖 HP:6800/6800 AI:1 PlayerID=3
+[CaiAutoAI] select actor=4 phase=2 reason=attack command=2 item=1550 target=1 enemySide=true HPP=100
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+[CaiAutoAI] select actor=3 phase=2 reason=attack command=2 item=1524 target=1 enemySide=true HPP=100
+---> BattlePlayerAI after : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+---> BattlePlayerAI after : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:35401
+AttackCount 1 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+CR_Skill_QQ=table: 00000223F27E2C10
+CURE 11005() -> 1()
+[CaiDemonKing] strategy selected: 11003; phase 2; phase=2; healUsed=true; oppositeSide=true; target=4; animation=44
+---> BattlePlayerAI after : playerID=4 李靖 HP:5357/6800 AI:1 PlayerID=3
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:4397/4880 AI:1 PlayerID=2
+---> BattlePlayerAI enter : playerID=1 賽特 HP:4458/5800 AI:1 PlayerID=0
+[CaiAutoAI] select actor=1 phase=2 reason=attack command=4 item=1639 target=1 enemySide=true HPP=76.862068965517
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:28167
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 1/4(賽特)
+ATTACK -> 1/4(賽特)
+[CaiDemonKing] strategy selected: 11004; phase 2; phase=2; healUsed=true; oppositeSide=true; target=2; animation=44
+Battle_Dead : ID=2 妮可
+---> BattlePlayerAI enter : playerID=4 李靖 HP:5357/6800 AI:1 PlayerID=3
+state 2 is dead
+have dead
+check cure State from Skill
+check 祭柳歸靈
+check 蝕岩還身
+check cure State from Items
+check 仙蓮子
+UseItem 646(仙蓮子) cure 妮可
+[CaiAutoAI] select actor=4 phase=2 reason=serious command=3 item=646 target=2 enemySide=false HPP=76.862068965517
+---> BattlePlayerAI after : playerID=4 李靖 HP:5357/6800 AI:1 PlayerID=3
+delitem 646 x 3 - 1
+---> BattlePlayerAI after : playerID=1 賽特 HP:4458/5800 AI:1 PlayerID=0
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:22141
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+ATTACK -> 3/4(卡瑪)
+[CaiDemonKing] strategy selected: 0; phase 2; phase=2; healUsed=true; oppositeSide=true; target=3; animation=40
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:3783/4880 AI:1 PlayerID=2
+[CaiAutoAI] select actor=3 phase=2 reason=attack command=2 item=1524 target=1 enemySide=true HPP=76.862068965517
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:22141
+AttackCount 2 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+ATTACK -> 3/4(卡瑪)
+[CaiDemonKing] strategy selected: 11003; phase 2; phase=2; healUsed=true; oppositeSide=true; target=2; animation=44
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:3295/4880 AI:1 PlayerID=2
+---> BattlePlayerAI enter : playerID=1 賽特 HP:3114/5800 AI:1 PlayerID=0
+AI_SkillAddHP target HP=53.689655172414%
+no heal skill.
+AI_ItemHeal target HP=53.689655172414%
+UseItem idx=9 804(真夢娃娃) cure 賽特
+[CaiAutoAI] select actor=1 phase=2 reason=heal-group command=3 item=804 target=1 enemySide=false HPP=53.689655172414
+---> BattlePlayerAI enter : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+AI_SkillAddHP target HP=53.689655172414%
+AI_ItemHeal target HP=53.689655172414%
+AI_SkillAddHP target HP=53.689655172414%
+AI_ItemHeal target HP=53.689655172414%
+[CaiAutoAI] select actor=2 phase=2 reason=attack command=2 item=1515 target=1 enemySide=true HPP=53.689655172414
+---> BattlePlayerAI after : playerID=1 賽特 HP:3114/5800 AI:1 PlayerID=0
+---> BattlePlayerAI enter : playerID=4 李靖 HP:6800/6800 AI:1 PlayerID=3
+[CaiAutoAI] select actor=4 phase=2 reason=attack command=2 item=1550 target=1 enemySide=true HPP=100
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:17933
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 3/4(卡瑪)
+ATTACK -> 3/4(卡瑪)
+[CaiDemonKing] strategy selected: 11004; phase 2; phase=2; healUsed=true; oppositeSide=true; target=4; animation=44
+---> BattlePlayerAI after : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+---> BattlePlayerAI after : playerID=4 李靖 HP:2564/6800 AI:1 PlayerID=3
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+AI_SkillAddHP target HP=37.705882352941%
+UseSkill idx=3 1588(八門定星術) cure 李靖
+[CaiAutoAI] select actor=3 phase=2 reason=heal-skill command=2 item=1588 target=4 enemySide=false HPP=37.705882352941
+---> BattlePlayerAI enter : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+AI_SkillAddMP target MP=2.1739130434783%
+no heal skill.
+AI_ItemHeal target MP=2.1739130434783%
+UseItem idx=5 642(仙魄香) cure 李靖
+[CaiAutoAI] select actor=1 phase=2 reason=restore-mp command=3 item=642 target=4 enemySide=false HPP=37.705882352941
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:4880/4880 AI:1 PlayerID=2
+---> BattlePlayerAI after : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+delitem 642 x 1 - 1
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:11372
+AttackCount 0 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 2/4(妮可)
+ATTACK -> 2/4(妮可)
+[CaiDemonKing] strategy selected: 0; phase 2; phase=2; healUsed=true; oppositeSide=true; target=3; animation=40
+---> BattlePlayerAI enter : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+[CaiAutoAI] select actor=2 phase=2 reason=attack command=2 item=1515 target=1 enemySide=true HPP=87.622950819672
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:11372
+AttackCount 2 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 4/4(李靖)
+Skill_QQ=table: 00000223F27E0910
+SKILL 11003() -> 4(李靖)
+[CaiDemonKing] strategy selected: 0; phase 2; phase=2; healUsed=true; oppositeSide=true; target=4; animation=40
+---> BattlePlayerAI enter : playerID=3 卡瑪 HP:4276/4880 AI:1 PlayerID=2
+[CaiAutoAI] select actor=3 phase=2 reason=attack command=2 item=1524 target=1 enemySide=true HPP=87.622950819672
+---> BattlePlayerAI enter : playerID=1 賽特 HP:5800/5800 AI:1 PlayerID=0
+[CaiAutoAI] select actor=1 phase=2 reason=attack command=2 item=1508 target=1 enemySide=true HPP=87.622950819672
+---> BattlePlayerAI enter : playerID=4 李靖 HP:6316/6800 AI:1 PlayerID=3
+[CaiAutoAI] select actor=4 phase=2 reason=attack command=4 item=1652 target=1 enemySide=true HPP=87.622950819672
+---> BattleEnemyAI enter : ID=1 蔡魔王 HP:11372
+AttackCount 1 data.Skills=table: 00000223F27E07D0
+data.CureSkills=table: 00000223F27E1E00
+data.SP_AE=nil
+Target -> 4/4(李靖)
+Skill_QQ=table: 00000223F27E0910
+SKILL 11002() -> 4(李靖)
+[CaiDemonKing] strategy selected: 11003; phase 2; phase=2; healUsed=true; oppositeSide=true; target=1; animation=44
+---> BattlePlayerAI after : playerID=2 妮可 HP:4050/4050 AI:1 PlayerID=1
+---> BattlePlayerAI after : playerID=4 李靖 HP:4852/6800 AI:1 PlayerID=3
+---> BattlePlayerAI after : playerID=3 卡瑪 HP:3792/4880 AI:1 PlayerID=2
+Battle_Dead : ID=1 蔡魔王
+[AllMonsterStaticCapture] capture bridge restored (Battle_RestoreItem): sources=193, races=16, skipped=0
+[AllMonsterStaticCapture] capture bridge armed (post-battle): sources=193, races=16, sourceRaceFallbacks=10, createdRaces=0, skipped=0; map/ enemy levels remain original; native  eligibility is ready
+[CaiAutoAI] battle finished; modes restored
+[CaiDemonKing] party restored: index=1; HP=5800; MP=700; SP=1100; State=0; reason=restore item
+[CaiDemonKing] party restored: index=2; HP=4050; MP=1275; SP=695; State=0; reason=restore item
+[CaiDemonKing] party restored: index=3; HP=4880; MP=1350; SP=590; State=0; reason=restore item
+[CaiDemonKing] party restored: index=4; HP=6800; MP=920; SP=1140; State=0; reason=restore item
+[CaiDemonKing] finished: restore item
+
+
+

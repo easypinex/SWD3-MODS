@@ -1,0 +1,116 @@
+INFO  Using log config file: jar:file:/D:/workspace/SWD3-MODS/.tools/static-re/ghidra-11.4.3/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: .work\cai-native-v01\party-analysis8.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (927 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Headless startup complete (2247 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\PIC\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Jython\ghidra_scripts
+    D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tests
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BSim\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\8051\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PDB\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\DATA\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\JVM\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FunctionID\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  Opening project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /swd3.exe (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tests\ReportPartyState.py (HeadlessAnalyzer)  
+INFO  ReportPartyState.py> PARTY STATE REPORT (GhidraScript)  
+INFO  ReportPartyState.py> FUNCTION 140066fe0 (GhidraScript)  
+INFO  ReportPartyState.py> 
+void FUN_140066fe0(void)
+
+{
+  char *_Memory;
+  longlong lVar1;
+  int iVar2;
+  
+  _Memory = DAT_14019f210;
+  if (DAT_14019f210 != (char *)0x0) {
+    do {
+      DAT_14019f210 = *(char **)(_Memory + 0x40);
+      if (*_Memory != '\0') {
+        iVar2 = 0;
+        if (0 < *(int *)(_Memory + 0x38)) {
+          lVar1 = 0;
+          do {
+            if (*(void **)(lVar1 + *(longlong *)(_Memory + 0x20)) != (void *)0x0) {
+              free(*(void **)(lVar1 + *(longlong *)(_Memory + 0x20)));
+            }
+            iVar2 = iVar2 + 1;
+            lVar1 = lVar1 + 8;
+          } while (iVar2 < *(int *)(_Memory + 0x38));
+        }
+        free(*(void **)(_Memory + 0x20));
+        free(*(void **)(_Memory + 0x28));
+      }
+      free(_Memory);
+      _Memory = DAT_14019f210;
+    } while (DAT_14019f210 != (char *)0x0);
+    DAT_1401f9cb8 = 0;
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  ReportPartyState.py> FUNCTION 140085e10 (GhidraScript)  
+INFO  ReportPartyState.py> 
+longlong * FUN_140085e10(longlong param_1,ushort param_2)
+
+{
+  ushort *puVar1;
+  longlong *plVar2;
+  
+  if (((param_2 == 0x8000) && (*(char *)(param_1 + 0x39b4) == '\x01')) &&
+     (*(char *)(param_1 + 0x39ba) == '\x01')) {
+    puVar1 = (ushort *)(*(longlong *)(param_1 + 0x18) + 0x30);
+    *puVar1 = *puVar1 & 0x7fff;
+    FUN_14007e430(param_1);
+    *(undefined1 *)(param_1 + 0x39ba) = 0;
+    DAT_1401ab1f2 = DAT_1401ab1f2 + -1;
+    return (longlong *)0x1;
+  }
+  plVar2 = *(longlong **)(param_1 + 0x3408);
+  if (plVar2 == (longlong *)0x0) {
+    return plVar2;
+  }
+  do {
+    if ((*(uint *)(plVar2 + 0x1c) & (uint)param_2) != 0) {
+      *(undefined4 *)((longlong)plVar2 + 0xe4) = 0;
+      param_2 = param_2 & ~(ushort)*(uint *)(plVar2 + 0x1c);
+      FUN_140085ef0(param_1,0);
+      plVar2 = (longlong *)(param_1 + 0x3408);
+      if (param_2 == 0) {
+        return (longlong *)0x1;
+      }
+    }
+    plVar2 = (longlong *)*plVar2;
+  } while (plVar2 != (longlong *)0x0);
+  return (longlong *)0x1;
+}
+
+ (GhidraScript)  

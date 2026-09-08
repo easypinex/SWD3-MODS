@@ -1,0 +1,128 @@
+INFO  Using log config file: jar:file:/D:/workspace/SWD3-MODS/.tools/static-re/ghidra-11.4.3/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: .work\cai-reward-menu-v16\followup-analysis.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1065 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Headless startup complete (2593 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\PIC\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Jython\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BSim\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\8051\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PDB\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\DATA\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\JVM\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tools
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FunctionID\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\workspace\SWD3-MODS\.\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  Opening project: D:\workspace\SWD3-MODS\.\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /swd3.exe (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tools\InspectRewardMenuRefresh.py (HeadlessAnalyzer)  
+INFO  InspectRewardMenuRefresh.py> SWD3 reward menu refresh report SHA256=63f1d83d8c3a756d17640d9022e19f8928741b091f0e47abbdb22c0ccf6c9523 (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> FUNCTION 0x1400de620L (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> 
+void FUN_1400de620(ulonglong param_1,short param_2)
+
+{
+  longlong lVar1;
+  
+  lVar1 = FUN_1400d9060(param_1,(int)param_2,0);
+  if (lVar1 == 0) {
+    FUN_14014c6a0(&DAT_1401a6d80,"Delete Item :ItemID = %d",param_1 & 0xffffffff);
+    return;
+  }
+  FUN_14014c6a0(&DAT_1401a6d80,"Add Item :ItemID = %d ,count=%d",param_1 & 0xffffffff,(int)param_2);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> FUNCTION 0x1400ad7a0L (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_1400ad7a0(int param_1,char *param_2,undefined4 param_3)
+
+{
+  longlong lVar1;
+  
+  if (((DAT_1401a6e20 >> 5 & 1) == 0) && (DAT_1401a7738 == -1)) {
+    FUN_1401574d0(&DAT_1402bed60);
+    FUN_1400adc40(&DAT_1401a7890);
+    _DAT_1401a7724 = 0;
+    _DAT_1401a7734 = 0;
+    _DAT_1401a7730 = 0;
+    if (DAT_1401a76e8 != (void *)0x0) {
+      free(DAT_1401a76e8);
+    }
+    DAT_1401a76e8 = (void *)0x0;
+    if ((param_2 != (char *)0x0) && (*param_2 != '\0')) {
+      lVar1 = SDL_strlen(param_2);
+      DAT_1401a76e8 = malloc(lVar1 + 1);
+      if (DAT_1401a76e8 != (void *)0x0) {
+        SDL_strlcpy(DAT_1401a76e8,param_2,lVar1 + 1);
+      }
+      DAT_1401a7700 = 1;
+    }
+    _DAT_1401a7710 = 0;
+    _DAT_1401a7754 = param_3;
+    if (param_1 == -1) {
+      _DAT_1401a7758 = 1;
+      DAT_1401a7738 = 0xfffd;
+    }
+    else {
+      _DAT_1401a7758 = 2;
+      DAT_1401a7738 = param_1;
+    }
+    return;
+  }
+  FUN_1400f1a60("RunEvent","Now Running Scene.%s() , can\'t do it.",DAT_1401a76e8);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> FUNCTION 0x1400de8f0L (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> 
+undefined8 FUN_1400de8f0(void)
+
+{
+  if (((DAT_1401a7738 != -1) && (DAT_1401a76e8 != (char *)0x0)) && (*DAT_1401a76e8 != '\0')) {
+    FUN_140008070();
+    return 1;
+  }
+  FUN_140007f90();
+  return 1;
+}
+
+ (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> FUNCTION 0x1400d9060L (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> 
+void FUN_1400d9060(undefined4 param_1,undefined4 param_2,undefined2 param_3)
+
+{
+  FUN_14009b2e0(&DAT_1401fa8de,param_1,param_2,param_3);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectRewardMenuRefresh.py> END REWARD MENU REPORT (GhidraScript)  

@@ -1,0 +1,158 @@
+INFO  Using log config file: jar:file:/D:/workspace/SWD3-MODS/.tools/static-re/ghidra-11.4.3/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: .work\cai-native-v01\party-analysis6.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (927 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Headless startup complete (2256 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\PIC\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Jython\ghidra_scripts
+    D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tests
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BSim\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\8051\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PDB\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\DATA\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\JVM\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FunctionID\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  Opening project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /swd3.exe (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tests\ReportPartyState.py (HeadlessAnalyzer)  
+INFO  ReportPartyState.py> INSTRUCTIONS 0x14006c030 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c030 CMP byte ptr [0x1401f9d03],0x0 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c037 JZ 0x14006c0d0 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c03d TEST ECX,ECX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c03f JLE 0x14006c084 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c041 LEA EAX,[RCX + -0x1] (GhidraScript)  
+INFO  ReportPartyState.py> 14006c044 MOV dword ptr [0x1401f9d1c],0x4c (GhidraScript)  
+INFO  ReportPartyState.py> 14006c04e XOR EDX,EDX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c050 MOV R9D,0x270f (GhidraScript)  
+INFO  ReportPartyState.py> 14006c056 TEST EAX,EAX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c058 MOV ECX,EDX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c05a MOV R8D,R9D (GhidraScript)  
+INFO  ReportPartyState.py> 14006c05d CMOVNS ECX,EAX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c060 CMP ECX,0xa (GhidraScript)  
+INFO  ReportPartyState.py> 14006c063 CMOVL EDX,ECX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c066 MOVSXD RAX,EDX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c069 MOV EDX,0xffffd8f1 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c06e IMUL RCX,RAX,0x3fa8 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c075 LEA RAX,[0x1401aba90] (GhidraScript)  
+INFO  ReportPartyState.py> 14006c07c ADD RCX,RAX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c07f JMP 0x140086e90 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c084 JNS 0x14006c0bd (GhidraScript)  
+INFO  ReportPartyState.py> 14006c086 NOT ECX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c088 MOV dword ptr [0x1401f9d1c],0x4c (GhidraScript)  
+INFO  ReportPartyState.py> 14006c092 XOR EDX,EDX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c094 CMP ECX,0x8 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c097 CMOVC EDX,ECX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c09a XOR R9D,R9D (GhidraScript)  
+INFO  ReportPartyState.py> 14006c09d MOV EAX,EDX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c09f XOR R8D,R8D (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0a2 IMUL RCX,RAX,0x39f8 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0a9 LEA RAX,[0x1401d49c0] (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0b0 MOV EDX,0xfffe7960 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0b5 ADD RCX,RAX (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0b8 JMP 0x140086e90 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0bd MOV RCX,qword ptr [0x1401f9d50] (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0c4 LEA RDX,[0x140173490] (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0cb JMP 0x14000a750 (GhidraScript)  
+INFO  ReportPartyState.py> 14006c0d0 RET (GhidraScript)  
+INFO  ReportPartyState.py> PARTY STATE REPORT (GhidraScript)  
+INFO  ReportPartyState.py> FUNCTION 1400855e0 (GhidraScript)  
+INFO  ReportPartyState.py> 
+void FUN_1400855e0(longlong param_1,short param_2,short param_3,short param_4)
+
+{
+  ushort *puVar1;
+  longlong lVar2;
+  char cVar3;
+  
+  if (*(char *)(param_1 + 0x39b4) != '\x01') {
+    if (*(longlong *)(param_1 + 0x30) == 0) {
+      return;
+    }
+    *(int *)(*(longlong *)(param_1 + 0x30) + 0x38) = (int)param_2;
+    *(int *)(*(longlong *)(param_1 + 0x30) + 0x58) = (int)param_2;
+    return;
+  }
+  lVar2 = *(longlong *)(param_1 + 0x18);
+  if (lVar2 == 0) {
+    return;
+  }
+  if (param_2 < 1) {
+    if (param_2 == -1) {
+      *(undefined4 *)(lVar2 + 4) = *(undefined4 *)(lVar2 + 0x10);
+      cVar3 = *(char *)(param_1 + 0x39ba);
+    }
+    else {
+      cVar3 = *(char *)(param_1 + 0x39ba);
+      if (param_2 == 0) {
+        if (cVar3 == '\0') {
+          DAT_1401ab1f2 = DAT_1401ab1f2 + '\x01';
+          *(undefined1 *)(param_1 + 0x39ba) = 1;
+          puVar1 = (ushort *)(*(longlong *)(param_1 + 0x18) + 0x30);
+          *puVar1 = *puVar1 & 0x8000;
+        }
+        goto LAB_140085689;
+      }
+    }
+  }
+  else {
+    *(int *)(lVar2 + 0x10) = (int)param_2;
+    *(int *)(*(longlong *)(param_1 + 0x18) + 4) = (int)param_2;
+    cVar3 = *(char *)(param_1 + 0x39ba);
+  }
+  if (cVar3 != '\0') {
+    *(undefined1 *)(param_1 + 0x39ba) = 0;
+    puVar1 = (ushort *)(*(longlong *)(param_1 + 0x18) + 0x30);
+    *puVar1 = *puVar1 & 0x7fff;
+    if (DAT_1401ab1f2 != '\0') {
+      DAT_1401ab1f2 = DAT_1401ab1f2 + -1;
+    }
+  }
+LAB_140085689:
+  if (param_3 < 1) {
+    if (param_3 == -1) {
+      *(undefined4 *)(*(longlong *)(param_1 + 0x18) + 8) =
+           *(undefined4 *)(*(longlong *)(param_1 + 0x18) + 0x14);
+    }
+  }
+  else {
+    *(int *)(*(longlong *)(param_1 + 0x18) + 0x14) = (int)param_3;
+    *(int *)(*(longlong *)(param_1 + 0x18) + 8) = (int)param_3;
+  }
+  if (param_4 < 1) {
+    if (param_4 != -1) {
+      return;
+    }
+    *(undefined4 *)(*(longlong *)(param_1 + 0x18) + 0xc) =
+         *(undefined4 *)(*(longlong *)(param_1 + 0x18) + 0x18);
+    return;
+  }
+  *(int *)(*(longlong *)(param_1 + 0x18) + 0x18) = (int)param_4;
+  *(int *)(*(longlong *)(param_1 + 0x18) + 0xc) = (int)param_4;
+  return;
+}
+
+ (GhidraScript)  

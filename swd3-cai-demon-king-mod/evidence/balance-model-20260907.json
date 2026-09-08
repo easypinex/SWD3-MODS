@@ -1,0 +1,1252 @@
+{
+  "model": "definition-based sensitivity model; indices are NOT predicted HP damage",
+  "assumptions": [
+    "Lv60 four heroes; native guardian pairs listed once each; no Cai benefit",
+    "defence leaves artifact resistance out as comparison, not a recommended empty loadout",
+    "counter uses one light tower and one dark vessel across the team; listed equipment assumed acquired",
+    "max resistance is an individual boundary, not four simultaneous copies of each rare artifact",
+    "artifact resistance evaluated at full training as definition ceiling",
+    "no WIS, defence, random, guard or critical multiplier invented",
+    "growth N1 adds HP1000; highest HP pair of two distinct mod cards is a per-person boundary only"
+  ],
+  "highest_hp_distinct_mod_pair": {
+    "ids": [
+      10024,
+      10039
+    ],
+    "hp_bonus": 638
+  },
+  "provenance": {
+    ".work\\extracted\\script-index-inspect\\out_data\\GameData_NewGame.lua": "482743f45f929932b92b449e14d693afa2b467daf7f21dff30ab5e82b171fd71",
+    "docs\\knowledge\\original-game-data\\battle-balance-and-capture\\generated\\item-combat-details.csv": "096b61d72cb50e1dd6ac6ffa3e03c13a83e26d7e95b44f433288e8a02e56d88c",
+    "docs\\knowledge\\original-game-data\\battle-balance-and-capture\\generated\\players-level-60.csv": "a865c1e98e4470026db5671a0ded7772b90eb066912fb380daeb7f717968c2c3",
+    "docs\\knowledge\\original-game-data\\battle-balance-and-capture\\generated\\endgame\\guardian-comparison.csv": "9299e5500a49a7ae0fdcd7bf39330ef36da7866b9190d9c516df5f3c2d76fb4e",
+    "swd3-cai-demon-king-mod\\Calculate-Balance.py": "b7b68f64e8b373bf45a62df855b527c2ec1b15c5e05935c0abb83b880c6aedd2"
+  },
+  "loadouts": [
+    {
+      "profile": "defence",
+      "role": 1,
+      "name": "賽特",
+      "gear": [
+        580,
+        898,
+        869,
+        887,
+        912,
+        993,
+        995
+      ],
+      "gear_names": [
+        "軒轅劍",
+        "龍族盔",
+        "冥妖戰甲",
+        "藍堂光套",
+        "神駝靴",
+        "白玉龍紋珮",
+        "神草結"
+      ],
+      "artifacts": [],
+      "artifact_names": [],
+      "guardians": [
+        255,
+        178
+      ],
+      "source_hp": 5802,
+      "growth_N1_hp": 6802,
+      "mod_pair_hp_boundary": 6440,
+      "source_additions": {
+        "AddATK": 596,
+        "AddDEF": 284,
+        "AddSPD": 14,
+        "AddMP": 102,
+        "AddSP": 2
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            0,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            -2
+          ],
+          "raw_attr_sum": -6,
+          "additive_factor": 0.4,
+          "multiplicative_factor": 0.48,
+          "additive_index": 1200.0,
+          "multiplicative_index": 1440.0
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            0,
+            0,
+            0,
+            -4,
+            2,
+            0,
+            0,
+            -2
+          ],
+          "raw_attr_sum": -4,
+          "additive_factor": 0.6,
+          "multiplicative_factor": 0.576,
+          "additive_index": 1440.0,
+          "multiplicative_index": 1382.4
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            0,
+            0,
+            0,
+            -4,
+            2,
+            0,
+            0,
+            -2
+          ],
+          "raw_attr_sum": -4,
+          "additive_factor": 0.6,
+          "multiplicative_factor": 0.576,
+          "additive_index": 2880.0,
+          "multiplicative_index": 2764.8
+        }
+      }
+    },
+    {
+      "profile": "defence",
+      "role": 2,
+      "name": "妮可",
+      "gear": [
+        536,
+        1030,
+        1015,
+        889,
+        909,
+        994,
+        993
+      ],
+      "gear_names": [
+        "萬鈞神弩",
+        "鏡舞",
+        "白狐披風",
+        "子雷手套",
+        "雅典之靴",
+        "五彩石項鍊",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [],
+      "artifact_names": [],
+      "guardians": [
+        179,
+        198
+      ],
+      "source_hp": 4350,
+      "growth_N1_hp": 5350,
+      "mod_pair_hp_boundary": 4688,
+      "source_additions": {
+        "AddATK": 240,
+        "AddDEF": 245,
+        "AddSPD": 7,
+        "AddMP": -92,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "raw_attr_sum": 2,
+          "additive_factor": 1.2,
+          "multiplicative_factor": 1.2,
+          "additive_index": 3600.0,
+          "multiplicative_index": 3600.0
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            -4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -4,
+            0
+          ],
+          "raw_attr_sum": -8,
+          "additive_factor": 0.2,
+          "multiplicative_factor": 0.36,
+          "additive_index": 480.0,
+          "multiplicative_index": 864.0
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            -4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -4,
+            0
+          ],
+          "raw_attr_sum": -8,
+          "additive_factor": 0.2,
+          "multiplicative_factor": 0.36,
+          "additive_index": 960.0,
+          "multiplicative_index": 1728.0
+        }
+      }
+    },
+    {
+      "profile": "defence",
+      "role": 3,
+      "name": "卡瑪",
+      "gear": [
+        553,
+        1025,
+        1017,
+        889,
+        1040,
+        995,
+        993
+      ],
+      "gear_names": [
+        "四極皇霸刀",
+        "天蠶絲帶",
+        "天仙神衣",
+        "子雷手套",
+        "流光鞋",
+        "神草結",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [],
+      "artifact_names": [],
+      "guardians": [
+        149,
+        152
+      ],
+      "source_hp": 4880,
+      "growth_N1_hp": 5880,
+      "mod_pair_hp_boundary": 5518,
+      "source_additions": {
+        "AddATK": 231,
+        "AddDEF": 253,
+        "AddSPD": 11,
+        "AddMP": -100,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            -2,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -6,
+          "additive_factor": 0.4,
+          "multiplicative_factor": 0.512,
+          "additive_index": 1200.0,
+          "multiplicative_index": 1536.0
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -4,
+          "additive_factor": 0.6,
+          "multiplicative_factor": 0.64,
+          "additive_index": 1440.0,
+          "multiplicative_index": 1536.0
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -4,
+          "additive_factor": 0.6,
+          "multiplicative_factor": 0.64,
+          "additive_index": 2880.0,
+          "multiplicative_index": 3072.0
+        }
+      }
+    },
+    {
+      "profile": "defence",
+      "role": 4,
+      "name": "李靖",
+      "gear": [
+        562,
+        905,
+        871,
+        886,
+        915,
+        979,
+        993
+      ],
+      "gear_names": [
+        "憾天神槍",
+        "聖獸玲瓏冠",
+        "九龍雲生冑",
+        "縛閻指套",
+        "帶火風輪",
+        "辟邪戒指",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [],
+      "artifact_names": [],
+      "guardians": [
+        368,
+        154
+      ],
+      "source_hp": 6800,
+      "growth_N1_hp": 7800,
+      "mod_pair_hp_boundary": 7438,
+      "source_additions": {
+        "AddATK": 261,
+        "AddDEF": 307,
+        "AddSPD": 14,
+        "AddMP": 0,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            -6,
+            0,
+            0,
+            -6,
+            2,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.1536,
+          "additive_index": 0,
+          "multiplicative_index": 460.8
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            2,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -4,
+          "additive_factor": 0.6,
+          "multiplicative_factor": 0.576,
+          "additive_index": 1440.0,
+          "multiplicative_index": 1382.4
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            2,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -4,
+          "additive_factor": 0.6,
+          "multiplicative_factor": 0.576,
+          "additive_index": 2880.0,
+          "multiplicative_index": 2764.8
+        }
+      }
+    },
+    {
+      "profile": "counter",
+      "role": 1,
+      "name": "賽特",
+      "gear": [
+        580,
+        898,
+        869,
+        887,
+        912,
+        979,
+        993
+      ],
+      "gear_names": [
+        "軒轅劍",
+        "龍族盔",
+        "冥妖戰甲",
+        "藍堂光套",
+        "神駝靴",
+        "辟邪戒指",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [],
+      "artifact_names": [],
+      "guardians": [
+        255,
+        178
+      ],
+      "source_hp": 5802,
+      "growth_N1_hp": 6802,
+      "mod_pair_hp_boundary": 6440,
+      "source_additions": {
+        "AddATK": 596,
+        "AddDEF": 286,
+        "AddSPD": 13,
+        "AddMP": 102,
+        "AddSP": 2
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            0,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -6,
+          "additive_factor": 0.4,
+          "multiplicative_factor": 0.48,
+          "additive_index": 1200.0,
+          "multiplicative_index": 1440.0
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            0,
+            0,
+            0,
+            -4,
+            2,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -4,
+          "additive_factor": 0.6,
+          "multiplicative_factor": 0.576,
+          "additive_index": 1440.0,
+          "multiplicative_index": 1382.4
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            0,
+            0,
+            0,
+            -4,
+            2,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -4,
+          "additive_factor": 0.6,
+          "multiplicative_factor": 0.576,
+          "additive_index": 2880.0,
+          "multiplicative_index": 2764.8
+        }
+      }
+    },
+    {
+      "profile": "counter",
+      "role": 2,
+      "name": "妮可",
+      "gear": [
+        536,
+        1031,
+        1015,
+        889,
+        909,
+        994,
+        993
+      ],
+      "gear_names": [
+        "萬鈞神弩",
+        "千葉",
+        "白狐披風",
+        "子雷手套",
+        "雅典之靴",
+        "五彩石項鍊",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [
+        948
+      ],
+      "artifact_names": [
+        "神光寶塔"
+      ],
+      "guardians": [
+        179,
+        198
+      ],
+      "source_hp": 4350,
+      "growth_N1_hp": 5350,
+      "mod_pair_hp_boundary": 4688,
+      "source_additions": {
+        "AddATK": 240,
+        "AddDEF": 235,
+        "AddSPD": 9,
+        "AddMP": -92,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            2,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -8,
+          "additive_factor": 0.2,
+          "multiplicative_factor": 0.192,
+          "additive_index": 600.0,
+          "multiplicative_index": 576.0
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            -4,
+            0,
+            -4,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            0
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.216,
+          "additive_index": 0,
+          "multiplicative_index": 518.4
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            -4,
+            0,
+            -4,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            0
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.216,
+          "additive_index": 0,
+          "multiplicative_index": 1036.8
+        }
+      }
+    },
+    {
+      "profile": "counter",
+      "role": 3,
+      "name": "卡瑪",
+      "gear": [
+        553,
+        1031,
+        1017,
+        1047,
+        1040,
+        995,
+        993
+      ],
+      "gear_names": [
+        "四極皇霸刀",
+        "千葉",
+        "天仙神衣",
+        "般若裟腕",
+        "流光鞋",
+        "神草結",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [],
+      "artifact_names": [],
+      "guardians": [
+        149,
+        152
+      ],
+      "source_hp": 4880,
+      "growth_N1_hp": 5880,
+      "mod_pair_hp_boundary": 5518,
+      "source_additions": {
+        "AddATK": 221,
+        "AddDEF": 208,
+        "AddSPD": 13,
+        "AddMP": 0,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            -2,
+            0,
+            -2,
+            -2,
+            -4,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.24576,
+          "additive_index": 0,
+          "multiplicative_index": 737.3
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            0,
+            0,
+            -4,
+            -2,
+            0,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -8,
+          "additive_factor": 0.2,
+          "multiplicative_factor": 0.384,
+          "additive_index": 480.0,
+          "multiplicative_index": 921.6
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            0,
+            0,
+            -4,
+            -2,
+            0,
+            0,
+            -2,
+            0
+          ],
+          "raw_attr_sum": -8,
+          "additive_factor": 0.2,
+          "multiplicative_factor": 0.384,
+          "additive_index": 960.0,
+          "multiplicative_index": 1843.2
+        }
+      }
+    },
+    {
+      "profile": "counter",
+      "role": 4,
+      "name": "李靖",
+      "gear": [
+        562,
+        905,
+        871,
+        886,
+        915,
+        979,
+        993
+      ],
+      "gear_names": [
+        "憾天神槍",
+        "聖獸玲瓏冠",
+        "九龍雲生冑",
+        "縛閻指套",
+        "帶火風輪",
+        "辟邪戒指",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [
+        949
+      ],
+      "artifact_names": [
+        "暗黑魔樽"
+      ],
+      "guardians": [
+        368,
+        154
+      ],
+      "source_hp": 6800,
+      "growth_N1_hp": 7800,
+      "mod_pair_hp_boundary": 7438,
+      "source_additions": {
+        "AddATK": 261,
+        "AddDEF": 307,
+        "AddSPD": 14,
+        "AddMP": 0,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            -6,
+            0,
+            0,
+            -6,
+            2,
+            0,
+            -2,
+            0,
+            0
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.1536,
+          "additive_index": 0,
+          "multiplicative_index": 460.8
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            2,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            -2,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.1152,
+          "additive_index": 0,
+          "multiplicative_index": 276.5
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            2,
+            0,
+            0,
+            0,
+            -4,
+            0,
+            -2,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.1152,
+          "additive_index": 0,
+          "multiplicative_index": 553.0
+        }
+      }
+    },
+    {
+      "profile": "individual_max_resistance",
+      "role": 1,
+      "name": "賽特",
+      "gear": [
+        580,
+        898,
+        1018,
+        887,
+        912,
+        979,
+        993
+      ],
+      "gear_names": [
+        "軒轅劍",
+        "龍族盔",
+        "毛獸大衣",
+        "藍堂光套",
+        "神駝靴",
+        "辟邪戒指",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [
+        948,
+        949
+      ],
+      "artifact_names": [
+        "神光寶塔",
+        "暗黑魔樽"
+      ],
+      "guardians": [
+        255,
+        178
+      ],
+      "source_hp": 5805,
+      "growth_N1_hp": 6805,
+      "mod_pair_hp_boundary": 6443,
+      "source_additions": {
+        "AddATK": 596,
+        "AddDEF": 206,
+        "AddSPD": 6,
+        "AddMP": 102,
+        "AddSP": 2
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            0,
+            0,
+            0,
+            -4,
+            -4,
+            0,
+            -2,
+            0,
+            -8,
+            0
+          ],
+          "raw_attr_sum": -18,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.0576,
+          "additive_index": 0,
+          "multiplicative_index": 172.8
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            0,
+            0,
+            0,
+            -4,
+            2,
+            0,
+            -2,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.1152,
+          "additive_index": 0,
+          "multiplicative_index": 276.5
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            0,
+            0,
+            0,
+            -4,
+            2,
+            0,
+            -2,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.1152,
+          "additive_index": 0,
+          "multiplicative_index": 553.0
+        }
+      }
+    },
+    {
+      "profile": "individual_max_resistance",
+      "role": 2,
+      "name": "妮可",
+      "gear": [
+        536,
+        1031,
+        1018,
+        889,
+        909,
+        994,
+        993
+      ],
+      "gear_names": [
+        "萬鈞神弩",
+        "千葉",
+        "毛獸大衣",
+        "子雷手套",
+        "雅典之靴",
+        "五彩石項鍊",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [
+        948,
+        949
+      ],
+      "artifact_names": [
+        "神光寶塔",
+        "暗黑魔樽"
+      ],
+      "guardians": [
+        179,
+        198
+      ],
+      "source_hp": 4353,
+      "growth_N1_hp": 5353,
+      "mod_pair_hp_boundary": 4691,
+      "source_additions": {
+        "AddATK": 240,
+        "AddDEF": 167,
+        "AddSPD": 4,
+        "AddMP": -100,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            2,
+            0,
+            -2,
+            -4,
+            0,
+            0,
+            0,
+            0,
+            -8,
+            0
+          ],
+          "raw_attr_sum": -12,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.1152,
+          "additive_index": 0,
+          "multiplicative_index": 345.6
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            -4,
+            0,
+            -4,
+            -4,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -24,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.02592,
+          "additive_index": 0,
+          "multiplicative_index": 62.2
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            -4,
+            0,
+            -4,
+            -4,
+            0,
+            0,
+            -4,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -24,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.02592,
+          "additive_index": 0,
+          "multiplicative_index": 124.4
+        }
+      }
+    },
+    {
+      "profile": "individual_max_resistance",
+      "role": 3,
+      "name": "卡瑪",
+      "gear": [
+        553,
+        1031,
+        1018,
+        1047,
+        1040,
+        995,
+        993
+      ],
+      "gear_names": [
+        "四極皇霸刀",
+        "千葉",
+        "毛獸大衣",
+        "般若裟腕",
+        "流光鞋",
+        "神草結",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [
+        948,
+        949
+      ],
+      "artifact_names": [
+        "神光寶塔",
+        "暗黑魔樽"
+      ],
+      "guardians": [
+        149,
+        152
+      ],
+      "source_hp": 4883,
+      "growth_N1_hp": 5883,
+      "mod_pair_hp_boundary": 5521,
+      "source_additions": {
+        "AddATK": 221,
+        "AddDEF": 124,
+        "AddSPD": 8,
+        "AddMP": 0,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            -2,
+            0,
+            -2,
+            -4,
+            -4,
+            0,
+            -2,
+            0,
+            -8,
+            0
+          ],
+          "raw_attr_sum": -22,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.036864,
+          "additive_index": 0,
+          "multiplicative_index": 110.6
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            0,
+            0,
+            -4,
+            -4,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -18,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.0576,
+          "additive_index": 0,
+          "multiplicative_index": 138.2
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            0,
+            0,
+            -4,
+            -4,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -18,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.0576,
+          "additive_index": 0,
+          "multiplicative_index": 276.5
+        }
+      }
+    },
+    {
+      "profile": "individual_max_resistance",
+      "role": 4,
+      "name": "李靖",
+      "gear": [
+        562,
+        905,
+        1018,
+        886,
+        915,
+        979,
+        993
+      ],
+      "gear_names": [
+        "憾天神槍",
+        "聖獸玲瓏冠",
+        "毛獸大衣",
+        "縛閻指套",
+        "帶火風輪",
+        "辟邪戒指",
+        "白玉龍紋珮"
+      ],
+      "artifacts": [
+        948,
+        949
+      ],
+      "artifact_names": [
+        "神光寶塔",
+        "暗黑魔樽"
+      ],
+      "guardians": [
+        368,
+        154
+      ],
+      "source_hp": 6803,
+      "growth_N1_hp": 7803,
+      "mod_pair_hp_boundary": 7441,
+      "source_additions": {
+        "AddATK": 253,
+        "AddDEF": 217,
+        "AddSPD": 12,
+        "AddMP": 0,
+        "AddSP": 0
+      },
+      "effects": {
+        "light_single": {
+          "points": 3000,
+          "components": [
+            -6,
+            0,
+            0,
+            -4,
+            2,
+            0,
+            -2,
+            0,
+            -8,
+            0
+          ],
+          "raw_attr_sum": -18,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.04608,
+          "additive_index": 0,
+          "multiplicative_index": 138.2
+        },
+        "dark_area": {
+          "points": 2400,
+          "components": [
+            2,
+            0,
+            0,
+            -4,
+            -4,
+            0,
+            -2,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -16,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.06912,
+          "additive_index": 0,
+          "multiplicative_index": 165.9
+        },
+        "dark_ultimate": {
+          "points": 4800,
+          "components": [
+            2,
+            0,
+            0,
+            -4,
+            -4,
+            0,
+            -2,
+            0,
+            0,
+            -8
+          ],
+          "raw_attr_sum": -16,
+          "additive_factor": 0,
+          "multiplicative_factor": 0.06912,
+          "additive_index": 0,
+          "multiplicative_index": 331.8
+        }
+      }
+    }
+  ],
+  "durability": {
+    "initial_hp": 80000,
+    "one_heal": 10000,
+    "total_max": 90000,
+    "heal_fraction_of_initial": 0.125,
+    "required_actual_damage_per_four_hero_action_window": {
+      "6_windows": 15000,
+      "8_windows": 11250,
+      "10_windows": 9000
+    }
+  },
+  "counter_team_dark_index": {
+    "additive_index": 1920.0,
+    "multiplicative_index": 3098.9
+  },
+  "area_healing": {
+    "true_dream_doll_804": {
+      "hp_each": 4000,
+      "sp_cost": 300,
+      "max_four_hero_hp": 16000
+    }
+  }
+}

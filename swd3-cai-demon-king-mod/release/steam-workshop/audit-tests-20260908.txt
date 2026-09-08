@@ -1,0 +1,31 @@
+PASS: dialogue thresholds, private RNG, equipment context, rotation, budgets and native save serialization
+
+PASS: fair-play caps, native item accounting, frozen debits, no false lock verdict, refund and isolation
+
+PASS: inventory refunds, native item helpers, same-ID rewards, keeper costs, capture exclusion, both load orders, failure retries and save isolation
+
+reward failed: ...space\SWD3-MODS\swd3-cai-demon-king-mod\tests/reward.lua:33: inventory failure
+PASS: reward native definitions, inventory/equipment lifecycle, failure retry and isolated skill arrays
+
+PASS: phase boundaries, exact pools, pressure cycle, once-only heal, valid targets, status and no revival
+PASS: bounded early physical pressure, recovery, phase transition, seal, heal and independent clocks
+
+PASS: private skills preserve native effects, scope and atomic conflict handling
+
+PASS: native physical FX declaration has one impact event
+PASS: one native-length cure animation, two distinct cure events, unchanged original FX
+PASS: Cai data ownership, load order, menu, lifecycle, failure and save isolation
+
+PASS: Cai Boss identity with actual capture runtime, both load orders, attack/capture windows and repeated cleanup
+
+PASS: Cai v0.4 independent registration, exit classification and context isolation
+PASS: Cai native dialogue coroutine, opening/defeat order, cancellation, errors and no menu hints
+PASS: strategy hook, native cure replacement, scope and cleanup
+PASS: released menu excludes test entries even with test packages and saved markers
+PASS: v1 dialogue branches, six-line budget, admission rejection, invalid victory and cross-save cancellation
+PASS: confirmed reward receipt after cleanup, Scene guards, one-time display and save isolation
+PASS: integrated F9 mixed Cai, silence, independent AI, difficulty, whole-side victory, one refund, cleanup and handler orders
+
+PASS: Cai StringDB references and uniqueness
+PASS: party full entry, native revival, four slots, exact restoration and failures
+

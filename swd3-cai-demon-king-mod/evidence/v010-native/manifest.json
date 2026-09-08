@@ -1,0 +1,20 @@
+{
+  "warning": "Decompiled types are inferred; not runtime acceptance",
+  "exeSha256": "63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523",
+  "files": [
+    {
+      "file": "native-capacity.txt",
+      "sha256": "30DC7AE5D462D15B211E3FC32F43FB971EE135831418BA80DC276F104249DD79"
+    },
+    {
+      "file": "native-finish-summon.txt",
+      "sha256": "F3D00B7C7A40793A2FB6C2DE2C310AA804841A4252C225BA4405A051B7DC783E"
+    },
+    {
+      "file": "native-item-gate.txt",
+      "sha256": "12CDA04C48CE2E0D8113339F3BA784FFC7F6AAD7834E42E26EA9F9C62AC54331"
+    }
+  ],
+  "gameVersion": "4.0.5.0",
+  "tool": "Ghidra 11.4.3 readOnly noanalysis"
+}

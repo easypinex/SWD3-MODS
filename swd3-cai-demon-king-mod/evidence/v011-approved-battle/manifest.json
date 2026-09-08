@@ -1,0 +1,37 @@
+{
+  "capturedAt": "2026-09-08T00:53:38.0496763+08:00",
+  "console": "37BC5835D585FB6754E44E42B22C1668814C83198FBA87C0CC2CF9FF76A042A4",
+  "packages": [
+    {
+      "Path": "D:\\SteamLibrary\\steamapps\\common\\SWD3\\Mods\\cai_demon_king.ssmod",
+      "Hash": "703258653D29E7300211948EF1B72BBAB62B215595C40CBFFD8378708DD1797C"
+    },
+    {
+      "Path": "D:\\SteamLibrary\\steamapps\\common\\SWD3\\Mods\\cai_auto_ai_probe.ssmod",
+      "Hash": "3B640925C802A2749ED8778C350AD85E04007EA1D77610062D06DD6BB5AA9DEA"
+    },
+    {
+      "Path": "D:\\SteamLibrary\\steamapps\\common\\SWD3\\Mods\\cai_test_start.ssmod",
+      "Hash": "7E1B39DD3A87CA5F440AAE21CD5CCD4B3C690B92F1FCC8A181ADEF5F01FE6F6C"
+    }
+  ],
+  "game": "63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523",
+  "artifacts": [
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\evidence\\v011-approved-battle\\console.txt",
+      "Hash": "37BC5835D585FB6754E44E42B22C1668814C83198FBA87C0CC2CF9FF76A042A4"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\evidence\\v011-approved-battle\\lifecycle-checks.txt",
+      "Hash": "AB8C7B79F23A4D7ED283B7D8A7B56831787E5AF2061D2FC0711077F2CA2DD998"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\evidence\\v011-approved-battle\\REPORT.md",
+      "Hash": "E439BD57F6C6E8C36B6101D358C0DF5D3C9D435A498B614480D050E3434BC816"
+    },
+    {
+      "Path": "D:\\workspace\\SWD3-MODS\\swd3-cai-demon-king-mod\\evidence\\v011-approved-battle\\summary.json",
+      "Hash": "8706DDE660CB628F3032D0FCDFE7DAE6A01ACD53B1F4558EF076B34E339F9C04"
+    }
+  ]
+}

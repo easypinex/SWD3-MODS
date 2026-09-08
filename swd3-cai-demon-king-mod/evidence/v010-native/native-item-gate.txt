@@ -1,0 +1,157 @@
+INFO  Using log config file: jar:file:/D:/workspace/SWD3-MODS/.tools/static-re/ghidra-11.4.3/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: D:\workspace\SWD3-MODS\.work\cai-guardian-supply-research\native-item-gate-analysis.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1020 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Headless startup complete (2384 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\PIC\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Jython\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BSim\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\8051\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PDB\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\DATA\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\JVM\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tools
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FunctionID\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  Opening project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /swd3.exe (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\swd3-cai-demon-king-mod\tools\InspectBattleFinishAndSummon.py (HeadlessAnalyzer)  
+INFO  InspectBattleFinishAndSummon.py> FUNCTION 1400725c0 (GhidraScript)  
+INFO  InspectBattleFinishAndSummon.py> 
+longlong FUN_1400725c0(longlong param_1,int param_2,undefined4 *param_3,undefined2 *param_4)
+
+{
+  undefined8 *puVar1;
+  short sVar2;
+  int *piVar3;
+  char cVar4;
+  uint uVar5;
+  undefined8 uVar6;
+  int iVar7;
+  longlong lVar8;
+  bool bVar9;
+  
+  SDL_memset(param_1 + 0x15d8,0,0x30);
+  puVar1 = (undefined8 *)(param_1 + 0x34f8);
+  if (*(longlong *)(param_1 + 0x3508) != 0) {
+    free((void *)*puVar1);
+  }
+  *puVar1 = 0;
+  *(undefined8 *)(param_1 + 0x3500) = 0;
+  *(undefined8 *)(param_1 + 0x3508) = 0;
+  *(longlong *)(param_1 + 0x3f20) = *(longlong *)(param_1 + 0x3f28);
+  *(undefined4 *)(param_1 + 0x3f78) = 0;
+  piVar3 = *(int **)(*(longlong *)(param_1 + 0x3f28) + 0x10);
+  *(int **)(param_1 + 0x3f20) = piVar3;
+  while( true ) {
+    if (piVar3 == (int *)0x0) {
+      return 0;
+    }
+    if (param_2 < 0) {
+      bVar9 = -param_2 == *piVar3;
+    }
+    else {
+      bVar9 = param_2 == piVar3[8];
+    }
+    if (bVar9) break;
+    piVar3 = *(int **)(piVar3 + 4);
+    *(int **)(param_1 + 0x3f20) = piVar3;
+  }
+  *(int **)(param_1 + 0x3f30) = piVar3;
+  *(ushort *)(param_1 + 0x398a) = *(ushort *)(param_1 + 0x398a) | 0x4000;
+  *param_4 = 0;
+  lVar8 = *(longlong *)(param_1 + 0x3f20);
+  if ((*(ushort *)(lVar8 + 100) & 0x2000) == 0) {
+    iVar7 = (int)*(short *)(lVar8 + 0x6e);
+    if (*(short *)(lVar8 + 0x6e) == 0) {
+      iVar7 = *(int *)(lVar8 + 0x60);
+    }
+    FUN_14007a330(param_1 + 0x15d8,iVar7);
+    lVar8 = *(longlong *)(param_1 + 0x3f20);
+    if ((*(short *)(lVar8 + 100) < 0) &&
+       (sVar2 = *(short *)(lVar8 + 0x66), *(short *)(param_1 + 0x3f74) = sVar2,
+       *(int *)(*(longlong *)(param_1 + 0x18) + 8) < (int)sVar2)) {
+      return 0;
+    }
+    if (((*(ushort *)(lVar8 + 100) & 0x4000) != 0) &&
+       (sVar2 = *(short *)(lVar8 + 0x66), *(short *)(param_1 + 0x3f76) = sVar2,
+       *(int *)(*(longlong *)(param_1 + 0x18) + 0xc) < (int)sVar2)) {
+      return 0;
+    }
+    if (*(short *)(lVar8 + 0x5c) == 0) {
+      *(undefined2 *)(param_1 + 0x388c) = *(undefined2 *)(lVar8 + 0x54);
+      *(undefined2 *)(param_1 + 0x388e) = *(undefined2 *)(lVar8 + 0x56);
+      *(undefined2 *)(param_1 + 0x3890) = *(undefined2 *)(lVar8 + 0x58);
+    }
+    *(undefined1 *)(param_1 + 0x39a6) = 0;
+    if ((*(ushort *)(lVar8 + 0x5c) & 0x200) != 0) {
+      *(undefined1 *)(param_1 + 0x39a6) = 1;
+      *(undefined2 *)(param_1 + 0x388c) = *(undefined2 *)(lVar8 + 0x54);
+      *(undefined2 *)(param_1 + 0x388e) = *(undefined2 *)(lVar8 + 0x56);
+      *(undefined2 *)(param_1 + 0x3890) = *(undefined2 *)(lVar8 + 0x58);
+    }
+    *param_3 = *(undefined4 *)(param_1 + 0x15ec);
+    lVar8 = *(longlong *)(param_1 + 0x3f20);
+    uVar5 = *(uint *)(lVar8 + 0x40);
+    if ((uVar5 >> 0xb & 1) != 0) {
+      *(ushort *)(param_1 + 0x398a) = *(ushort *)(param_1 + 0x398a) | 0x1000;
+      *(undefined4 *)(param_1 + 0x3f78) = *(undefined4 *)(lVar8 + 0x20);
+      uVar5 = *(uint *)(lVar8 + 0x40);
+    }
+    if ((uVar5 & 8) != 0) {
+      *param_4 = 1;
+      lVar8 = *(longlong *)(param_1 + 0x3f20);
+    }
+    if ((*(byte *)(lVar8 + 0x40) & 0x10) != 0) {
+      *param_4 = 1;
+      lVar8 = *(longlong *)(param_1 + 0x3f20);
+    }
+    if ((*(uint *)(lVar8 + 0x40) & 0x8000000) != 0) {
+      *(ushort *)(param_1 + 0x398a) = *(ushort *)(param_1 + 0x398a) | 0x2000;
+      *param_4 = 2;
+      cVar4 = FUN_140148bd0(&DAT_1401a6d80,"ItemTemp",
+                            *(undefined4 *)(*(longlong *)(param_1 + 0x3f20) + 0x20),
+                            "FN_EmptyTalisman");
+      if (cVar4 == '\0') {
+        *param_4 = 3;
+        *(ushort *)(param_1 + 0x398a) = *(ushort *)(param_1 + 0x398a) & 0xdfff;
+      }
+    }
+    lVar8 = *(longlong *)(param_1 + 0x3f20);
+    if (((*(uint *)(lVar8 + 0x40) & 0x8000080) != 0x80) && (*(uint *)(lVar8 + 0x40) != 0x800)) {
+      FUN_14009aa20();
+      lVar8 = *(longlong *)(param_1 + 0x3f20);
+    }
+    uVar6 = FUN_14009a880(lVar8);
+    FUN_140053890(puVar1,uVar6);
+    return *(longlong *)(param_1 + 0x3f20);
+  }
+  FUN_14007a330(param_1 + 0x15d8,*(undefined4 *)(lVar8 + 0x60));
+  *(undefined2 *)(param_1 + 0x3886) = *(undefined2 *)(*(longlong *)(param_1 + 0x3f20) + 0x44);
+  return *(longlong *)(param_1 + 0x3f20);
+}
+
+ (GhidraScript)  
