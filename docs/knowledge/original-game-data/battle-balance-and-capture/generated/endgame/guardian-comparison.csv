@@ -1,0 +1,194 @@
+﻿pool,item_id,name,availability_note,source_id,sp_cost,add_hp,add_mp,add_sp,add_str,add_stamina,add_wis,add_spd,add_atk,add_def,hp,atk,def,spd,wis
+native,47,蟹精魔機,acquisition not guaranteed,47,350,,,,,,,-6,15,10,2500,530,180,55,120
+native,49,羯忍幻機,acquisition not guaranteed,49,300,,,,,,,3,10,5,1800,500,162,58,100
+native,101,黏怪,acquisition not guaranteed,101,8,5,,,1,,,,,,6,19,18,16,10
+native,118,吸血殭屍,acquisition not guaranteed,118,16,,,,,2,-3,,,,60,60,45,35,30
+native,124,炎靈子,acquisition not guaranteed,124,180,30,,,,,,,5,3,630,380,80,58,135
+native,125,吸血鬼王,acquisition not guaranteed,125,27,,,,3,1,,-2,,,100,87,40,43,50
+native,126,邪靈,acquisition not guaranteed,126,20,-5,10,,,,,,,,30,83,85,40,60
+native,127,石骨魚,acquisition not guaranteed,127,15,,,,,2,,1,,,30,45,30,26,18
+native,128,石骨飛魚,acquisition not guaranteed,128,18,,,,,3,,2,,,50,58,43,40,18
+native,129,阿加希歐,acquisition not guaranteed,129,25,,20,,,,3,,,,200,147,64,46,120
+native,130,獢,acquisition not guaranteed,130,13,,,,1,2,,1,,,120,80,43,42,15
+native,131,吸血鬼,acquisition not guaranteed,131,14,,,,1,2,1,,,,43,52,32,33,30
+native,132,侏儒,acquisition not guaranteed,132,11,3,5,2,2,,,,,,18,31,25,23,25
+native,133,亞格瑞斯,acquisition not guaranteed,133,28,,,,5,2,,-3,,,125,100,56,36,50
+native,134,半人馬,acquisition not guaranteed,134,30,5,10,5,,,3,,,,110,90,53,43,70
+native,135,美杜莎,acquisition not guaranteed,135,28,3,10,-5,,,,3,,,100,80,57,45,50
+native,136,格萊艾,acquisition not guaranteed,136,26,-10,20,,,,3,,,,150,80,38,48,90
+native,137,凱貝羅斯,acquisition not guaranteed,137,30,,,,,1,1,3,,,130,90,46,43,56
+native,138,寒蛙,acquisition not guaranteed,138,30,,,,1,2,-5,2,,,140,111,65,43,70
+native,139,瓶女,acquisition not guaranteed,139,35,20,3,-15,,,,,,,180,102,55,45,100
+native,140,妖貓,acquisition not guaranteed,140,33,,5,,,,,3,,-5,90,93,42,53,90
+native,141,牛頭魚,acquisition not guaranteed,141,40,,,,5,3,,-2,,,160,113,58,48,65
+native,142,雪球怪,acquisition not guaranteed,142,32,-5,,,2,-2,2,2,,,100,116,89,40,80
+native,143,溫蒂妮,acquisition not guaranteed,143,45,,,,3,-2,5,,,,155,110,60,45,110
+native,144,竹妖,acquisition not guaranteed,144,120,,,,,,20,3,,5,420,320,103,60,80
+native,145,魍魎,acquisition not guaranteed,145,145,,,,,,,-2,5,1,450,360,120,48,100
+native,146,妖陀螺鬼,acquisition not guaranteed,146,160,100,50,,,,,,3,,500,400,130,56,140
+native,147,水仙,acquisition not guaranteed,147,90,50,30,40,,,,,,,330,310,90,48,100
+native,148,七仙女,acquisition not guaranteed,148,220,,,,,,,2,-5,12,1600,490,100,62,180
+native,149,九天玄女,acquisition not guaranteed,149,280,,,,,,5,3,10,10,2200,500,96,65,180
+native,150,嫦娥,acquisition not guaranteed,150,260,50,50,50,,,,4,2,2,1500,510,155,62,180
+native,151,瓊霜,acquisition not guaranteed,151,100,,,,5,10,3,,,,500,245,100,45,120
+native,152,瑪特女神,acquisition not guaranteed,152,185,,,,,,10,4,,5,680,400,150,55,160
+native,153,瓦雀,acquisition not guaranteed,153,50,,10,,,,5,,,,200,137,90,40,120
+native,154,上元夫人,acquisition not guaranteed,154,90,,,,-5,10,12,,,,600,360,110,50,130
+native,155,蠶女,acquisition not guaranteed,155,175,,45,,,,4,,,5,800,475,156,62,120
+native,156,女夷,acquisition not guaranteed,156,180,,70,25,,,,,,2,1430,460,98,64,138
+native,157,女夷22,acquisition not guaranteed,157,180,,70,25,,,,,,2,1430,460,98,64,138
+native,158,娥皇,acquisition not guaranteed,158,240,,,,,,,2,8,-3,1700,503,108,60,160
+native,159,女英,acquisition not guaranteed,159,190,,,,,,,1,-3,8,1650,495,115,64,160
+native,160,席娜,acquisition not guaranteed,160,70,20,,40,,,3,,,,350,200,75,46,120
+native,161,亞坦,acquisition not guaranteed,161,52,-10,,,4,,10,,,,220,150,93,43,120
+native,162,蝠妖,acquisition not guaranteed,162,38,,-10,,,4,,,,,160,140,70,42,80
+native,163,朱蛤獸,acquisition not guaranteed,163,45,,,15,-3,6,,,,,180,157,79,38,100
+native,164,神燈巨人,acquisition not guaranteed,164,60,-15,-15,-15,3,3,3,-3,,,300,170,88,37,160
+native,165,色烈芬,acquisition not guaranteed,165,215,60,60,60,,,,1,1,1,2000,580,122,60,180
+native,166,藍人,acquisition not guaranteed,166,35,,,,,2,15,,,,120,110,72,40,52
+native,167,戰死屍鬼,acquisition not guaranteed,167,188,,,,,,,-2,8,3,1300,420,134,62,100
+native,170,殭屍,acquisition not guaranteed,170,10,2,,3,,,,-2,,,16,24,18,16,10
+native,171,幽靈,acquisition not guaranteed,171,11,,10,,,,,2,,,18,30,12,30,15
+native,172,阿普洛迪,acquisition not guaranteed,172,260,,80,,,,10,3,,,2000,570,166,64,180
+native,173,阿拔東,acquisition not guaranteed,173,105,,,45,,,15,,,6,480,300,88,50,150
+native,174,阿高司,acquisition not guaranteed,174,75,20,,15,10,,,,,,350,150,73,55,125
+native,175,炎顱,acquisition not guaranteed,175,45,,,,3,5,-5,,,,180,133,65,43,56
+native,177,火蠑螈,acquisition not guaranteed,177,32,15,-5,5,,,,,,,170,140,74,45,70
+native,178,神龍,acquisition not guaranteed,178,320,,,,,,,6,8,8,3800,580,140,62,160
+native,179,鳳凰,acquisition not guaranteed,179,350,300,100,,,,,,8,,3500,600,160,60,120
+native,181,庫塔,acquisition not guaranteed,181,75,,,,5,5,5,-5,,,380,215,95,43,160
+native,184,食屍鬼,acquisition not guaranteed,184,120,-50,,,,,,3,4,,500,344,103,56,80
+native,185,山鬼,acquisition not guaranteed,185,70,,,,,,,-3,6,2,250,280,120,46,80
+native,186,黑無常,acquisition not guaranteed,186,240,-60,,,,,,2,7,6,2700,500,130,60,120
+native,189,食人花,acquisition not guaranteed,189,28,,,,,,,-3,1,5,140,125,88,43,20
+native,191,樂仙女,acquisition not guaranteed,191,200,300,100,-80,,,,,,,1160,430,112,63,130
+native,194,白無常,acquisition not guaranteed,194,250,-20,80,,,,,3,,2,2300,530,136,64,150
+native,197,耆戈,acquisition not guaranteed,197,88,60,30,50,,,,,,,320,205,100,48,120
+native,198,太白金星,acquisition not guaranteed,198,300,,,,,,20,1,15,-6,2500,560,145,68,180
+native,199,天將,acquisition not guaranteed,199,270,,-50,,,,,,8,3,2800,570,135,60,100
+native,206,惡靈,acquisition not guaranteed,206,15,,-5,3,,2,,,,,40,56,30,38,24
+native,208,水鬼,acquisition not guaranteed,208,14,,,10,1,,,1,,,53,53,34,32,30
+native,213,龍王,acquisition not guaranteed,213,310,10,-2,2,,,,,,,3200,580,160,68,160
+native,214,黑龍,acquisition not guaranteed,214,290,,,,,,,5,7,7,2800,550,150,64,140
+native,221,枯屍鬼,acquisition not guaranteed,221,40,,,,,5,-3,,,,300,127,50,35,60
+native,222,枯屍鬼王,acquisition not guaranteed,222,48,10,,5,,,,-2,,,400,136,55,37,89
+native,223,石獅精,acquisition not guaranteed,223,260,,,,,,-10,4,6,6,1800,530,160,58,100
+native,226,獨角獸,acquisition not guaranteed,226,175,3,,,,,,3,,5,1000,500,100,63,120
+native,238,尼梅亞獅,acquisition not guaranteed,238,160,,,,,,,-5,10,4,1500,530,166,58,100
+native,253,雪芙,acquisition not guaranteed,253,180,35,,50,,,,,3,,1000,500,125,60,180
+native,254,肯塔羅斯,acquisition not guaranteed,254,140,,,,,,8,,12,-6,1200,480,122,52,120
+native,255,尼凱,acquisition not guaranteed,255,360,,,,,,,6,12,8,2600,600,180,64,180
+native,267,冥府獄卒,acquisition not guaranteed,267,150,,,,,,,-3,8,3,700,390,106,54,120
+native,269,冤魂,acquisition not guaranteed,269,130,,,,,,,3,-4,6,460,340,95,58,90
+native,271,吊死鬼,acquisition not guaranteed,271,138,50,,,,,,-3,2,2,580,355,100,54,80
+native,272,餓死鬼,acquisition not guaranteed,272,130,-50,20,,,,,2,,,400,330,88,49,100
+native,273,瘟鬼,acquisition not guaranteed,273,168,,,,,,,1,6,3,620,378,96,56,80
+native,274,夜叉,acquisition not guaranteed,274,100,,,,10,-2,,-3,,,400,350,93,44,60
+native,277,雪女,acquisition not guaranteed,277,188,-30,,,,,,1,5,3,1500,446,105,63,130
+native,281,天宮仙女,acquisition not guaranteed,281,190,,,,,,,-4,5,4,1350,458,120,66,100
+native,316,妖燈鬼,acquisition not guaranteed,316,190,,,,,,,4,-4,4,1080,460,96,60,150
+native,317,迷魂霧妖,acquisition not guaranteed,317,193,,-40,,,,,4,,2,80,460,10,68,120
+native,368,鬥戰聖佛,acquisition not guaranteed,368,380,,,,,,-20,2,5,20,3000,630,160,66,170
+native,377,死靈騎士,acquisition not guaranteed,377,205,,,,,,,3,10,-5,3000,530,160,62,120
+native,390,鬼爵,acquisition not guaranteed,390,64,25,,,,,,-3,5,,220,160,79,40,80
+native,391,魚身人面妖,acquisition not guaranteed,391,53,,,,,,,2,2,2,180,150,89,45,90
+native,392,閻惡靈,acquisition not guaranteed,392,58,-15,-10,-5,,,,2,1,6,160,164,60,38,80
+native,401,戰馬,acquisition not guaranteed,401,0,,,,,,,,,,0,0,0,0,0
+native,2201,土匪,acquisition not guaranteed,2201,200,,,,,,,3,10,-5,3000,530,160,62,120
+native,2203,山鬼,original comment: test only,2203,70,,,,,,,-3,6,2,9999,1,999,46,80
+static_mod,10001,妮可・契靈,requires static capture MOD; runtime summoning still case-dependent,2,10,20,34,25,1,1,19,4,1,25,59,66,44,30,45
+static_mod,10002,薇達・契靈,requires static capture MOD; runtime summoning still case-dependent,3,90,96,69,35,7,4,25,3,9,30,944,288,106,46,100
+static_mod,10003,麥爾斯・契靈,requires static capture MOD; runtime summoning still case-dependent,4,10,32,22,25,1,1,19,4,1,25,189,48,29,32,35
+static_mod,10004,姆斯比爾・契靈,requires static capture MOD; runtime summoning still case-dependent,6,90,108,44,70,4,4,22,8,6,30,2124,132,75,45,90
+static_mod,10005,康那里士・契靈,requires static capture MOD; runtime summoning still case-dependent,7,30,69,28,45,2,2,21,6,3,27,1416,108,62,48,100
+static_mod,10006,慧彥・契靈,requires static capture MOD; runtime summoning still case-dependent,10,30,45,52,26,6,2,21,2,8,21,590,265,150,51,180
+static_mod,10007,恐懼之王・契靈,requires static capture MOD; runtime summoning still case-dependent,12,90,96,69,41,7,4,25,3,9,24,5900,187,84,54,120
+static_mod,10008,藍魔神・契靈,requires static capture MOD; runtime summoning still case-dependent,13,90,102,58,76,4,4,23,8,6,24,2360,138,69,46,120
+static_mod,10009,蜃樓王・契靈,requires static capture MOD; runtime summoning still case-dependent,16,90,108,52,41,10,4,23,3,14,24,5900,345,78,56,130
+static_mod,10010,鬼猴・契靈,requires static capture MOD; runtime summoning still case-dependent,18,90,133,46,41,13,7,23,3,17,24,4130,177,74,50,120
+static_mod,10011,撒旦・契靈,requires static capture MOD; runtime summoning still case-dependent,28,280,296,158,117,26,16,32,9,37,34,35400,690,191,140,200
+static_mod,10012,雨丹子・契靈,requires static capture MOD; runtime summoning still case-dependent,32,160,181,91,75,14,7,25,5,21,23,17700,667,133,64,180
+static_mod,10013,張客・契靈,requires static capture MOD; runtime summoning still case-dependent,33,160,193,93,75,12,8,26,5,18,24,11800,633,150,60,200
+static_mod,10014,鎮邪・契靈,requires static capture MOD; runtime summoning still case-dependent,38,160,193,79,75,15,7,25,5,23,23,11800,690,115,80,180
+static_mod,10015,王思月・契靈,requires static capture MOD; runtime summoning still case-dependent,39,160,192,73,75,12,8,25,5,18,26,9440,644,140,62,130
+static_mod,10016,悟緣・契靈,requires static capture MOD; runtime summoning still case-dependent,40,90,93,62,53,8,7,22,3,11,17,590,402,288,58,33
+static_mod,10017,蚩尤・契靈,requires static capture MOD; runtime summoning still case-dependent,46,280,302,130,115,26,15,28,8,38,26,35400,977,230,90,180
+static_mod,10018,機關三魔獸・契靈,requires static capture MOD; runtime summoning still case-dependent,48,90,105,50,53,7,6,22,3,9,15,7080,276,103,48,10
+static_mod,10019,影忍妖機・契靈,requires static capture MOD; runtime summoning still case-dependent,50,30,73,26,66,4,5,20,7,6,13,1180,57,46,30,22
+static_mod,10020,羯羊妖機・契靈,requires static capture MOD; runtime summoning still case-dependent,51,160,199,65,81,14,7,24,5,21,17,17700,575,170,65,50
+static_mod,10021,夜叉悟緣・契靈,requires static capture MOD; runtime summoning still case-dependent,52,160,165,97,92,12,6,25,7,18,11,9440,552,118,62,120
+static_mod,10022,雨丹子五鬼・契靈,requires static capture MOD; runtime summoning still case-dependent,53,160,181,104,87,12,7,28,5,18,11,14160,587,170,60,200
+static_mod,10023,機關和尚・契靈,requires static capture MOD; runtime summoning still case-dependent,57,90,116,50,59,11,7,22,4,16,10,694,338,169,54,80
+static_mod,10024,牛魔王・契靈,requires static capture MOD; runtime summoning still case-dependent,59,280,320,134,137,27,18,30,10,37,21,35400,920,511,180,300
+static_mod,10025,冰魔薇達・契靈,requires static capture MOD; runtime summoning still case-dependent,60,30,69,30,72,4,2,23,6,6,6,1416,150,81,45,78
+static_mod,10026,機關三魔獸・契靈,requires static capture MOD; runtime summoning still case-dependent,61,90,90,62,35,15,4,16,3,12,30,3540,334,69,58,10
+static_mod,10027,藍魔神本體・契靈,requires static capture MOD; runtime summoning still case-dependent,62,90,96,64,70,10,4,17,8,6,30,4130,150,71,48,120
+static_mod,10028,姆斯比爾・契靈,requires static capture MOD; runtime summoning still case-dependent,63,90,102,50,35,15,4,16,3,12,30,590,184,75,45,90
+static_mod,10029,藍魔神・契靈,requires static capture MOD; runtime summoning still case-dependent,64,90,111,52,35,15,4,17,3,12,30,708,150,71,43,120
+static_mod,10030,影忍妖機・契靈,requires static capture MOD; runtime summoning still case-dependent,65,30,69,20,20,12,2,14,2,8,27,336,235,109,50,22
+static_mod,10031,康那里士・契靈,requires static capture MOD; runtime summoning still case-dependent,67,90,96,70,41,14,5,17,3,11,25,2950,368,92,48,100
+static_mod,10032,撒旦麥爾斯・契靈,requires static capture MOD; runtime summoning still case-dependent,68,90,108,72,41,16,4,18,3,14,24,5428,437,130,48,200
+static_mod,10033,撒旦麥爾斯・契靈,requires static capture MOD; runtime summoning still case-dependent,69,90,102,71,41,14,4,20,3,11,24,4248,437,130,45,200
+static_mod,10034,蜃樓王・契靈,requires static capture MOD; runtime summoning still case-dependent,70,90,108,52,41,16,4,17,3,14,24,4720,345,78,43,130
+static_mod,10035,木鐵人・契靈,requires static capture MOD; runtime summoning still case-dependent,71,90,117,38,41,14,6,16,3,11,27,4130,414,153,58,0
+static_mod,10036,康那里士・契靈,requires static capture MOD; runtime summoning still case-dependent,72,160,175,97,75,20,7,19,5,21,23,14750,621,92,62,150
+static_mod,10037,撒旦麥爾斯・契靈,requires static capture MOD; runtime summoning still case-dependent,73,160,177,99,67,18,7,20,4,18,24,10148,575,130,58,200
+static_mod,10038,撒旦・契靈,requires static capture MOD; runtime summoning still case-dependent,74,280,312,142,105,32,19,26,7,40,40,35400,1149,1149,70,200
+static_mod,10039,撒旦賽特・契靈,requires static capture MOD; runtime summoning still case-dependent,75,280,318,144,105,26,16,29,7,30,33,35400,862,191,92,200
+static_mod,10040,羯忍幻機・契靈,requires static capture MOD; runtime summoning still case-dependent,76,160,189,73,67,20,6,19,4,21,23,2070,560,181,58,100
+static_mod,10041,慧彥・契靈,requires static capture MOD; runtime summoning still case-dependent,93,30,55,66,38,12,5,19,2,7,12,590,265,150,51,180
+static_mod,10042,蛇・契靈,requires static capture MOD; runtime summoning still case-dependent,102,10,26,28,43,7,1,13,4,1,7,22,26,21,20,20
+static_mod,10043,獅・契靈,requires static capture MOD; runtime summoning still case-dependent,103,30,57,32,63,8,2,14,6,3,9,176,132,96,45,50
+static_mod,10044,虎・契靈,requires static capture MOD; runtime summoning still case-dependent,104,30,73,26,38,15,2,14,4,13,9,198,137,100,42,60
+static_mod,10045,度度鳥・契靈,requires static capture MOD; runtime summoning still case-dependent,105,10,44,10,43,7,1,13,4,1,7,16,21,14,21,12
+static_mod,10046,野猴・契靈,requires static capture MOD; runtime summoning still case-dependent,106,10,20,34,49,7,1,13,4,1,1,22,22,16,22,10
+static_mod,10047,黑金剛・契靈,requires static capture MOD; runtime summoning still case-dependent,107,10,45,32,54,10,4,13,7,4,1,32,35,17,18,20
+static_mod,10048,熊・契靈,requires static capture MOD; runtime summoning still case-dependent,108,10,32,22,49,7,1,13,4,1,1,38,37,19,20,13
+static_mod,10049,吸血蝙蝠・契靈,requires static capture MOD; runtime summoning still case-dependent,109,10,38,16,49,7,1,13,4,1,1,11,21,16,20,10
+static_mod,10050,毒蠍子・契靈,requires static capture MOD; runtime summoning still case-dependent,110,10,44,10,49,7,1,13,4,1,1,16,22,14,20,14
+static_mod,10051,毒蜘蛛・契靈,requires static capture MOD; runtime summoning still case-dependent,111,10,20,34,25,13,1,7,4,1,25,16,23,18,21,10
+static_mod,10052,隱翅蟲・契靈,requires static capture MOD; runtime summoning still case-dependent,112,10,26,28,25,13,1,7,4,1,25,13,20,11,22,10
+static_mod,10053,巨蛾・契靈,requires static capture MOD; runtime summoning still case-dependent,113,10,32,22,25,13,1,7,4,1,25,16,24,14,23,10
+static_mod,10054,毒蟾蜍・契靈,requires static capture MOD; runtime summoning still case-dependent,114,10,38,16,25,13,1,7,4,1,25,16,20,14,16,15
+static_mod,10055,巨蛙・契靈,requires static capture MOD; runtime summoning still case-dependent,115,10,44,10,25,13,1,7,4,1,25,13,20,15,24,10
+static_mod,10056,水蛇・契靈,requires static capture MOD; runtime summoning still case-dependent,116,10,20,34,31,13,1,7,4,1,19,22,24,13,22,10
+static_mod,10057,狼・契靈,requires static capture MOD; runtime summoning still case-dependent,117,30,51,38,51,14,2,8,6,3,21,138,126,88,41,20
+static_mod,10058,鷹・契靈,requires static capture MOD; runtime summoning still case-dependent,119,30,57,40,34,18,2,10,8,9,21,187,150,78,42,48
+static_mod,10059,蜈蚣・契靈,requires static capture MOD; runtime summoning still case-dependent,120,10,38,16,31,13,1,7,4,1,19,38,44,29,30,15
+static_mod,10060,黑蜈蚣・契靈,requires static capture MOD; runtime summoning still case-dependent,121,10,44,10,46,16,1,7,7,6,19,43,55,45,36,15
+static_mod,10061,紅耳蝙蝠・契靈,requires static capture MOD; runtime summoning still case-dependent,122,10,20,42,44,14,2,9,9,4,13,49,60,50,43,40
+static_mod,10062,北歐狼・契靈,requires static capture MOD; runtime summoning still case-dependent,123,10,26,28,37,13,1,7,4,1,13,65,81,47,38,35
+static_mod,10063,鱷魚・契靈,requires static capture MOD; runtime summoning still case-dependent,168,30,63,36,36,22,2,8,5,12,15,392,256,120,38,70
+static_mod,10064,大鬣蜥・契靈,requires static capture MOD; runtime summoning still case-dependent,169,90,114,44,55,24,4,10,7,17,18,392,420,164,43,10
+static_mod,10065,黑豹・契靈,requires static capture MOD; runtime summoning still case-dependent,176,30,69,20,57,14,2,8,6,3,15,165,131,92,47,60
+static_mod,10066,格特輪・契靈,requires static capture MOD; runtime summoning still case-dependent,180,90,90,70,53,21,4,11,3,12,12,2714,322,115,48,100
+static_mod,10067,鬥戰聖佛・契靈,requires static capture MOD; runtime summoning still case-dependent,378,280,276,126,131,36,11,16,14,37,23,23600,725,184,66,170
+static_mod,10068,鬥戰聖佛分身・契靈,requires static capture MOD; runtime summoning still case-dependent,379,160,177,89,97,32,6,13,11,28,17,9440,667,161,60,160
+static_mod,10069,教眾長老・契靈,requires static capture MOD; runtime summoning still case-dependent,380,90,108,52,53,22,4,11,3,14,12,1344,414,161,58,180
+static_mod,10070,黃八・契靈,requires static capture MOD; runtime summoning still case-dependent,381,90,114,46,53,22,4,11,3,14,12,6844,414,182,55,180
+static_mod,10071,人屍・契靈,requires static capture MOD; runtime summoning still case-dependent,382,160,165,97,87,26,6,13,5,21,11,3540,600,182,60,180
+static_mod,10072,蜃樓石頭妖・契靈,requires static capture MOD; runtime summoning still case-dependent,383,90,96,72,69,24,4,13,6,15,6,4130,402,173,40,40
+static_mod,10073,蜃樓財寶怪・契靈,requires static capture MOD; runtime summoning still case-dependent,384,90,102,55,59,19,4,12,3,9,6,2950,322,115,44,40
+static_mod,10074,響尾蛇・契靈,requires static capture MOD; runtime summoning still case-dependent,385,30,63,26,69,14,2,8,6,3,3,159,132,74,48,20
+static_mod,10075,大棕熊・契靈,requires static capture MOD; runtime summoning still case-dependent,386,30,69,20,69,14,2,8,6,3,3,182,135,98,43,13
+static_mod,10076,銀背金剛・契靈,requires static capture MOD; runtime summoning still case-dependent,387,30,60,48,24,29,5,2,3,12,27,154,135,86,40,20
+static_mod,10077,紅鬃猿・契靈,requires static capture MOD; runtime summoning still case-dependent,388,30,51,38,45,20,2,2,6,3,27,116,120,86,45,10
+static_mod,10078,奧斯曼・契靈,requires static capture MOD; runtime summoning still case-dependent,389,30,57,40,20,24,2,3,2,8,27,472,184,98,47,100
+static_mod,10079,沙漠綠蠍・契靈,requires static capture MOD; runtime summoning still case-dependent,393,30,67,26,32,26,2,2,5,12,27,220,128,73,38,40
+static_mod,10080,地獄妖貓・契靈,requires static capture MOD; runtime summoning still case-dependent,394,30,73,39,55,20,2,6,9,3,28,177,159,103,53,90
+static_mod,10081,高地骷髏妖・契靈,requires static capture MOD; runtime summoning still case-dependent,395,30,45,59,73,20,2,6,9,4,22,826,146,98,60,70
+static_mod,10082,弒肉妖・契靈,requires static capture MOD; runtime summoning still case-dependent,396,30,51,38,51,20,2,2,6,3,21,566,86,71,42,50
+static_mod,10083,赤尾蠍子・契靈,requires static capture MOD; runtime summoning still case-dependent,397,10,32,22,31,19,1,1,4,1,19,43,53,45,28,14
+static_mod,10084,加賽因・契靈,requires static capture MOD; runtime summoning still case-dependent,398,30,63,26,51,20,2,2,6,3,21,118,55,29,28,43
+static_mod,10085,修道院院長・契靈,requires static capture MOD; runtime summoning still case-dependent,399,30,69,34,60,20,3,6,8,4,24,159,61,55,30,50
+static_mod,10086,梅羅文加軍人・契靈,requires static capture MOD; runtime summoning still case-dependent,400,10,32,38,42,19,4,1,7,2,17,16,16,13,17,10
+static_mod,10087,死靈騎士・契靈,requires static capture MOD; runtime summoning still case-dependent,403,160,181,106,80,32,8,11,5,20,24,3540,610,184,62,120
+static_mod,10088,教士・契靈,requires static capture MOD; runtime summoning still case-dependent,407,10,32,36,44,20,3,5,5,3,16,26,32,21,29,30
+static_mod,10089,武僧・契靈,requires static capture MOD; runtime summoning still case-dependent,408,10,38,30,40,21,2,5,4,4,16,41,37,24,25,20
+static_mod,10090,梅羅文加軍人・契靈,requires static capture MOD; runtime summoning still case-dependent,409,10,52,10,44,20,5,1,5,4,17,30,36,24,32,20
+static_mod,10091,威尼斯水軍・契靈,requires static capture MOD; runtime summoning still case-dependent,410,10,28,34,46,21,4,1,4,5,11,86,74,61,48,35
+static_mod,10092,黑衣大食兵・契靈,requires static capture MOD; runtime summoning still case-dependent,411,30,59,42,42,26,5,2,3,10,13,246,240,71,43,95
+static_mod,10093,白衣大食兵・契靈,requires static capture MOD; runtime summoning still case-dependent,412,30,65,32,46,24,5,2,4,9,13,242,214,64,45,95
+static_mod,10094,唐軍步卒・契靈,requires static capture MOD; runtime summoning still case-dependent,416,30,81,34,38,24,7,3,2,8,13,275,218,68,45,100
+static_mod,10095,道士・契靈,requires static capture MOD; runtime summoning still case-dependent,433,90,114,46,53,28,4,5,3,14,12,802,414,182,55,180
+static_mod,10097,NAME1032・契靈,requires static capture MOD; runtime summoning still case-dependent,2202,160,181,83,87,32,7,6,5,21,11,11800,633,76,72,80

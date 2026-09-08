@@ -1,0 +1,984 @@
+﻿item_id,name,kind,source_file,line,symbol,quantity,enemy_id,drop_rate,limitation
+698,諸方神石,remove_item,BattleScript.lua,419,BattleScript.BS70,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+630,嘉果,remove_item,BattleScript.lua,1886,BattleScript.BS216,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,add_item,OnEvent.lua,52,OnEvent.GameStart.main,2,,,"literal reference only; conditions, repeatability and total supply unresolved"
+730,中國陶器,add_item,OnEvent.lua,53,OnEvent.GameStart.main,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+792,神魔異事錄,add_item,OnEvent.lua,54,OnEvent.GameStart.main,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+402,駱駝,add_item,Scene.lua,510,Scene.TALK3,2,,,"literal reference only; conditions, repeatability and total supply unresolved"
+624,無酵餅,chest_reference,Scene.lua,9682,Scene.TALK151,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1019,頭巾,chest_reference,Scene.lua,9686,Scene.TALK152,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+501,闊劍,store_listing,Scene.lua,9750,Scene.TALK187,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+502,長劍,store_listing,Scene.lua,9750,Scene.TALK187,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+503,羽翼劍,store_listing,Scene.lua,9750,Scene.TALK187,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+521,短木弓,store_listing,Scene.lua,9750,Scene.TALK187,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+851,胸甲,store_listing,Scene.lua,9750,Scene.TALK187,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+855,甲冑,store_listing,Scene.lua,9750,Scene.TALK187,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,9776,Scene.TALK203,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,chest_reference,Scene.lua,9781,Scene.TALK204,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,chest_reference,Scene.lua,9828,Scene.TALK213,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+624,無酵餅,chest_reference,Scene.lua,9833,Scene.TALK214,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,9838,Scene.TALK215,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+872,皮手套,chest_reference,Scene.lua,9886,Scene.TALK224,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+767,珍珠,add_item,Scene.lua,10251,Scene.TALK240,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+624,無酵餅,add_item,Scene.lua,10419,Scene.TALK245,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1019,頭巾,chest_reference,Scene.lua,10581,Scene.TALK254,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,chest_reference,Scene.lua,10585,Scene.TALK255,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+769,靈界指標,add_item,Scene.lua,10751,Scene.TALK262,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+768,空白符紙,add_item,Scene.lua,10752,Scene.TALK262,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,10834,Scene.TALK265,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,10842,Scene.TALK267,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+503,羽翼劍,add_item,Scene.lua,10862,Scene.TALK268,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+622,結纍葡萄,chest_reference,Scene.lua,10873,Scene.TALK270,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,chest_reference,Scene.lua,10877,Scene.TALK271,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,10881,Scene.TALK272,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+622,結纍葡萄,chest_reference,Scene.lua,10885,Scene.TALK273,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,10893,Scene.TALK275,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+766,紅寶石戒指,add_item,Scene.lua,11002,Scene.TALK277,8,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,11132,Scene.TALK279,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,11136,Scene.TALK281,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+622,結纍葡萄,chest_reference,Scene.lua,11152,Scene.TALK285,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,chest_reference,Scene.lua,11163,Scene.TALK287,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,11167,Scene.TALK288,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+907,鋼靴,chest_reference,Scene.lua,11171,Scene.TALK289,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+876,聖皇手套,chest_reference,Scene.lua,11175,Scene.TALK290,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,11179,Scene.TALK291,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+987,銀項鍊,chest_reference,Scene.lua,11183,Scene.TALK292,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+931,薩登荊環,chest_reference,Scene.lua,11188,Scene.TALK293,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+647,解毒草,chest_reference,Scene.lua,11196,Scene.TALK295,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,11200,Scene.TALK296,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+764,密道鑰匙,remove_item,Scene.lua,11407,Scene.TALK326,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+732,清水,add_item,Scene.lua,12629,Scene.TALK364,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+502,長劍,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+503,羽翼劍,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+504,火燄劍,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+522,十字弓,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1004,貂皮衣,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+852,鎖子甲,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+890,皮帽,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+907,鋼靴,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+873,鐵鎖手套,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1042,手鐲,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+624,無酵餅,store_listing,Scene.lua,15808,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+502,長劍,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+503,羽翼劍,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+504,火燄劍,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+522,十字弓,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1004,貂皮衣,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+852,鎖子甲,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+890,皮帽,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+907,鋼靴,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+873,鐵鎖手套,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1042,手鐲,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+624,無酵餅,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+697,祠符,store_listing,Scene.lua,15811,Scene.TALK459,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+769,靈界指標,add_item,Scene.lua,15838,Scene.TALK459,5,,,"literal reference only; conditions, repeatability and total supply unresolved"
+764,密道鑰匙,add_item,Scene.lua,16085,Scene.TALK460,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+768,空白符紙,add_item,Scene.lua,16866,Scene.TALK475,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+789,鑰匙,remove_item,Scene.lua,22186,Scene.TALK554,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+791,波希頓石像,remove_item,Scene.lua,22848,Scene.TALK575,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+853,聖皇之鎧,chest_reference,Scene.lua,27384,Scene.TALK618,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,27388,Scene.TALK619,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+622,結纍葡萄,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+564,飛斧,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+972,鐵戒指,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+973,銀戒指,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+988,金項鍊,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+999,珍珠耳環,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1043,玉鐲,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1021,銀髮結,store_listing,Scene.lua,28528,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+622,結纍葡萄,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+564,飛斧,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+972,鐵戒指,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+973,銀戒指,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+988,金項鍊,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+999,珍珠耳環,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1043,玉鐲,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1021,銀髮結,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+697,祠符,store_listing,Scene.lua,28532,Scene.TALK652,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+503,羽翼劍,store_listing,Scene.lua,28554,Scene.TALK653,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+504,火燄劍,store_listing,Scene.lua,28554,Scene.TALK653,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+523,獵弓,store_listing,Scene.lua,28554,Scene.TALK653,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+528,烏紋弓,store_listing,Scene.lua,28554,Scene.TALK653,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+538,弧月刀,store_listing,Scene.lua,28554,Scene.TALK653,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+524,雷神弓,store_listing,Scene.lua,28554,Scene.TALK653,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+854,鎖鎧,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+856,片葉鎧,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1005,虎皮衣,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1004,貂皮衣,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1006,蛇鱗衣,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+892,輕鋼盔,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+893,羽盔,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+874,鐵手套,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+875,鋼手套,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1044,白金之腕,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1033,鱗靴,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1034,鷹爪靴,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+907,鋼靴,store_listing,Scene.lua,28577,Scene.TALK654,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+629,精華藥水,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+637,魔晶粉,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+651,溶石藥劑,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+655,定心丸,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+659,明目水,store_listing,Scene.lua,28598,Scene.TALK655,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+174,阿高司,add_item,Scene.lua,28640,Scene.TALK658,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+140,妖貓,remove_item,Scene.lua,28641,Scene.TALK658,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+141,牛頭魚,remove_item,Scene.lua,28642,Scene.TALK658,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+622,結纍葡萄,chest_reference,Scene.lua,28658,Scene.TALK660,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+929,地炎玉,chest_reference,Scene.lua,28662,Scene.TALK661,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,28666,Scene.TALK662,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,chest_reference,Scene.lua,28670,Scene.TALK663,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,chest_reference,Scene.lua,28674,Scene.TALK664,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,28678,Scene.TALK665,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+983,銀笛,chest_reference,Scene.lua,28686,Scene.TALK667,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,28694,Scene.TALK669,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+637,魔晶粉,chest_reference,Scene.lua,28698,Scene.TALK670,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,chest_reference,Scene.lua,28702,Scene.TALK671,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+769,靈界指標,chest_reference,Scene.lua,28755,Scene.TALK673,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+936,水靈珠,chest_reference,Scene.lua,28759,Scene.TALK674,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+768,空白符紙,chest_reference,Scene.lua,28763,Scene.TALK675,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,28767,Scene.TALK676,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,28771,Scene.TALK677,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,add_item,Scene.lua,28784,Scene.TALK678,10,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,28791,Scene.TALK679,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+972,鐵戒指,chest_reference,Scene.lua,28811,Scene.TALK685,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,28815,Scene.TALK686,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+622,結纍葡萄,chest_reference,Scene.lua,28819,Scene.TALK687,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1022,安碧特麗之冠,chest_reference,Scene.lua,28823,Scene.TALK688,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+651,溶石藥劑,chest_reference,Scene.lua,28827,Scene.TALK689,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+623,聖石榴,chest_reference,Scene.lua,28849,Scene.RandomBox3,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+528,烏紋弓,chest_reference,Scene.lua,28851,Scene.RandomBox3,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+637,魔晶粉,chest_reference,Scene.lua,28878,Scene.TALK693,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,chest_reference,Scene.lua,28882,Scene.TALK694,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,28886,Scene.TALK695,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+672,神奇麵包,add_item,Scene.lua,28933,Scene.TALK699,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,remove_item,Scene.lua,28934,Scene.TALK699,-10,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,28940,Scene.TALK1151,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+674,妖精麥粉,add_item,Scene.lua,28964,Scene.TALK1153,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,chest_reference,Scene.lua,28974,Scene.TALK1154,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,28991,Scene.TALK1159,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+768,空白符紙,chest_reference,Scene.lua,28995,Scene.TALK1160,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,chest_reference,Scene.lua,28999,Scene.TALK1161,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+722,山蛇莓,chest_reference,Scene.lua,29003,Scene.TALK1162,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,29007,Scene.TALK1163,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+629,精華藥水,chest_reference,Scene.lua,29011,Scene.TALK1164,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+655,定心丸,chest_reference,Scene.lua,29015,Scene.TALK1165,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+565,飛去來器,chest_reference,Scene.lua,29019,Scene.TALK1166,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,29023,Scene.TALK1167,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1023,翠玉金釵,chest_reference,Scene.lua,29027,Scene.TALK1168,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+937,神偷面具,chest_reference,Scene.lua,29031,Scene.TALK1169,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+894,鷹矢盔,chest_reference,Scene.lua,29035,Scene.TALK1170,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,29039,Scene.TALK1171,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,chest_reference,Scene.lua,29051,Scene.TALK1174,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+681,不老之泉水,chest_reference,Scene.lua,29055,Scene.TALK1175,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+688,蜂王露,chest_reference,Scene.lua,29059,Scene.TALK1176,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,29075,Scene.TALK1179,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+637,魔晶粉,chest_reference,Scene.lua,29079,Scene.TALK1180,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,29087,Scene.TALK1182,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+728,菟絲魔子,chest_reference,Scene.lua,29091,Scene.TALK1183,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1000,象牙耳環,chest_reference,Scene.lua,29110,Scene.TALK1185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+638,魔力水,chest_reference,Scene.lua,29118,Scene.TALK1187,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,chest_reference,Scene.lua,29130,Scene.TALK1189,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+566,流雲針,chest_reference,Scene.lua,29135,Scene.TALK1190,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+533,絕情貓袖箭,add_item,Scene.lua,29167,Scene.TALK1193,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+579,月牙劍,store_listing,Scene.lua,33942,Scene.TALK729,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+579,月牙劍,store_listing,Scene.lua,33970,Scene.TALK729,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+578,中國劍,add_item,Scene.lua,34160,Scene.TALK771,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+793,封印之劍,remove_item,Scene.lua,34454,Scene.TALK785,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+912,神駝靴,add_item,Scene.lua,34490,Scene.TALK785,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+826,薰衣草,add_item,Scene.lua,34792,Scene.TALK794,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+722,山蛇莓,add_item,Scene.lua,34793,Scene.TALK794,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+681,不老之泉水,remove_item,Scene.lua,35005,Scene.TALK800,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+672,神奇麵包,remove_item,Scene.lua,35009,Scene.TALK800,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+896,聖皇盔,remove_item,Scene.lua,35013,Scene.TALK800,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+645,輪迴盤,remove_item,Scene.lua,35017,Scene.TALK800,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+629,精華藥水,remove_item,Scene.lua,35021,Scene.TALK800,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+681,不老之泉水,add_item,Scene.lua,35117,Scene.TALK799,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+672,神奇麵包,add_item,Scene.lua,35148,Scene.TALK1051,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+896,聖皇盔,add_item,Scene.lua,35179,Scene.TALK1052,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+645,輪迴盤,add_item,Scene.lua,35212,Scene.TALK1053,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+629,精華藥水,add_item,Scene.lua,35243,Scene.TALK1054,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+912,神駝靴,add_item,Scene.lua,35396,Scene.TALK1065,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+402,駱駝,add_item,Scene.lua,37572,Scene.TALK816,2,,,"literal reference only; conditions, repeatability and total supply unresolved"
+402,駱駝,remove_item,Scene.lua,44911,Scene.TALK994,-2,,,"literal reference only; conditions, repeatability and total supply unresolved"
+799,暗黑修羅砧,remove_item,Scene.lua,45138,Scene.TALK97,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+794,紅酒,store_listing,Scene.lua,45804,Scene.TALK783,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+629,精華藥水,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+637,魔晶粉,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+638,魔力水,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+984,角笛,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+988,金項鍊,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+998,珊瑚耳環,store_listing,Scene.lua,45813,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+629,精華藥水,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+637,魔晶粉,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+638,魔力水,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+984,角笛,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+988,金項鍊,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+998,珊瑚耳環,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+697,祠符,store_listing,Scene.lua,45816,Scene.TALK784,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+508,月牙劍,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+527,大食誡弓,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+537,彎刀,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+538,弧月刀,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+539,刃風刀,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+855,甲冑,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+856,片葉鎧,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+860,思潮之袍,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1006,蛇鱗衣,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1007,蛟鱗衣,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1011,護心鏡,store_listing,Scene.lua,45845,Scene.TALK792,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+508,月牙劍,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+507,隴金玉劍,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+527,大食誡弓,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+526,華蓮七彩弓,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+537,彎刀,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+538,弧月刀,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+549,柳葉刀,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+566,流雲針,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+567,輪刃,store_listing,Scene.lua,45952,Scene.TALK898,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+854,鎖鎧,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+860,思潮之袍,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+857,癒傷之鎧,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+864,烏蠶衣,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1014,神秘斗篷,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+914,菟縱鞋,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+911,武裝鞋,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1046,景衣法鐲,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1047,般若裟腕,store_listing,Scene.lua,45965,Scene.TALK899,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+638,魔力水,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+697,祠符,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+726,延胡索之花,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+727,大葉合歡散,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+830,坦普拉琴,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+977,象牙戒指,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+978,瑪瑙戒指,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+990,琥珀項鍊,store_listing,Scene.lua,45978,Scene.TALK900,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+508,月牙劍,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+506,赤螫,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+532,閻魔弓,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+538,弧月刀,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+539,刃風刀,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+878,掃羅手套,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+913,虎爪鞋,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1038,綑鍊鞋,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1041,閰氣靴,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1014,神秘斗篷,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1007,蛟鱗衣,store_listing,Scene.lua,46082,Scene.TALK1047,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+973,銀戒指,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+974,金戒指,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+977,象牙戒指,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+990,琥珀項鍊,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+988,金項鍊,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+719,博落迴之根,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+721,海檬果,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+726,延胡索之花,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+565,飛去來器,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+566,流雲針,store_listing,Scene.lua,46095,Scene.TALK1048,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,store_listing,Scene.lua,46108,Scene.TALK1049,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,store_listing,Scene.lua,46108,Scene.TALK1049,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,store_listing,Scene.lua,46108,Scene.TALK1049,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+636,魔法葉,store_listing,Scene.lua,46108,Scene.TALK1049,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+638,魔力水,store_listing,Scene.lua,46108,Scene.TALK1049,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+649,解僵針,store_listing,Scene.lua,46108,Scene.TALK1049,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+655,定心丸,store_listing,Scene.lua,46108,Scene.TALK1049,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,store_listing,Scene.lua,46108,Scene.TALK1049,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+402,駱駝,remove_item,Scene.lua,48433,Scene.TALK1023,-2,,,"literal reference only; conditions, repeatability and total supply unresolved"
+537,彎刀,remove_item,Scene.lua,49096,Scene.TALK1108,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+537,彎刀,add_item,Scene.lua,49135,Scene.TALK1109,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+578,中國劍,remove_item,Scene.lua,49888,Scene.TALK1127,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1003,棉布衣,add_item,Scene.lua,51329,Scene.TALK125,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+766,紅寶石戒指,remove_item,Scene.lua,51330,Scene.TALK125,-8,,,"literal reference only; conditions, repeatability and total supply unresolved"
+622,結纍葡萄,add_item,Scene.lua,51539,Scene.TALK129,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+624,無酵餅,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+647,解毒草,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+872,皮手套,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+906,皮靴,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+971,銅戒指,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1003,棉布衣,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1019,頭巾,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1020,布帽,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1032,藤鞋,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1042,手鐲,store_listing,Scene.lua,52298,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+624,無酵餅,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+647,解毒草,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+697,祠符,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+872,皮手套,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+906,皮靴,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+971,銅戒指,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1003,棉布衣,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1019,頭巾,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1020,布帽,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1032,藤鞋,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1042,手鐲,store_listing,Scene.lua,52302,Scene.TALK185,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+732,清水,remove_item,Scene.lua,53355,Scene.TALK226,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+767,珍珠,remove_item,Scene.lua,54209,Scene.TALK172,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+730,中國陶器,remove_item,Scene.lua,54642,Scene.TALK99,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,add_item,Scene.lua,55550,Scene.TALK183,2,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,57560,Scene.TALK2201,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57566,Scene.TALK2202,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+954,吸魔壺,chest_reference,Scene.lua,57574,Scene.TALK2204,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+566,流雲針,chest_reference,Scene.lua,57578,Scene.TALK2205,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57582,Scene.TALK2206,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,57586,Scene.TALK2207,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,57590,Scene.TALK2208,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57594,Scene.TALK2209,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+773,魔晶礦Ｂ,chest_reference,Scene.lua,57598,Scene.TALK2210,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1045,雨雲之腕,chest_reference,Scene.lua,57602,Scene.TALK2211,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,57606,Scene.TALK2212,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+637,魔晶粉,chest_reference,Scene.lua,57610,Scene.TALK2213,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+638,魔力水,chest_reference,Scene.lua,57614,Scene.TALK2214,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57622,Scene.TALK2216,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57626,Scene.TALK2217,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+630,嘉果,chest_reference,Scene.lua,57631,Scene.TALK2218,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+638,魔力水,chest_reference,Scene.lua,57636,Scene.TALK2219,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,57641,Scene.TALK2220,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+623,聖石榴,chest_reference,Scene.lua,57647,Scene.TALK2222,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+645,輪迴盤,chest_reference,Scene.lua,57651,Scene.TALK2223,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+672,神奇麵包,chest_reference,Scene.lua,57656,Scene.TALK2224,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,57660,Scene.TALK2226,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,57664,Scene.TALK2228,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,chest_reference,Scene.lua,57668,Scene.TALK2229,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,chest_reference,Scene.lua,57672,Scene.TALK2230,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57678,Scene.TALK2231,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+638,魔力水,chest_reference,Scene.lua,57683,Scene.TALK2232,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,chest_reference,Scene.lua,57688,Scene.TALK2233,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,chest_reference,Scene.lua,57706,Scene.TALK2235,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,57711,Scene.TALK2236,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,chest_reference,Scene.lua,57716,Scene.TALK2237,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,57721,Scene.TALK2238,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,57741,Scene.TALK2240,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,57746,Scene.TALK2241,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,chest_reference,Scene.lua,57751,Scene.TALK2242,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+729,神祕果,chest_reference,Scene.lua,57761,Scene.TALK2244,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57766,Scene.TALK2245,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+630,嘉果,chest_reference,Scene.lua,57770,Scene.TALK2246,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57774,Scene.TALK2247,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57778,Scene.TALK2248,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+674,妖精麥粉,chest_reference,Scene.lua,57782,Scene.TALK2249,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57786,Scene.TALK2250,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+774,魔晶礦Ｃ,chest_reference,Scene.lua,57790,Scene.TALK2251,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57794,Scene.TALK2252,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+653,還神果,chest_reference,Scene.lua,57798,Scene.TALK2253,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+779,機關設計圖４,chest_reference,Scene.lua,57803,Scene.TALK2254,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+645,輪迴盤,chest_reference,Scene.lua,57808,Scene.TALK2255,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57812,Scene.TALK2256,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+639,還靈丹,chest_reference,Scene.lua,57816,Scene.TALK2257,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57820,Scene.TALK2258,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,57824,Scene.TALK2259,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,57829,Scene.TALK2260,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+945,白虎風牙,chest_reference,Scene.lua,57834,Scene.TALK2261,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+895,海神盔,chest_reference,Scene.lua,57839,Scene.TALK2262,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+899,金剛斗笠,chest_reference,Scene.lua,57844,Scene.TALK2263,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57849,Scene.TALK2264,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+633,千年何首烏,chest_reference,Scene.lua,57854,Scene.TALK2265,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,57859,Scene.TALK2266,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+946,玄武土器,chest_reference,Scene.lua,57864,Scene.TALK2267,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+948,神光寶塔,chest_reference,Scene.lua,57868,Scene.TALK2268,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+633,千年何首烏,chest_reference,Scene.lua,57873,Scene.TALK2269,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+639,還靈丹,chest_reference,Scene.lua,57878,Scene.TALK2270,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+692,神木之精,chest_reference,Scene.lua,57883,Scene.TALK2271,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+827,人像圖冊,chest_reference,Scene.lua,57888,Scene.TALK2272,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+558,鉤鐮槍,chest_reference,Scene.lua,57893,Scene.TALK2273,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+884,靈蛇手套,chest_reference,Scene.lua,57957,Scene.TALK2289,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+943,乾坤袋,remove_item,Scene.lua,57986,Scene.TALK2290,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+947,雷公鎚,chest_reference,Scene.lua,58007,Scene.TALK2291,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+902,紫金冠,chest_reference,Scene.lua,58011,Scene.TALK2292,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+947,雷公鎚,remove_item,Scene.lua,58043,Scene.TALK2296,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+402,駱駝,add_item,Scene.lua,59373,Scene.TALK24,2,,,"literal reference only; conditions, repeatability and total supply unresolved"
+402,駱駝,remove_item,Scene.lua,60132,Scene.TALK4028,-2,,,"literal reference only; conditions, repeatability and total supply unresolved"
+70,蜃樓王,add_item,Scene.lua,67801,Scene.TALK4015,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+63,姆斯比爾,add_item,Scene.lua,73358,Scene.CHAP8_BEGIN,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+64,藍魔神,add_item,Scene.lua,73359,Scene.CHAP8_BEGIN,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+627,魔貝粉,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+626,十果粉,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+639,還靈丹,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+697,祠符,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+649,解僵針,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+657,聖言石,store_listing,Scene.lua,73377,Scene.TALK4401,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+554,齊眉棍,store_listing,Scene.lua,73387,Scene.TALK4402,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+555,八卦棍,store_listing,Scene.lua,73387,Scene.TALK4402,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+568,翔羽葉,store_listing,Scene.lua,73387,Scene.TALK4402,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+569,旋流刺,store_listing,Scene.lua,73387,Scene.TALK4402,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+979,辟邪戒指,store_listing,Scene.lua,73387,Scene.TALK4402,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+995,神草結,store_listing,Scene.lua,73387,Scene.TALK4402,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1031,千葉,store_listing,Scene.lua,73387,Scene.TALK4402,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+883,烏蠶手套,store_listing,Scene.lua,73387,Scene.TALK4402,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+823,多魔遊戲軟體,chest_reference,Scene.lua,73416,Scene.TALK4404,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+797,天扇,chest_reference,Scene.lua,73421,Scene.TALK4405,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+658,破元仙露,remove_item,Scene.lua,73444,Scene.TALK4406,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+768,空白符紙,chest_reference,Scene.lua,73477,Scene.TALK4410,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+796,太極圖,chest_reference,Scene.lua,73523,Scene.TALK4419,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1013,竹葉符衣,chest_reference,Scene.lua,73528,Scene.TALK4420,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+941,夜叉肩帶,chest_reference,Scene.lua,73541,Scene.TALK4423,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,73546,Scene.TALK4424,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+881,青電臂,chest_reference,Scene.lua,73551,Scene.TALK4425,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+621,藥草,chest_reference,Scene.lua,73555,Scene.TALK4426,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+545,太皇刀─閻天,chest_reference,Scene.lua,73560,Scene.TALK4427,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+785,神津珍譜─肆,chest_reference,Scene.lua,73565,Scene.TALK4428,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+795,圓珠,chest_reference,Scene.lua,73570,Scene.TALK4429,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+645,輪迴盤,chest_reference,Scene.lua,73575,Scene.TALK4430,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+509,雪浪劍,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+511,湛盧,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+525,火炎神弩,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+529,鐵胎弓,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+548,蝴蝶刀,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+550,鴛鴦刀,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+555,八卦棍,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+557,蒺藜槍,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+863,銀絲戰袍,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+866,精鐵蠻甲,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+885,龍鱗手套,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1008,天蠶絲衣,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1037,蛇皮短靴,store_listing,Scene.lua,73608,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+578,中國劍,remove_item,Scene.lua,73616,Scene.TALK4431,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+514,魚腸,add_item,Scene.lua,73617,Scene.TALK4431,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+509,雪浪劍,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+511,湛盧,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+525,火炎神弩,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+529,鐵胎弓,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+548,蝴蝶刀,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+550,鴛鴦刀,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+555,八卦棍,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+557,蒺藜槍,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+863,銀絲戰袍,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+866,精鐵蠻甲,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+885,龍鱗手套,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1008,天蠶絲衣,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1037,蛇皮短靴,store_listing,Scene.lua,73624,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+509,雪浪劍,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+511,湛盧,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+525,火炎神弩,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+529,鐵胎弓,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+548,蝴蝶刀,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+550,鴛鴦刀,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+555,八卦棍,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+557,蒺藜槍,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+863,銀絲戰袍,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+866,精鐵蠻甲,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+885,龍鱗手套,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1008,天蠶絲衣,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1037,蛇皮短靴,store_listing,Scene.lua,73634,Scene.TALK4431,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+696,土地神符,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+697,祠符,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+569,旋流刺,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+570,飛蝗石,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1059,紅雀鐲,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+979,辟邪戒指,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+980,五鬼戒指,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+991,龍紋珮,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1001,綠玉耳環,store_listing,Scene.lua,73666,Scene.TALK4433,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+631,鹿茸膏,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+650,柴胡乾葛草,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+651,溶石藥劑,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+648,解病萬靈丹,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+647,解毒草,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+649,解僵針,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+653,還神果,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+655,定心丸,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+659,明目水,store_listing,Scene.lua,73675,Scene.TALK4434,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+768,空白符紙,chest_reference,Scene.lua,73686,Scene.TALK4436,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,73690,Scene.TALK4437,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,73698,Scene.TALK4439,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+950,暗殺寶錄,chest_reference,Scene.lua,73702,Scene.TALK4440,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+651,溶石藥劑,chest_reference,Scene.lua,73710,Scene.TALK4442,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+657,聖言石,chest_reference,Scene.lua,73714,Scene.TALK4443,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+775,魔晶礦Ｄ,chest_reference,Scene.lua,73723,Scene.TALK4445,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+817,金塊,chest_reference,Scene.lua,73727,Scene.TALK4446,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+776,機關設計圖１,chest_reference,Scene.lua,73731,Scene.TALK4447,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+645,輪迴盤,chest_reference,Scene.lua,73740,Scene.TALK4449,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+568,翔羽葉,chest_reference,Scene.lua,73745,Scene.TALK4450,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+510,崙凰劍,chest_reference,Scene.lua,73754,Scene.TALK4452,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+696,土地神符,store_listing,Scene.lua,73783,Scene.TALK4454,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+697,祠符,store_listing,Scene.lua,73783,Scene.TALK4454,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+572,飛爪,store_listing,Scene.lua,73783,Scene.TALK4454,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+574,柳葉飛刀,store_listing,Scene.lua,73783,Scene.TALK4454,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1048,加卡達鐲,store_listing,Scene.lua,73783,Scene.TALK4454,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+980,五鬼戒指,store_listing,Scene.lua,73783,Scene.TALK4454,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+992,白玉飛天珮,store_listing,Scene.lua,73783,Scene.TALK4454,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1001,綠玉耳環,store_listing,Scene.lua,73783,Scene.TALK4454,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+631,鹿茸膏,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+633,千年何首烏,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+639,還靈丹,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+650,柴胡乾葛草,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+651,溶石藥劑,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+648,解病萬靈丹,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+647,解毒草,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+653,還神果,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+655,定心丸,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+659,明目水,store_listing,Scene.lua,73793,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+631,鹿茸膏,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+633,千年何首烏,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+634,千年蔘心丹,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+635,麒麟竭,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+639,還靈丹,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+640,靈神天藥,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+650,柴胡乾葛草,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+661,七葉蓮,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+662,河車丸,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+651,溶石藥劑,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+648,解病萬靈丹,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+653,還神果,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+655,定心丸,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+659,明目水,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+658,破元仙露,store_listing,Scene.lua,73802,Scene.TALK4455,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+819,名歌星ＣＤ,chest_reference,Scene.lua,73829,Scene.TALK4461,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+644,還魄丹,chest_reference,Scene.lua,73833,Scene.TALK4462,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+671,豐饒之角,chest_reference,Scene.lua,73837,Scene.TALK4463,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,73841,Scene.TALK4464,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+623,聖石榴,chest_reference,Scene.lua,73845,Scene.TALK4465,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+814,炭粉,chest_reference,Scene.lua,73849,Scene.TALK4466,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+628,金創藥,chest_reference,Scene.lua,73857,Scene.TALK4468,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+859,啻浪奇甲,chest_reference,Scene.lua,73861,Scene.TALK4469,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+816,竹筒,chest_reference,Scene.lua,73865,Scene.TALK4470,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+721,海檬果,chest_reference,Scene.lua,73869,Scene.TALK4471,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+696,土地神符,chest_reference,Scene.lua,73877,Scene.TALK4473,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+812,硝石,chest_reference,Scene.lua,73897,Scene.TALK4478,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+813,硫磺,chest_reference,Scene.lua,73905,Scene.TALK4480,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+930,靈虛扇,chest_reference,Scene.lua,73929,Scene.TALK4486,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+831,琵琶,chest_reference,Scene.lua,73933,Scene.TALK4487,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+546,太皇刀─紅葉,chest_reference,Scene.lua,73937,Scene.TALK4488,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+516,干將,chest_reference,Scene.lua,73941,Scene.TALK4489,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+531,地湧,chest_reference,Scene.lua,73945,Scene.TALK4490,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+576,五雷神機,chest_reference,Scene.lua,73949,Scene.TALK4491,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+886,縛閻指套,chest_reference,Scene.lua,73953,Scene.TALK4492,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+887,藍堂光套,chest_reference,Scene.lua,73957,Scene.TALK4493,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+898,龍族盔,chest_reference,Scene.lua,73961,Scene.TALK4494,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1053,千佛鐲,chest_reference,Scene.lua,73965,Scene.TALK4495,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+768,空白符紙,chest_reference,Scene.lua,73969,Scene.TALK4496,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+541,麟火吞月刀,chest_reference,Scene.lua,73973,Scene.TALK4497,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+869,冥妖戰甲,chest_reference,Scene.lua,73977,Scene.TALK4498,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+952,金鐘罩秘笈,chest_reference,Scene.lua,73989,Scene.TALK4501,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1030,鏡舞,chest_reference,Scene.lua,73993,Scene.TALK4502,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+919,鈦銧奇鞋,chest_reference,Scene.lua,74009,Scene.TALK4506,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1039,繡花葉鞋,chest_reference,Scene.lua,74017,Scene.TALK4508,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1017,天仙神衣,chest_reference,Scene.lua,74021,Scene.TALK4509,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+562,憾天神槍,chest_reference,Scene.lua,74029,Scene.TALK4511,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+871,九龍雲生冑,chest_reference,Scene.lua,74033,Scene.TALK4512,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+768,空白符紙,chest_reference,Scene.lua,74068,Scene.TALK4514,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+879,地痞手套,chest_reference,Scene.lua,74072,Scene.TALK4515,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+793,封印之劍,remove_item,Scene.lua,74624,Scene.TALK4049,-17,,,"literal reference only; conditions, repeatability and total supply unresolved"
+625,回復劑,remove_item,Scene.lua,75821,Scene.TALK1060,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+938,鼠槌,chest_reference,Scene.lua,76764,Scene.TALK2603,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+698,諸方神石,chest_reference,Scene.lua,76824,Scene.TALK2624,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+777,機關設計圖２,chest_reference,Scene.lua,76828,Scene.TALK2625,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+688,蜂王露,chest_reference,Scene.lua,76860,Scene.TALK2633,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+812,硝石,remove_item,Scene.lua,77144,Scene.TALK4621,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+813,硫磺,remove_item,Scene.lua,77145,Scene.TALK4621,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+814,炭粉,remove_item,Scene.lua,77146,Scene.TALK4621,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+816,竹筒,remove_item,Scene.lua,77147,Scene.TALK4621,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+571,日月乾坤圈,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+862,龍鬚衣,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+870,星狼雲鎧,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+880,冰晶腕,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+882,仙風膀,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+900,龍鱗盔,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+904,金霞盔,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+916,踏風草鞋,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+920,五行鞋,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+981,龍睛法戒,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+985,葦笛,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+992,白玉飛天珮,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+993,白玉龍紋珮,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1009,玄雪絲衣,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1010,鳳凰羽衣,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1025,天蠶絲帶,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1029,法藏,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1035,冰雕鞋,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1036,鳳羽靴,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1051,蓮腕釧,store_listing,Scene.lua,77209,Scene.TALK4621,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+776,機關設計圖１,remove_item,Scene.lua,77827,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+777,機關設計圖２,remove_item,Scene.lua,77828,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+778,機關設計圖３,remove_item,Scene.lua,77829,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+779,機關設計圖４,remove_item,Scene.lua,77830,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+780,機關設計圖５,remove_item,Scene.lua,77831,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+781,機關設計圖６,remove_item,Scene.lua,77832,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+772,魔晶礦Ａ,remove_item,Scene.lua,77870,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+773,魔晶礦Ｂ,remove_item,Scene.lua,77871,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+774,魔晶礦Ｃ,remove_item,Scene.lua,77872,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+775,魔晶礦Ｄ,remove_item,Scene.lua,77873,Scene.TALK4821,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+505,斷梗,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+513,勝邪,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+534,神臂弓,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+535,意弦弓,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+542,無瑕雙刀,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+547,軒轅菜刀,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+558,鉤鐮槍,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+560,太寧筆槍,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+572,飛爪,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+571,日月乾坤圈,store_listing,Scene.lua,78262,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+543,太皇刀─綠痕,remove_item,Scene.lua,78312,Scene.TALK4834,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+544,太皇刀─藍牙,remove_item,Scene.lua,78313,Scene.TALK4834,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+545,太皇刀─閻天,remove_item,Scene.lua,78314,Scene.TALK4834,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+546,太皇刀─紅葉,remove_item,Scene.lua,78315,Scene.TALK4834,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+505,斷梗,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+513,勝邪,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+534,神臂弓,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+535,意弦弓,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+542,無瑕雙刀,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+547,軒轅菜刀,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+558,鉤鐮槍,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+560,太寧筆槍,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+572,飛爪,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+571,日月乾坤圈,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+536,萬鈞神弩,store_listing,Scene.lua,78343,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+505,斷梗,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+513,勝邪,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+534,神臂弓,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+535,意弦弓,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+542,無瑕雙刀,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+547,軒轅菜刀,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+558,鉤鐮槍,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+560,太寧筆槍,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+572,飛爪,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+571,日月乾坤圈,store_listing,Scene.lua,78355,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+505,斷梗,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+513,勝邪,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+534,神臂弓,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+535,意弦弓,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+542,無瑕雙刀,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+547,軒轅菜刀,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+558,鉤鐮槍,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+560,太寧筆槍,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+572,飛爪,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+571,日月乾坤圈,store_listing,Scene.lua,78368,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+505,斷梗,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+513,勝邪,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+534,神臂弓,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+535,意弦弓,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+542,無瑕雙刀,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+547,軒轅菜刀,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+558,鉤鐮槍,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+560,太寧筆槍,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+572,飛爪,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+571,日月乾坤圈,store_listing,Scene.lua,78386,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+505,斷梗,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+513,勝邪,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+534,神臂弓,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+535,意弦弓,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+542,無瑕雙刀,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+547,軒轅菜刀,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+558,鉤鐮槍,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+560,太寧筆槍,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+572,飛爪,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+571,日月乾坤圈,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+536,萬鈞神弩,store_listing,Scene.lua,78397,Scene.TALK4834,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+782,神津珍譜─壹,remove_item,Scene.lua,78466,Scene.TALK4836,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+783,神津珍譜─貳,remove_item,Scene.lua,78467,Scene.TALK4836,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+784,神津珍譜─參,remove_item,Scene.lua,78468,Scene.TALK4836,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+785,神津珍譜─肆,remove_item,Scene.lua,78469,Scene.TALK4836,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+786,神津珍譜─伍,remove_item,Scene.lua,78470,Scene.TALK4836,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+669,耶穌聖血,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+670,香柏葉,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+671,豐饒之角,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+672,神奇麵包,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+673,蜜乳樹汁,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+674,妖精麥粉,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+675,巴丹杏仁,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+676,歌唱的胡桃,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+677,瑰麗之梨,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+678,魔法精羽,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+679,飛翔魔油,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+681,不老之泉水,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+683,人馬獸之血,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+684,黃金蘋果,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+685,密茹之水,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+686,里納種子,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+687,三葉雪桑果,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+688,蜂王露,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+689,活靈芝,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+691,活骨靈藥,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+692,神木之精,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+693,玉山佛甲草,store_listing,Scene.lua,78715,Scene.TALK4848,,,,"literal reference only; conditions, repeatability and total supply unresolved"
+776,機關設計圖１,remove_item,Scene.lua,78967,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+777,機關設計圖２,remove_item,Scene.lua,78968,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+778,機關設計圖３,remove_item,Scene.lua,78969,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+779,機關設計圖４,remove_item,Scene.lua,78970,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+780,機關設計圖５,remove_item,Scene.lua,78971,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+781,機關設計圖６,remove_item,Scene.lua,78972,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+772,魔晶礦Ａ,remove_item,Scene.lua,79010,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+773,魔晶礦Ｂ,remove_item,Scene.lua,79011,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+774,魔晶礦Ｃ,remove_item,Scene.lua,79012,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+775,魔晶礦Ｄ,remove_item,Scene.lua,79013,Scene.TALK4856,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+795,圓珠,remove_item,Scene.lua,80481,Scene.TALK6067,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+796,太極圖,remove_item,Scene.lua,80482,Scene.TALK6067,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+797,天扇,remove_item,Scene.lua,80483,Scene.TALK6067,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+798,控屍符,remove_item,Scene.lua,80668,Scene.TALK6070,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+798,控屍符,remove_item,Scene.lua,80710,Scene.TALK6071,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+32,雨丹子,add_item,Scene.lua,80954,Scene.TALK6072,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+800,舍利子,remove_item,Scene.lua,82050,Scene.TALK6200,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+809,解石化符,remove_item,Scene.lua,85122,Scene.TALK6545,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+834,軒轅劍,remove_item,Scene.lua,86455,Scene.TALK6810,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+580,軒轅劍,add_item,Scene.lua,86456,Scene.TALK6810,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+815,炸藥,remove_item,Scene.lua,87269,Scene.TALK6866,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+810,起兵計劃書,remove_item,Scene.lua,87374,Scene.CHAP_12,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+811,安祿山軍令,remove_item,Scene.lua,87375,Scene.CHAP_12,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+148,七仙女,remove_item,Scene.lua,88328,Scene.TALK6961,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+149,九天玄女,remove_item,Scene.lua,88329,Scene.TALK6961,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+150,嫦娥,remove_item,Scene.lua,88330,Scene.TALK6961,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+154,上元夫人,remove_item,Scene.lua,88331,Scene.TALK6961,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+155,蠶女,remove_item,Scene.lua,88332,Scene.TALK6961,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+151,瓊霜,remove_item,Scene.lua,88333,Scene.TALK6961,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+832,味仙認可證,remove_item,Scene.lua,88374,Scene.TALK6962,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+833,簽名板,add_item,Scene.lua,88600,Scene.TALK6969,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+824,玫瑰,remove_item,Scene.lua,88661,Scene.TALK6970,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+825,茉莉花,remove_item,Scene.lua,88662,Scene.TALK6970,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+826,薰衣草,remove_item,Scene.lua,88663,Scene.TALK6970,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+833,簽名板,add_item,Scene.lua,88664,Scene.TALK6970,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+825,茉莉花,remove_item,Scene.lua,88685,Scene.TALK6970,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+833,簽名板,add_item,Scene.lua,88686,Scene.TALK6970,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+830,坦普拉琴,remove_item,Scene.lua,88790,Scene.TALK6973,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+831,琵琶,remove_item,Scene.lua,88791,Scene.TALK6973,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+833,簽名板,add_item,Scene.lua,88817,Scene.TALK6974,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+833,簽名板,add_item,Scene.lua,88880,Scene.TALK6975,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1043,玉鐲,remove_item,Scene.lua,88988,Scene.TALK7001,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1001,綠玉耳環,remove_item,Scene.lua,88989,Scene.TALK7001,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+992,白玉飛天珮,remove_item,Scene.lua,88990,Scene.TALK7001,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+975,玉戒指,remove_item,Scene.lua,88991,Scene.TALK7001,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+507,隴金玉劍,remove_item,Scene.lua,88992,Scene.TALK7001,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+1023,翠玉金釵,remove_item,Scene.lua,88993,Scene.TALK7001,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+876,聖皇手套,remove_item,Scene.lua,89256,Scene.TALK7011,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+853,聖皇之鎧,remove_item,Scene.lua,89257,Scene.TALK7011,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+896,聖皇盔,remove_item,Scene.lua,89258,Scene.TALK7011,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+908,聖皇靴,remove_item,Scene.lua,89259,Scene.TALK7011,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+868,泥蚣袍,add_item,Scene.lua,89802,Scene.TALK7022,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+516,干將,remove_item,Scene.lua,89803,Scene.TALK7022,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+517,莫邪,remove_item,Scene.lua,89804,Scene.TALK7022,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+817,金塊,add_item,Scene.lua,89836,Scene.TALK7022,10,,,"literal reference only; conditions, repeatability and total supply unresolved"
+511,湛盧,remove_item,Scene.lua,89837,Scene.TALK7022,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+512,純鈞,remove_item,Scene.lua,89838,Scene.TALK7022,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+513,勝邪,remove_item,Scene.lua,89839,Scene.TALK7022,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+514,魚腸,remove_item,Scene.lua,89840,Scene.TALK7022,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+515,巨闕,remove_item,Scene.lua,89841,Scene.TALK7022,-1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+624,無酵餅,get_item_reference,Scene.lua,11595,Scene.TALK335,,,,literal reference only; conditions and quantity unresolved
+622,結纍葡萄,get_item_reference,Scene.lua,11608,Scene.TALK336,,,,literal reference only; conditions and quantity unresolved
+873,鐵鎖手套,get_item_reference,Scene.lua,11615,Scene.TALK338,,,,literal reference only; conditions and quantity unresolved
+824,玫瑰,get_item_reference,Scene.lua,12727,Scene.TALK365,,,,literal reference only; conditions and quantity unresolved
+768,空白符紙,get_item_reference,Scene.lua,16865,Scene.TALK475,,,,literal reference only; conditions and quantity unresolved
+644,還魄丹,get_item_reference,Scene.lua,17221,Scene.TALK497,,,,literal reference only; conditions and quantity unresolved
+768,空白符紙,get_item_reference,Scene.lua,17251,Scene.TALK498,,,,literal reference only; conditions and quantity unresolved
+789,鑰匙,get_item_reference,Scene.lua,20975,Scene.TALK537A,,,,literal reference only; conditions and quantity unresolved
+791,波希頓石像,get_item_reference,Scene.lua,26527,Scene.TALK595,,,,literal reference only; conditions and quantity unresolved
+971,銅戒指,get_item_reference,Scene.lua,52151,Scene.TALK137,,,,literal reference only; conditions and quantity unresolved
+765,航海圖,get_item_reference,Scene.lua,52927,Scene.TALK207,,,,literal reference only; conditions and quantity unresolved
+770,六芒星陣,get_item_reference,Scene.lua,52967,Scene.TALK207,,,,literal reference only; conditions and quantity unresolved
+788,水晶鏡,get_item_reference,Scene.lua,53682,Scene.TALK159,,,,literal reference only; conditions and quantity unresolved
+621,藥草,get_item_reference,Scene.lua,54211,Scene.TALK172,,,,literal reference only; conditions and quantity unresolved
+731,煉妖壺,get_item_reference,Scene.lua,54643,Scene.TALK99,,,,literal reference only; conditions and quantity unresolved
+800,舍利子,get_item_reference,Scene.lua,67991,Scene.TALK4017,,,,literal reference only; conditions and quantity unresolved
+771,封神壇,get_item_reference,Scene.lua,68374,Scene.TALK4017,,,,literal reference only; conditions and quantity unresolved
+150,嫦娥,get_item_reference,Scene.lua,73443,Scene.TALK4406,,,,literal reference only; conditions and quantity unresolved
+518,龍泉,get_item_reference,Scene.lua,74049,Scene.TALK4513,,,,literal reference only; conditions and quantity unresolved
+519,泰阿,get_item_reference,Scene.lua,74055,Scene.TALK4513,,,,literal reference only; conditions and quantity unresolved
+520,工布,get_item_reference,Scene.lua,74061,Scene.TALK4513,,,,literal reference only; conditions and quantity unresolved
+772,魔晶礦Ａ,get_item_reference,Scene.lua,75829,Scene.TALK1060,,,,literal reference only; conditions and quantity unresolved
+678,魔法精羽,get_item_reference,Scene.lua,76412,Scene.TALK778,,,,literal reference only; conditions and quantity unresolved
+815,炸藥,get_item_reference,Scene.lua,77194,Scene.TALK4621,,,,literal reference only; conditions and quantity unresolved
+868,泥蚣袍,get_item_reference,Scene.lua,77874,Scene.TALK4821,,,,literal reference only; conditions and quantity unresolved
+49,羯忍幻機,get_item_reference,Scene.lua,77938,Scene.TALK4821,,,,literal reference only; conditions and quantity unresolved
+687,三葉雪桑果,get_item_reference,Scene.lua,78175,Scene.TALK4830,,,,literal reference only; conditions and quantity unresolved
+553,四極皇霸刀,get_item_reference,Scene.lua,78335,Scene.TALK4834,,,,literal reference only; conditions and quantity unresolved
+832,味仙認可證,get_item_reference,Scene.lua,78474,Scene.TALK4836,,,,literal reference only; conditions and quantity unresolved
+517,莫邪,get_item_reference,Scene.lua,79014,Scene.TALK4856,,,,literal reference only; conditions and quantity unresolved
+47,蟹精魔機,get_item_reference,Scene.lua,79080,Scene.TALK4856,,,,literal reference only; conditions and quantity unresolved
+798,控屍符,get_item_reference,Scene.lua,81011,Scene.TALK6075,,,,literal reference only; conditions and quantity unresolved
+798,控屍符,get_item_reference,Scene.lua,81023,Scene.TALK6075,,,,literal reference only; conditions and quantity unresolved
+621,藥草,get_item_reference,Scene.lua,81040,Scene.TALK6075,,,,literal reference only; conditions and quantity unresolved
+992,白玉飛天珮,get_item_reference,Scene.lua,82988,Scene.TALK6302,,,,literal reference only; conditions and quantity unresolved
+809,解石化符,get_item_reference,Scene.lua,85227,Scene.TALK6546,,,,literal reference only; conditions and quantity unresolved
+834,軒轅劍,get_item_reference,Scene.lua,87683,Scene.TALK66,,,,literal reference only; conditions and quantity unresolved
+762,大米娃娃,get_item_reference,Scene.lua,88282,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+801,樂樂娃娃,get_item_reference,Scene.lua,88283,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+802,貓王娃娃,get_item_reference,Scene.lua,88284,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+801,樂樂娃娃,get_item_reference,Scene.lua,88287,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+802,貓王娃娃,get_item_reference,Scene.lua,88288,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+804,真夢娃娃,get_item_reference,Scene.lua,88289,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+802,貓王娃娃,get_item_reference,Scene.lua,88292,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+805,紅珊瑚娃娃,get_item_reference,Scene.lua,88293,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+804,真夢娃娃,get_item_reference,Scene.lua,88294,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+801,樂樂娃娃,get_item_reference,Scene.lua,88297,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+804,真夢娃娃,get_item_reference,Scene.lua,88298,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+805,紅珊瑚娃娃,get_item_reference,Scene.lua,88299,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+804,真夢娃娃,get_item_reference,Scene.lua,88302,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+805,紅珊瑚娃娃,get_item_reference,Scene.lua,88303,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+762,大米娃娃,get_item_reference,Scene.lua,88304,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+805,紅珊瑚娃娃,get_item_reference,Scene.lua,88307,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+762,大米娃娃,get_item_reference,Scene.lua,88308,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+801,樂樂娃娃,get_item_reference,Scene.lua,88309,Scene.TALK6961,,,,literal reference only; conditions and quantity unresolved
+1052,修羅膀腕,get_item_reference,Scene.lua,88668,Scene.TALK6970,,,,literal reference only; conditions and quantity unresolved
+1002,紅寶石耳環,get_item_reference,Scene.lua,88995,Scene.TALK7001,,,,literal reference only; conditions and quantity unresolved
+1040,流光鞋,get_item_reference,Scene.lua,89130,Scene.TALK7008,,,,literal reference only; conditions and quantity unresolved
+690,舍利子,get_item_reference,Scene.lua,89178,Scene.TALK7009,,,,literal reference only; conditions and quantity unresolved
+1027,麒麟緞帶,get_item_reference,Scene.lua,89264,Scene.TALK7011,,,,literal reference only; conditions and quantity unresolved
+909,雅典之靴,get_item_reference,Scene.lua,89304,Scene.TALK7012,,,,literal reference only; conditions and quantity unresolved
+889,子雷手套,get_item_reference,Scene.lua,89344,Scene.TALK7013,,,,literal reference only; conditions and quantity unresolved
+1029,法藏,get_item_reference,Scene.lua,89392,Scene.TALK7014,,,,literal reference only; conditions and quantity unresolved
+625,回復劑,get_item_reference,Scene.lua,89432,Scene.TALK7016,,,,literal reference only; conditions and quantity unresolved
+625,回復劑,get_item_reference,Scene.lua,89442,Scene.TALK7016,,,,literal reference only; conditions and quantity unresolved
+626,十果粉,get_item_reference,Scene.lua,89469,Scene.TALK7017,,,,literal reference only; conditions and quantity unresolved
+626,十果粉,get_item_reference,Scene.lua,89483,Scene.TALK7017,,,,literal reference only; conditions and quantity unresolved
+1023,翠玉金釵,get_item_reference,Scene.lua,89523,Scene.TALK7018,,,,literal reference only; conditions and quantity unresolved
+1023,翠玉金釵,get_item_reference,Scene.lua,89537,Scene.TALK7018,,,,literal reference only; conditions and quantity unresolved
+1034,鷹爪靴,get_item_reference,Scene.lua,89574,Scene.TALK7019,,,,literal reference only; conditions and quantity unresolved
+1034,鷹爪靴,get_item_reference,Scene.lua,89584,Scene.TALK7019,,,,literal reference only; conditions and quantity unresolved
+817,金塊,get_item_reference,Scene.lua,89741,Scene.TALK7021,,,,literal reference only; conditions and quantity unresolved
+817,金塊,get_item_reference,Scene.lua,89768,Scene.TALK7021,,,,literal reference only; conditions and quantity unresolved
+975,玉戒指,get_item_reference,Scene.lua,89878,Scene.TALK7023,,,,literal reference only; conditions and quantity unresolved
+975,玉戒指,get_item_reference,Scene.lua,89893,Scene.TALK7023,,,,literal reference only; conditions and quantity unresolved
+833,簽名板,add_item,SceneSetting.lua,673,Scene.DOMOExchange,1,,,"literal reference only; conditions, repeatability and total supply unresolved"
+793,封印之劍,get_item_reference,SceneSetting.lua,1360,Scene.SAVE_MENU,,,,literal reference only; conditions and quantity unresolved
+638,魔力水,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[18],,18,20,drop definition; encounter availability and repeatability unresolved
+712,羅剎食日鈸,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[32],,32,20,drop definition; encounter availability and repeatability unresolved
+994,五彩石項鍊,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[46],,46,20,drop definition; encounter availability and repeatability unresolved
+632,蟠桃,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[46],,46,2,drop definition; encounter availability and repeatability unresolved
+780,機關設計圖５,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[51],,51,20,drop definition; encounter availability and repeatability unresolved
+689,活靈芝,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[51],,51,3,drop definition; encounter availability and repeatability unresolved
+949,暗黑魔樽,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[53],,53,20,drop definition; encounter availability and repeatability unresolved
+717,暗黑修羅砧,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[53],,53,5,drop definition; encounter availability and repeatability unresolved
+692,神木之精,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[71],,71,4,drop definition; encounter availability and repeatability unresolved
+793,封印之劍,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[75],,75,20,drop definition; encounter availability and repeatability unresolved
+629,精華藥水,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[76],,76,2,drop definition; encounter availability and repeatability unresolved
+621,藥草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[101],,101,2,drop definition; encounter availability and repeatability unresolved
+621,藥草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[113],,113,4,drop definition; encounter availability and repeatability unresolved
+625,回復劑,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[118],,118,3,drop definition; encounter availability and repeatability unresolved
+625,回復劑,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[125],,125,3,drop definition; encounter availability and repeatability unresolved
+621,藥草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[126],,126,3,drop definition; encounter availability and repeatability unresolved
+647,解毒草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[127],,127,5,drop definition; encounter availability and repeatability unresolved
+624,無酵餅,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[128],,128,3,drop definition; encounter availability and repeatability unresolved
+637,魔晶粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[129],,129,3,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[130],,130,3,drop definition; encounter availability and repeatability unresolved
+644,還魄丹,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[131],,131,2,drop definition; encounter availability and repeatability unresolved
+636,魔法葉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[132],,132,3,drop definition; encounter availability and repeatability unresolved
+629,精華藥水,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[133],,133,3,drop definition; encounter availability and repeatability unresolved
+683,人馬獸之血,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[134],,134,3,drop definition; encounter availability and repeatability unresolved
+651,溶石藥劑,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[135],,135,3,drop definition; encounter availability and repeatability unresolved
+625,回復劑,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[136],,136,3,drop definition; encounter availability and repeatability unresolved
+626,十果粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[137],,137,3,drop definition; encounter availability and repeatability unresolved
+649,解僵針,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[138],,138,5,drop definition; encounter availability and repeatability unresolved
+626,十果粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[139],,139,3,drop definition; encounter availability and repeatability unresolved
+624,無酵餅,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[140],,140,3,drop definition; encounter availability and repeatability unresolved
+629,精華藥水,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[141],,141,3,drop definition; encounter availability and repeatability unresolved
+637,魔晶粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[142],,142,3,drop definition; encounter availability and repeatability unresolved
+625,回復劑,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[143],,143,3,drop definition; encounter availability and repeatability unresolved
+985,葦笛,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[144],,144,3,drop definition; encounter availability and repeatability unresolved
+647,解毒草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[145],,145,3,drop definition; encounter availability and repeatability unresolved
+628,金創藥,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[145],,145,5,drop definition; encounter availability and repeatability unresolved
+654,茴香水,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[146],,146,4,drop definition; encounter availability and repeatability unresolved
+630,嘉果,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[147],,147,3,drop definition; encounter availability and repeatability unresolved
+703,靈樞玉液,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[148],,148,2,drop definition; encounter availability and repeatability unresolved
+714,九龍神火罩,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[149],,149,1,drop definition; encounter availability and repeatability unresolved
+652,五色石南葉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[150],,150,3,drop definition; encounter availability and repeatability unresolved
+681,不老之泉水,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[151],,151,2,drop definition; encounter availability and repeatability unresolved
+673,蜜乳樹汁,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[152],,152,2,drop definition; encounter availability and repeatability unresolved
+649,解僵針,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[153],,153,3,drop definition; encounter availability and repeatability unresolved
+643,天山雪蓮,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[154],,154,3,drop definition; encounter availability and repeatability unresolved
+630,嘉果,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[155],,155,3,drop definition; encounter availability and repeatability unresolved
+711,白皙葫蘆,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[156],,156,2,drop definition; encounter availability and repeatability unresolved
+711,白皙葫蘆,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[157],,157,2,drop definition; encounter availability and repeatability unresolved
+632,蟠桃,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[158],,158,1,drop definition; encounter availability and repeatability unresolved
+702,金元五體丹,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[159],,159,1,drop definition; encounter availability and repeatability unresolved
+649,解僵針,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[160],,160,3,drop definition; encounter availability and repeatability unresolved
+637,魔晶粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[161],,161,3,drop definition; encounter availability and repeatability unresolved
+679,飛翔魔油,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[161],,161,2,drop definition; encounter availability and repeatability unresolved
+655,定心丸,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[162],,162,3,drop definition; encounter availability and repeatability unresolved
+978,瑪瑙戒指,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[162],,162,10,drop definition; encounter availability and repeatability unresolved
+984,角笛,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[163],,163,10,drop definition; encounter availability and repeatability unresolved
+638,魔力水,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[164],,164,3,drop definition; encounter availability and repeatability unresolved
+677,瑰麗之梨,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[164],,164,7,drop definition; encounter availability and repeatability unresolved
+657,聖言石,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[165],,165,3,drop definition; encounter availability and repeatability unresolved
+653,還神果,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[166],,166,3,drop definition; encounter availability and repeatability unresolved
+661,七葉蓮,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[167],,167,3,drop definition; encounter availability and repeatability unresolved
+649,解僵針,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[169],,169,3,drop definition; encounter availability and repeatability unresolved
+621,藥草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[170],,170,3,drop definition; encounter availability and repeatability unresolved
+622,結纍葡萄,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[171],,171,4,drop definition; encounter availability and repeatability unresolved
+638,魔力水,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[172],,172,3,drop definition; encounter availability and repeatability unresolved
+712,羅剎食日鈸,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[173],,173,5,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[175],,175,3,drop definition; encounter availability and repeatability unresolved
+625,回復劑,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[177],,177,3,drop definition; encounter availability and repeatability unresolved
+641,仙爐灰,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[178],,178,1,drop definition; encounter availability and repeatability unresolved
+641,仙爐灰,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[179],,179,1,drop definition; encounter availability and repeatability unresolved
+637,魔晶粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[180],,180,3,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[181],,181,3,drop definition; encounter availability and repeatability unresolved
+630,嘉果,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[184],,184,2,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[185],,185,3,drop definition; encounter availability and repeatability unresolved
+644,還魄丹,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[186],,186,3,drop definition; encounter availability and repeatability unresolved
+719,博落迴之根,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[189],,189,3,drop definition; encounter availability and repeatability unresolved
+715,雲生碧燄巾,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[191],,191,3,drop definition; encounter availability and repeatability unresolved
+645,輪迴盤,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[194],,194,3,drop definition; encounter availability and repeatability unresolved
+626,十果粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[197],,197,3,drop definition; encounter availability and repeatability unresolved
+646,仙蓮子,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[198],,198,1,drop definition; encounter availability and repeatability unresolved
+716,天雷聚陽鼎,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[199],,199,2,drop definition; encounter availability and repeatability unresolved
+626,十果粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[206],,206,3,drop definition; encounter availability and repeatability unresolved
+722,山蛇莓,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[208],,208,4,drop definition; encounter availability and repeatability unresolved
+641,仙爐灰,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[213],,213,1,drop definition; encounter availability and repeatability unresolved
+641,仙爐灰,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[214],,214,1,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[221],,221,3,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[222],,222,3,drop definition; encounter availability and repeatability unresolved
+621,藥草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[223],,223,3,drop definition; encounter availability and repeatability unresolved
+678,魔法精羽,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[226],,226,1,drop definition; encounter availability and repeatability unresolved
+639,還靈丹,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[253],,253,2,drop definition; encounter availability and repeatability unresolved
+662,河車丸,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[267],,267,5,drop definition; encounter availability and repeatability unresolved
+657,聖言石,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[269],,269,2,drop definition; encounter availability and repeatability unresolved
+649,解僵針,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[271],,271,3,drop definition; encounter availability and repeatability unresolved
+628,金創藥,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[272],,272,3,drop definition; encounter availability and repeatability unresolved
+661,七葉蓮,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[273],,273,4,drop definition; encounter availability and repeatability unresolved
+630,嘉果,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[274],,274,3,drop definition; encounter availability and repeatability unresolved
+709,紫玉冰晶,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[277],,277,2,drop definition; encounter availability and repeatability unresolved
+707,遁影浮沙,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[281],,281,2,drop definition; encounter availability and repeatability unresolved
+696,土地神符,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[316],,316,3,drop definition; encounter availability and repeatability unresolved
+712,羅剎食日鈸,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[316],,316,3,drop definition; encounter availability and repeatability unresolved
+624,無酵餅,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[377],,377,3,drop definition; encounter availability and repeatability unresolved
+628,金創藥,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[377],,377,3,drop definition; encounter availability and repeatability unresolved
+556,如意金箍棒,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[378],,378,20,drop definition; encounter availability and repeatability unresolved
+631,鹿茸膏,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[380],,380,5,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[390],,390,3,drop definition; encounter availability and repeatability unresolved
+720,囚燕草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[392],,392,3,drop definition; encounter availability and repeatability unresolved
+647,解毒草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[393],,393,3,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[394],,394,3,drop definition; encounter availability and repeatability unresolved
+933,硃砂神筆,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[396],,396,20,drop definition; encounter availability and repeatability unresolved
+1005,虎皮衣,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[398],,398,20,drop definition; encounter availability and repeatability unresolved
+624,無酵餅,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[403],,403,3,drop definition; encounter availability and repeatability unresolved
+628,金創藥,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[403],,403,3,drop definition; encounter availability and repeatability unresolved
+621,藥草,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[407],,407,5,drop definition; encounter availability and repeatability unresolved
+564,飛斧,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[409],,409,3,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[411],,411,3,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[412],,412,3,drop definition; encounter availability and repeatability unresolved
+628,金創藥,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[416],,416,3,drop definition; encounter availability and repeatability unresolved
+624,無酵餅,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[2201],,2201,3,drop definition; encounter availability and repeatability unresolved
+628,金創藥,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[2201],,2201,3,drop definition; encounter availability and repeatability unresolved
+645,輪迴盤,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[2202],,2202,20,drop definition; encounter availability and repeatability unresolved
+627,魔貝粉,enemy_drop_definition,GameData_BattleCharData.lua,,ItemTemp[2203],,2203,3,drop definition; encounter availability and repeatability unresolved

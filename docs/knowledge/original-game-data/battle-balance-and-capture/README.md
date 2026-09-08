@@ -16,7 +16,7 @@
 
 | 檔案 | 用途 |
 | --- | --- |
-| `players-level-60.csv` | 四名固定隊員在原版等級上限 60 的裸身成長值與全習得法術。 |
+| `players-level-60.csv` | 四名固定隊員在原版等級上限 60 的裸身成長值、初始與升級習得技能；不含另依絕招經驗學會的12招。 |
 | `player-learned-skills.csv`、`skills.csv` | 角色習得法術與全部法術的 MP／SP 消耗、攻擊效果、屬性、範圍、異常／增益欄位。 |
 | `equipment-and-artifacts.csv` | 武器、防具、飾品、法寶及其能力加成；這是最佳配裝候選集，不是取得保證。 |
 | `guardian-cards.csv` | 所有已標為 `IT_12` 護駕／活物卡的體力消耗、召喚攻擊效果與卡本身戰鬥資料。 |
@@ -27,6 +27,14 @@
 | `current-challengeable-enemies.csv`、`top-challengeable-enemies-by-hp.csv` | 套用**目前** `CardBattleRules.IsBattleReady` 的可選敵人與 HP 優先閱讀清單；排序不是最終強度公式。 |
 | `current-challengeable-enemy-actions.csv` | 每個目前可選敵人的普通攻擊、技能、特殊攻擊、治療／危急技能，含原始攻擊點、屬性、範圍、異常、初始使用次數與 AI 使用率。 |
 | `export-manifest.csv` | 本次匯出的資料來源。 |
+| `item-combat-details.csv` | 補充原版 ItemTemp 的熟練值、Calculation、九維加成、抗性、特殊功能與使用旗標；缺欄保留空白，不能把說明或 AddSpecial 數字當成已知 native 公式。 |
+| `player-special-skills.csv` | PlayerSpecialSkill／PlayerSpecialSkillExp 的12個後續絕招，補足等級技能表；Consumption 未標 Cons_MP／Cons_SP 者不能當成 MP／SP 成本。 |
+| `endgame/equipment-candidates.csv` | 依角色、合法槽位、單一加成排序的前三候選，排除 discard／法寶混入普通防具；不保證取得或全隊庫存足夠。 |
+| `endgame/guardian-comparison.csv` | 原生97筆（含標記測試用的2203）與現行卡庫排除蔡魔王後96筆分池比較；static_mod 列是外部 MOD 規格快照，不是原版資料。 |
+| `endgame/enemy-action-pressure.csv` | 193筆可選敵方的519個招式條目，保留重複AI槽；補入回血、吸HP／MP／SP、全體範圍、異常、解狀態、選招權重與缺失引用，不能直接當傷害或施放機率。 |
+| `endgame/item-source-references.csv`、`endgame/manifest.json` | 原版商店／寶箱／領物／增減物／掉落的字面參照，以及來源／分析器／結果 SHA-256；沒有遍歷可達路徑、商店庫存或煉化配方。 |
+
+2026-09-06 的新增資料與反例見[終局補充](BALANCE-RESEARCH.md#終局資源補充2026-09-06)。先由原匯出器重建 CSV，再依[終局工具參數](../../tools-and-commands.md#終局平衡候選與取得線索)產生新目錄；`endgame/` 是該工具的保存產物，不手改。第一輪原有14份 CSV 逐列回歸不變，新增2份原版表；接續敵方技能分析只校正enemy-actions的39條治療權重說明（按絕對HP排序），其餘15份保持一致。衍生分析另輸出253筆裝備候選、193筆分池護駕、519筆敵方招式與983筆取得參照。
 
 ## 已知界線
 

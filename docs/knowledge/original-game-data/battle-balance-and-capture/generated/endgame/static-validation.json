@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "original_csv_unchanged": 14,
+  "new_csv_shape": "PASS",
+  "special_skills_and_consumption": "PASS",
+  "growth_missing_fields": "PASS",
+  "recovery_targeting": "PASS",
+  "guardian_pair_and_satan_values": "PASS",
+  "literal_scanner_ignores_comments_and_strings": "PASS",
+  "copied_results_match_hashes": "PASS",
+  "gameplay_test": "not run; user manual only",
+  "existing_output_refused": "PASS",
+  "saved_manifest_all_hashes": "PASS",
+  "lua_syntax": "PASS",
+  "markdown_files": 107,
+  "markdown_local_links": 870,
+  "markdown_errors": 0,
+  "enemy_followup": {
+    "unchanged_other_export_tables": 15,
+    "corrected_cure_annotations": 39,
+    "actions": 519,
+    "area_effect_entries": 89,
+    "cure_entries": 39,
+    "missing_cure_skills": 5,
+    "valid_cure_entries_with_area_flag": 0,
+    "bull_hp_and_sp_drain": "PASS",
+    "unchanged_prior_derived_csv": 3,
+    "source_and_output_hashes": "PASS"
+  }
+}

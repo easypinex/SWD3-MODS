@@ -206,7 +206,7 @@ foreach ($enemy in $challengeable) {
         $skill = $skillsById[$skillId]
         $actionName = if ($null -ne $skill) { [string]$skill.name } else { "技能 $skillId" }
         $effectId = if ($null -ne $skill) { [string]$skill.attack_effect_id } else { '' }
-        Add-EnemyAction -Enemy $enemy -ActionType '治療／危急技能' -SourceId $skillId -ActionName $actionName -EffectId $effectId -InitialCount ([string](Get-At $cureCounts $index)) -Rate '依全隊最低 HP 百分比增加權重。'
+        Add-EnemyAction -Enemy $enemy -ActionType '治療／危急技能' -SourceId $skillId -ActionName $actionName -EffectId $effectId -InitialCount ([string](Get-At $cureCounts $index)) -Rate '依目前 HP 數值最少的存活敵人之 HP 百分比增加權重；不是最低 HP 百分比排序。'
     }
 }
 $enemyActions | ConvertTo-Csv -NoTypeInformation | Set-Content -LiteralPath (Join-Path $OutputRoot 'current-challengeable-enemy-actions.csv') -Encoding utf8

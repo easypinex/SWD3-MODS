@@ -445,6 +445,62 @@ for role = 1, 4 do
     })
 end
 
+-- Supplemental tables retain absent fields as blank (distinct from explicit 0).
+-- These are definitions, not effective equipped stats or native damage results.
+local detailFields = {
+    'Calculation', 'Consumption', 'Cons_MP', 'Cons_SP', 'Cons_Throw', 'Cons_Item',
+    'UsePlace', 'Price', 'ProficientPoint', 'ProficientHard', 'AddSpecial',
+    'SutraName', 'ResistanceSK', 'SkillExp', 'AddHP', 'AddMP', 'AddSP',
+    'AddSTR', 'AddStamina', 'AddWIS', 'AddSPD', 'AddFriend', 'AddDodge',
+    'AddATK', 'AddDEF', 'AttrFire', 'AttrIce', 'AttrWind', 'AttrEarth',
+    'AttrPoison', 'AttrLight', 'AttrDark', 'AttrThunder', 'AttrPhysical',
+    'AttackEffect', 'UseScript', 'ViewScript',
+}
+local detailHeaders = { 'item_id', 'name', 'types', 'roles', 'discard', 'is_unique' }
+for _, key in ipairs(detailFields) do table.insert(detailHeaders, key) end
+table.insert(detailHeaders, 'function_flags')
+local detailsFile = begin('item-combat-details.csv', detailHeaders)
+for _, id in ipairs(numericKeys(GameData.ItemTemp)) do
+    local item = GameData.ItemTemp[id]
+    if type(item) == 'table' then
+        local values = { id, itemName(item), itemTypes(item), roleUsers(item),
+            bool(item.discard), bool(item.isUnique) }
+        for _, key in ipairs(detailFields) do
+            local value = item[key]
+            assert(value == nil or type(value) ~= 'table', 'unexpected nested detail: ' .. key)
+            table.insert(values, value == nil and '' or value)
+        end
+        local flags = {}
+        for key, value in pairs(item) do
+            if type(key) == 'string' and key:match('^FN_') then
+                table.insert(flags, key .. '=' .. tostring(value))
+            end
+        end
+        table.sort(flags)
+        table.insert(values, table.concat(flags, '|'))
+        row(detailsFile, values)
+    end
+end
+
+local specialFile = begin('player-special-skills.csv', {
+    'party_slot', 'character_name', 'sequence', 'skill_id', 'skill_name',
+    'required_special_exp', 'consumption', 'consumes_mp', 'consumes_sp',
+    'attack_effect_id', 'attack_point', 'attribute_id', 'wide_range',
+    'continuous_turns', 'affixation_effect', 'relieve_effect', 'add_buff',
+    'resist_attribute', 'snatch_hp', 'snatch_mp', 'snatch_sp', 'escape',
+    'summon_id', 'summon_count',
+})
+for role = 1, 4 do
+    for sequence, id in ipairs(GameData.PlayerSpecialSkill[role]) do
+        local item = assert(GameData.ItemTemp[id], 'missing special skill')
+        local values = { role, text(GameData.NewGameChar[role].Name), sequence,
+            id, itemName(item), GameData.PlayerSpecialSkillExp[role][sequence],
+            number(item.Consumption), bool(item.Cons_MP), bool(item.Cons_SP) }
+        for _, value in ipairs(effectColumns(item.AttackEffect)) do table.insert(values, value) end
+        row(specialFile, values)
+    end
+end
+
 local manifest = begin('export-manifest.csv', { 'source_file', 'purpose' })
 for _, name in ipairs(sources) do
     row(manifest, { name, 'loaded as original data definition' })
