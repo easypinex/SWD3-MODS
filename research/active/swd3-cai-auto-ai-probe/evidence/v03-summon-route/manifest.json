@@ -1,0 +1,9 @@
+{
+  "scope": "AI_ITEM route 140044ab0 -> 1400524e0 queues 3; keeper action uses 0x10; no runtime patch",
+  "gameVersion": "4.0.5.0",
+  "scriptSha256": "79B12D035CC1E13FDE6C4CB9C2F5CF5E61AF0BF54458B765863155A62C620C90",
+  "warning": "Static decompilation; inferred types; no claim that all alternative APIs are impossible",
+  "exeSha256": "63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523",
+  "reportSha256": "F79B7E180937145303B6F2561B0CD0E4598C86CAD258881AB24C20158057DF65",
+  "tool": "Ghidra 11.4.3 -readOnly -noanalysis"
+}

@@ -1,0 +1,10 @@
+MODName 蔡魔王自動AI測試
+MODAuthor Andy
+MODDate 2026,9,8
+MODVersion 0,4
+MODinfo 蔡魔王戰四人自動策略測試；啟用期間使用原生AI介面，需完整重啟。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+DAT 2,0,CaiAutoPolicy.lua,AI policy
+DAT 2,0,CaiAutoAI.lua,Native AI integration
