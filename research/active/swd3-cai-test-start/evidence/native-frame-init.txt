@@ -1,0 +1,1499 @@
+INFO  Using log config file: jar:file:/D:/workspace/SWD3-MODS/.tools/static-re/ghidra-11.4.3/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: D:\workspace\SWD3-MODS\.work\cai-test-start-research\frame-init-analysis.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Andy\AppData\Roaming\ghidra\ghidra_11.4.3_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (932 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  Headless startup complete (2360 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\PIC\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Jython\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Base\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\BSim\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\8051\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PDB\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\DATA\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Processors\JVM\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\workspace\SWD3-MODS\research\active\swd3-cai-test-start\tools
+    D:\workspace\SWD3-MODS\.tools\static-re\ghidra-11.4.3\Ghidra\Features\FunctionID\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessAnalyzer)  
+INFO  Opening project: D:\workspace\SWD3-MODS\.work\native-events-doccheck-20260906-104009\ghidra-project\NativeEvents (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /swd3.exe (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\workspace\SWD3-MODS\research\active\swd3-cai-test-start\tools\InspectFrameInit.py (HeadlessAnalyzer)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400618d7 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400618f5 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1401578b2 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1401578ff To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140157a1b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140157b1e To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ddbff To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ddc43 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ad91e To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a1939 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a3a1f To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140059e29 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140093a4b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c3aa1 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c3f28 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ee017 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ee049 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140099aec To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140099c65 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140099c9b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140099f4a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140099f6b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a3b56 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005be50 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005bec6 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005bee3 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b41f8 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400fff6d To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400fff91 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140068025 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140068038 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140161e87 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140161f08 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a7e22 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b1fbf To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b2026 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a3e9f To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140151eb4 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140151ed8 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a3f5b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a7ed6 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a4001 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14009f155 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005f1dd To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005f24c To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dd640 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b7149 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b7254 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005b542 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005b5a2 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140093322 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400db957 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400db991 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dba07 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dba43 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dc45a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dc49b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dc43a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dc423 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dbe89 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dbf14 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dc209 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400dc274 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005f65a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005f698 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140161774 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1401617f8 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14003f661 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14003fb6f To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14003fb87 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b770f To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b78b8 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b7dfe To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400cff9f To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d792c To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ad7f6 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d79f7 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d7a30 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d7b80 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d7ce7 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d7d39 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d7d8c To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d7f92 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d7ff3 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d8037 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d80fc To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d81be To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d82c2 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d830e To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d83d0 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d8565 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d859f To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d85e1 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d8737 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c5fb1 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c600c To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c6067 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ffa8d To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ffa99 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b6951 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d89b8 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140068a19 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140006a04 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14013f367 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140066b1a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140066b6a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14006ac8a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140152d57 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140152d74 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14006ad13 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b6f57 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d1144 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d1207 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d1393 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140094e0d To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140094e33 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140094e61 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400bf06c To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400bf0b2 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400bf1f1 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400bf225 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400bf2b1 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400bf2f0 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a40e0 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400684df To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400684f2 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a4210 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c22b8 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c2662 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c2c4b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c2e10 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c2fe5 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c3023 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400402eb To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400404c7 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140040563 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400406a5 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b6585 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b65a4 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400ce430 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14009448a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400945fd To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b44d4 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a277b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a2860 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140090c0a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400a0dba To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400c8780 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b855f To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b85a5 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d459c To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d48a2 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14006896a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14006897d To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400d4df0 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14006063a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400606b4 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140060714 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b6750 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b676f To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400cc89a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b4995 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b275c To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b279e To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b29dc To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b2a1e To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14015076b To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005e8c4 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005e923 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14005ea4a To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400cefb6 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400cf055 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400cf124 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400de7b3 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400b67f1 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1401507c8 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140094888 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 1400948ce To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140094946 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 14009497e To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140094a36 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140094aae To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140094ae8 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140066857 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 1402bed60 From: 140170990 To: 1402bed60 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1402cd1d8 To: 140105800 Type: DATA Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140195d08 To: 140105800 Type: DATA Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140195d1c To: 140105800 Type: DATA Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140195d2c To: 140105800 Type: DATA Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003d8b1 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003cd25 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b9e6 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140046e9e To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140047331 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400478aa To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14004b7bb To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14004bc43 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14004e181 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140073207 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140078a40 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14007eb12 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14007f0af To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14007f143 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14007f9ab To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14007fa97 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003bf60 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14007fdc6 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140082a7d To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140082e62 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140082f34 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140083d27 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400841d8 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c011 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140086b21 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400871cc To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400872ad To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400873f1 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400874b7 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140089046 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140089242 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008ad77 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008bde5 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008c0e5 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008c533 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008f359 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008fe01 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008fe8c To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008ff06 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008ff80 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14009f079 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140100429 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140118ef5 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14011e7ce To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14011ef95 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14012c991 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14012ce2a To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14012a322 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14012ad1f To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140130d9e To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14013ec47 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14013f222 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14012b27c To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1401434a8 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14011aa1e To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140152242 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1401522fb To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140152384 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140152427 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1401524bb To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14015260b To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14015273b To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140152be2 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140157cef To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140157da4 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140117a51 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140159fc5 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14015a168 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14015a241 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14015a2ee To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14015a33b To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14015a3ca To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003aa31 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003aaa3 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003aaf5 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003ab5c To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003abcb To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003ac24 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003ac85 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003acd7 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003ad3c To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003adb4 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003ae53 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003af86 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b0ba To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b102 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b19a To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b1e1 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b270 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b2b7 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b33b To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b383 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b402 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b47b To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b52c To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b5ed To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b658 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b6c3 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b7c2 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b809 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b89a To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b8ec To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003b937 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003ba9e To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003bd98 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c260 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c410 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c4ec To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c647 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c6ce To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c789 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c89d To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c902 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c995 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003c9df To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003ca53 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003caa2 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14003cb15 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14004ab41 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14006a357 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14006a444 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140151be5 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14006f6a2 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14007e7fc To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400846e5 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140087667 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008baef To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140073f8f To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140073482 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400736eb To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400739fb To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140073cca To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400741c0 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140074929 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140074ca6 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400754e6 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140075939 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140075b3f To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140075cb8 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400879ca To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140087c77 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008b088 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140076d44 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140076ed9 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140076fa9 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400774fa To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400779ad To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140077c5f To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008cc51 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008c6db To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140084388 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140079daf To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140083735 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400849df To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400880aa To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008b2d3 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008b6b4 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008ca2b To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008cfa5 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008fc2b To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008fd12 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14009fa87 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1401004d2 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14010058c To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400c28ed To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 140100930 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400d3b29 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400dfc63 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 1400dfd55 To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> REF 140105800 From: 14008236b To: 140105800 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT (GhidraScript)  
+INFO  InspectFrameInit.py> STRING 1401726b0 (GhidraScript)  
+INFO  InspectFrameInit.py> STRINGREF From: 140159b57 To: 1401726b0 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> STRINGREF From: 1400b3b4a To: 1401726b0 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> STRINGREF From: 14003e883 To: 1401726b0 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> STRINGREF From: 1400c0875 To: 1401726b0 Type: DATA Op: 1 ANALYSIS (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f30 MOV qword ptr [RSP + 0x8],RBX (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f35 PUSH RBP (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f36 PUSH RSI (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f37 PUSH RDI (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f38 PUSH R12 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f3a PUSH R13 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f3c PUSH R14 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f3e PUSH R15 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f40 SUB RSP,0x70 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f44 MOV RAX,qword ptr [0x1401a8128] (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f4b XOR RAX,RSP (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f4e MOV qword ptr [RSP + 0x68],RAX (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f53 MOV EBX,dword ptr [RSP + 0xe8] (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f5a XOR R12D,R12D (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f5d MOV EBP,dword ptr [RSP + 0xe0] (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f64 MOV ECX,EBX (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f66 MOV EDI,dword ptr [RSP + 0xd0] (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f6d BTR EBX,0x1f (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f71 TEST EBP,EBP (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f73 MOV dword ptr [RSP + 0x50],R9D (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f78 MOV EAX,EBP (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f7a MOV dword ptr [RSP + 0x60],0x0 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f82 CMOVZ R12D,dword ptr [RSP + 0xf0] (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f8b MOV ESI,R9D (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f8e NEG EAX (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f90 MOV dword ptr [RSP + 0xe8],EBX (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f97 MOV R15D,R8D (GhidraScript)  
+INFO  InspectFrameInit.py> 140159f9a MOV dword ptr [0x14020ca10],EBP (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fa0 SBB R13D,R13D (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fa3 MOV R14D,EDX (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fa6 AND R13D,0x14 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159faa TEST ECX,ECX (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fac JS 0x14015a0a9 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fb2 CMP EDX,0x234a (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fb8 JNZ 0x14015a013 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fba MOV EDX,0x9 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fbf MOV R8B,0x1 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fc2 MOV ECX,R14D (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fc5 CALL 0x140105800 (GhidraScript)  
+INFO  InspectFrameInit.py> 140159fca MOV byte ptr [RSP + 0x38],0x1 (GhidraScript)  
+INFO  InspectFrameInit.py> FUNCTION 1400c06a0 FUN_1400c06a0 (GhidraScript)  
+INFO  InspectFrameInit.py> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_1400c06a0(void)
+
+{
+  longlong lVar1;
+  char cVar2;
+  int iVar3;
+  undefined8 uVar4;
+  int iVar5;
+  void *pvVar6;
+  ulonglong uVar7;
+  ulonglong uVar8;
+  int *piVar9;
+  longlong lVar10;
+  int *piVar11;
+  undefined4 *puVar12;
+  longlong lVar13;
+  undefined1 local_res8 [8];
+  void *local_48;
+  undefined4 local_40;
+  char local_3c [2];
+  char local_3a;
+  undefined1 local_39;
+  undefined8 local_38;
+  ulonglong local_30;
+  
+  lVar13 = 3;
+  _DAT_140208e40 = 3;
+  DAT_140202f18 = malloc(0x3520);
+  DAT_140202f20 = malloc(0x3520);
+  DAT_140202f28 = malloc(0x3520);
+  DAT_140202f30 = malloc(0x3520);
+  SDL_memset(DAT_140202f18,0xff,0x3520);
+  SDL_memset(DAT_140202f20,0xff,0x3520);
+  SDL_memset(DAT_140202f28,0xff,0x3520);
+  SDL_memset(DAT_140202f30,0xff,0x3520);
+  DAT_140202ef8 = malloc(0x130);
+  uVar7 = 0;
+  DAT_140202f04 = 0;
+  do {
+    SDL_memset(DAT_140202ef8,0,0x130);
+    cVar2 = FUN_14007a8e0((longlong)DAT_140202ef8 + 0x38);
+    lVar10 = (longlong)DAT_140202f04;
+    if (cVar2 != '\0') {
+      *(uint *)((longlong)DAT_140202f18 + lVar10 * 4) =
+           (uint)*(ushort *)((longlong)DAT_140202ef8 + 0x78);
+      *(uint *)((longlong)DAT_140202f20 + lVar10 * 4) =
+           (uint)*(ushort *)((longlong)DAT_140202ef8 + 0x7a);
+      *(undefined4 *)((longlong)DAT_140202f28 + lVar10 * 4) =
+           *(undefined4 *)((longlong)DAT_140202ef8 + 0x40);
+      *(int *)((longlong)DAT_140202f30 + lVar10 * 4) =
+           (int)*(char *)((longlong)DAT_140202ef8 + 0xef);
+    }
+    DAT_140202f04 = DAT_140202f04 + 1;
+  } while (DAT_140202f04 < 0xd48);
+  free(DAT_140202ef8);
+  DAT_140202508 = calloc(1,0x130);
+  DAT_140202ef0 = calloc(1,0x130);
+  _DAT_1402bf3cc = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuFrame_Basic_ACT");
+  _DAT_1402bf3d4 = 0;
+  DAT_140200840 = 1;
+  DAT_140202f04 = 0;
+  DAT_140202f08 = 0;
+  FUN_1400c54a0(&DAT_140200850);
+  FUN_1400c54a0(&DAT_140200c98);
+  FUN_1401447a0(0x136,1);
+  DAT_140202f48 = malloc(300);
+  DAT_140202f50 = malloc(300);
+  DAT_140202f58 = malloc(300);
+  DAT_140202f60 = malloc(300);
+  DAT_140202f68 = malloc(0x1e0);
+  DAT_140202f70 = malloc(0x1e0);
+  DAT_140202f78 = malloc(0x1e0);
+  DAT_140202f80 = malloc(0x1e0);
+  DAT_140202f88 = malloc(0x400);
+  piVar9 = (int *)((longlong)DAT_140202f88 + 0x200);
+  uVar8 = uVar7;
+  piVar11 = piVar9;
+  do {
+    iVar3 = (int)uVar8;
+    *piVar9 = iVar3 * DAT_1401a66b8 >> 1;
+    *piVar11 = -(iVar3 * DAT_1401a66b8 >> 1);
+    uVar8 = (ulonglong)(iVar3 + 1U);
+    piVar9 = piVar9 + 1;
+    piVar11 = piVar11 + -1;
+  } while ((int)(iVar3 + 1U) < 0x7f);
+  DAT_140202f90 = 0;
+  _DAT_140202f94 = 0;
+  DAT_1401fcff0 = 2;
+  DAT_140202fe8 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ObsoltPrview_ACT");
+  DAT_140202fec = FUN_140149080(&DAT_1401a6d80,"ACTdef","ObsoltPrview_QQ");
+  DAT_1401a00e8 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuItemTab_Width");
+  DAT_1401a00ec = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuItemTab_Height");
+  DAT_140202fa0 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuItemTab_TSW");
+  DAT_140202fa4 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuItemTab_Select_TSW");
+  DAT_140202fa8 = 7;
+  DAT_140202fac = 4;
+  _DAT_140202fb0 = 5;
+  DAT_140202fe4 = FUN_140149080(&DAT_1401a6d80,"ACTdef","Fusion_ItemSelect_TSW");
+  _DAT_1401a00d8 = _DAT_140177960;
+  _DAT_1401a00e0 = _UNK_140177968;
+  DAT_140202fb4 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuWallPaper_BG_TSW");
+  _DAT_140202fd4 = DAT_140202fb4;
+  _DAT_140202fd0 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuWallPaper_BG_fusion_Altar");
+  _DAT_140202fd8 = _DAT_140202fd0;
+  _DAT_140202fdc = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuWallPaper_BG_fusion_Empty");
+  _DAT_140202fe0 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuWallPaper_BG_fusion");
+  uVar4 = FUN_140105ae0(DAT_140202fb4,_DAT_140202fdc & 0xffff,0);
+  DAT_140202ff0 = FUN_140118b80(&DAT_14020d370,uVar4,local_res8);
+  uVar4 = FUN_140105ae0(DAT_140202fb4,_DAT_140202fd0 & 0xffff,0);
+  DAT_140202ff8 = FUN_140118b80(&DAT_14020d370,uVar4,local_res8);
+  uVar4 = FUN_140105ae0(DAT_140202fb4,_DAT_140202fe0 & 0xffff,0);
+  DAT_140203000 = FUN_140118b80(&DAT_14020d370,uVar4,local_res8);
+  piVar9 = &DAT_140202fb8;
+  puVar12 = &DAT_140202fa8;
+  uVar8 = uVar7;
+  do {
+    FUN_14011e800(&DAT_140202cb0 + uVar8,DAT_140202fa0,*puVar12,0);
+    lVar10 = DAT_14020d390;
+    iVar3 = piVar9[1];
+    iVar5 = *piVar9;
+    if (iVar5 < 0) {
+      iVar5 = -(int)((ulonglong)(-iVar5 * DAT_14020d390) >> 0xc);
+    }
+    else {
+      iVar5 = (int)((ulonglong)(iVar5 * DAT_14020d390) >> 0xc);
+    }
+    *(int *)((longlong)&DAT_140202d00 + uVar7) = iVar5;
+    lVar1 = DAT_14020d398;
+    if (iVar3 < 0) {
+      iVar3 = -(int)((ulonglong)(-iVar3 * DAT_14020d398) >> 0xc);
+    }
+    else {
+      iVar3 = (int)((ulonglong)(iVar3 * DAT_14020d398) >> 0xc);
+    }
+    *(int *)((longlong)&DAT_140202d04 + uVar7) = iVar3;
+    *(int *)((longlong)&DAT_140202d18 + uVar7) = iVar5;
+    *(int *)((longlong)&DAT_140202d1c + uVar7) = iVar3;
+    if (DAT_1401a00e8 < 0) {
+      iVar3 = -(int)((ulonglong)(-DAT_1401a00e8 * lVar10) >> 0xc);
+    }
+    else {
+      iVar3 = (int)((ulonglong)(DAT_1401a00e8 * lVar10) >> 0xc);
+    }
+    *(int *)((longlong)&DAT_140202d20 + uVar7) = iVar3;
+    if (DAT_1401a00ec < 0) {
+      iVar5 = -(int)((ulonglong)(-DAT_1401a00ec * lVar1) >> 0xc);
+    }
+    else {
+      iVar5 = (int)((ulonglong)(DAT_1401a00ec * lVar1) >> 0xc);
+    }
+    *(int *)((longlong)&DAT_140202d24 + uVar7) = iVar5;
+    *(float *)((longlong)&DAT_140202d68 + uVar7) =
+         (float)*(int *)((longlong)&DAT_140202d08 + uVar7) / (float)iVar3;
+    *(float *)((longlong)&DAT_140202d6c + uVar7) =
+         (float)*(int *)((longlong)&DAT_140202d0c + uVar7) / (float)iVar5;
+    FUN_14011e800(&DAT_140202510 + uVar8,DAT_140202fa4,*puVar12,0);
+    lVar10 = DAT_14020d390;
+    iVar3 = piVar9[1];
+    iVar5 = *piVar9;
+    if (iVar5 < 0) {
+      iVar5 = -(int)((ulonglong)(-iVar5 * DAT_14020d390) >> 0xc);
+    }
+    else {
+      iVar5 = (int)((ulonglong)(iVar5 * DAT_14020d390) >> 0xc);
+    }
+    *(int *)((longlong)&DAT_140202560 + uVar7) = iVar5;
+    lVar1 = DAT_14020d398;
+    if (iVar3 < 0) {
+      iVar3 = -(int)((ulonglong)(-iVar3 * DAT_14020d398) >> 0xc);
+    }
+    else {
+      iVar3 = (int)((ulonglong)(iVar3 * DAT_14020d398) >> 0xc);
+    }
+    *(int *)((longlong)&DAT_140202564 + uVar7) = iVar3;
+    *(int *)((longlong)&DAT_140202578 + uVar7) = iVar5;
+    *(int *)((longlong)&DAT_14020257c + uVar7) = iVar3;
+    if (DAT_1401a00e8 < 0) {
+      iVar3 = -(int)((ulonglong)(-DAT_1401a00e8 * lVar10) >> 0xc);
+    }
+    else {
+      iVar3 = (int)((ulonglong)(DAT_1401a00e8 * lVar10) >> 0xc);
+    }
+    *(int *)((longlong)&DAT_140202580 + uVar7) = iVar3;
+    if (DAT_1401a00ec < 0) {
+      iVar5 = -(int)((ulonglong)(-DAT_1401a00ec * lVar1) >> 0xc);
+    }
+    else {
+      iVar5 = (int)((ulonglong)(DAT_1401a00ec * lVar1) >> 0xc);
+    }
+    *(int *)((longlong)&DAT_140202584 + uVar7) = iVar5;
+    *(float *)((longlong)&DAT_1402025c8 + uVar7) =
+         (float)*(int *)((longlong)&DAT_140202568 + uVar7) / (float)iVar3;
+    *(float *)((longlong)&DAT_1402025cc + uVar7) =
+         (float)*(int *)((longlong)&DAT_14020256c + uVar7) / (float)iVar5;
+    uVar8 = uVar8 + 0xc0;
+    puVar12 = puVar12 + 1;
+    piVar9 = piVar9 + 2;
+    uVar7 = uVar7 + 0xc0;
+    lVar13 = lVar13 + -1;
+  } while (lVar13 != 0);
+  local_30 = 0xf;
+  local_38 = 0xb;
+  local_48 = (void *)s_BotlExecute_140177858._0_8_;
+  local_40 = (uint)CONCAT12(s_BotlExecute_140177858[10],s_BotlExecute_140177858._8_2_);
+  FUN_1400ae540(&DAT_1401fbdd8,&local_48,0x28,0x28,0x24b3,10,0x24b5,4);
+  if (0xf < local_30) {
+    pvVar6 = local_48;
+    if ((0xfff < local_30 + 1) &&
+       (pvVar6 = *(void **)((longlong)local_48 + -8),
+       0x1f < (ulonglong)((longlong)local_48 + (-8 - (longlong)pvVar6)))) {
+                    /* WARNING: Subroutine does not return */
+      _invalid_parameter_noinfo_noreturn();
+    }
+    free(pvVar6);
+  }
+  local_30 = 0xf;
+  local_38 = 0xe;
+  local_48 = (void *)s_BotlSwitchLeft_140177868._0_8_;
+  local_40._0_1_ = s_BotlSwitchLeft_140177868[8];
+  local_40._1_1_ = s_BotlSwitchLeft_140177868[9];
+  local_40._2_1_ = s_BotlSwitchLeft_140177868[10];
+  local_40._3_1_ = s_BotlSwitchLeft_140177868[0xb];
+  local_3c[0] = s_BotlSwitchLeft_140177868[0xc];
+  local_3c[1] = s_BotlSwitchLeft_140177868[0xd];
+  local_3a = 0;
+  FUN_1400ae540(&DAT_1401fbdd8,&local_48,0x28,0x28,0x24b3,0xc,0x24b5,0xb);
+  if (0xf < local_30) {
+    pvVar6 = local_48;
+    if ((0xfff < local_30 + 1) &&
+       (pvVar6 = *(void **)((longlong)local_48 + -8),
+       0x1f < (ulonglong)((longlong)local_48 + (-8 - (longlong)pvVar6)))) {
+                    /* WARNING: Subroutine does not return */
+      _invalid_parameter_noinfo_noreturn();
+    }
+    free(pvVar6);
+  }
+  local_30 = 0xf;
+  local_38 = 0xf;
+  local_48 = (void *)s_BotlSwitchRight_140177878._0_8_;
+  local_40._0_1_ = s_BotlSwitchRight_140177878[8];
+  local_40._1_1_ = s_BotlSwitchRight_140177878[9];
+  local_40._2_1_ = s_BotlSwitchRight_140177878[10];
+  local_40._3_1_ = s_BotlSwitchRight_140177878[0xb];
+  local_3c[0] = s_BotlSwitchRight_140177878[0xc];
+  local_3c[1] = s_BotlSwitchRight_140177878[0xd];
+  local_3a = s_BotlSwitchRight_140177878[0xe];
+  local_39 = 0;
+  FUN_1400ae540(&DAT_1401fbdd8,&local_48,0x28,0x28,0x24b3,5,0x24b5,0xc);
+  if (0xf < local_30) {
+    pvVar6 = local_48;
+    if ((0xfff < local_30 + 1) &&
+       (pvVar6 = *(void **)((longlong)local_48 + -8),
+       0x1f < (ulonglong)((longlong)local_48 + (-8 - (longlong)pvVar6)))) {
+                    /* WARNING: Subroutine does not return */
+      _invalid_parameter_noinfo_noreturn();
+    }
+    free(pvVar6);
+  }
+  FUN_1400c3080();
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectFrameInit.py> FUNCTION 1400b3550 FUN_1400b3550 (GhidraScript)  
+INFO  InspectFrameInit.py> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_1400b3550(void)
+
+{
+  _DAT_1401fd044 = 0;
+  FUN_1400cd850();
+  SDL_memset(&DAT_1401fdbc0,0,0xd8);
+  _DAT_1401fdc00 = 0xffffffffffffffff;
+  _DAT_1401fdc20 = 0xffffffff;
+  _DAT_1401fdbc4 = 0;
+  _DAT_1401fdbd8 = SDL_GetTicks();
+  SDL_memset(&DAT_1401fdd80,0,0xd8);
+  _DAT_1401fddc0 = 0xffffffffffffffff;
+  _DAT_1401fdde0 = 0xffffffff;
+  _DAT_1401fdd84 = 0;
+  _DAT_1401fdd98 = SDL_GetTicks();
+  SDL_memset(&DAT_1401fdae0,0,0xd8);
+  _DAT_1401fdb20 = 0xffffffffffffffff;
+  _DAT_1401fdb40 = 0xffffffff;
+  _DAT_1401fdae4 = 0;
+  _DAT_1401fdaf8 = SDL_GetTicks();
+  _DAT_1401fdb04 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuWallPaper_SystemACT");
+  DAT_1401fdb0c = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuWallPaper_SystemQQ");
+  SDL_memset(&DAT_1401fff90,0,0xd8);
+  _DAT_1401fffd0 = 0xffffffffffffffff;
+  _DAT_1401ffff0 = 0xffffffff;
+  _DAT_1401fff94 = 0;
+  _DAT_1401fffa8 = SDL_GetTicks();
+  _DAT_1401fffb4 = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_FaceIconBG_ACT");
+  _DAT_1401fffbc = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_FaceIconBG_QQ");
+  SDL_memset(&DAT_1401fd720,0,0xd8);
+  _DAT_1401fd760 = 0xffffffffffffffff;
+  _DAT_1401fd780 = 0xffffffff;
+  _DAT_1401fd724 = 0;
+  _DAT_1401fd738 = SDL_GetTicks();
+  _DAT_1401fd744 = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_SelectItemBar_ACT");
+  _DAT_1401fd778 = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_SelectItemBar_QQ");
+  SDL_memset(&DAT_1401fd560,0,0xd8);
+  _DAT_1401fd5a0 = 0xffffffffffffffff;
+  _DAT_1401fd5c0 = 0xffffffff;
+  _DAT_1401fd564 = 0;
+  _DAT_1401fd578 = SDL_GetTicks();
+  SDL_memset(&DAT_1401fd640,0,0xd8);
+  _DAT_1401fd680 = 0xffffffffffffffff;
+  _DAT_1401fd6a0 = 0xffffffff;
+  _DAT_1401fd644 = 0;
+  _DAT_1401fd658 = SDL_GetTicks();
+  SDL_memset(&DAT_1401fd480,0,0xd8);
+  _DAT_1401fd4c0 = 0xffffffffffffffff;
+  _DAT_1401fd4e0 = 0xffffffff;
+  _DAT_1401fd484 = 0;
+  _DAT_1401fd498 = SDL_GetTicks();
+  _DAT_1401fd584 = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_HPbar_ACT");
+  _DAT_1401fd58c = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_HPbar_QQ");
+  _DAT_1401fd664 = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_MPbar_ACT");
+  _DAT_1401fd66c = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_MPbar_QQ");
+  _DAT_1401fd4a4 = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_SPbar_ACT");
+  _DAT_1401fd4ac = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_SPbar_QQ");
+  SDL_memset(&DAT_1401fde60,0,0xd8);
+  DAT_1401fdea0 = 0xffffffffffffffff;
+  DAT_1401fdec0 = 0xffffffff;
+  DAT_1401fde64 = 0;
+  DAT_1401fde78 = SDL_GetTicks();
+  SDL_memset(&DAT_1401fdf38,0,0xd8);
+  _DAT_1401fdf78 = 0xffffffffffffffff;
+  _DAT_1401fdf98 = 0xffffffff;
+  _DAT_1401fdf3c = 0;
+  _DAT_1401fdf50 = SDL_GetTicks();
+  SDL_memset(&DAT_1401fe010,0,0xd8);
+  _DAT_1401fe050 = 0xffffffffffffffff;
+  _DAT_1401fe070 = 0xffffffff;
+  _DAT_1401fe014 = 0;
+  _DAT_1401fe028 = SDL_GetTicks();
+  SDL_memset(&DAT_1401fe0e8,0,0xd8);
+  _DAT_1401fe128 = 0xffffffffffffffff;
+  _DAT_1401fe148 = 0xffffffff;
+  _DAT_1401fe0ec = 0;
+  _DAT_1401fe100 = SDL_GetTicks();
+  DAT_1401fde84 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MainSelect_ContinueACT");
+  DAT_1401fde8c = FUN_140149080(&DAT_1401a6d80,"ACTdef","MainSelect_ContinueQQ");
+  DAT_1401fdf5c = FUN_140149080(&DAT_1401a6d80,"ACTdef","MainSelect_NewGameACT");
+  _DAT_1401fdf64 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MainSelect_NewGameQQ");
+  _DAT_1401fe034 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MainSelect_OptionACT");
+  _DAT_1401fe03c = FUN_140149080(&DAT_1401a6d80,"ACTdef","MainSelect_OptionQQ");
+  _DAT_1401fe10c = FUN_140149080(&DAT_1401a6d80,"ACTdef","MainSelect_QuitACT");
+  _DAT_1401fe114 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MainSelect_QuitQQ");
+  SDL_memset(&DAT_140200070,0,0xd8);
+  _DAT_1402000b0 = 0xffffffffffffffff;
+  _DAT_1402000d0 = 0xffffffff;
+  _DAT_140200074 = 0;
+  _DAT_140200088 = SDL_GetTicks();
+  _DAT_140200094 = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_SelectItemBar_ACT");
+  _DAT_14020009c = FUN_140149080(&DAT_1401a6d80,"ACTdef","Menu_SelectItemBar2_QQ");
+  SDL_memset(&DAT_1402bf3a8,0,0xd8);
+  _DAT_1402bf3e8 = 0xffffffffffffffff;
+  _DAT_1402bf408 = 0xffffffff;
+  _DAT_1402bf3ac = 0;
+  _DAT_1402bf3c0 = SDL_GetTicks();
+  _DAT_1402bf3cc = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuFrame_Basic_ACT");
+  _DAT_1402bf3d4 = 0;
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectFrameInit.py> FUNCTION 14003e500 FUN_14003e500 (GhidraScript)  
+INFO  InspectFrameInit.py> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_14003e500(undefined8 param_1)
+
+{
+  undefined4 *puVar1;
+  float fVar2;
+  char cVar3;
+  short sVar4;
+  undefined4 uVar5;
+  int iVar6;
+  uint uVar7;
+  undefined8 uVar8;
+  void *_Memory;
+  int *piVar9;
+  ushort uVar10;
+  short sVar11;
+  ulonglong uVar12;
+  ulonglong uVar13;
+  uint uVar14;
+  ulonglong uVar15;
+  ulonglong uVar16;
+  ushort uVar17;
+  longlong lVar18;
+  longlong *plVar19;
+  ushort uVar20;
+  longlong lVar21;
+  undefined1 *puVar22;
+  undefined8 *puVar23;
+  int *piVar24;
+  undefined *puVar25;
+  bool bVar26;
+  short local_res10 [4];
+  short local_res18 [4];
+  short local_res20 [4];
+  short local_58 [2];
+  int local_54;
+  int local_50 [6];
+  
+  DAT_14020dbe0 = DAT_1401a76e1;
+  DAT_1401a76d8 = 0x21;
+  DAT_1401a9a30 = 0;
+  DAT_1401ab36e = 0;
+  SDL_strlcpy(&DAT_1401ab460,param_1,0x400);
+  DAT_1401a7830 = 0;
+  FUN_1401187e0(&DAT_14020d370);
+  DAT_1401ab188 = FUN_140143dc0(&DAT_1402bcca0);
+  FUN_140066fe0();
+  FUN_14003a9e0(5);
+  lVar21 = 0x12;
+  SDL_memset(&DAT_14019f138,0,0x12);
+  SDL_memset(&DAT_14019f14a,0,0x12);
+  SDL_memset(&DAT_14019f15d,0,0x12);
+  SDL_memset(&DAT_14019f16f,0,0x12);
+  SDL_memset(&DAT_14019f181,0,0x12);
+  SDL_memset(&DAT_14019f194,0,0x12);
+  lVar18 = 0;
+  _DAT_14019f130 = 0;
+  DAT_14019f15c = 0;
+  DAT_14019f193 = 0;
+  SDL_memset(&DAT_1401d48e0,0,0xd8);
+  SDL_memset(&DAT_1401a9ea0,0,0x100);
+  do {
+    if (*(longlong *)((longlong)&DAT_1401f3930 + lVar18) != 0) {
+      free(*(void **)((longlong)&DAT_1401f3920 + lVar18));
+    }
+    *(undefined8 *)((longlong)&DAT_1401f3920 + lVar18) = 0;
+    *(undefined8 *)((longlong)&DAT_1401f3928 + lVar18) = 0;
+    *(undefined8 *)((longlong)&DAT_1401f3930 + lVar18) = 0;
+    if (*(longlong *)((longlong)&DAT_1401f28c0 + lVar18) != 0) {
+      free(*(void **)((longlong)&DAT_1401f28b0 + lVar18));
+    }
+    *(undefined8 *)((longlong)&DAT_1401f28b0 + lVar18) = 0;
+    *(undefined8 *)((longlong)&DAT_1401f28b8 + lVar18) = 0;
+    *(undefined8 *)((longlong)&DAT_1401f28c0 + lVar18) = 0;
+    lVar18 = lVar18 + 0x20;
+  } while (lVar18 < 0x140);
+  if (DAT_14019f310 != 0) {
+    free(DAT_14019f300);
+  }
+  DAT_14019f300 = (void *)0x0;
+  _DAT_14019f308 = 0;
+  DAT_14019f310 = 0;
+  if (DAT_14019f330 != 0) {
+    free(DAT_14019f320);
+  }
+  DAT_14019f320 = (void *)0x0;
+  _DAT_14019f328 = 0;
+  DAT_14019f330 = 0;
+  if (DAT_14019f350 != 0) {
+    free(DAT_14019f340);
+  }
+  DAT_14019f340 = (void *)0x0;
+  _DAT_14019f348 = 0;
+  DAT_14019f350 = 0;
+  SDL_memset(&DAT_1401aa9c8,0,0x28);
+  SDL_memset(&DAT_1401ab2a0,0,0x50);
+  SDL_memset(&DAT_1401ab240,0,0x20);
+  SDL_memset(&DAT_1401ab2f4,0,6);
+  SDL_memset(&DAT_14019f1d0,0,0x50);
+  SDL_memset(&DAT_1401a9a38,0,0x10);
+  SDL_memset(&DAT_1401ab450,0,8);
+  SDL_memset(&DAT_1401ab8d8,0,10);
+  SDL_memset(&DAT_1401ab8a0,0,0x24);
+  SDL_memset(&DAT_1401ab438,0,0x12);
+  SDL_memset(&DAT_1401aaf80,0,0x48);
+  SDL_memset(&DAT_1401ab0c0,0xffffffff,0x48);
+  SDL_memset(&DAT_1401ab070,0xffffffff,0x48);
+  SDL_memset(&DAT_1401ab110,0xffffffff,0x48);
+  SDL_memset(&DAT_1401aa770,0xffffffff,0x120);
+  SDL_memset(&DAT_1401ab450,0,8);
+  SDL_memset(&DAT_1402bf3a8,0,0xd8);
+  _DAT_1402bf3e8 = 0xffffffffffffffff;
+  _DAT_1402bf408 = 0xffffffff;
+  _DAT_1402bf3ac = 0;
+  _DAT_1402bf3c0 = SDL_GetTicks();
+  _DAT_1402bf3cc = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuFrame_Basic_ACT");
+  _DAT_1402bf3d4 = 0;
+  FUN_140100260(&DAT_1402bf3a8,0);
+  lVar18 = 0x1401aa65f;
+  DAT_1401ab34a = 0;
+  DAT_1401ab998 = 0xffffffff;
+  DAT_1401ab262 = 0;
+  uVar20 = 0;
+  DAT_1401ab2f0 = 0;
+  DAT_1401f54b0 = 0;
+  do {
+    *(undefined4 *)(lVar18 + -0xf) = 0xffffffff;
+    *(undefined2 *)(lVar18 + -1) = 0;
+    *(undefined1 *)(lVar18 + -3) = 0;
+    *(undefined2 *)(lVar18 + -5) = 0;
+    lVar18 = lVar18 + 0x10;
+    lVar21 = lVar21 + -1;
+  } while (lVar21 != 0);
+  _DAT_1401aa950 = _DAT_1401728d0;
+  _DAT_1401aa958 = _UNK_1401728d8;
+  _DAT_1401aa8e8 = 0;
+  puVar22 = &DAT_1401ab8d8;
+  uVar17 = uVar20;
+  do {
+    cVar3 = FUN_140151160(uVar17 + 0x1e);
+    if (cVar3 == '\x01') {
+      _DAT_1401aa8e8 = _DAT_1401aa8e8 + 1;
+      *puVar22 = 1;
+    }
+    uVar7 = _DAT_1401aa8e8;
+    uVar17 = uVar17 + 1;
+    puVar22 = puVar22 + 1;
+  } while (uVar17 < 4);
+  uVar15 = 0;
+  _DAT_14019f0e8 = _DAT_140172930;
+  uVar13 = 0;
+  _DAT_14019f0c8 = _DAT_140172930;
+  uRam000000014019f0d0 = _UNK_140172938;
+  _DAT_14019f0d8 = _DAT_140172930;
+  uRam000000014019f0e0 = _UNK_140172938;
+  if (_DAT_1401aa8e8 != 0) {
+    do {
+      cVar3 = (&DAT_1401ab8d8)[uVar15];
+      while (uVar14 = (uint)uVar15, cVar3 == '\0') {
+        uVar17 = (short)uVar15 + 1;
+        uVar15 = (ulonglong)uVar17;
+        uVar14 = (uint)uVar17;
+        if (3 < uVar17) break;
+        cVar3 = (&DAT_1401ab8d8)[uVar17];
+      }
+      uVar17 = (short)uVar14 + 1;
+      uVar15 = (ulonglong)uVar17;
+      (&DAT_14019f0c8)[uVar13] = uVar14;
+    } while ((uVar17 < 4) &&
+            (uVar17 = (short)uVar13 + 1, uVar13 = (ulonglong)uVar17, uVar17 < uVar7));
+  }
+  cVar3 = FUN_140151160(0xc9);
+  if (cVar3 != '\0') {
+    DAT_1401ab1d8 = DAT_1401ab1d8 | 2;
+  }
+  _DAT_1401aa638 = _DAT_140172920;
+  _DAT_1401aa640 = _UNK_140172928;
+  FUN_140103570(&DAT_1401f3b90);
+  puVar23 = &DAT_1401aa890;
+  lVar18 = 2;
+  plVar19 = &DAT_1401aa890;
+  do {
+    if (*plVar19 != 0) {
+      FUN_1401698c0();
+    }
+    *plVar19 = 0;
+    plVar19 = plVar19 + 1;
+    lVar18 = lVar18 + -1;
+  } while (lVar18 != 0);
+  lVar18 = DAT_14020d3f0;
+  if (DAT_14020dbc0 != '\0') {
+    lVar18 = DAT_14020d3c0;
+  }
+  if (DAT_1401a76e1 != '\0') {
+    DAT_14020dbc0 = '\0';
+    lVar18 = DAT_14020d3c0;
+  }
+  do {
+    uVar8 = FUN_1401697c0(&DAT_1402c15d0,*(undefined4 *)(lVar18 + 0x10),
+                          *(undefined4 *)(lVar18 + 0x14));
+    *puVar23 = uVar8;
+    puVar23 = puVar23 + 1;
+  } while ((longlong)puVar23 < 0x1401aa8a0);
+  DAT_14019f11c = 0xffff;
+  DAT_14019f120 = 0xffff;
+  DAT_14019f124 = 0xffff;
+  cVar3 = FUN_140151160(0x13);
+  if (cVar3 != '\0') {
+    FUN_140118ee0(&DAT_14020d370);
+  }
+  SDL_UpperBlit(DAT_14020d3f0,0,*(undefined8 *)(DAT_1401aa890 + 8),0);
+  cVar3 = FUN_140053000(&DAT_1401f4718,&DAT_14019f220,&DAT_1401ab460);
+  if (cVar3 != '\0') {
+    DAT_1401aa8e4 = (uint)DAT_14019f278;
+    FUN_14003d610(&DAT_1401f5430,&DAT_14019f220);
+    if (DAT_14019f2b0 != '\0') {
+      DAT_1401ab1d8 = DAT_1401ab1d8 | 1;
+    }
+    if (DAT_1401aa8e4 != 0) {
+      FUN_140067310(&DAT_1401f9d38,&DAT_1401ab460);
+      DAT_14019f124 = 0xffff;
+      DAT_14019f120 = 0xffff;
+      DAT_14019f11c = 0xffff;
+      SDL_memset(&DAT_1401d48e0,0,0xd8);
+      fVar2 = DAT_1401728bc;
+      DAT_14019f288 = DAT_14019f280;
+      do {
+        if (DAT_14019f288 == (undefined8 *)0x0) break;
+        puVar23 = (undefined8 *)DAT_14019f288[1];
+        puVar1 = (undefined4 *)*DAT_14019f288;
+        if (puVar23 == (undefined8 *)0x0) {
+          puVar23 = (undefined8 *)DAT_14019f288[1];
+          _DAT_14019f290 = DAT_14019f288;
+        }
+        DAT_14019f288 = puVar23;
+        if (puVar1 == (undefined4 *)0x0) break;
+        uVar15 = (ulonglong)uVar20;
+        puVar25 = &DAT_1401d49c0 + uVar15 * 0x39f8;
+        FUN_14007de60(puVar25,uVar20,1);
+        SDL_memset(&DAT_1401ab9b0,0,0xe0);
+        lVar18 = uVar15 * 0x20;
+        bVar26 = DAT_1401ab303 == '\x01';
+        *(short *)(&DAT_1401a9b58 + lVar18) = (short)(int)((float)(int)puVar1[2] * fVar2);
+        *(undefined2 *)(&DAT_1401a9b5a + lVar18) = *(undefined2 *)(puVar1 + 3);
+        (&DAT_1401a9b5c)[lVar18] = 0;
+        if (bVar26) {
+          FUN_1400875a0(puVar25,1);
+          *(short *)(&DAT_1401a9b58 + lVar18) = 0x350 - *(short *)(&DAT_1401a9b58 + lVar18);
+        }
+        FUN_140078980(puVar25,&DAT_1401a9b40 + lVar18,*puVar1,DAT_14019f2d8,DAT_14019f2dc);
+        FUN_14014ccf0(&DAT_1401a6d80,"Battle_EnemyInit",1,uVar20 + 1);
+        if ((*(byte *)((&DAT_1401d49f0)[uVar15 * 0x73f] + 8) & 0x20) != 0) {
+          DAT_1401aa979 = 1;
+        }
+        if (*(short *)(puVar1 + 1) == 1) {
+          FUN_140085560(puVar25,1);
+        }
+        uVar20 = uVar20 + 1;
+      } while (uVar20 != 8);
+      uVar7 = _DAT_1401aa8e8;
+      uVar15 = 0;
+      uVar17 = 0;
+      uVar20 = uVar17;
+      if (_DAT_1401aa8e8 != 0) {
+        do {
+          uVar10 = uVar20 + 1;
+          (&DAT_1401a9c5c)[(ulonglong)uVar20 * 0x20] = 1;
+          uVar20 = uVar10;
+        } while (uVar10 < uVar7);
+      }
+      if (uVar7 == 1) {
+        sVar4 = 0x2ba;
+        _DAT_1401a9c58 = 0x11f02ba;
+        sVar11 = 0x11f;
+      }
+      else if (uVar7 == 2) {
+        sVar4 = 0x289;
+        _DAT_1401a9c58 = 0x1130289;
+        sVar11 = 0x113;
+        _DAT_1401a9c78 = 0x17202df;
+      }
+      else if (uVar7 == 3) {
+        sVar4 = 0x29b;
+        _DAT_1401a9c58 = 0x110029b;
+        sVar11 = 0x110;
+        _DAT_1401a9c78 = 0x16102ec;
+        _DAT_1401a9c98 = 0xe00264;
+      }
+      else if (uVar7 == 4) {
+        sVar4 = 0x2b8;
+        _DAT_1401a9c58 = 0x12a02b8;
+        sVar11 = 0x12a;
+        _DAT_1401a9c78 = 0x1150292;
+        _DAT_1401a9c98 = 0xd90266;
+        _DAT_1401a9cb8 = 0x167030b;
+      }
+      else {
+        sVar11 = (short)((uint)_DAT_1401a9c58 >> 0x10);
+        sVar4 = (short)_DAT_1401a9c58;
+      }
+      DAT_1401ab1b8 = sVar4 + 0xd;
+      DAT_1401aa8f0 = 0;
+      DAT_1401ab1bc = sVar11 + -0x91;
+      _DAT_1401ab1c0 = DAT_1401a9c78 + 6;
+      _DAT_1401ab1c4 = DAT_1401a9c7a + -0xaa;
+      _DAT_1401ab1c8 = DAT_1401a9c98 + 0xd;
+      _DAT_1401ab1cc = DAT_1401a9c9a + -0x9b;
+      _DAT_1401ab1d0 = DAT_1401a9cb8 + -6;
+      _DAT_1401ab1d4 = DAT_1401a9cba + -0xa3;
+      uVar13 = uVar15;
+      uVar20 = uVar17;
+      if (uVar7 != 0) {
+        do {
+          uVar12 = (ulonglong)uVar20;
+          lVar18 = uVar12 * 0x3fa8;
+          puVar25 = &DAT_1401aba90 + lVar18;
+          FUN_14007de60(puVar25,uVar20,0);
+          iVar6 = (&DAT_14019f0c8)[uVar12];
+          if (iVar6 < 0) {
+            *(undefined2 *)(&DAT_1401afa24 + lVar18) = 0xffff;
+          }
+          else {
+            if (DAT_1401ab303 == '\x01') {
+              FUN_1400875a0(puVar25,1);
+              (&DAT_1401a9c58)[uVar12 * 0x10] = 0x350 - (&DAT_1401a9c58)[uVar12 * 0x10];
+              (&DAT_1401ab1b8)[uVar12 * 2] = 0x340 - (&DAT_1401ab1b8)[uVar12 * 2];
+              iVar6 = (&DAT_14019f0c8)[uVar12];
+            }
+            FUN_14006f260(puVar25,&DAT_1401faf00 + (longlong)iVar6 * 0x1a,
+                          &DAT_1401fb0a0 + (longlong)iVar6 * 0x60,&DAT_1401a9c40 + uVar12 * 0x20);
+            iVar6 = (&DAT_14019f0c8)[uVar12];
+            *(undefined2 *)(&DAT_1401afa24 + lVar18) = *(undefined2 *)(&DAT_14019f0c8 + uVar12);
+            uVar5 = FUN_140149d60(&DAT_1401a6d80,"NewGameChar",iVar6 + 1,"ItemTempID");
+            *(undefined4 *)(&DAT_1401abab8 + lVar18) = uVar5;
+            iVar6 = (&DAT_14019f0c8)[uVar12];
+            *(undefined4 *)(&DAT_1401af470 + lVar18) = 0;
+            *(undefined2 *)(&DAT_1401afa26 + lVar18) =
+                 *(undefined2 *)(&DAT_14019f078 + (longlong)iVar6 * 4);
+            cVar3 = FUN_14007e8e0(puVar25);
+            if (cVar3 == '\x01') {
+              DAT_1401ab1f2 = DAT_1401ab1f2 + 1;
+            }
+            else {
+              iVar6 = (&DAT_14019f0c8)[uVar12];
+              if (*(short *)((&DAT_1401fb288)[(longlong)iVar6 * 0x10] + 0x6e) == 0x1e) {
+                (&DAT_1401aba9c)[lVar18] = 1;
+              }
+              if (*(short *)((&DAT_1401fb290)[(longlong)iVar6 * 0x10] + 0x6e) == 0x1e) {
+                (&DAT_1401aba9c)[lVar18] = 1;
+              }
+              DAT_1401aa8f0 = DAT_1401aa8f0 + 1;
+            }
+            FUN_14014ccf0(&DAT_1401a6d80,"Battle_PlayerInit",1,(int)uVar13 + 1);
+          }
+          uVar20 = uVar20 + 1;
+          uVar13 = (ulonglong)uVar20;
+        } while (uVar20 < _DAT_1401aa8e8);
+      }
+      FUN_14003d9e0();
+      FUN_14003da40();
+      uVar20 = uVar17;
+      if (_DAT_1401aa8e8 != 0) {
+        do {
+          uVar13 = (ulonglong)uVar20;
+          puVar25 = &DAT_1401aba90 + uVar13 * 0x3fa8;
+          FUN_14006f9b0(puVar25,&DAT_1401fb250 + (int)((&DAT_14019f0c8)[uVar13] << 4));
+          FUN_14006feb0(puVar25,(&DAT_1401fb228)[(int)(&DAT_14019f0c8)[uVar13]]);
+          FUN_140071150(puVar25,0x10,0x1f,&DAT_1401af02c + uVar13 * 0x3fa8);
+          FUN_14006fe90(puVar25,&DAT_1401fb450);
+          FUN_14008cb70(puVar25,(&DAT_1401faf50)[(longlong)(int)(&DAT_14019f0c8)[uVar13] * 0xd]);
+          uVar20 = uVar20 + 1;
+        } while (uVar20 < _DAT_1401aa8e8);
+      }
+      fVar2 = DAT_1401728c0;
+      uVar20 = uVar17;
+      if (_DAT_1401aa8e8 != 0) {
+        do {
+          uVar13 = (ulonglong)uVar20;
+          puVar25 = &DAT_1401aba90 + uVar13 * 0x3fa8;
+          FUN_1400870d0(puVar25,local_50,&local_54);
+          *(int *)(&DAT_1401aab78 + uVar13 * 4) = local_50[0];
+          local_res18[0] = 0;
+          local_res10[0] = 0;
+          iVar6 = (int)(((float)local_50[0] / (float)local_54) * fVar2);
+          *(int *)(&DAT_1401aaa38 + uVar13 * 4) = iVar6;
+          *(int *)(&DAT_1401aaa10 + uVar13 * 4) = iVar6;
+          FUN_14008ba20(puVar25,local_res18,local_res10);
+          *(int *)(&DAT_1401aabc8 + uVar13 * 4) = (int)local_res10[0];
+          local_58[0] = 0;
+          local_res20[0] = 0;
+          iVar6 = (int)(((float)(int)local_res10[0] / (float)(int)local_res18[0]) * fVar2);
+          *(int *)(&DAT_1401aaa88 + uVar13 * 4) = iVar6;
+          *(int *)(&DAT_1401aaa60 + uVar13 * 4) = iVar6;
+          FUN_14008ba50(puVar25,local_58,local_res20);
+          *(int *)(&DAT_1401aac18 + uVar13 * 4) = (int)local_res20[0];
+          iVar6 = (int)(((float)(int)local_res20[0] / (float)(int)local_58[0]) * fVar2);
+          *(int *)(&DAT_1401aaad8 + uVar13 * 4) = iVar6;
+          *(int *)(&DAT_1401aaab0 + uVar13 * 4) = iVar6;
+          uVar5 = 0;
+          if (*(undefined4 **)(&DAT_1401abab0 + uVar13 * 0x3fa8) != (undefined4 *)0x0) {
+            uVar5 = **(undefined4 **)(&DAT_1401abab0 + uVar13 * 0x3fa8);
+          }
+          uVar20 = uVar20 + 1;
+          *(undefined4 *)(&DAT_1401aab28 + uVar13 * 4) = uVar5;
+          *(undefined4 *)(&DAT_1401aab00 + uVar13 * 4) = uVar5;
+        } while (uVar20 < _DAT_1401aa8e8);
+      }
+      FUN_1400de480();
+      DAT_1401ab260 = 0;
+      if ((ushort)DAT_1401ab264 < 3) {
+        uVar20 = uVar17;
+        if (0 < DAT_1401ab264) {
+          do {
+            uVar13 = (ulonglong)_DAT_1401aa8e8;
+            bVar26 = DAT_1401ab303 == '\x01';
+            *(undefined4 *)(&DAT_1401a9c58 + uVar13 * 0x10) = 0x13603e1;
+            (&DAT_1401a9c5c)[uVar13 * 0x20] = 1;
+            if (bVar26) {
+              (&DAT_1401a9c58)[uVar13 * 0x10] = 0xff6f;
+            }
+            FUN_14006f750(&DAT_1401aba90 + uVar13 * 0x3fa8,
+                          *(undefined4 *)(DAT_1401ab268 + (ulonglong)uVar20 * 4),
+                          &DAT_1401a9c40 + uVar13 * 0x20,DAT_1401abaa0);
+            FUN_140085850(&DAT_1401aba90 + (ulonglong)_DAT_1401aa8e8 * 0x3fa8,1);
+            FUN_14014ccf0(&DAT_1401a6d80,"Battle_NPCInit",1,_DAT_1401aa8e8 + 1);
+            if (DAT_1401ab303 == '\0') {
+              FUN_1400875a0(&DAT_1401aba90 + (ulonglong)_DAT_1401aa8e8 * 0x3fa8,1);
+            }
+            _DAT_1401aa8e8 = _DAT_1401aa8e8 + 1;
+            DAT_1401ab260 = DAT_1401ab260 + 1;
+          } while ((DAT_1401ab260 != 2) && (uVar20 = uVar20 + 1, (int)(uint)uVar20 < DAT_1401ab264))
+          ;
+        }
+      }
+      else {
+        _Memory = calloc((longlong)DAT_1401ab264,4);
+        do {
+          do {
+            uVar20 = FUN_140167e10(DAT_1401ab264);
+            uVar7 = _DAT_1401aa8e8;
+            uVar13 = (ulonglong)uVar20;
+          } while (*(int *)((longlong)_Memory + uVar13 * 4) == 1);
+          uVar12 = (ulonglong)_DAT_1401aa8e8;
+          uVar16 = (ulonglong)_DAT_1401aa8e8;
+          bVar26 = DAT_1401ab303 == '\x01';
+          *(undefined4 *)(&DAT_1401a9c58 + uVar12 * 0x10) = 0x13603e1;
+          (&DAT_1401a9c5c)[uVar12 * 0x20] = 1;
+          if (bVar26) {
+            (&DAT_1401a9c58)[uVar12 * 0x10] = 0xff6f;
+            FUN_1400875a0(&DAT_1401aba90 + uVar16 * 0x3fa8,CONCAT71((uint7)(uint3)(uVar7 >> 8),1));
+            uVar7 = _DAT_1401aa8e8;
+          }
+          lVar18 = (ulonglong)uVar7 * 0x3fa8;
+          *(short *)(&DAT_1401aba94 + lVar18) = (short)uVar7;
+          FUN_14006f750(&DAT_1401aba90 + lVar18,*(undefined4 *)(DAT_1401ab268 + uVar13 * 4),
+                        &DAT_1401a9c40 + (ulonglong)uVar7 * 0x20,DAT_1401abaa0);
+          FUN_140085850(&DAT_1401aba90 + (ulonglong)_DAT_1401aa8e8 * 0x3fa8,1);
+          if (DAT_1401ab303 == '\0') {
+            FUN_1400875a0(&DAT_1401aba90 + (ulonglong)_DAT_1401aa8e8 * 0x3fa8,1);
+          }
+          FUN_14014ccf0(&DAT_1401a6d80,"Battle_NPCInit",1,_DAT_1401aa8e8 + 1);
+          _DAT_1401aa8e8 = _DAT_1401aa8e8 + 1;
+          uVar20 = DAT_1401ab260 + 1;
+          DAT_1401ab260 = uVar20;
+          *(undefined4 *)((longlong)_Memory + uVar13 * 4) = 1;
+        } while (uVar20 != 2);
+        free(_Memory);
+      }
+      DAT_1401aa8ec = _DAT_1401aa8e8;
+      FUN_140048500();
+      FUN_1400485f0();
+      uVar7 = DAT_1401aa8e4;
+      piVar24 = &DAT_1401aa8f8;
+      piVar9 = &DAT_1401ab3f0;
+      uVar13 = uVar15;
+      uVar12 = uVar15;
+      do {
+        if (*piVar9 < 8) {
+          *piVar24 = *piVar9;
+          uVar14 = (int)uVar12 + 1;
+          uVar12 = (ulonglong)uVar14;
+          piVar24 = piVar24 + 1;
+          if (uVar14 == uVar7) break;
+        }
+        uVar14 = (int)uVar13 + 1;
+        uVar13 = (ulonglong)uVar14;
+        piVar9 = piVar9 + 1;
+      } while ((int)uVar14 < 0x12);
+      uVar20 = uVar17;
+      if (0 < (int)uVar7) {
+        do {
+          local_54 = FUN_140167e10(6);
+          if (0 < local_54) {
+            uVar10 = uVar17;
+            do {
+              FUN_140078d00(&DAT_1401d49c0 + (ulonglong)uVar20 * 0x39f8,0);
+              uVar10 = uVar10 + 1;
+            } while ((int)(uint)uVar10 < local_54);
+          }
+          uVar20 = uVar20 + 1;
+        } while ((int)(uint)uVar20 < (int)DAT_1401aa8e4);
+      }
+      if (_DAT_1401aa8e8 != 0) {
+        do {
+          FUN_14007e9a0(&DAT_1401aba90 + uVar15 * 0x3fa8);
+          uVar20 = (short)uVar15 + 1;
+          uVar15 = (ulonglong)uVar20;
+        } while (uVar20 < _DAT_1401aa8e8);
+      }
+      if ((_DAT_1401aa8e8 - DAT_1401ab260) - DAT_1401ab2fc <= (uint)DAT_1401ab1f2) {
+        DAT_1401aa938 = 0x67;
+      }
+      FUN_14014ccf0(&DAT_1401a6d80,"Battle_Enter",0);
+      return;
+    }
+  }
+  uVar8 = FUN_1401668f0(0x40b);
+  FUN_1400f1a60("LoadBattle","%s : ID:%s",uVar8,&DAT_1401ab460);
+  return;
+}
+
+ (GhidraScript)  
+INFO  InspectFrameInit.py> FUNCTION 140105800 FUN_140105800 (GhidraScript)  
+INFO  InspectFrameInit.py> 
+undefined * FUN_140105800(ulonglong param_1,ulonglong param_2,char param_3)
+
+{
+  short sVar1;
+  undefined *puVar2;
+  undefined8 uVar3;
+  longlong lVar4;
+  undefined *puVar5;
+  
+  if ((int)param_1 != 0) {
+    if (param_3 != '\0') {
+      puVar2 = (undefined *)FUN_140105550();
+      if (puVar2 != (undefined *)0x0) {
+        if ((*(longlong *)(puVar2 + 0x10) == 0) && (*(longlong *)(puVar2 + 0x28) != 0)) {
+          uVar3 = SDL_AllocFormat(0x15331002);
+          lVar4 = SDL_ConvertSurface(*(undefined8 *)(puVar2 + 0x28),uVar3,0);
+          if (lVar4 != 0) {
+            uVar3 = FUN_1401023f0(*(undefined8 *)(lVar4 + 0x20),puVar2 + 8,
+                                  *(undefined4 *)(*(longlong *)(puVar2 + 0x28) + 0x10),
+                                  *(undefined4 *)(*(longlong *)(puVar2 + 0x28) + 0x14),0x10);
+            *(undefined8 *)(puVar2 + 0x10) = uVar3;
+            SDL_FreeSurface(lVar4);
+            if (*(longlong *)(puVar2 + 0x10) != 0) {
+              puVar2[0x30] = 1;
+            }
+          }
+        }
+        return puVar2;
+      }
+      if (DAT_1401a5ec8 <= DAT_14020bda0) {
+        FUN_140105430();
+      }
+      puVar5 = (undefined *)FUN_140105130(param_1 & 0xffffffff,param_2 & 0xffff,1);
+      puVar2 = DAT_14020bda8;
+      if (puVar5 != (undefined *)0x0) {
+        puVar2 = puVar5;
+      }
+      return puVar2;
+    }
+    sVar1 = FUN_14011fa80(param_1,param_2,&DAT_14020bdc0);
+    if (sVar1 != 0) {
+      if (DAT_14020bdf0 != '\0') {
+        FUN_1401021d0(&DAT_14020bdc0);
+      }
+      return &DAT_14020bdc0;
+    }
+  }
+  return (undefined *)0x0;
+}
+
+ (GhidraScript)  
+INFO  InspectFrameInit.py> FUNCTION 140159a90 FUN_140159a90 (GhidraScript)  
+INFO  InspectFrameInit.py> 
+void FUN_140159a90(longlong param_1)
+
+{
+  undefined4 uVar1;
+  undefined4 uVar2;
+  void *pvVar3;
+  undefined8 uVar4;
+  longlong lVar5;
+  int iVar6;
+  longlong lVar7;
+  
+  *(undefined4 *)(param_1 + 0x760) = 4;
+  pvVar3 = malloc(0x20);
+  *(void **)(param_1 + 0x768) = pvVar3;
+  iVar6 = 0;
+  if (0 < *(int *)(param_1 + 0x760)) {
+    lVar7 = 0;
+    do {
+      iVar6 = iVar6 + 1;
+      uVar4 = FUN_140149710(&DAT_1401a6d80,"NewGameChar",iVar6,&DAT_140173a24);
+      uVar4 = FUN_140166910(uVar4);
+      lVar5 = SDL_strlen(uVar4);
+      pvVar3 = malloc(lVar5 + 1);
+      *(void **)(lVar7 + *(longlong *)(param_1 + 0x768)) = pvVar3;
+      SDL_strlcpy(*(undefined8 *)(lVar7 + *(longlong *)(param_1 + 0x768)),uVar4,lVar5 + 1);
+      lVar7 = lVar7 + 8;
+    } while (iVar6 < *(int *)(param_1 + 0x760));
+  }
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","MenuFrame_Basic_ACT");
+  *(undefined4 *)(param_1 + 0x66c) = uVar1;
+  *(undefined4 *)(param_1 + 0x674) = 0;
+  if (*(int *)(param_1 + 0x6bc) == 0) {
+    FUN_140100260(param_1 + 0x648,0);
+  }
+  SDL_memset(param_1 + 0x2e8,0,0xd8);
+  *(undefined8 *)(param_1 + 0x328) = 0xffffffffffffffff;
+  *(undefined4 *)(param_1 + 0x348) = 0xffffffff;
+  *(undefined4 *)(param_1 + 0x2ec) = 0;
+  uVar1 = SDL_GetTicks();
+  *(undefined4 *)(param_1 + 0x300) = uVar1;
+  SDL_memset(param_1 + 0x3c0,0,0xd8);
+  *(undefined8 *)(param_1 + 0x400) = 0xffffffffffffffff;
+  *(undefined4 *)(param_1 + 0x420) = 0xffffffff;
+  *(undefined4 *)(param_1 + 0x3c4) = 0;
+  uVar1 = SDL_GetTicks();
+  *(undefined4 *)(param_1 + 0x3d8) = uVar1;
+  SDL_memset(param_1 + 0x498,0,0xd8);
+  *(undefined8 *)(param_1 + 0x4d8) = 0xffffffffffffffff;
+  *(undefined4 *)(param_1 + 0x4f8) = 0xffffffff;
+  *(undefined4 *)(param_1 + 0x49c) = 0;
+  uVar1 = SDL_GetTicks();
+  *(undefined4 *)(param_1 + 0x4b0) = uVar1;
+  SDL_memset(param_1 + 0x570,0,0xd8);
+  *(undefined8 *)(param_1 + 0x5b0) = 0xffffffffffffffff;
+  *(undefined4 *)(param_1 + 0x5d0) = 0xffffffff;
+  *(undefined4 *)(param_1 + 0x574) = 0;
+  uVar1 = SDL_GetTicks();
+  *(undefined4 *)(param_1 + 0x588) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarBodyACT");
+  *(undefined4 *)(param_1 + 0x30c) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarBodyQQ");
+  *(undefined4 *)(param_1 + 0x314) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarBlockACT");
+  *(undefined4 *)(param_1 + 0x3e4) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarBlockQQ");
+  *(undefined4 *)(param_1 + 0x3ec) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarUpACT");
+  *(undefined4 *)(param_1 + 0x4bc) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarUpQQ");
+  *(undefined4 *)(param_1 + 0x4c4) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarDownACT");
+  *(undefined4 *)(param_1 + 0x594) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarDownQQ");
+  *(undefined4 *)(param_1 + 0x59c) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarUpQQ");
+  *(undefined4 *)(param_1 + 0x720) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarUp_Glow_QQ");
+  *(undefined4 *)(param_1 + 0x724) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarDownQQ");
+  *(undefined4 *)(param_1 + 0x728) = uVar1;
+  uVar1 = FUN_140149080(&DAT_1401a6d80,"ACTdef","ScrollBarDown_Glow_QQ");
+  *(undefined4 *)(param_1 + 0x72c) = uVar1;
+  uVar1 = FUN_140149b70(&DAT_1401a6d80,"ACTdef","DIALOG_PRESS_QQ");
+  uVar2 = FUN_140149b70(&DAT_1401a6d80,"ACTdef","DIALOG_PRESS_ACT");
+  *(undefined1 *)(param_1 + 0xc) = 1;
+  *(undefined4 *)(param_1 + 0x7c) = uVar2;
+  *(undefined4 *)(param_1 + 0x84) = uVar1;
+  FUN_140100260(param_1 + 0x58,0);
+  *(undefined1 *)(param_1 + 0xd) = 1;
+  uVar1 = FUN_140149b70(&DAT_1401a6d80,"ACTdef","DIALOG_NPAGE_QQ");
+  uVar2 = FUN_140149b70(&DAT_1401a6d80,"ACTdef","DIALOG_NPAGE_ACT");
+  *(undefined1 *)(param_1 + 0x174) = 1;
+  *(undefined4 *)(param_1 + 0x1e4) = uVar2;
+  *(undefined4 *)(param_1 + 0x1ec) = uVar1;
+  FUN_140100260(param_1 + 0x1c0,0);
+  *(undefined1 *)(param_1 + 0x175) = 1;
+  return;
+}
+
+ (GhidraScript)  

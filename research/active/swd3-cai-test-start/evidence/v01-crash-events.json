@@ -1,0 +1,12 @@
+[
+  {
+    "TimeCreated": "2026-09-07T21:37:28.3861152+08:00",
+    "Id": 1000,
+    "Message": "失敗的應用程式名稱： swd3.exe，版本： 4.0.5.0，時間戳記： 0x64e33002\r\n錯誤模組名稱： swd3.exe， 版本： 4.0.5.0，時間戳記： 0x64e33002\r\n例外狀況代碼： 0xc0000005\r\n錯誤位移： 0x000000000015a18e\r\n錯誤處理常式識別碼： 0x74A8\r\n失敗的應用程式開始時間： 0x1DD3ECDFA0B904C\r\nFaulting 應用程式路徑： D:\\SteamLibrary\\steamapps\\common\\SWD3\\swd3.exe\r\nFaulting 模組路徑： D:\\SteamLibrary\\steamapps\\common\\SWD3\\swd3.exe\r\nReport 識別碼： 51f29840-1f9f-4889-b340-d6d4b66d6466\r\nFaulting 套件完整名稱： \r\nFaulting 套件相對應用程式識別碼： "
+  },
+  {
+    "TimeCreated": "2026-09-07T21:36:29.4500646+08:00",
+    "Id": 1000,
+    "Message": "失敗的應用程式名稱： swd3.exe，版本： 4.0.5.0，時間戳記： 0x64e33002\r\n錯誤模組名稱： swd3.exe， 版本： 4.0.5.0，時間戳記： 0x64e33002\r\n例外狀況代碼： 0xc0000005\r\n錯誤位移： 0x000000000015a18e\r\n錯誤處理常式識別碼： 0xBD50\r\n失敗的應用程式開始時間： 0x1DD3ECDAA0C1866\r\nFaulting 應用程式路徑： D:\\SteamLibrary\\steamapps\\common\\SWD3\\swd3.exe\r\nFaulting 模組路徑： D:\\SteamLibrary\\steamapps\\common\\SWD3\\swd3.exe\r\nReport 識別碼： 4e4d3efb-6a6a-43c6-b21e-0230172fc8f6\r\nFaulting 套件完整名稱： \r\nFaulting 套件相對應用程式識別碼： "
+  }
+]

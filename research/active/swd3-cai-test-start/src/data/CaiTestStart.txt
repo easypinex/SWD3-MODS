@@ -1,0 +1,4 @@
+CST_TITLE 四人滿裝測試開局
+CST_READY 整備完成：四人六十級、完整配裝與修練
+CST_SAVE 關閉後開啟存檔畫面；請選空槽另存
+CST_FAILED 整備未完成，請回報Console並重新開局

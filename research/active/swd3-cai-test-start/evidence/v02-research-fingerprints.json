@@ -1,0 +1,34 @@
+[
+  {
+    "Path": "D:\\SteamLibrary\\steamapps\\common\\SWD3\\swd3.exe",
+    "Hash": "63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523"
+  },
+  {
+    "Path": "C:\\Users\\Andy\\AppData\\Local\\CrashDumps\\swd3.exe.29864.dmp",
+    "Hash": "432BB6495BDA980FCA872122332DAF8F285F71E559E28F4AD88CE2B38E50A2DE"
+  },
+  {
+    "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-cai-test-start\\tools\\ReadCrashDump.py",
+    "Hash": "BDEAAABE1093CFCAD40B0805AA7C27BB38D34451BDA44A981190B4467ED7E270"
+  },
+  {
+    "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-cai-test-start\\tools\\InspectMenuCrash.py",
+    "Hash": "E4E1A734359AFEA05041F0DCDAA84245582737033A97EE8B173A2F0F6BF8610E"
+  },
+  {
+    "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-cai-test-start\\tools\\InspectSharedFrameAccess.py",
+    "Hash": "25351B53C75D5FBC9F235B672DF3AD731184C7E371909CF41A9283C6ECA87582"
+  },
+  {
+    "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-cai-test-start\\tools\\InspectSaveEntry.py",
+    "Hash": "7B50CBCB17E3A8BE83C33E426A740EED0F38058F4376A36618EC3D5B83BF1174"
+  },
+  {
+    "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-cai-test-start\\tools\\InspectFrameInit.py",
+    "Hash": "AF692C38EB655F9C8291C5AEF18365AEA863F2ED76D61104A1CD3B863CB3F277"
+  },
+  {
+    "Path": "D:\\workspace\\SWD3-MODS\\research\\active\\swd3-cai-test-start\\tools\\InspectFrameRepair.py",
+    "Hash": "990BCE20E35B9D15657121E45D902BA137655A13927E3FD35DDDC07B5A1AD5D7"
+  }
+]

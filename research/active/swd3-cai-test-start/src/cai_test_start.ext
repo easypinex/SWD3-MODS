@@ -1,0 +1,11 @@
+MODName 四人滿裝測試開局
+MODAuthor Andy
+MODDate 2026,9,7
+MODVersion 0,3
+MODinfo 新遊戲建立四人六十級滿裝測試隊伍；請存到空槽，完成後停用本包。%Q
+MODGameVersion 4,0
+MODsystemMOD 0
+MODbundleSave 1
+DAT 0,0,CaiTestStart.txt,Test setup text
+DAT 2,0,CaiTestProfile.lua,Fixed endgame profile
+DAT 2,0,CaiTestStart.lua,Native new game setup
