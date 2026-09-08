@@ -1,0 +1,22 @@
+{
+  "project": "swd3-proficiency-multiplier-mod",
+  "version": "1.1",
+  "workshopId": "3787409181",
+  "fileName": "proficiency_multiplier.ssmod",
+  "bytes": 2209,
+  "sha256": "580CB912620E79A315F3705E9CAEA198A097A5E2A0FC47329F9A22DE77958DB7",
+  "dat": [
+    {
+      "name": "00_ProficiencyMultiplierConfig.lua",
+      "sha256": "8F14AACCF0248E29CAC031F5D36CF3F7CE049731EF47C3E4D3051EF93AE6B90E"
+    },
+    {
+      "name": "ProficiencyMultiplier.lua",
+      "sha256": "5A29DA23857C8F48425E4DFF03948F1EF2359BD6BE5E8C73F16D0F67208BC33C"
+    }
+  ],
+  "auditDate": "2026-09-08",
+  "decision": "維持 Steam v1.1；本機移除滑桿並原樣回復遠端來源",
+  "roundtrip": "all DAT and metadata verified",
+  "steamOperation": "unchanged"
+}

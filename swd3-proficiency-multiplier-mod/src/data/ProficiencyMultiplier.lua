@@ -1,57 +1,41 @@
 -- 軒轅劍參：雲和山的彼端 Steam 版
--- 武器熟練度 100 倍 MOD：倍率核心
+-- 武器熟練度 100 倍 MOD
 
 SWD3ProficiencyMultiplier = SWD3ProficiencyMultiplier or {}
 SWD3ProficiencyMultiplier.multiplier =
     SWD3ProficiencyMultiplier.multiplier or 100.0
 
-local DEFAULT_MULTIPLIER = 100.0
-local SETTING_KEY = 'SWD3ProficiencyMultiplierValue'
-local PRESET_MULTIPLIERS = { 0.5, 1.0, 2.0, 5.0, 10.0, 20.0, 50.0, 100.0 }
+local MIN_MULTIPLIER = 0.5
+local MAX_MULTIPLIER = 100.0
 local originalThresholds = {}
 
-local function normalizeMultiplier(value)
-    local numericValue = tonumber(value)
+local function applyProficiencyMultiplier()
+    local multiplier = tonumber(SWD3ProficiencyMultiplier.multiplier)
 
-    if numericValue ~= nil then
-        for _, preset in ipairs(PRESET_MULTIPLIERS) do
-            if math.abs(numericValue - preset) < 0.0001 then
-                return preset
-            end
-        end
+    if multiplier == nil then
+        log('[ProficiencyMultiplier] Invalid multiplier; using 100.0')
+        multiplier = 100.0
+    elseif multiplier < MIN_MULTIPLIER then
+        log('[ProficiencyMultiplier] Multiplier below 0.5; clamped to 0.5')
+        multiplier = MIN_MULTIPLIER
+    elseif multiplier > MAX_MULTIPLIER then
+        log('[ProficiencyMultiplier] Multiplier above 100.0; clamped to 100.0')
+        multiplier = MAX_MULTIPLIER
     end
 
-    return nil
-end
-
-local function captureOriginalThresholds()
-    if GameData == nil or GameData.ItemTemp == nil then
-        return false
-    end
-
-    for itemId, itemData in pairs(GameData.ItemTemp) do
-        if itemData.IT_09 == true
-            and type(itemData.ProficientHard) == 'number'
-            and itemData.ProficientHard > 0
-            and originalThresholds[itemId] == nil then
-
-            originalThresholds[itemId] = itemData.ProficientHard
-        end
-    end
-
-    return true
-end
-
-local function applyProficiencyMultiplier(multiplier)
-    if not captureOriginalThresholds() then
-        log('[ProficiencyMultiplier] Item data not ready; multiplier not applied')
-        return false, 0
-    end
+    SWD3ProficiencyMultiplier.multiplier = multiplier
 
     local changedCount = 0
 
     for itemId, itemData in pairs(GameData.ItemTemp) do
-        if originalThresholds[itemId] ~= nil then
+        if itemData.IT_09 == true
+            and type(itemData.ProficientHard) == 'number'
+            and itemData.ProficientHard > 0 then
+
+            if originalThresholds[itemId] == nil then
+                originalThresholds[itemId] = itemData.ProficientHard
+            end
+
             local adjustedThreshold = math.floor(
                 originalThresholds[itemId] / multiplier + 0.5
             )
@@ -66,59 +50,15 @@ local function applyProficiencyMultiplier(multiplier)
         multiplier,
         changedCount
     ))
-
-    return true, changedCount
 end
 
-function SWD3ProficiencyMultiplier.GetMultiplier()
-    return normalizeMultiplier(SWD3ProficiencyMultiplier.multiplier)
-        or DEFAULT_MULTIPLIER
+-- 非系統 MOD 會在遊戲基礎資料載入完成後執行，因此直接套用最可靠。
+-- 若未來版本改變載入順序，才退回到連續的 SysInit 事件列表。
+if GameData ~= nil and GameData.ItemTemp ~= nil then
+    applyProficiencyMultiplier()
+else
+    log('[ProficiencyMultiplier] Item data not ready; waiting for SysInit')
+    OnEvent = OnEvent or {}
+    OnEvent.SysInit = OnEvent.SysInit or {}
+    table.insert(OnEvent.SysInit, applyProficiencyMultiplier)
 end
-
-function SWD3ProficiencyMultiplier.SetMultiplier(value)
-    local multiplier = normalizeMultiplier(value)
-
-    if multiplier == nil then
-        log('[ProficiencyMultiplier] Invalid preset; using 100.0')
-        multiplier = DEFAULT_MULTIPLIER
-    end
-
-    SWD3ProficiencyMultiplier.multiplier = multiplier
-
-    if Setting ~= nil then
-        Setting[SETTING_KEY] = multiplier
-    end
-
-    return applyProficiencyMultiplier(multiplier)
-end
-
-function SWD3ProficiencyMultiplier.GetPresetMultipliers()
-    local presets = {}
-
-    for index, multiplier in ipairs(PRESET_MULTIPLIERS) do
-        presets[index] = multiplier
-    end
-
-    return presets
-end
-
-local function initializeProficiencyMultiplier()
-    local multiplier = nil
-
-    if Setting ~= nil then
-        multiplier = normalizeMultiplier(Setting[SETTING_KEY])
-    end
-
-    if multiplier == nil then
-        multiplier = normalizeMultiplier(SWD3ProficiencyMultiplier.multiplier)
-            or DEFAULT_MULTIPLIER
-    end
-
-    SWD3ProficiencyMultiplier.SetMultiplier(multiplier)
-end
-
--- MOD Lua 早於 Save/setting_v2.lua 載入；基礎腳本會建立 SysInit 1～3，
--- 因此固定使用連續的第 4 個事件，在設定檔載入完成後套用保存倍率。
-OnEvent = OnEvent or {}
-OnEvent.SysInit = OnEvent.SysInit or {}
-OnEvent.SysInit[4] = initializeProficiencyMultiplier

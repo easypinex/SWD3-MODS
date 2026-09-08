@@ -8,6 +8,12 @@
 
 本文件只保留 `proficiency_multiplier` 的實測歷史與專案例外。
 
+## 現行 v1.1 回復（2026-09-08）
+
+依使用者要求從 Steam ID `3787409181` 下載 v1.1，反解後將 metadata 與兩份 Lua 原樣還原至來源。移除 v1.2 的 UI Lua／DAT；不再使用 F8、`SysInit[4]` 或保存的倍率 key。遠端維持原 v1.1，不重新上傳。
+
+v1.1：2,209 bytes，SHA-256 `580CB912620E79A315F3705E9CAEA198A097A5E2A0FC47329F9A22DE77958DB7`。本次檢查見[紀錄](release/steam-workshop/AUDIT-20260908.md)。下列滑桿、點擊及固定 SysInit 索引均為已移除的 v1.2 歷史。
+
 ## 實測基線
 
 - 遊戲：Steam HD `swd3.exe 4.0.5`

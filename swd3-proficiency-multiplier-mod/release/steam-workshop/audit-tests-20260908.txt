@@ -1,0 +1,1 @@
+PASS: published v1.1 bounds, one-hit floor, original attack gains, deferred/repeated initialization and no UI hooks

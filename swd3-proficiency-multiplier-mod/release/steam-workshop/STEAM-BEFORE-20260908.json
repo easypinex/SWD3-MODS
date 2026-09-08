@@ -1,0 +1,21 @@
+{
+  "id": "3787409181",
+  "title": "Steam版 - 武器熟練度 100 倍",
+  "visibility": "k_ERemoteStoragePublishedFileVisibilityPublic",
+  "files": [
+    {
+      "FileName": "proficiency_multiplier.ssmod",
+      "Size": 2209,
+      "Sha256": "580CB912620E79A315F3705E9CAEA198A097A5E2A0FC47329F9A22DE77958DB7",
+      "Package": {
+        "Version": "1.1",
+        "Name": "武器熟練度100倍",
+        "FileName": "proficiency_multiplier.ssmod",
+        "Size": 2209,
+        "Sha256": "580CB912620E79A315F3705E9CAEA198A097A5E2A0FC47329F9A22DE77958DB7",
+        "ManifestSha256": "E08AA0F0156B6EDA298BC8936764BA1370F959380E94D9D940D489835904E914"
+      },
+      "PackageError": null
+    }
+  ]
+}
