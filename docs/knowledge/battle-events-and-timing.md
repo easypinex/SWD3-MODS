@@ -28,9 +28,30 @@
 
 ## Battle_DrawBGI 與玩家 AI 模式
 
+此繪圖事件不作戰鬥對話入口；專屬戰場的已測對話方式見下節。
+
 **已靜態反解＋已實測，HD 4.0.5。** primary dispatcher 受啟動時讀取的 `BattlePlayerAI_mod` 控制，且在 `NowMenu != 3`、`NowMenu < 100` 等條件下才呼叫；index 是行動者，不是 action 選項。啟用該 global 的隔離實測同時接管手動指令，因此不能只為開啟繪圖／觀察 callback 而設定它，也不能把它當可靠逐幀或 action 6 目標確認窗口。位址、caller 與失敗測試見[BGI 重新反解與 v0.4 隔離反例](../../research/active/swd3-native-menu-probe/NATIVE-CAPTURE-RESEARCH.md#bgi-啟動條件與隔離反例)。
 
+**官方檔內說明／原版Lua，Steam HD4.0.5，2026-09-07。** `OnEvent_BattlePlayerAI.lua`的main先以`_PlayerCommands`建立可用命令表、收集隊伍資源／狀態；`AImode=0`直接返回手動，1呼叫`Function.BattlePlayerAI_FullAuto`，2／3／其餘分別物攻／術攻／回復。Lua選招經`BattleEnv.setTarget`及玩家`AI_Command`／`AI_SelectItem`／`AI_TargetIsEnemySide`回傳，main最後設定`AI_Target`。這是原生玩家AI啟用後的接口，不能據此推定原本手動UI也會執行相同欄位。
+
+`Function_Repository.lua`的攻擊候選呼叫`_BattleEnv.CalDamage(playerIndex,-enemyIndex,command,itemId)`取得預測，技能可用性另由`CheckPlayerCanUseSkill`檢查；不是完整傷害公式或實傷保證。`BattlePlayerAI.lua`的HP／MP／SP回復helper讀取各主角`BattleEnv.players[index].AI_AddPlayerSide*`預排治療記憶，後續的after／狀態事件會清理；這只證明有減少重複決策的機制，不能把預排當成效果完成或可靠的全隊交易。原版三檔指紋與可重跑mock入口見[玩家AI研究](../../research/active/swd3-cai-auto-ai-probe/TESTING.md#v01範圍)；其中測試MOD的角色模式還原與實際戰鬥效果仍待人工，不提升為通用保證。
+
+## 專屬 BattleScript 的戰鬥內對話
+
+**AI使用活物不等於召喚，已實測失敗＋已靜態反解，HD4.0.5.0，2026-09-08。** 公開AI_Command=3／AI_SelectItem=活物ID可進物品支付流程，卻不能據此推定會進入護駕召喚。已觀察卡瑪選神龍178後SP590→270、没有KeeperInit；另三卡也未登場。native `140044ab0` case3經`1400524e0`把private queue寫成3；護駕初始化在`140040820`的0x10分支。公開AI_Command不是此queue的直接setter；不能把AI_Command=16或自行補呼KeeperInit當修復。完整反例與指紋見[AI召喚路徑研究](../../research/active/swd3-cai-auto-ai-probe/TESTING.md#v03-撤回失敗召喚並提供手動接手)。這否決指定路徑，未證明所有其他公開API都不可能召喚。
+
+
+**已實測（使用者人工回報＋Console），Steam HD4.0.5，2026-09-06。** `.ssmod`可為自己的BattleField同名掛接`BattleScript[fieldId]`，在該coroutine內`BSC.Enter(1)`後使用原版`BattleScript.AutoPrint`（內部`BSC.Print`）顯示開場對話。已測案例亦可由真正全滅callback只記狀態，等script從`BSC.Run(1)`恢復後顯示敗北對話，再呼叫`BSC.BattleBreak`返回；不必把可yield對話直接放入事件handler或地圖Scene。
+
+版本、可重跑步驟及精確順序見[蔡魔王v0.6人工通過](../../swd3-cai-demon-king-mod/TESTING.md#v06-戰鬥內對話人工通過)；實作定位為`CaiDemonKing.lua`的`startBattle`／`runBattleScript`／`battleLine`／`Battle_Dead` handler。該例使用NoOVER、單敵、兩名主角，僅證明所列開場與全滅分支及再次開場；其他結局、普通遭遇、對話樣式與裝置另驗。原版AutoPrint參數與版次依[脚本基線](engine-research-workflow.md#steam-hd-405-原版腳本基線)的`BattleScript.lua`核對。
+
+**界線：** `BSC.Run(1)`可以作該例script恢復點，但不能因此推定1代表某名主角完成一個有效指令，亦不建立一般非致死傷害完成callback。對話前後記錄只佐證呼叫路徑，仍需人工確認文字可見、可關閉與畫面正常。限制在自有戰場，處理重入與中斷；原版劇情BattleScript可能改旗標或發物，不應直接呼叫整段舊劇情作通用對話helper。
+
 ## 尚缺的生命週期證據與標準量測組合
+
+**受限實測，HD4.0.5／蔡魔王v0.11／AI v0.4，2026-09-08。** [雙護駕首勝紀錄](../../swd3-cai-demon-king-mod/evidence/v011-approved-battle/REPORT.md#戰鬥結果)的Console123／126行，鳳凰與神龍在KeeperInit皆為HP正值、dead=false、hidden=true，之後各有12次原生護駕AI決策。因此在此情況以`not isHide`作存活護駕必要條件會漏計；不外推為所有護駕／時刻都hidden，也不因此取消死亡、移除或目前對象驗證。
+
+**官方檔內說明／原版 Lua，HD4.0.5，2026-09-08。** `OnEvent_Battle.lua` 的 KeeperInit.main 將護駕登錄為 BattleEnv.players 中的 isKeeper／self／NPCData／GUID；`OnEvent_BattleEnemyAI.lua` 的目標篩選僅對主角套用 isHide，護駕以有效 NPC_GUID、HP>0、非死亡檢查。不要把主角的全部顯示条件直接搬成護駕存活規格；這項查碼不保證 KeeperInit 時所有 native 旗標已完成更新。原檔指紋及接手失敗案例見[AI v0.4 研究](../../research/active/swd3-cai-auto-ai-probe/TESTING.md#v04-手動召喚接手修正)。
 
 需要確認重複粒度、取消、混合動作或結束分支時，才讀 [L1–L5 操作與既有 trace](../../research/active/swd3-capture-command-timing-probe/EVIDENCE.md#尚缺的生命週期證據與標準量測組合)。必須把實際操作與完整 Console 配對；mock 呼叫全部事件不等於 native 會走過全部事件。
 

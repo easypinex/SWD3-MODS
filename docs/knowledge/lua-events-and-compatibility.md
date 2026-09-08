@@ -94,7 +94,7 @@ return unpackValues(returns, 1, returns.n)
 
 已觀察到原版 `OnEvent.SysInit` 使用連續索引。稀疏的大型索引可能被只巡覽連續項目的引擎跳過，因此一般情況使用 `table.insert`。
 
-只有在依賴明確載入順序且已確認前方索引時，才可使用固定連續索引。例如熟練度 MOD 因 Lua 早於 `Save/setting_v2.lua` 載入，使用既有 1、2、3 後的 `[4]` 讀取 `Setting`。來源為該專案 [4.0.5 的 SysInit 紀錄](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#sysinit4-專案例外)，不是所有 MOD 的預設模板。
+只有在依賴明確載入順序且已確認前方索引時，才可使用固定連續索引。歷史上的熟練度 v1.2（現已回復 v1.1）因 Lua 早於 `Save/setting_v2.lua` 載入，使用既有 1、2、3 後的 `[4]` 讀取 `Setting`。來源為該專案 [4.0.5 的 SysInit 紀錄](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#sysinit4-專案例外)，不是所有 MOD 的預設模板。
 
 多個 Lua `DAT` 的先後順序也只能作為該專案的依賴契約。規則檔與引擎整合檔應分離：規則檔只處理可 mock 的純資料，整合檔才接觸 `OnEvent`、UI 與引擎函式；整合檔在使用相依 namespace 前應清楚失敗，而不是默默以 `nil` 繼續。
 

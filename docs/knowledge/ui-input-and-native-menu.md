@@ -10,7 +10,7 @@
 
 ## 已驗證的座標式 UI 基元
 
-下表是現有專案的讀取／繪圖用法，實作定位為[熟練度面板來源](../../swd3-proficiency-multiplier-mod/src/data/ProficiencyMultiplierUI.lua)中的 `InputFunc.MouseX`、`DrawFunc.Color`、`StringFunc.DrawString`；該專案的 [4.0.5 實測基線](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#實測基線)與[逐頁點擊待驗收](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#點擊穿透風險)分開記錄。來源用法不等於各解析度、透明度與輸入頁面均已驗收。
+下表是現有專案的讀取／繪圖用法，實作定位為[已移除的熟練度 v1.2 面板紀錄](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#點擊穿透風險)中的 `InputFunc.MouseX`、`DrawFunc.Color`、`StringFunc.DrawString`；該專案的 [4.0.5 實測基線](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#實測基線)與[逐頁點擊待驗收](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#點擊穿透風險)分開記錄。來源用法不等於各解析度、透明度與輸入頁面均已驗收。
 
 | 目標 | 用法 | 注意事項 |
 | --- | --- | --- |
@@ -47,7 +47,7 @@ end
 
 原版 `OnEvent_Input.lua` 將 `InputKeyDown`、`InputKeyUp`、`InputClick`、`InputDClick` 的 `.main` 都定義成 `(KeyFunc_flag, Key_SCANCODE)`；這是**官方檔內說明**，不是四種事件都已實機驗證。現有正式功能仍只依賴已測過的 `InputKeyDown`／`InputClick` 路徑；`InputKeyUp` 與 `InputDClick` 應先做隔離探針。
 
-**專案用法，時間單位待驗證。** [熟練度面板來源](../../swd3-proficiency-multiplier-mod/src/data/ProficiencyMultiplierUI.lua)的 `GetTicks` 呼叫用於繪製後的點擊有效窗與快捷鍵 debounce。呼叫前檢查它是否為 function；以相對差值比較，且把門檻當成專案 UX 參數。其精確時間單位尚未獨立驗證，不要把數值標成毫秒的引擎保證。
+**專案用法，時間單位待驗證。** [已移除的熟練度 v1.2 面板紀錄](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#點擊穿透風險)的 `GetTicks` 呼叫用於繪製後的點擊有效窗與快捷鍵 debounce。呼叫前檢查它是否為 function；以相對差值比較，且把門檻當成專案 UX 參數。其精確時間單位尚未獨立驗證，不要把數值標成毫秒的引擎保證。
 
 快捷鍵要與其他 MOD 一起測試，並在相關選單、地圖、戰鬥和對話狀態確認觸發範圍。
 
@@ -90,6 +90,10 @@ GameFunc.RunScene(-1, 'MyScene', 0)
 行數／字串長度上限及所有巢狀場景組合仍需按專案實測。中文列尾修正的條件見[文字案例](../../research/active/swd3-native-menu-probe/ENGINE-UI-RESEARCH.md#escmenu-的已知不適用情況)，不能由英文選單成功推定中文安全。
 
 ## 選型原則
+
+**已實測的受限修正，HD4.0.5，2026-09-07：** 四人測試開局v0.2在提示後先開原生`ESC.SaveMenu()`，使用者已通過取消後Esc開選單／四人人數回歸，並首次保存。這支持原生存檔畫面可補齊此起點的共用邊框初始化；不代表任意選單都需先開存檔畫面，亦未補足重讀／停用矩陣。版本、實際安裝hash與Console見[首次通過紀錄](../../research/active/swd3-cai-test-start/TESTING.md#v02-選單與首次保存通過)。下段保留v0.1反例及修正前的研究背景。
+
+**已人工回報失敗＋崩潰檔／靜態定位，HD4.0.5，2026-09-07：** 四人測試開局v0.1略過原版序章，`ESC.Menu`提示可正常顯示及關閉，隨後按Esc進物品頁卻因共用邊框TSW快取為0而崩潰。原生提示選單通過不能代替其後角色／物品介面的初始化驗收。反例、exe指紋、原生存檔列會先載入共用ACT的靜態路徑，與v0.2修正候選邊界見[測試開局研究](../../research/active/swd3-cai-test-start/TESTING.md#v02-esc崩潰修正候選)；尚未證明所有自訂起點需要同一處理。
 
 - 需要 modal 鍵鼠操作時，優先評估已驗證的原生 `ESC.Menu`。
 - 若原生選單沒有已驗證的鍵盤取消鍵，子選單應把「返回上層」同時放在首列與末列，並縮短資料頁面；可再以標題提示「點選空白處返回」。不要把未驗證的 Esc 當成替代方案。

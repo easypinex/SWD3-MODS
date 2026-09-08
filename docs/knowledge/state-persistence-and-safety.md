@@ -8,7 +8,7 @@
 | 單一存檔的功能資料 | `SaveData.<ModNamespace>` | 使用 MOD 專屬命名空間，測試不同存檔不互相污染。 |
 | 純 UI 暫態 | 記憶體中的 MOD 狀態 | 沒有必要不要保存；重啟回到明確預設。 |
 
-讀取 `Setting` 應放在已確認設定載入完成的事件。熟練度 MOD 的 [4.0.5 載入順序紀錄](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#sysinit4-專案例外)是 `SysInit[4]` 的專案例外來源；一般掛接方式見 [Lua 事件與相容性](lua-events-and-compatibility.md#sysinit-與載入時序)。單一存檔資料的既有範例為煉化 MOD 的最近戰鬥等級；[自動檢查](../../swd3-refinery-diagnostics-unlock-mod/TESTING.md#自動檢查)只證明 mock 寫入各存檔表，不補齊完整重啟／載入矩陣。
+讀取 `Setting` 應放在已確認設定載入完成的事件。已移除的熟練度 v1.2 之 [4.0.5 載入順序紀錄](../../swd3-proficiency-multiplier-mod/PACKAGING-NOTES.md#sysinit4-專案例外)是 `SysInit[4]` 的專案例外來源；一般掛接方式見 [Lua 事件與相容性](lua-events-and-compatibility.md#sysinit-與載入時序)。單一存檔資料的既有範例為煉化 MOD 的最近戰鬥等級；[自動檢查](../../swd3-refinery-diagnostics-unlock-mod/TESTING.md#自動檢查)只證明 mock 寫入各存檔表，不補齊完整重啟／載入矩陣。
 
 遊戲內建 manifest 的註解指出：`MODbundleSave 0` 會記錄在 Save、`1` 不綁 Save、`2` 使 Save 永久要求 MOD。無論欄位值為何，只要 MOD 讀寫持久資料，都要驗證全新存檔、既有存檔、不同存檔、停用和重新啟用。
 
@@ -46,6 +46,8 @@
 需要逐次傷害後還原時，先查[戰鬥時序](battle-events-and-timing.md#對-mod-設計的直接規則)。目前沒有可依賴的通用非致死傷害完成 callback；不能用繪圖、timer 或下一名角色的 after 猜測結束點。
 
 任何倍率或衍生值切換都應從保存的原始值重新計算，避免反覆切換累積誤差。
+
+**已實測的受限角色資源還原，Steam HD4.0.5／蔡魔王v0.7，2026-09-07。** 兩名主角在PlayerInit保存HP／MP／SP／State，Enter補滿，敗北BattleBreak後於RestoreItem還原；Console確認妮可HP由場外4045補至4050，離場精確回到4045，賽特亦回到其快照值。這支持在所列流程保存原值，而非用最大值代替原值；不證明原先全員陣亡、所有異常、其他結局或跨存檔皆安全。配對人工回報、封包版號及逐值日誌見[滿狀態存檔流程通過](../../swd3-cai-demon-king-mod/TESTING.md#滿狀態存檔流程通過2026-09-07)。
 
 ## 尊重原版交易與獎勵流程
 

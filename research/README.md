@@ -4,14 +4,18 @@
 
 ## 位置與狀態
 
+
 `active/` 保存持續使用工具與未完成研究；`archive/` 保存已結案、被取代或停止的實驗。**歸檔不等於問題全解，也不等於識別碼已釋放。** 重跑歷史探針須先核對其所依賴的 MOD 版本、停用互斥與不存檔條件；不承諾舊探針可直接搭配現行正式版。
 
-研究狀態只在本清冊維護；證據類型見[測試文件](../docs/knowledge/testing-and-verification.md#證據標記)，識別碼狀態見[相容性登記](../docs/compatibility-registry.md)。原有 19 個專案從工作區根目錄搬至表中位置，名稱不變；另新增 1 個發佈工具診斷與替代規劃，共 20 個。
+研究狀態只在本清冊維護；證據類型見[測試文件](../docs/knowledge/testing-and-verification.md#證據標記)，識別碼狀態見[相容性登記](../docs/compatibility-registry.md)。原有19個專案搬遷後，新增發佈工具診斷、蔡魔王動作、玩家AI及四人開局研究，共23個。
 
-## 持續使用與未完成研究（7 個）
+## 持續使用與未完成研究（10 個）
 
 | 研究／新位置 | 狀態與用途 | 已萃取知識 | 尚未解答／接續方式 |
 | --- | --- | --- | --- |
+| [swd3-cai-test-start](active/swd3-cai-test-start/README.md) | 四人Lv60滿裝起點；v0.2 Esc／四人回歸及首次保存已人工通過 | [資料模型](../docs/knowledge/runtime-api-and-data-model.md)的新角色初始化／修練；[UI](../docs/knowledge/ui-input-and-native-menu.md#選型原則)的冷啟動反例與受限修正 | 原生存檔畫面補載共用邊框；重讀、逐件修練／裝備效果與停用重讀待人工；不改舊sav |
+| [swd3-cai-auto-ai-probe](active/swd3-cai-auto-ai-probe/README.md) | v0.4手動雙護駕後AI接手與完整首勝已人工＋Console通過；原生介面全域切換 | 全域開關限制沿[戰鬥時序](../docs/knowledge/battle-events-and-timing.md#battle_drawbgi-與玩家-ai-模式) | 本組合全滅回歸、完整自動召喚與補召仍未完成；[首勝證據](../swd3-cai-demon-king-mod/evidence/v011-approved-battle/REPORT.md)；不自動操作遊戲或重開戰鬥 |
+| [swd3-cai-act-probe](active/swd3-cai-act-probe/README.md) | v0.2 DAT1 紅衣基本動作已人工通過；保留重跑及 Lua 路線疑點 | [有限 ACT 實測](../docs/knowledge/graphics-and-tsw-assets.md#既有-tsw-的增量-act-宣告) | 完整版三招技能、卡片、全滅等由 [TESTING](../swd3-cai-demon-king-mod/TESTING.md) 承接；Lua ACTData 疑點未定論 |
 | [swd3works-publisher-repair](active/swd3works-publisher-repair/README.md) | 進行中：0.3.0 發佈維護桌面版已完成，私人新建／升版／重啟紀錄已實測 | [工具](../docs/knowledge/tools-and-commands.md#steam-版本維護原型-020)、[可行性](../docs/knowledge/steam-workshop-release.md#獨立-steam-工作者原型) | [版本維護操作與驗收](active/swd3works-publisher-repair/RELEASES.md)；[桌面使用與驗收](active/swd3works-publisher-repair/DESKTOP.md)；後續封裝編輯器與本機安裝管理；原工具卡死 runtime 尚未重現 |
 | [swd3-engine-ui-diagnostics](active/swd3-engine-ui-diagnostics/README.md) | 持續使用：唯讀公開 API／package 名稱盤點 | [正文](../docs/knowledge/ui-input-and-native-menu.md) | 列出函式不證明可安全呼叫；native module 可用性未驗證 |
 | [swd3-native-menu-probe](active/swd3-native-menu-probe/README.md) | 持續使用：原生選單、文字及 native 分析工具 | [正文](../docs/knowledge/ui-input-and-native-menu.md) | 選單長度／跨情境；收妖反解另見 NATIVE-CAPTURE-RESEARCH.md |

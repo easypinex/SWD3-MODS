@@ -2,6 +2,14 @@
 
 本工作區製作的是《軒轅劍參：雲和山的彼端》Steam 高清版 MOD（`.ssmod`），不是 Codex plugin。不要建立 `.codex-plugin/plugin.json`、marketplace 或其他 Codex plugin 結構。
 
+## 遊戲中測試由使用者人工操作
+
+**使用者明確指示，2026-09-06；適用於本工作區後續所有任務。**
+
+- 「遊戲中」的實機操作與驗收一律由使用者人工進行。禁止使用 `computer-use` skill，也不得改用其他 UI 自動化工具、模擬鍵鼠／控制器輸入或腳本代替使用者操作遊戲。
+- Agent 先完成可行的靜態、mock、封裝與反解檢查，再提供精簡的人工測試步驟、預期結果與需要回報的資訊；依使用者回報及對應日誌記錄結果，未回報的案例維持待驗證。
+- 下方關閉／啟動遊戲、開啟 Console 與安裝 MOD／外掛的既有預先授權仍有效，但不包含遊戲中的自動操作；Agent 可分析已產生的 Console／探針日誌。
+
 ## 閱讀原則
 
 1. 先讀目標專案的 `README.md`。
@@ -51,7 +59,7 @@
 | `swd3-proficiency-multiplier-mod` | `README.md`；改倍率／保存讀 `state-persistence-and-safety.md`，改事件讀 `lua-events-and-compatibility.md`，改面板讀 `ui-input-and-native-menu.md`，發布讀 `PACKAGING-NOTES.md` |
 | `swd3-refinery-diagnostics-unlock-mod` | `README.md`；必讀 `state-persistence-and-safety.md` 與 `lua-events-and-compatibility.md`；改診斷文字再讀 `localization-and-strings.md`；測試讀 `TESTING.md`；發布讀 `release/steam-workshop/` |
 | `swd3-live-card-battle-mod` | `README.md`、`TESTING.md`；必讀 `lua-events-and-compatibility.md`、`state-persistence-and-safety.md`、`ui-input-and-native-menu.md`、`runtime-api-and-data-model.md`；改戰鬥／預留再讀 `battle-and-inventory-lifecycle.md`；碰圖片研究才讀 `IMAGE-ASSET-GUIDE.md` 與 `graphics-and-tsw-assets.md` |
-| `swd3-cai-demon-king-mod` | `README.md`（目前僅評估草案）；動作可行性讀 graphics／engine-research／testing，角色補齊讀 runtime／state，相容性依 README 的挑戰模式與卡庫入口選讀；未有實機證據前不把新 ACT 登錄列為已支援 |
+| `swd3-cai-demon-king-mod` | `README.md`、涉及驗收時讀 `TESTING.md`；基本動作探針已人工通過，現行正式版技能／卡庫／勝敗仍依矩陣；發布見 release/steam-workshop；動作讀 graphics，未知路徑再讀 engine-research／testing，角色補齊讀 runtime／state，相容性依 README 選讀 |
 | `swd3-all-monster-static-capture-mod` | `README.md`；資格／收服讀 native-capture，交換讀 battle-and-inventory，改資料讀 runtime／state；驗收讀 TESTING，發布讀 release |
 | `swd3-engine-ui-diagnostics` | `README.md`、testing；只建立唯讀 API 盤點，不呼叫未知介面 |
 | `swd3-native-menu-probe` | `README.md`、`ENGINE-UI-RESEARCH.md`、UI、testing |

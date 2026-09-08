@@ -536,6 +536,7 @@ python 'research\active\swd3-native-menu-probe\tools\FindLuaBindingXrefs.py' `
 | UI 的靈契資格、CanObsolt 查詢與實際 gate 是否一致 | [ReportHdCaptureUiEligibility.py](../../research/active/swd3-native-menu-probe/tools/ghidra/ReportHdCaptureUiEligibility.py)：`GATE`、`TARGETS`、`MENU_TRANSITION` | gate callers、getter 反編譯及選單過渡片段；選單只輸出篩選段落。 |
 | 靈契執行時如何判定資格並走成功後續 | [DecompileHdNativeCaptureEligibility.py](../../research/active/swd3-native-menu-probe/tools/ghidra/DecompileHdNativeCaptureEligibility.py)：`TARGETS` | 固定 gate `0x1400752b0`、成功狀態與後續函式；不等同實機成功率驗收。 |
 | 爆擊／一般攻擊的傷害資料如何流動 | [DecompileHdCriticalDamageFlow.py](../../research/active/swd3-native-menu-probe/tools/ghidra/DecompileHdCriticalDamageFlow.py)：`TARGETS` | 4 個固定 VA 的 payload／後續處理反編譯；欄位語意仍需原版資料或探針證據。 |
+| Boss bit 是否進入傷害、異常或初始化分支 | [ReportHdBossDamageBranches.py](../../research/active/swd3-native-menu-probe/tools/ghidra/ReportHdBossDamageBranches.py)、[ReportHdBossDamageFieldEvidence.py](../../research/active/swd3-native-menu-probe/tools/ghidra/ReportHdBossDamageFieldEvidence.py) | Ghidra Jython，無參數，先核對資料庫 exe SHA；直接 `[register+8],0x20` TEST／AND 候選、戰鬥區域命中函式、指定 helper／註冊反解及原始 ASCII／指令。僅輸出，不改資料庫；掃描不是所有 bit 用法的窮舉。[重跑與證據](../../research/active/swd3-native-menu-probe/evidence/boss-damage-20260908/README.md#證據檔與重跑)。 |
 | player action 在哪裡分流 | [ReportHdBattlePlayerActionStateSplit.py](../../research/active/swd3-native-menu-probe/tools/ghidra/ReportHdBattlePlayerActionStateSplit.py)：`TARGET`、`START_LINE`、`END_LINE` | `0x140044ab0` 反編譯的第 810–915 行片段；行號受分析器版本及資料庫狀態影響，須核對上下文，必要時另取完整函式。 |
 | MOD loader／native module 載入路徑 | [Invoke-LoaderStaticAnalysis.ps1](../../research/active/swd3-native-loader-probe/scripts/Invoke-LoaderStaticAnalysis.ps1)：`param`、`followUpReports` | 專用多報告包裝器，使用方式與額外前置條件見[Loader 研究包裝器](#loader-研究包裝器)；不接受事件名查詢。 |
 
@@ -678,6 +679,20 @@ Get-FileHash -LiteralPath '<artifact>' -Algorithm SHA256
 
 `-SourceRoot` 預設為上述隔離來源；`-OutputRoot` 省略時會寫入資料集 `generated/`，驗證時必須明確傳入獨立目錄。匯出器只讀原版 Lua／文字並透過既有 Fengari 產生 UTF-8 CSV；確認 PASS、CSV 數量與來源 manifest，不能把資料匯出成功當實機戰鬥驗收。
 
+### 終局平衡候選與取得線索
+
+`docs/knowledge/original-game-data/battle-balance-and-capture/Build-EndgameAudit.py` 使用 Python 標準庫，必填 `--source-root <隔離 out_data>`、`--data-root <原版匯出 CSV 目錄>`、`--static-cards <97張卡規格 CSV>`、`--output-root <工作區內尚不存在的新目錄>`。先用上節匯出器產生含 `item-combat-details.csv`／`player-special-skills.csv` 的資料，再執行此工具。
+
+只讀來源及卡庫規格，產生裝備分角色／槽位／單一指標前三候選、分開原生與 MOD 的護駕比較（排除來源438）、敵方招式的傷害／範圍／回復／吸取／異常關聯表、字面商店／寶箱／增減物／掉落參照及 SHA-256 manifest。拒絕既有輸出與輸入目錄內輸出；不執行原版劇情、不讀存檔、不改遊戲。參照掃描只辨識 `ESC.OpenStore`、`Scene.OpenChest`、`ItemFunc.AddItem`、`Scene.GetItem` 的字面 ID 及掉落表，不證明條件可達、總份數或無限供應；排名也不是整隊最優解。判讀見[終局補充研究](original-game-data/battle-balance-and-capture/BALANCE-RESEARCH.md#終局資源補充2026-09-06)。
+
+### 蔡魔王護駕材料鏈離線核對
+
+AI失敗召喚的只讀核對工具為`research/active/swd3-cai-auto-ai-probe/tools/InspectNativeSummonRoute.py`，同樣經Ghidra既有隔離專案`-readOnly -noanalysis`執行；列出物品gate caller、召喚相關字串參照與固定native binding函式。無額外腳本參數，stdout／log寫到工作區`.work`。初稿曾因Jython ASCII字串轉換中止，現版改unicode；須確認FUNCTION內容完整及沒有Traceback，不能只看退出碼。採用報告與腳本指紋見[研究證據](../../research/active/swd3-cai-auto-ai-probe/evidence/v03-summon-route/manifest.json)。
+
+勝利／召喚native查碼另有`swd3-cai-demon-king-mod/tools/InspectSummonCapacity.py`與`InspectBattleFinishAndSummon.py`：Ghidra Jython唯讀腳本，前者定位`Battle_KeeperInit`字串caller並反編譯，後者以檔內固定地址查函式（現行`1400725c0`物品支付入口）。依上方Ghidra命令，以既有HD4.0.5副本專案執行`-process swd3.exe -noanalysis -readOnly -scriptPath <專案tools> -postScript <腳本名>`，stdout與log放新的`.work`檔。檢查FUNCTION標記及實際內容；不操作遊戲、不改PE。採用報告／版本界線見[本版native證據](../../swd3-cai-demon-king-mod/evidence/v010-native/manifest.json)。
+
+`swd3-cai-demon-king-mod/tools/Export-RefineryData.lua <隔離out_data>`由fengari執行，只載入原版定義與煉化函式，將JSON輸出到stdout；外層保存於`.work/`。`Audit-RenewableRecipes.py --data <該JSON> --names <原版ItemString.txt> --output <新的.work子目錄>`計算以石國兩商店為材料葉節點的有序東西方配方鏈，輸出候選／完整樹／材料份數／護駕動作CSV／報告／指紋及witnesses.lua。只用RefineryType與RevType均涵蓋的材料種族，缺Race按0，避免漏算天神或把不在原生材料分類的靈藥投入下一步。拒絕既有輸出及.work外輸出；無遊戲／存檔寫入。它不宣稱native材料可選、商店可達、資金足夠或完整煉化取得上限；同級並列排除，循環不會無中生有。`Verify-RecipeWitnesses.lua <隔離out_data> <witnesses.lua>`再以原版OnEvent.Obsolt.main(1,2,0)逐條驗預覽，交易函式mock為報錯；不得把doing改成正式交易。只有Fengari的debug字串%d用%g相容，計算未改。這些專案研究工具不載入其他MOD；結果與界線見[護駕材料研究](../../swd3-cai-demon-king-mod/GUARDIAN-SUPPLY-AND-AI.md#材料鏈驗證結果)。
+
 ## Loader 研究包裝器
 
 從工作區根目錄呼叫；`-GameRoot` 必填，`-ReuseAnalysis` 選用。它定位包含 AGENTS 與 docs/knowledge 的祖先目錄，再使用其 `.tools/static-re`；不依賴探針直接位於根目錄。它會建立 native-analysis 副本、報告與 Ghidra 資料庫，方法及副作用見[loader README](../../research/active/swd3-native-loader-probe/README.md)。
@@ -689,6 +704,10 @@ Get-FileHash -LiteralPath '<artifact>' -Algorithm SHA256
 ```
 
 ## 文件連結檢查
+
+蔡魔王v1.0的離線檢查由既有`swd3-cai-demon-king-mod/tests/run-tests.ps1`納入`dialogue.lua`及`fair_play.lua`；個別執行語法為`npx --yes --package fengari-node-cli fengari <上述測試Lua> <CaiProject> <隔離out_data>`。前者在隔離globals執行原版GameData_cFunction的序列化輸出及重載，後者載入原版ItemsClass核對比試規格／扣物對帳；均只操作mock資料，不讀寫真實存檔或執行遊戲。須確認對應PASS與無stack traceback，不只看退出碼。
+
+挑戰道具返還的原版整合測試：`npx --yes --package fengari-node-cli fengari swd3-cai-demon-king-mod/tests/inventory_refund.lua <CaiProject> <隔離out_data> <LiveProject>`。三個位置參數必填；只在Fengari的mock globals載入原版定義／ItemsClass及目前兩份Inventory模組，不讀寫遊戲或存檔。由蔡魔王`tests/run-tests.ps1`納入，兩個MOD各自的原有測試也須執行。核對`PASS: inventory refunds`且無stack traceback，測試層級與原生待驗界線見[專案驗收](../../swd3-cai-demon-king-mod/TESTING.md#v012-挑戰道具返還)。
 
 ```powershell
 python '.\docs\tools\check-docs.py'

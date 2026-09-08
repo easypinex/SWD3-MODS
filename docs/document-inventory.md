@@ -1,6 +1,6 @@
 # 文件責任與現況盤點
 
-更新日期：2026-09-06。這是現況與權威位置清冊，不是知識正文或按批次累加的更新日誌。歷史盤點基線與本次搬遷證據見[整理紀錄](../research/archive/knowledge-consolidation-20260906/README.md)。
+更新日期：2026-09-08。這是現況與權威位置清冊，不是知識正文或按批次累加的更新日誌。歷史盤點基線與本次搬遷證據見[整理紀錄](../research/archive/knowledge-consolidation-20260906/README.md)。
 
 ## 入口責任
 
@@ -9,7 +9,7 @@
 | [工作區 README](../README.md) | 正式 MOD、圖庫與主要入口導航 | 易過期的本機啟用／發布狀態 |
 | [AGENTS](../AGENTS.md) | 依開發任務條件決定最小閱讀路徑、知識歸屬 | 原始 trace、產品版本教學 |
 | [知識庫索引](knowledge/README.md) | 人工按主題瀏覽 | 第二份通用規則或證據定義 |
-| [研究清冊](../research/README.md) | 20 個研究專案的位置、狀態、正文去向與缺口 | 完整引擎結論 |
+| [研究清冊](../research/README.md) | 研究專案的位置、狀態、正文去向與缺口；数量以清冊為準 | 完整引擎結論 |
 | [相容性登記](compatibility-registry.md) | 快捷鍵、hook、namespace、保存 key、文字與資產 ID 的擁有／保留狀態 | native API 規格 |
 | 本文件 | 文件與資料責任清冊 | 研究結果的另一份摘要正文 |
 
@@ -37,14 +37,14 @@
 
 | 位置／群組 | 文件及資產角色 |
 | --- | --- |
-| [熟練度 MOD](../swd3-proficiency-multiplier-mod/README.md) | README 功能／倍率；PACKAGING-NOTES 歷史版本與例外；workshop-description 發布文案 |
+| [熟練度 MOD](../swd3-proficiency-multiplier-mod/README.md) | README 固定100倍 v1.1；PACKAGING-NOTES 保存已移除的滑桿歷史；release 保留遠端回復與核對證據 |
 | [煉化 MOD](../swd3-refinery-diagnostics-unlock-mod/README.md) | README 功能；TESTING 驗收／還原；PACKAGING 與 release 保留版本證據及發布素材 |
 | [挑戰 MOD](../swd3-live-card-battle-mod/README.md) | README／TESTING 為現行產品契約；BALANCE-AND-SAFETY-AUDIT 為產品決策；IMAGE-ASSET-GUIDE 僅為歷史入口；release 為逐版素材 |
 | [全魔物靈契](../swd3-all-monster-static-capture-mod/README.md) | README／TESTING 為功能、具體數值、版本與案例證據；catalogue 為自有映射／平衡輸出；release 為發布素材 |
-| [蔡魔王 MOD 規劃](../swd3-cai-demon-king-mod/README.md) | 僅評估草案：既有造型選項、戰鬥補齊需求、獨立入口、相容性與分階段門檻；尚無來源封包或實機結果 |
+| [蔡魔王挑戰](../swd3-cai-demon-king-mod/README.md) | 現行功能依README／[TESTING](../swd3-cai-demon-king-mod/TESTING.md)；[設計稿](../swd3-cai-demon-king-mod/ULTIMATE-DESIGN.md)保存對話／真契靈方向；[平衡目標](../swd3-cai-demon-king-mod/BALANCE-TARGETS.md)保存最多四人、終局資源分層、候選數值與待驗量測；[歷史選型](../swd3-cai-demon-king-mod/DESIGN-HISTORY.md)保留早期方案 |
 | [HD 圖庫](../SWD3-HD-TSW-PNG-GALLERY/README.md) | README 重建；SSMOD-FORMAT-RESEARCH 為格式證據；manifest／CSV 為映射，圖片可由正版安裝重建 |
 | [來源圖庫](../SWD3-TSW-PNG-GALLERY/README.md) | README 重建；來源 manifest／CSV 不作 HD 映射 |
-| [原版資料入口](knowledge/original-game-data/README.md)及[戰鬥資料集](knowledge/original-game-data/battle-balance-and-capture/README.md) | BALANCE-RESEARCH 只維護原版數值分析與界線；匯出腳本及 generated CSV 為共用資料來源／推導，不是產品設定 |
+| [原版資料入口](knowledge/original-game-data/README.md)及[戰鬥資料集](knowledge/original-game-data/battle-balance-and-capture/README.md) | BALANCE-RESEARCH維護原版數值分析與界線；匯出腳本及generated CSV為共用資料來源／推導，不是產品設定；endgame保存終局候選／取得參照／hash，護駕比較明確分開原生與MOD規格快照 |
 | [研究清冊](../research/README.md) | 7 個持續使用／未完成、13 個歷史探針；各 README／TESTING 保存條件、重跑與停止方法 |
 | [發佈工具診斷與替代](../research/active/swd3works-publisher-repair/README.md) | README 保存 F1–F3 與備案；NEW-TOOL-DESIGN 為產品規劃；DESKTOP 保存現行 0.3.2 桌面版與原版開發工具按鈕替換契約；RELEASES／PROTOTYPE 保存 0.2.0／M0 歷史；prototype／scripts 為自有來源；evidence 保存靜態與真實 Steam 驗證、核對報告 |
 | research/archive/legacy-designs | 舊蚩尤提案、圖片方案；現行文件只連結，不複製教學 |

@@ -21,10 +21,11 @@
 
 | 專案 | 功能 | 專案入口 |
 | --- | --- | --- |
-| `swd3-proficiency-multiplier-mod` | 武器熟練度倍率與選單切換 | [README](swd3-proficiency-multiplier-mod/README.md) |
+| `swd3-proficiency-multiplier-mod` | 固定 100 倍武器熟練度（v1.1） | [README](swd3-proficiency-multiplier-mod/README.md) |
 | `swd3-refinery-diagnostics-unlock-mod` | 東西方煉化限制解除與配方診斷 | [README](swd3-refinery-diagnostics-unlock-mod/README.md) |
-| `swd3-live-card-battle-mod` | 從活物卡建立 1～3 名敵人的挑戰戰鬥 | [README](swd3-live-card-battle-mod/README.md) |
+| `swd3-live-card-battle-mod` | 自由選擇 1～5 名敵人、難度調整與戰後還原 | [README](swd3-live-card-battle-mod/README.md) |
 | `swd3-all-monster-static-capture-mod` | 全魔物靈契、靜態契靈卡庫與原生收服交換 | [README](swd3-all-monster-static-capture-mod/README.md) |
+| `swd3-cai-demon-king-mod` | 蔡魔王首領挑戰、懷舊對話與真契靈獎勵 | [README](swd3-cai-demon-king-mod/README.md) |
 
 成品狀態、版本、雜湊與實機驗收保留在各專案文件，不在工作區入口保存容易過期的本機狀態。
 
@@ -32,7 +33,7 @@
 
 - [SWD3 MOD Studio 桌面版](research/active/swd3works-publisher-repair/DESKTOP.md)：獨立工作坊發佈、版本更新與下載核對工具；[下載 0.3.2](https://github.com/easypinex/SWD3-MODS/releases/tag/mod-studio-v0.3.2)。
 
-規劃中的獨立 MOD：[蔡魔王](swd3-cai-demon-king-mod/README.md)，目前為造型、戰鬥補齊與相容性評估草案，尚無可安裝版本。
+測試模組與研究探針保留在工作區，不發佈至 Steam；正式作品也不包含測試開局、發物或玩家 AI 包。
 
 - [研究清冊](research/README.md)：所有探針與診斷的單一入口；區分持續使用、未完成及歷史實驗，列出知識去向與未解問題。
 - [Steam HD TSW 圖庫](SWD3-HD-TSW-PNG-GALLERY/README.md)：正式 HD ID／SN 映射與重建流程。

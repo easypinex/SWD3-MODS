@@ -42,7 +42,18 @@
 
 欄位出現在原版資料或註解中，只證明它是研究候選；缺省值、布林／數字表示、Save override 與可寫性仍需按實際功能驗證。特別是同名欄位可能在不同物品類別具有不同產品語意。
 
+### 新遊戲初始化與熟練欄位的靜態路徑
+
+**已靜態反解，Steam HD4.0.5、2026-09-07。** `FUN_14009e820`在重建SaveData／發出GameStart後，分別由`FUN_14009dd70`以NewGameChar[1..4]建立四名主角基本數值，讀取Level、HPMax／MPMax／SPMax與能力／抗性。隨後匯入NewGameSkill，逐角色解譯NewGameEqu的11個命名位置，呼叫原生裝備建立流程。這使新開局配置可沿原生流程初始化，不必把未知舊角色setter或猜測的PlayerEqu索引當成依賴；不證明任意舊存檔重設／所有劇情起點安全。
+
+同版`FUN_14007ae20`／`FUN_14007aee0`將訓練值限制於ProficientHard，寫入ItemTemp的Familiar及FamiliarPercent；`FUN_1400751a0`在達標後設isFamiliarMax。`FUN_140149d60`查詢優先讀SaveData、缺值退GameData。`ItemsClass.lua`雖註解物品Value為法寶經驗，不能單凭該舊註解把所有Value寫滿；應核對實際消費欄位。這裡只記錄靜態控制流，不把Lua寫入後的native缓存刷新、保存或修練效果稱為已實測。
+
+固定exe指紋、唯讀Ghidra腳本、完整函式與mock邊界集中於[新開局研究](../../research/active/swd3-cai-test-start/TESTING.md#v01靜態與mock)。具體新開局、滿修練及保存／重讀仍由該研究的人工矩陣驗證。
+
+**已觀察native初始化Console，HD4.0.5、測試開局v0.1：** 同研究[啟動證據](../../research/active/swd3-cai-test-start/TESTING.md#人工最小驗收)記錄四人各11件NewEquip，命名配置對應數字位置為1武器、2頭、3身、4手、5腳、6／7飾品、8／9護駕、10／11法寶。這是該版native建構的對照，不是手動畫面或任意中途換裝實測；原版`Function.CheckSutra`仍以8／9取法寶，與此建構紀錄不符，不應只據舊helper註解推定槽位。
+
 ### 新增活物卡的原生註冊時點
+
 
 **已實測方案，Steam HD 4.0.5，2026-09-03。** 目前可依賴的新增活物卡做法是在 MOD 的 Lua `DAT 2` **載入期**建立完整的 `GameData.ItemTemp[newId]`。實測成功限下列單卡反白案例；工作區不採用 `GameStart`、按鍵或戰後才新增 ID 的方式，這不等同已窮盡所有未知 native 註冊方法。
 
@@ -75,6 +86,8 @@
 
 ## 戰鬥中的角色資料
 
+**已靜態反解，Steam HD4.0.5，2026-09-06。** `BattlePlayers[index].CharData`指向主角原生數值，HP／MP／SP／State為可寫binding；但HP與戰鬥死亡旗標、人數是不同資料。`actor.ReleaseEffect(actor,32768)`有專用復活分支，會清死亡旗標並調整死亡人數；單純寫HP不足。`Battle_PlayerInit`出現在角色建立及死亡統計之後，整隊死亡檢查則早於Battle_Enter，因此只在Enter補血可能已太晚。精確exe指紋、函式地址及原始報告見[角色狀態靜態依據](../../swd3-cai-demon-king-mod/PARTY-STATE-RESEARCH.md#原生靜態依據)。這些是native分支事實，正式補滿／離場還原仍須另做實機驗收，不依此宣稱任意userdata欄位都可安全寫入。
+
 `BattlePlayers[1].CharData.Level` 已在煉化診斷 MOD 用來讀取戰鬥中主角等級。可定位的[專案功能](../../swd3-refinery-diagnostics-unlock-mod/README.md#功能)與[2026-09-01 mock 記錄](../../swd3-refinery-diagnostics-unlock-mod/TESTING.md#自動檢查)支持該用法與保存邏輯；此項未附獨立實機版號／完整 trace，不能標成完整角色 API 規格。其他角色、欄位或寫入需求仍須先建立探針。
 
 **已否決，Steam HD 4.0.5，2026-09-04。** `BattlePlayers[1].CharData` 在 `Battle_PlayerInit` 後是 userdata，不是可任意擴充的 Lua table；直接寫 `AttrPoison` 會回報 `no member named 'AttrPoison'`。同次研究也確認在玩家初始化前暫改 `GameData.ItemTemp[玩家ID].AttrPoison=-10` 不會使食人花毒屬性傷害進入可用免傷。這否決了所測 `AttrPoison` 寫入與來源暫改方案，不代表全部未知抗性 API 永遠不存在。護駕 `Add*` 與卡片 `Attr*` 的區別及替代路徑反例見[來源抗性探針](../../research/archive/swd3-guardian-resistance-battle-probe/README.md)、[userdata 探針](../../research/archive/swd3-guardian-resistance-runtime-probe/README.md)。
@@ -103,6 +116,14 @@
 **已靜態反解，Steam HD 4.0.5、exe SHA-256 `63F1D83D8C3A756D17640D9022E19F8928741B091F0E47ABBDB22C0CCF6C9523`。** HD 的 `NPCData` Lua registration 以名稱 `ItemType` 對應 native offset `0x8`；原生 Boss／劇情判定使用其中 bit `0x20`。資料表中的 `IT_06` 是來源 `GameData.ItemTemp` 的 Lua 欄位，**不是**戰鬥 userdata 的 `NPCData.IT_06` 屬性。研究或隔離探針若要暫時切換 Boss 語意，必須保存完整整數 `NPCData.ItemType`，僅加／清 `0x20`，保留其餘 bit 並以 readback 驗證後再繼續；不得對 userdata 虛構 `IT_06` 欄位。`ItemType` 在實際戰鬥各時點的可寫性仍須逐案 readback 實測，不能因 binding 名稱存在而外推為正式功能安全。
 
 **已靜態反解＋隔離實測。** 同一 `ItemType` 的 `0x800` 對應靈契資格。Boss bit 同時是 native 攻擊／爆擊分支的輸入，暫清後曾出現妮可 9999 的 A/B 反例；不得宣稱只影響 UI，也不能據此推導所有武器完整傷害公式。完整旗標與傷害證據見[反解紀錄](../../research/active/swd3-native-menu-probe/NATIVE-CAPTURE-RESEARCH.md#已靜態反解it_06-bridge-與-9999-爆擊的關係)、[賽特窗口紀錄](../../research/active/swd3-seth-capture-window-probe/NATIVE-EVENT-AND-CAPTURE-FLOW.md)。如何選擇收妖方案見[原生靈契](native-capture-and-eligibility.md)。
+
+### Boss 旗幟的傷害與狀態分支
+
+**已靜態反解，2026-09-08，限本節上述 HD 4.0.5 exe SHA-256。** Boss bit 不是已知的統一減傷倍率。`FUN_140089570` 的特殊爆擊按攻擊者 `NPC_GUID` 分流：賽特 1 的分支不讀 Boss；妮可 2 對 non-Boss 可以進入以目標 HP／DEF 提高基準並處理死亡的特殊路徑；李靖 17 的中間基準乘 150% 在 Boss 判斷前已完成，Boss 只阻擋其隨機附加狀態。卡瑪 8 的該段也不讀 Boss。這不等於完整爆擊倍率、所有武器或奇術傷害保證；普通核心未見此 bit 的通用減傷乘數。角色對應、條件、16-bit 限制與 9999 上限定位見[傷害核心證據](../../research/active/swd3-native-menu-probe/evidence/boss-damage-20260908/README.md#傷害核心與特殊爆擊)。
+
+**已靜態反解，同版本。** `FUN_140085890` 對 NPC 施加異常的一條機率路徑，Boss ON 會使 RNG 範圍參數減 10；OFF 取消這層保護，可能提高異常施加機會。它不是傷害加 10% 或成功率固定加 10 個百分點；仍受等級／智慧／SkillHits、效果資料及提前返回條件影響。因此賽特自身沒有妮可的分支，也不能推論賽特所有招式不受影響；後來補回 bit 不等於解除已登記的狀態。原始指令、RNG 範圍及受限公式見[異常狀態證據](../../research/active/swd3-native-menu-probe/evidence/boss-damage-20260908/README.md#異常狀態保護)。
+
+**已靜態反解，同版本。** 敵人初始化 `FUN_140078980` 在讀到 Boss bit 時，對副本 **ATK +10、SPD +6**，再套用該函式的場地倍率；caller 在此後才 dispatch `Battle_EnemyInit`。因此戰前清除來源旗幟與行動期間切換 live bit 是不同影響：後者不會自動補算或撤销已完成的初始化加成。欄位註冊、載入與 caller 證據見[初始化證據](../../research/active/swd3-native-menu-probe/evidence/boss-damage-20260908/README.md#戰前來源旗幟與初始化)；特定 MOD 是否實際漏加、SaveData 覆寫與場地倍率的結果仍需逐案核對。
 
 ## 安全讀取範例
 
